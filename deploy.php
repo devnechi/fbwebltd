@@ -34,6 +34,8 @@ task('build', function () {
     run('cd {{release_path}} && build');
 });
 
+set('composer_options', 'install --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader');
+
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
