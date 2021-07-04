@@ -181,7 +181,7 @@
         <div class="container">
             <div class="row">
                 <div class="heading titleintro wow fadeInUp">
-                    <h2>“We Solve Complicated Problems, in a Simple Digital Way.”</h2>
+                    <h2>We bring simplified Technology solutions into complex complex development spaces</h2>
                     <p style="font-size: 24px;">Basics, we blend creativity and expert software technology to solve
                         different types
                         of problems ranging from minor day to-day ones to large-scale corporate ones.
