@@ -51,6 +51,113 @@
             /* width: 120px; */
         }
 
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+
+
+.containerz{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+  }
+  @media screen and (max-width: 640px){
+    .containerz{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    .containerz{
+      width: 33.33333%;
+    }
+  }
+
+  .containerz .title{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .contentz:hover .contentz-overlay{
+    opacity: 1;
+  }
+
+  .contentz-image{
+    width: 100%;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .contentz:hover .contentz-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .contentz-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+
+  .contentz-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+
+
+  .fadeIn-top{
+    top: 20%;
+  }
+
     </style>
 </head>
 
@@ -146,9 +253,10 @@
                     <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft"
                         data-wow-delay="0.3s">
                         <h1 class="h1-responsive font-weight-bold mt-sm-5"
-                            style="color:rgb(216, 216, 29);  padding-top: 40px;">Simplified</h1>
-                        <h1 class="h1-responsive font-weight-bold mt-sm-5" style="margin-top: 0rem !important;">Digital
-                            Solutions</h1>
+                            style="color:rgb(216, 216, 29);  padding-top: 40px;">Supporting </h1>
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" style="margin-top: 0rem !important;">Development space</h1>
+                        <h1 class="h1-responsive font-weight-bold mt-sm-5" style="margin-top: 0rem !important;">to be <strong>competitive</strong></h1>
+
 
                         {{-- <hr class="hr-light">
                         <h2 class="h2-responsive">Analyse, Design, Develope and Deliver </h2>
@@ -181,14 +289,64 @@
         <div class="container">
             <div class="row">
                 <div class="heading titleintro wow fadeInUp">
-                    <h2>We bring simplified Technology solutions into complex complex development spaces</h2>
-                    <p style="font-size: 24px;">Basics, we blend creativity and expert software technology to solve
-                        different types
-                        of problems ranging from minor day to-day ones to large-scale corporate ones.
-                        We give our customers access to simpler, smarter, more valuable solutions.
+                    <h2>Future basics is a digital company bringing simplified digital solution into complex development space. </h2>
+                    <p style="font-size: 24px;"><strong>Future Basics</strong></p>
+                    <p style="font-size: 24px;"> is a digital company</p>
+                    <p style="font-size: 24px;"> bringing simplified digital solution into complex development space
                     </p>
                 </div>
             </div>
+        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="container containerz">
+                            <h3 class="title">Text fadeIn top</h3>
+                            <div class="contentz">
+                              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="contentz-overlay"></div>
+                                <img class="contentz-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                <div class="contentz-details fadeIn-top">
+                                  <h3>This is a title</h3>
+                                  <p>This is a short description</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="container containerz">
+                            <h3 class="title">Text fadeIn top</h3>
+                            <div class="contentz">
+                              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="contentz-overlay"></div>
+                                <img class="contentz-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                <div class="contentz-details fadeIn-top">
+                                  <h3>This is a title</h3>
+                                  <p>This is a short description</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="container containerz">
+                            <h3 class="title">Text fadeIn top</h3>
+                            <div class="contentz">
+                              <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="contentz-overlay"></div>
+                                <img class="contentz-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                                <div class="contentz-details fadeIn-top">
+                                  <h3>This is a title</h3>
+                                  <p>This is a short description</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+            </div>
+            <div class="container">
             <div class="row">
                 <div class="col-md-8">
                     <h2 class="h1-responsive font-weight-bold mt-sm-5">Simplified Digital Solutions</h2>

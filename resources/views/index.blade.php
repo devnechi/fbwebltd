@@ -74,12 +74,6 @@
                         <a href="{{ route('about') }}" class="ml-4 text-sm text-gray-700  navbrand-text"> About</a>
                         <a href="{{ route('business') }}" class="ml-4 text-sm text-gray-700  navbrand-text">
                             Business</a>
-                        {{-- <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  navbrand-text">
-                            Responsibilities</a>
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  navbrand-text">
-                            Employees</a>
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  navbrand-text"> Social
-                            Media</a> --}}
                         <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  navbrand-text"> Contact
                             us</a>
                         <a href="{{ route('login') }}" class="ml-4 text-sm text-gray-700  navbrand-text"> Log in</a>
@@ -167,7 +161,7 @@
             <div class="col-md-8 pull-right">
                 <h2 class="h1-responsive font-weight-bold mt-sm-5">Simplified Digital Solutions</h2>
                 <br />
-                <p style="font-size: 24px;">We venture in areas that show great potential and extract value from
+                <p style="font-size: 24px;">We are in areas that show great potential and extract value from
                     them. Our mission is</p>
             </div>
         </div>
