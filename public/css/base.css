@@ -174,38 +174,38 @@ h6 {
 
 @font-face {
   font-family: 'TencentSansw3';
-  src: url('../font/TencentSans-W3.eot');
+  src: url('../fonts/TencentSans-W3.eot');
   src:
-    url('../font/TencentSans-W3.eot?#font-spider') format('embedded-opentype'),
-    url('../font/TencentSans-W3.woff') format('woff'),
-    url('../font/TencentSans-W3.ttf') format('truetype'),
-    url('../font/TencentSans-W3.svg') format('svg');
+    url('../fonts/TencentSans-W3.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/TencentSans-W3.woff') format('woff'),
+    url('../fonts/TencentSans-W3.ttf') format('truetype'),
+    url('../fonts/TencentSans-W3.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TencentSansW3CN';
-  src: url('../font/TencentSans-W3-CN.otf');
+  src: url('../fonts/TencentSans-W3-CN.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TencentSansW7CN';
-  src: url('../font/TencentSans-W7-CN.otf');
+  src: url('../fonts/TencentSans-W7-CN.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TencentSansw7';
-  src: url('../font/TencentSans-W7.eot');
+  src: url('../fonts/TencentSans-W7.eot');
   src:
-    url('../font/TencentSans-W7.eot?#font-spider') format('embedded-opentype'),
-    url('../font/TencentSans-W7.woff') format('woff'),
-    url('../font/TencentSans-W7.ttf') format('truetype'),
-    url('../font/TencentSans-W7.svg') format('svg');
+    url('../fonts/TencentSans-W7.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/TencentSans-W7.woff') format('woff'),
+    url('../fonts/TencentSans-W7.ttf') format('truetype'),
+    url('../fonts/TencentSans-W7.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -514,7 +514,7 @@ h6 {
 } */
 .submenu_show .logo h1,
 .head_white .logo h1 {
-  background-image: url(/img/index/fb_menu_logo_drk.png);
+  background-image: url(/img/index/fb_menu_logo.png);
   background-size: 100% 100%;
 }
 
@@ -1676,6 +1676,9 @@ background:url(../img/mobile/bg_1.png) no-repeat 0 0; background-size: contain;
   background: url(../img/together/chevron-right-white.png) no-repeat center;
   background-size: 20px 20px;
 }
+
+
+
 
 /* è´¢åŠ¡æ–°é—»æ¨¡å— */
 .new-mod-flx {
