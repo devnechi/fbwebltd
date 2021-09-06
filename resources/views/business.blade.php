@@ -1,7 +1,7 @@
 @extends('layouts.public_layout')
 @section('content')
     <div class="view"
-        style="background-image: url('images/businesss.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 740px;">
+        style="background-image: url('../img/businesss.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 740px;">
         <!-- Mask & flexbox options-->
         <div class="mask rgba-gradient align-items-center">
             <!-- Content -->

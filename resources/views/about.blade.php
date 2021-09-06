@@ -4,7 +4,7 @@
     <!-- https://mdbootstrap.com/img/Photos/Others/architecture.jpg -->
     <!-- Full Page Intro -->
     <div class="view"
-        style="background-image: url('images/africa_people.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 740px;">
+        style="background-image: url('../img/africa_people.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 740px;">
         <!-- Mask & flexbox options-->
         <div class="mask rgba-gradient align-items-center">
             <!-- Content -->

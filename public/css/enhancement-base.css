@@ -1,48 +1,48 @@
 
 @font-face {
     font-family: 'TencentSansw3';
-    src: url('../font/TencentSans-W3.eot');
+    src: url('../fonts/TencentSans-W3.eot');
     src:
-        url('../font/TencentSans-W3.eot?#font-spider') format('embedded-opentype'),
-        url('../font/TencentSans-W3.woff') format('woff'),
-        url('../font/TencentSans-W3.ttf') format('truetype'),
-        url('../font/TencentSans-W3.svg') format('svg');
+        url('../fonts/TencentSans-W3.eot?#font-spider') format('embedded-opentype'),
+        url('../fonts/TencentSans-W3.woff') format('woff'),
+        url('../fonts/TencentSans-W3.ttf') format('truetype'),
+        url('../fonts/TencentSans-W3.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'TencentSansw7';
-    src: url('../font/TencentSans-W7.eot');
+    src: url('../fonts/TencentSans-W7.eot');
     src:
-        url('../font/TencentSans-W7.eot?#font-spider') format('embedded-opentype'),
-        url('../font/TencentSans-W7.woff') format('woff'),
-        url('../font/TencentSans-W7.ttf') format('truetype'),
-        url('../font/TencentSans-W7.svg') format('svg');
+        url('../fonts/TencentSans-W7.eot?#font-spider') format('embedded-opentype'),
+        url('../fonts/TencentSans-W7.woff') format('woff'),
+        url('../fonts/TencentSans-W7.ttf') format('truetype'),
+        url('../fonts/TencentSans-W7.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans';
-    src: url('../font/OpenSans-Regular.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans';
-    src: url('../font/OpenSans-Bold.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans';
-    src: url('../font/OpenSans-Light.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans';
-    src: url('../font/OpenSans-SemiBold.ttf') format('truetype');
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -193,7 +193,9 @@ input, textarea, select{
 }
 .ten_img .ten_img_link:hover:after{ right: 18px; }
 
-.ten_img--5x4:before{ padding-bottom: 80%; }
+.ten_img--5x4:before{
+    padding-bottom: 80%;
+}
 .ten_img--5x3:before{ padding-bottom: 60%; }
 .ten_img--5x2:before{ padding-bottom: 40%; }
 .ten_img--5x1:before{ padding-bottom: 20%; }

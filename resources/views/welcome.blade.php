@@ -174,7 +174,7 @@
                             style="transition-duration: 300ms; transform: translate3d(-3810px, 0px, 0px);">
                             <div class="ten_banner_slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
                                 style="cursor: pointer; width: 1905px;" data-swiper-slide-index="1">
-                                <a href="https://www.futurebasics.co.tz/en-us/doc.pdf?series=talent" target="_blank">
+                                <a href="https://www.futurebasics.co.tz" target="_blank">
                                     <!-- <a href="https://static.www.futurebasics.com/uploads/2021/08/18/236f212d95d7402bacdbdf904a6b2b65.pdf" target="_blank">
             -->
                                     <img src="img/index/banner/nile.jpg" alt="Fin Release">
@@ -191,7 +191,7 @@
                             </div>
                             <div class="ten_banner_slide swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
                                 style="cursor: pointer; width: 1905px;" data-swiper-slide-index="0">
-                                <a href="https://www.futurebasics.co.tz/en-us/des.pdf?series=talent" target="_blank">
+                                <a href="http://www.futurebasics.co.tz" target="_blank">
                                     <img class="banner-img" src="img/index/banner/nile.jpg"
                                         alt="futurebasics Perspectives">
                                     <div class="ten_banner_shadow ten_banner_shadow--10"></div>
@@ -206,7 +206,7 @@
                             </div>
                             <div class="ten_banner_slide swiper-slide swiper-slide-active"
                                 style="cursor: pointer; width: 1905px;" data-swiper-slide-index="1">
-                                <a href="https://www.futurebasics.co.tz/en-us/uploads/2021/08/18/236f212d95d7402bacdbdf904a6b2b65.pdf"
+                                <a href="http://www.futurebasics.co.tz"
                                     target="_blank">
                                     <img src="img/some/cds.JPG" alt="Financial Release">
                                     <div class="ten_banner_shadow ten_banner_shadow--20"></div>
@@ -221,7 +221,7 @@
                             </div>
                             <div class="ten_banner_slide swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
                                 style="cursor: pointer; width: 1905px;" data-swiper-slide-index="0">
-                                <a href="https://www.futurebasics.co.tz/en-us/des.pdf?series=talent" target="_blank">
+                                <a href="http://www.futurebasics.co.tz" target="_blank">
                                     <img class="banner-img" src="img/index/banner/runner.jpg"
                                         alt="futurebasics Perspectives">
                                     <div class="ten_banner_shadow ten_banner_shadow--10"></div>
@@ -261,19 +261,19 @@
             <section>
                 <div class="ten_main">
                     <div class="ten_links">
-                        <a href="https://www.futurebasics.co.tz/en-us/about.html#about-con-1" class="ten_img">
+                        <a href="{{ route('about') }}" class="ten_img">
                             <img src="img/index/banner/open.jpg" alt="About Us">
                             <div class="ten_img_txt">
                                 <h2>About Us</h2>
                             </div>
                         </a>
-                        <a href="https://www.futurebasics.co.tz/en-us/about.html#about-con-6" class="ten_img">
+                        <a href="{{ route('about') }}" class="ten_img">
                             <img src="img/pics/teach.jpg" alt="Our Culture">
                             <div class="ten_img_txt">
                                 <h2>Our Culture</h2>
                             </div>
                         </a>
-                        <a href="https://www.futurebasics.co.tz/en-us/about.html#about-con-7" class="ten_img">
+                        <a href="{{ route('about') }}" class="ten_img">
                             <img src="img/pics/tina.jpg" alt="Our Offices">
                             <div class="ten_img_txt">
                                 <h2>Our Offices</h2>
@@ -292,7 +292,7 @@
                             <img src="img/index/about/abt-us.jpg" alt="FutureBasics">
                             <div class="ten_img_shadow ten_img_shadow--vert"></div>
                             <div class="ten_img_txt ten_img_txt--bottom">
-                                <a href="https://www.futurebasics.co.tz/en-us/business.html">
+                                <a href="{{ route('business') }}">
                                     <h2>Supporting Business Development</h2>
                                     <p>Improving Efficiency and ease of operation</p>
                                 </a>
@@ -302,7 +302,7 @@
                             <img src="img/index/banner/dada.jpg" alt="FutureBasics">
                             <div class="ten_img_shadow ten_img_shadow--vert"></div>
                             <div class="ten_img_txt ten_img_txt--bottom">
-                                <a href="https://www.futurebasics.co.tz/en-us/business.html?page-active=to-b">
+                                <a href="{{ route('business') }}">
                                     <h2>Bridging the Gap to Digitization</h2>
                                     <p>Guidance and assistance into the Digital World</p>
                                 </a>
@@ -312,7 +312,7 @@
                             <img src="img/index/about/stair.jpg" alt="FutureBasics">
                             <div class="ten_img_shadow ten_img_shadow--vert"></div>
                             <div class="ten_img_txt ten_img_txt--bottom">
-                                <a href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation">
+                                <a href="{{ route('business') }}">
                                     <h2>Supporting development spaces</h2>
                                     <p>Making progress through digitization</p>
                                 </a>
@@ -321,16 +321,16 @@
                     </div>
                     <div class="ten_home">
                         <div class="ten_home_l">
-                            <a href="https://www.futurebasics.co.tz/en-us/business.html" class="" data-target="home1">
+                            <a href="{{ route('business') }}" class="" data-target="home1">
                                 <h2>Supporting Business Development</h2>
                                 <p>Improving Efficiency and ease of operation</p>
                             </a>
-                            <a href="https://www.futurebasics.co.tz/en-us/business.html?page-active=to-b"
+                            <a href="{{ route('business') }}"
                                 data-target="home2" class="active">
                                 <h2>Bridging the Gap to Digitization</h2>
                                 <p>Guidance and assistance into the Digital World</p>
                             </a>
-                            <a href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation"
+                            <a href="{{ route('business') }}"
                                 data-target="home3" class="">
                                 <h2>Supporting development spaces</h2>
                                 <p>Making progress through digitization</p>
@@ -342,7 +342,7 @@
                                     <img src="img/pics/auto-tina.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a href="https://www.futurebasics.co.tz/en-us/business.html#business-con-1">
+                                        <a href="{{ route('business') }}">
                                             <h3>Automate your Business</h3>
                                             <p>Offering a comprehensive suite of communications and social services that
                                                 connect people to make accurate business decisions.</p>
@@ -353,7 +353,7 @@
                                     <img src="img/pics/bs-ppl.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a href="https://www.futurebasics.co.tz/en-us/business.html#business-con-2">
+                                        <a href="{{ route('business') }}">
                                             <h3>Moving online</h3>
                                             <p>Delivering high-quality content through industry-leading technologies, to
                                                 shape our next-generation social and content offering.</p>
@@ -364,7 +364,7 @@
                                     <img src="img/index/banner/nile.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a href="https://www.futurebasics.co.tz/en-us/business.html#business-con-3">
+                                        <a href="{{ route('business') }}">
                                             <h3>Business systems development</h3>
                                             <p>Connecting users to merchants via fast and secure payment service,
                                                 and to financial institutions via innovative consumer finance products.
@@ -376,7 +376,7 @@
                                     <img src="img/index/tiles/growth.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a href="https://www.futurebasics.co.tz/en-us/business.html#business-con-4">
+                                        <a href="{{ route('business') }}">
                                             <h3>Assisting Expansion & Centralization</h3>
                                             <p>Developing a range of powerful software tools to meet the evolving needs
                                                 of users.</p>
@@ -390,7 +390,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=to-b#business-con-5">
+                                            href="{{ route('business') }}">
                                             <h3>Online presence</h3>
                                             <p>A leading big data marketing platform.</p>
                                         </a>
@@ -401,7 +401,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=to-b#business-con-6">
+                                            href="{{ route('business') }}">
                                             <h3>Build with us your business system</h3>
                                             <p>Building industry-leading cloud-based products and services to support
                                                 enterprises to go digital and go global.</p>
@@ -413,7 +413,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=to-b#business-con-7">
+                                            href="{{ route('business') }}">
                                             <h3>Digital Data Management</h3>
                                             <p>Leveraging cutting-edge Internet technologies and products, including
                                                 cloud, AI, big data analytics, security, payments, Mini Programs,
@@ -429,7 +429,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation#business-con-8">
+                                            href="{{ route('business') }}">
                                             <h3>Large and small scale enterprises</h3>
                                             <p>Enhancing the research and application of artificial intelligence to
                                                 benefit mankind.</p>
@@ -441,7 +441,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation#business-con-9">
+                                            href="{{ route('business') }}">
                                             <h3>Businesses</h3>
                                             <p>Providing a full-stack of IoT products and solutions across a broad range
                                                 of devices and applications.</p>
@@ -453,7 +453,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation#business-con-9">
+                                            href="{{ route('business') }}">
                                             <h3>Organizations</h3>
                                             <p>Focus on audio and video communications technologies.</p>
                                         </a>
@@ -463,8 +463,7 @@
                                     <img src="img/index/tiles/comm.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="https://www.futurebasics.co.tz/en-us/business.html?page-active=innovation#business-con-10">
+                                        <a href="{{ route('business') }}">
                                             <h3>Communities</h3>
                                             <p>Collaborating with partners to explore new frontiers and develop
                                                 technologies.</p>
@@ -543,7 +542,7 @@
                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                     </div>
                     <div class="ten_subbanner_txt">
-                        <a href="https://www.futurebasics.co.tz/en-us/responsibility.html">
+                        <a href="{{ route('business') }}">
                             <h2>Normalizing <br>Efficiency</h2>
                             <h5>Through technology, we provide access to simpler, smarter, more valuable business
                                 solutions</h5>
@@ -652,33 +651,8 @@
         </script>
         <!-- JS Content End -->
 
-        <!--
-<footer>
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="block">
-                  <p>Copyright &copy; <a href="http://www.futurebasics.co.tz">Future Basics</a>| All right
-                      reserved.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer> -->
-        <!-- <div class="wrap_footer">
-  <div class="footer_con">
-    <div class="focus_us">
-      <h3 class="tit">Follow Us</h3>
-    </div> -->
 
-        <!--
-    <div class="logo_futurebasics">
-      <img src="/img/index/futurebasics_logo.png" alt="futurebasics" />
-    </div> -->
-        <!--
-		<p class="copyright"><a href="#" class="flag_num"> + 255 687 859 500 <span> + 255 687 859 500</span></a>Copyright © 2019 - 2021 Future Basics. All Rights Reserved. <br class="flag_m"/>Future Basics Company All rights reserved</p> -->
-
-        <!-- </div> -->
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="row">
