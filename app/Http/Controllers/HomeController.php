@@ -33,7 +33,7 @@ class HomeController extends Controller
      */
     public function about()
     {
-        return view('home');
+        return view('about');
     }
 
     /**
@@ -44,6 +44,16 @@ class HomeController extends Controller
     public function business()
     {
         return view('business');
+    }
+
+    /**
+     * Show the admin application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function adminHome()
+    {
+        return view('admin.admin-dashboard');
     }
 
 

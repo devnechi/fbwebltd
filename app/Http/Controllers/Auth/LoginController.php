@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
 class LoginController extends Controller
 {
     /*
@@ -26,9 +28,50 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
 
-    /**
+     protected $redirectTo;
+    public function redirectTo(){
+
+        if (Auth::user()->usertype_id == 1){
+            $this->redirectTo = '/admin';
+                return $this->redirectTo;
+        }else{
+            $this->redirectTo = '/login';
+            return $this->redirectTo;
+        }
+    }
+
+
+    // public function login(Request $request)
+    // {
+    //     $input = $request->all();
+
+    //     $this->validate($request, [
+    //         'email' => 'required|email',
+    //         'password' => 'required',
+    //     ]);
+
+    //     // var_dump($input);
+    //     if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
+    //     {
+    //         if (auth()->user()->usertype_id == 1) {
+    //              return redirect()->route('home');
+    //              //$u = auth()->user()->usertype_id;
+    //             //var_dump($u);
+    //         }else{
+    //             return redirect()->route('home');
+    //         }
+    //         // var_dump($input['usertype_id']);
+    //     }else{
+    //         return redirect()->route('login')
+    //             ->with('error','Email-Address And Password Are Wrong.');
+    //     }
+
+    // }
+
+
+      /**
      * Create a new controller instance.
      *
      * @return void

@@ -29,6 +29,8 @@ host('futurebasics.co.tz')
     ->identityFile('~/.ssh/deployerkey')
     ->set('deploy_path', '/var/www/futurebasics.co.tz/public_html/fb');
 // Tasks
+//    ->set('deploy_path', '/var/www/futurebasics.co.tz/public_html/fb');
+
 
 task('build', function () {
     run('cd {{release_path}} && build');
