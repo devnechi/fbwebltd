@@ -27,7 +27,7 @@ add('writable_dirs', []);
 host('futurebasics.co.tz')
     ->user('deployer')
     ->identityFile('~/.ssh/deployerkey')
-    ->set('deploy_path', '/var/www/futurebasics.co.tz/public_html/fb');
+    ->set('deploy_path', '/var/www/futurebasics.co.tz/public_html/fb/');
 // Tasks
 //    ->set('deploy_path', '/var/www/futurebasics.co.tz/public_html/fb');
 

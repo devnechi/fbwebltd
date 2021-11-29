@@ -67,7 +67,7 @@
     <link rel="stylesheet" type="text/css" href="/css/rem-2.css">
 
     <style>
-        footer {
+        /* footer {
             text-align: center;
             background: #272727;
             padding: 27px 0px;
@@ -87,9 +87,117 @@
         footer p a:hover {
             color: #fff;
             text-decoration: none;
-        }
+        } */
 
-    </style>
+        /* contact information */
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/**************************
+* 16. footer styles
+***************************/
+.footer {
+  background: #F3F6FD;
+}
+.footer .footer-top {
+  padding: 40px 0;
+}
+.footer .footer-top .footer-right {
+  text-align: right;
+}
+.footer .footer-top .footer-right .footer-menu {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 0;
+}
+.footer .footer-top .footer-right .footer-menu ul, .footer .footer-top .footer-right .footer-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer .footer-top .footer-right .footer-menu ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footer-top .footer-right .footer-menu ul li + li {
+  margin-left: 30px;
+}
+.footer .footer-top .footer-right .footer-menu ul li a {
+  display: block;
+  color: rgba(45, 45, 45, 0.8);
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.footer .footer-top .footer-right .footer-menu ul li a:hover {
+  color: #fd942a;
+}
+.footer .footer-top .footer-right .footer-social {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+  padding: 12px 0;
+}
+.footer .footer-top .footer-right .footer-social a {
+  color: rgba(45, 45, 45, 0.8);
+  font-size: 16px;
+  letter-spacing: .05em;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.footer .footer-top .footer-right .footer-social a + a {
+  margin-left: 20px;
+}
+.footer .footer-top .footer-right .footer-social a:hover {
+  color: #fd942a;
+}
+.footer .footer-bottom {
+  text-align: center;
+}
+.footer .footer-bottom .thm-container {
+  border-top: 1px solid rgba(76, 87, 229, 0.2);
+  max-width: 1110px;
+  padding: 38px 0;
+}
+.footer .footer-bottom p {
+  margin: 0;
+  color: rgba(45, 45, 45, 0.8);
+  font-size: 16px;
+}
+
+ </style>
 </head>
 
 <body>
@@ -119,6 +227,8 @@
                         <ul class="sub_list" style="display: none;">
                             <li><a href="{{ route('about') }}">About Us</a></li>
                             <li><a href="{{ route('about') }}">Vision &amp; Mission</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+
                         </ul>
                     </li>
                     <li class="menu_item">
@@ -132,18 +242,18 @@
                     <li class="menu_item">
                         <a class="txt" href="{{ route('login') }}">Login</a>
                     </li>
-                    <li class="menu_item menu_item_lan">
+                    {{-- <li class="menu_item menu_item_lan">
                         <a class="cn" lang="sw-tz">SWAHILI</a>
                         <i class="s_line">|</i>
                         <a class="en" lang="en-us">English</a>
-                    </li>
+                    </li> --}}
                 </ul>
                 @endauth
-                <div class="lang_area">
+                {{-- <div class="lang_area">
                     <a class="lang_ch" lang="sw-tz">SW</a>
                     <i class="s_line">|</i>
                     <a class="lang_en current" lang="en-us">EN</a>
-                </div>
+                </div> --}}
 
             </div>
             <div class="icon_menu">
@@ -206,8 +316,7 @@
                             </div>
                             <div class="ten_banner_slide swiper-slide swiper-slide-active"
                                 style="cursor: pointer; width: 1905px;" data-swiper-slide-index="1">
-                                <a href="http://www.futurebasics.co.tz"
-                                    target="_blank">
+                                <a href="http://www.futurebasics.co.tz" target="_blank">
                                     <img src="img/some/cds.JPG" alt="Financial Release">
                                     <div class="ten_banner_shadow ten_banner_shadow--20"></div>
                                     <div class="ten_banner_text">
@@ -325,13 +434,11 @@
                                 <h2>Supporting Business Development</h2>
                                 <p>Improving Efficiency and ease of operation</p>
                             </a>
-                            <a href="{{ route('business') }}"
-                                data-target="home2" class="active">
+                            <a href="{{ route('business') }}" data-target="home2" class="active">
                                 <h2>Bridging the Gap to Digitization</h2>
                                 <p>Guidance and assistance into the Digital World</p>
                             </a>
-                            <a href="{{ route('business') }}"
-                                data-target="home3" class="">
+                            <a href="{{ route('business') }}" data-target="home3" class="">
                                 <h2>Supporting development spaces</h2>
                                 <p>Making progress through digitization</p>
                             </a>
@@ -344,8 +451,10 @@
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a href="{{ route('business') }}">
                                             <h3>Automate your Business</h3>
-                                            <p>Offering a comprehensive suite of communications and social services that
-                                                connect people to make accurate business decisions.</p>
+                                            <p> Decrease errors and
+                                                increase efficiency by
+                                                reducing manual reliance
+                                                within business operations</p>
                                         </a>
                                     </div>
                                 </div>
@@ -355,8 +464,10 @@
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a href="{{ route('business') }}">
                                             <h3>Moving online</h3>
-                                            <p>Delivering high-quality content through industry-leading technologies, to
-                                                shape our next-generation social and content offering.</p>
+                                            <p> Take your enterprise to the
+                                                next level by moving your
+                                                business operations and
+                                                systems online.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -378,8 +489,10 @@
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a href="{{ route('business') }}">
                                             <h3>Assisting Expansion & Centralization</h3>
-                                            <p>Developing a range of powerful software tools to meet the evolving needs
-                                                of users.</p>
+                                            <p>
+                                                We provide digital solutions that help
+                                                your business grow and handle data
+                                                more efficiently.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -389,10 +502,9 @@
                                     <img src="img/some/offc.JPG" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Online presence</h3>
-                                            <p>A leading big data marketing platform.</p>
+                                            <p>We help enterprises establish and build an online presence.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -400,11 +512,12 @@
                                     <img src="img/pics/buildbus.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Build with us your business system</h3>
-                                            <p>Building industry-leading cloud-based products and services to support
-                                                enterprises to go digital and go global.</p>
+                                            <p>
+                                                Building industry-leading cloud-based products and services to support
+                                                enterprises to go digital and go global.
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -412,13 +525,10 @@
                                     <img src="img/some/top.JPG" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Digital Data Management</h3>
-                                            <p>Leveraging cutting-edge Internet technologies and products, including
-                                                cloud, AI, big data analytics, security, payments, Mini Programs,
-                                                location-based services and more, to assist industries to digital
-                                                upgrade with our smart industry solutions.</p>
+                                            <p>We provide tools that help collect, handle and produce data more
+                                                efficiently.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -428,11 +538,11 @@
                                     <img src="img/index/tiles/tobuy.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Large and small scale enterprises</h3>
-                                            <p>Enhancing the research and application of artificial intelligence to
-                                                benefit mankind.</p>
+                                            <p>
+                                                Digital Solutions for all types of enterprises.
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -440,11 +550,10 @@
                                     <img src="img/pics/moro.JPG" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Businesses</h3>
-                                            <p>Providing a full-stack of IoT products and solutions across a broad range
-                                                of devices and applications.</p>
+                                            <p>Digital tools that help grow, improve and enhance businesses
+                                                productivity.</p>
                                         </a>
                                     </div>
                                 </div>
@@ -452,10 +561,12 @@
                                     <img src="img/index/tiles/org.jpg" alt="FutureBasics">
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
-                                        <a
-                                            href="{{ route('business') }}">
+                                        <a href="{{ route('business') }}">
                                             <h3>Organizations</h3>
-                                            <p>Focus on audio and video communications technologies.</p>
+                                            <p>
+                                                We provide tools that help organisations achieve their goals faster and
+                                                with less resources.
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -465,8 +576,9 @@
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a href="{{ route('business') }}">
                                             <h3>Communities</h3>
-                                            <p>Collaborating with partners to explore new frontiers and develop
-                                                technologies.</p>
+                                            <p>
+                                                Technologically aiding the development of communities and their people.
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -520,7 +632,7 @@
                                     <div class="ten_img_shadow ten_img_shadow--vert"></div>
                                     <div class="ten_img_txt ten_img_txt--bottom">
                                         <a>
-                                            <h3>Naqualify</h3>
+                                            <h3>Nakwalify</h3>
                                             <p>An online platform that provides an accommodating online certification
                                                 environment by allowing organizations to post online courses for their
                                                 intended demographic which upon completion, individuals receive credible
@@ -552,6 +664,50 @@
                 </div>
             </section>
             <!--Banner1-->
+
+
+            <!--nakwalify-->
+            <section id="contact-us" class="ten_subbanner ten_subbanner--type1">
+                <div class="ten_main">
+                    <div class="ten_subbanner_txt">
+                        <a href="#">
+                            <h2>Contact us</h2>
+                            <h5>We would like to hear from you!!</h5>
+                            <p><span class="ten_subbanner_arr"></span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-container inited swiper-container-fade swiper-container-initialized swiper-container-horizontal"
+                        data-breakpoint="0:1" data-spacing="0" data-autoplay="5000" data-effect="fade"
+                        data-prev=".ten_banner_arr_l" data-next=".ten_banner_arr_r">
+                        <div class="container">
+                            <form action="#">
+                                {{-- <label for="country">Country</label>
+                                <select id="country" name="country">
+                                  <option value="australia">Australia</option>
+                                  <option value="canada">Canada</option>
+                                  <option value="usa">USA</option>
+                                </select> --}}
+
+                              <label for="fname">First Name</label>
+                              <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+
+                              <label for="lname">Last Name</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                              <label for="subject">Subject</label>
+                              <input type="text" id="lname" name="lastname" placeholder="Subject">
+
+
+                              <label for="content">Content</label>
+                              <textarea id="content" name="content" placeholder="Write your message here...." style="height:200px"></textarea>
+
+                              <input type="submit" value="Submit">
+                            </form>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <!--contact us-->
 
             <!--Banner2-->
             <section class="ten_subbanner ten_subbanner--type2">
@@ -649,41 +805,92 @@
             })
 
         </script>
+
+
+<script>
+    //animated header class
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll > 200) {
+            //console.log('a');
+            $(".navigation").addClass("animated");
+        } else {
+            //console.log('a');
+            $(".navigation").removeClass("animated");
+        }
+    });
+
+</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
+
+<script src="{{ mix('js/app.js') }}"></script>
         <!-- JS Content End -->
 
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <p>Copyright &copy; <a href="http://www.futurebasics.co.tz">Future Basics</a>| All right
-                                reserved.</p>
-                        </div>
+        <!--
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="block">
+                  <p>Copyright &copy; <a href="http://www.futurebasics.co.tz">Future Basics</a>| All right
+                      reserved.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> -->
+        {{-- <div class="wrap_footer">
+  <div class="footer_con"> --}}
+            {{-- <div class="focus_us">
+            <h3 class="tit">Follow Us</h3>
+            </div> --}}
+        {{-- <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <p> Copyright &copy; <a href="http://www.futurebasics.co.tz"> Future Basics </a> | All right
+                            reserved.
+                            <a href="#" class="flag_num">
+                                info@futurebasics.co.tz
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script>
-            //animated header class
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                //console.log(scroll);
-                if (scroll > 200) {
-                    //console.log('a');
-                    $(".navigation").addClass("animated");
-                } else {
-                    //console.log('a');
-                    $(".navigation").removeClass("animated");
-                }
-            });
+        </div> --}}
 
-        </script>
 
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
-
-        <script src="{{ mix('js/app.js') }}"></script>
+{{-- //crubsa ft --}}
+<div class="footer">
+    <div class="footer-top">
+        <div class="thm-container clearfix">
+            <a href="#" class="footer-logo pull-left"><img src="/img/index/fb_menu_logo_drk.png" alt="Future Basics ltd logo" width="250"></a>
+            <div class="footer-right pull-right">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li><!--
+                        --><li><a href="#">ABOUT US</a></li><!--
+                        --><li><a href="#">SERVICES</a></li><!--
+                        --><li><a href="#">FAQ</a></li><!--
+                        --><li><a href="#">SUPPORT</a></li>
+                    </ul>
+                </div><!-- /.footer-menu -->
+                <div class="footer-social">
+                    <a href="#" class="icofont icofont-social-facebook"></a><!--
+                    --><a href="#" class="icofont icofont-social-twitter"></a><!--
+                    --><a href="#" class="icofont icofont-brand-linkedin"></a>
+                </div><!-- /.footer-social -->
+            </div><!-- /.footer-right pull-right -->
+        </div><!-- /.thm-container -->
+    </div><!-- /.footer-top -->
+    <div class="footer-bottom">
+        <div class="thm-container">
+            <p>Copyright © Future Basics Company Limited 2021. All right reserved.</p>
+        </div><!-- /.thm-container -->
+    </div><!-- /.footer-bottom -->
+</footer>
 </body>
 
 </html>

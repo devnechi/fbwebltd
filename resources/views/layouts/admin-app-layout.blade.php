@@ -1407,7 +1407,7 @@
                     <h4 style="font-size:30px;">Dashboard</h4>
                     <li><a href="{{ route('admin') }}">Home</a></li>
                     <li><a href="{{ route('manage-projects') }}">Project Management</a></li>
-                    <li><a href="{{ route('to-user-management') }}">User Management</a></li>
+                    <li><a href="{{ route('user-management') }}">User Management</a></li>
                     <li><a href="#">Finance Management</a></li>
                     <li><a href="#">Account settings</a></li>
                     <li>
