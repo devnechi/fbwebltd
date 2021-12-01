@@ -688,15 +688,14 @@ input[type=submit]:hover {
                                   <option value="usa">USA</option>
                                 </select> --}}
 
-                              <label for="fname">First Name</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                              <label for="fname">Full Name</label>
+                              <input type="text" id="fullname" name="fullname" placeholder="Your Full name..">
 
-                              <label for="lname">Last Name</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                              <label for="email">Email</label>
+                              <input type="email" id="lname" name="email" placeholder="Enter your email..">
 
                               <label for="subject">Subject</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Subject">
-
+                              <input type="text" id="subject" name="subject" placeholder="Subject">
 
                               <label for="content">Content</label>
                               <textarea id="content" name="content" placeholder="Write your message here...." style="height:200px"></textarea>
