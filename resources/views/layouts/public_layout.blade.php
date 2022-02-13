@@ -2,178 +2,256 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-    <title>Future Basics Company Limited</title>
 
     <meta name="keywords" content="Development space，Radarmile, Livestoka, Technology, Innovations">
     <meta name="description"
         content="Future Basics is a digital company bringing simplified digital solution into complex Development Space">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    {{-- <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"> --}}
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <!-- for FF, Chrome, Opera -->
-    <link rel="icon" type="image/png" href="img/assets/favicons/fbicon.png" sizes="112x112">
-    <link rel="icon" type="image/png" href="img/assets/favicons/fbicon.png" sizes="112x112">
+    <!--twitter og-->
+    <meta name="twitter:site" content="@themetags">
+    <meta name="twitter:creator" content="@themetags">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quiety - Creative SAAS Technology & IT Solutions Bootstrap 5 HTML Template">
+    <meta name="twitter:description" content="Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.">
+    <meta name="twitter:image" content="#">
 
-    <!-- for IE -->
-    <link rel="icon" type="image/x-icon" href="img/assets/favicons/fbicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="img/assets/favicons/fbicon.ico" />
-    <!-- <script src="https://www.googletagmanager.com/gtag/js?id=G-DW9MBJC8M8" async=""></script><script src="//pingjs.qq.com/h5/stats.js?v2.0.4" name="MTAH5" sid="500665694" cid="500696449"></script><script>
-          window.windowLoadList = [];
-          window.windowLoad = function (call){
-            windowLoadList.push(call);
-          }
-          var _locale = 'en-us';
-        </script> -->
+    <!--facebook og-->
+    <meta property="og:url" content="#">
+    <meta name="twitter:title" content="Quiety - Creative SAAS Technology & IT Solutions Bootstrap 5 HTML Template">
+    <meta property="og:description" content="Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.">
+    <meta property="og:image" content="#">
+    <meta property="og:image:secure_url" content="#">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
-        integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <!--meta-->
+    <meta name="description" content="Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.">
+    <meta name="author" content="ThemeTags">
 
+    <!--favicon icon-->
+    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
 
-    <!-- <link rel="stylesheet" href="css/themify-icons.css"> -->
-    {{-- <link rel="stylesheet" href="css/themefisher-fonts.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css"> --}}
-    {{-- <link rel="stylesheet" href="css/animate.css"> --}}
-    {{-- <link rel="stylesheet" href="css/style.css"> --}}
-    <!-- Responsive Stylesheet -->
-    {{-- <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/themify-icons.css"> --}}
+    <!--title-->
+    <title>{{ config('app.name', 'FutureBasics') }}</title>
 
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- <link rel="stylesheet" href="css/themify-icons.css"> -->
-  <link rel="stylesheet" href="css/themefisher-fonts.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Responsive Stylesheet -->
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/themify-icons.css">
+    <!--build:css-->
+    {{-- <link rel="stylesheet" href="css/main.css"> --}}
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
+    <!-- endbuild -->
 
+    <!--custom css start-->
+    {{-- <link rel="stylesheet" href="css/custom.css"> --}}
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/css/base-2.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link href="/css/swiper.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/yearpicker.css" type="text/css">
+    <!--custom css end-->
+    <script src="{{ asset('js/app.js') }}"></script>
 
 
-
-    <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/css/base-2.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-
-    <link href="/css/enhancement-base.css" rel="stylesheet" type="text/css">
-    <link href="/css/home-new.css" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" type="text/css" href="/css/rem.css">
-    <link rel="stylesheet" type="text/css" href="/css/rem-2.css">
-
-    <style>
-        footer {
-            text-align: center;
-            background: #272727;
-            padding: 27px 0px;
-        }
-
-        footer p {
-            font-weight: 300;
-            font-size: 12px;
-            color: #dfdfdf;
-            letter-spacing: 3px;
-        }
-
-        footer p a {
-            color: #fff;
-        }
-
-        footer p a:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-
-    </style>
 </head>
 
 <body>
 
-    <div class="wrap en-us">
-        <!-- Header area -->
-        <div class="wrap_head hestate head_white" style="display: block; position: fixed; top: 0px;">
-            <!-- Click search icon add class name search_area_show Hide the menu, show the input box -->
-            <!-- add class name submenu_show show submenu -->
-            <div class="head_con">
-                <a class="logo" href="{{ url('/') }}">
-                    {{-- <h1>Future Basics</h1> --}}
-                    <h1>{{ config('app.name', 'Future Basics') }}</h1>
-                </a>
-                @if (Route::has('login'))
-
-                <ul class="menu_list" style="transform: translate(0px, 0px); opacity: 1;">
-                    @auth
-
-                    <li class="menu_item">
-                        <a class="txt" href="{{ route('home') }}">Home</a>
-                    </li>
-                    @else
-
-                    <li class="menu_item">
-                        <a class="txt" href="{{ route('about') }}">About</a>
-                        <ul class="sub_list" style="display: none;">
-                            <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('about') }}">Vision &amp; Mission</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <a class="txt" href="{{ route('business') }}">Business</a>
-                        <ul class="sub_list" style="display: none;">
-                            <li><a href="{{ route('business') }}">Business</a></li>
-                            <li><a href="{{ route('business') }}">Enterprises</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="menu_item">
-                        <a class="txt" href="{{ route('login') }}">Login</a>
-                    </li>
-                    <li class="menu_item menu_item_lan">
-                        <a class="cn" lang="sw-tz">SWAHILI</a>
-                        <i class="s_line">|</i>
-                        <a class="en" lang="en-us">English</a>
-                    </li>
-                </ul>
-                @endauth
-                <div class="lang_area">
-                    <a class="lang_ch" lang="sw-tz">SW</a>
-                    <i class="s_line">|</i>
-                    <a class="lang_en current" lang="en-us">EN</a>
-                </div>
-
-            </div>
-            <div class="icon_menu">
-                <a class="i_menu"></a>
-                <a class="i_close"></a>
-            </div>
-            <div class="bg_hover"></div>
+    <!--preloader start-->
+    {{-- <div id="preloader">
+        <div class="preloader-wrap">
+            <img src="img/favicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <div class="loading-bar"></div>
         </div>
-        @endif
+    </div> --}}
+    <!--preloader end-->
+    <!--main content wrapper start-->
+    <div class="main-wrapper">
+
+        <!--header section start-->
+        <header class="main-header w-100">
+            <nav class="navbar navbar-expand-xl navbar-light sticky-header">
+                <div class="container d-flex align-items-center justify-content-lg-between position-relative">
+                    <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
+                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white" />
+                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-color" />
+                    </a>
+
+                    <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
+                        <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
+                    </a>
+                    <div class="clearfix"></div>
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                            <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
+                            {{-- <li><a href="{{ route('about') }}" class="nav-link">About us</a></li> --}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{ route('about') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About us
+                                </a>
+                                <div class=" dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                    <div class="dropdown-grid rounded-custom width-half">
+                                        <div class="dropdown-grid-item">
+                                            <h6 class="drop-heading">More about us</h6>
+                                            <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
+                                                <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
+                                                <div class="dropdown-info">
+                                                    <div class="drop-title">Vision & Mission</div>
+                                                    {{-- <p>It's for <strong>SaaS Software</strong> Company</p> --}}
+                                                </div>
+                                            </a>
+                                            <a href="{{ route('about') }}#our-team" class="dropdown-link">
+                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
+                                                <div class="dropdown-info">
+                                                    <div class="drop-title">Our Team</div>
+                                                    {{-- <p>Modern <strong>Saas agency</strong></p> --}}
+                                                </div>
+                                            </a>
+                                            <a href="{{ route('about') }}" class="dropdown-link">
+                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
+                                                <div class="dropdown-info">
+                                                    <div class="drop-title">Our Culture</div>
+                                                    {{-- <p>Modern <strong>Saas agency</strong></p> --}}
+                                                </div>
+                                            </a>
+                                            <a href="{{ route('about') }}#office-location" class="dropdown-link">
+                                                <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
+                                                <div class="dropdown-info">
+                                                    <div class="drop-title">Our Offices</div>
+                                                    {{-- <p><strong>Web Software</strong> Company</p> --}}
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                    <div class="dropdown-grid rounded-custom width-full-3">
+                                        <div class="dropdown-grid-item">
+                                            <h6 class="drop-heading">Digital Solutions</h6>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-eject"></i></span>
+                                                <div class="drop-title">Graphic Design</div>
+                                            </a>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bolt"></i></span>
+                                                <div class="drop-title">Design & Prototyping</div>
+                                            </a>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bars"></i></span>
+                                                <div class="drop-title">Desktop applications Development</div>
+                                            </a>
+
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-browser"></i></span>
+                                                <div class="drop-title">Web applications Development</div>
+                                            </a>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2" ><i class="far fa-address-card"></i></span>
+                                                <div class="drop-title">Mobile applications Development</div>
+                                            </a>
 
 
-        <!-- Header area -->
-        <!-- Home Page Content Start -->
-        <!-- CSS Content Start -->
-        <link href="/css/enhancement-base.css" rel="stylesheet" type="text/css">
-        <link href="/css/home-new.css" rel="stylesheet" type="text/css">
-        <!-- CSS Content End -->
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-closed-captioning"></i></span>
+                                                <div class="drop-title">Data Mining & Data Science</div>
+                                            </a>
+
+
+                                        </div>
+                                        <div class="dropdown-grid-item">
+                                            <h6 class="drop-heading">Business Solutions</h6>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-usd-square"></i></span>
+                                                <div class="drop-title">Business System Analysis</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-th-list"></i></span>
+                                                <div class="drop-title">Business Processes Administration</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-chart-network"></i></span>
+                                                <div class="drop-title">Data Analytics</div>
+                                            </a>
+
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-paper-plane"></i></span>
+                                                <div class="drop-title">Digital Strategy Fomulation</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-th-large"></i></span>
+                                                <div class="drop-title">Business Systems Development</div>
+                                            </a>
+
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-user"></i></span>
+                                                <div class="drop-title">AI/ML Model Development</div>
+                                            </a>
+                                        </div>
+                                        <div class="dropdown-grid-item last-item bg-light radius-right-side">
+                                            <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                    <div class="dropdown-grid rounded-custom width-full">
+                                        <div class="dropdown-grid-item">
+                                            <h6 class="drop-heading">Enterprise Solutions</h6>
+                                            <a href="{{ route('business') }}" class="dropdown-link px-0">
+                                                <span class="me-2"><i class="far fa-fingerprint"></i></span>
+                                                <div class="drop-title">Livestoka</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                                <span class="me-2"><i class="far fa-address-book"></i></span>
+                                                <div class="drop-title">Radarmile</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                <div class="drop-title">Nakwalify</div>
+                                            </a>
+
+
+                                        </div>
+                                        <div class="dropdown-grid-item radius-right-side bg-light">
+                                            <h6 class="drop-heading">Innovations</h6>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                <div class="drop-title">Smart Risiti</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-life-ring"></i></span>
+                                                <div class="drop-title">Wakala +</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-headset"></i></span>
+                                                <div class="drop-title">Wakili</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-laptop-code"></i></span>
+                                                <div class="drop-title">Avorra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
+                        <a href="{{ route('login') }}" class="btn btn-link text-decoration-none me-2">Sign In</a>
+                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+                    </div>
 
       <!--Navbar -->
      {{-- <main class="py-4"> --}}
@@ -182,106 +260,15 @@
 
 {{-- </main> --}}
 
-   <!-- HTML Content End -->
-   <script src="https://js.aq.qq.com/js/aq_common.js"></script>
-   <script type="text/javascript" src="/js/jquery.min.js"></script>
-   <script type="text/javascript" src="/js/swiper-3.4.0.jquery.min.js"></script>
-   <script type="text/javascript" src="/js/js.js"></script>
-   <script type="text/javascript" src="/js/js-2.js"></script>
-   <script type="text/javascript" src="/js/swiper.min.js"></script>
-   <script type="text/javascript" src="/js/qrcode.js"></script>
-   <script type="text/javascript" src="/js/futurebasics.js"></script>
-   <script type="text/javascript" src="/js/imgsize.js"></script>
-   <script type="text/javascript" src="/js/yearpicker.js"></script>
-   <script type="text/javascript" src="/js/jquery-throttle-debounce.js"></script>
-
-
-
-  <!-- Js -->
-  <script src="js/vendor/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"
-      integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
-      integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous">
-  </script>
-  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <script src="js/jquery.lwtCountdown-1.0.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.form.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/wow.min.js"></script>
-  {{-- <script>
-      //animated header class
-      $(window).scroll(function () {
-          var scroll = $(window).scrollTop();
-          //console.log(scroll);
-          if (scroll > 200) {
-              //console.log('a');
-              $(".navigation").addClass("animated");
-          } else {
-              //console.log('a');
-              $(".navigation").removeClass("animated");
-          }
-      });
-
-  </script> --}}
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
-
-  <script src="{{ mix('js/app.js') }}"></script>
-
-
-   <!-- JS Content Start -->
-   <script>
-       if ($(document).scrollTop() >= $('.wrap_head').height()) {
-           $('.wrap_head').addClass('head_white');
-       } else {
-           $('.wrap_head').removeClass('head_white');
-       }
-       $(window).scroll(function (event) {
-           if ($(document).scrollTop() >= $('.wrap_head').height()) {
-               $('.wrap_head').addClass('head_white');
-           } else {
-               $('.wrap_head').removeClass('head_white');
-           }
-       })
-
-   </script>
-   <!-- JS Content End -->
-
-   <footer>
-       <div class="container">
-           <div class="row">
-               <div class="col-md-12">
-                   <div class="block">
-                       <p>Copyright &copy; <a href="http://www.futurebasics.co.tz">Future Basics</a>| All right
-                           reserved.</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </footer>
-   <script>
-       //animated header class
-       $(window).scroll(function () {
-           var scroll = $(window).scrollTop();
-           //console.log(scroll);
-           if (scroll > 200) {
-               //console.log('a');
-               $(".navigation").addClass("animated");
-           } else {
-               //console.log('a');
-               $(".navigation").removeClass("animated");
-           }
-       });
-
-   </script>
-
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> -->
-
-   <script src="{{ mix('js/app.js') }}"></script>
+       <!--build:js-->
+       <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
+       <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+       <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+       <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+       <script src="assets/js/vendors/parallax.min.js"></script>
+       <script src="assets/js/vendors/aos.js"></script>
+       <script src="assets/js/app.js"></script>
+       <!--endbuild-->
 </body>
 
 </html>

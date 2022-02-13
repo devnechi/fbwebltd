@@ -14,7 +14,7 @@ class PublicPagesController extends Controller
      */
     public function about()
     {
-        return view('about');
+        return view('about-us');
     }
 
     /**
@@ -24,7 +24,51 @@ class PublicPagesController extends Controller
      */
     public function business()
     {
-        return view('business');
+        return view('services');
     }
+
+
+      /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function generalServices()
+    {
+        return view('services');
+    }
+
+      /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function singelservice()
+    {
+        return view('service-single');
+    }
+
+          /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function contactus()
+    {
+        return view('contact-us');
+    }
+
+
+         /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function comingsoon()
+    {
+        return view('coming-soon');
+    }
+
+
 
 }
