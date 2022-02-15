@@ -23,6 +23,13 @@ Auth::routes();
  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('/admin', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin');
 
+//email
+//to html view
+Route::get('/mailsend',[App\Http\Controllers\MailController::class, 'mailsend']);
+
+//sending the email
+Route::post('/sendmail',[App\Http\Controllers\MailController::class, 'sendmail'])->name('sendmail');
+
 //ADMIN
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 Route::get('/manage-projects', [App\Http\Controllers\AdminController::class, 'manageprojects'])->name('manage-projects');
