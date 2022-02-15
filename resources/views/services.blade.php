@@ -297,27 +297,27 @@
                                         <div class="dropdown-grid rounded-custom width-full-3">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Digital Solutions</h6>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-bars"></i></span>
                                                     <div class="drop-title">Graphic Design</div>
                                                 </a>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-browser"></i></span>
                                                     <div class="drop-title">Design & Prototyping</div>
                                                 </a>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2" ><i class="far fa-address-card"></i></span>
                                                     <div class="drop-title">Desktop applications Development</div>
                                                 </a>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-bolt"></i></span>
                                                     <div class="drop-title">Web applications Development</div>
                                                 </a>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-eject"></i></span>
                                                     <div class="drop-title">Mobile applications Development</div>
                                                 </a>
-                                                <a href={{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Mining & Data Science</div>
                                                 </a>
