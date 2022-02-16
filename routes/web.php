@@ -30,7 +30,7 @@ Auth::routes();
 //sending the email
 //Route::post('/sendmail',[App\Http\Controllers\MailController::class, 'sendmail'])->name('sendmail');
 
- Route::get('/contact-sem', [App\Http\Controllers\ContactController::class, 'getContact'])->name('contact-em');
+ Route::get('/contact-sem', [App\Http\Controllers\ContactController::class, 'getContact'])->name('contact-sem');
  Route::post('/contact-em', [App\Http\Controllers\ContactController::class, 'saveContact'])->name('contact-em');
 
 
