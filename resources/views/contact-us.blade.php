@@ -532,7 +532,7 @@
                                 <div class="col-sm-6 ">
                                     <label for="subject" class="mb-1">Subject</label>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" aria-label="Subject">
+                                        <input type="text" class="form-control"  id="subject" name="subject" placeholder="Subject" aria-label="Subject">
                                         @error('subject')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

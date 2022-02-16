@@ -49,7 +49,7 @@ class ContactController extends Controller
             'email' => $request->email,
             'subject' => $request->subject,
             'phone_number' =>$request->phone,
-            'user_message' =>  $request->message,
+            'user_message' =>  $request->message
         ), function($message) use ($request)
           {
              $message->from($request->email);
