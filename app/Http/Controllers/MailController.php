@@ -27,7 +27,7 @@ class MailController extends Controller
        //dd($request);
        $data = array(
          'subject' => $request->subject,
-         'message'=> $request->message ,
+         'message'=> $request->message,
           );
          Mail::to($request->email)->send(new Email($data));
          return back()->with('success', 'Sent Successfully !');

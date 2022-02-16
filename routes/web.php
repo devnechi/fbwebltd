@@ -25,10 +25,16 @@ Auth::routes();
 
 //email
 //to html view
-Route::get('/mailsend',[App\Http\Controllers\MailController::class, 'mailsend']);
+//Route::get('/mailsend',[App\Http\Controllers\MailController::class, 'mailsend']);
 
 //sending the email
-Route::post('/sendmail',[App\Http\Controllers\MailController::class, 'sendmail'])->name('sendmail');
+//Route::post('/sendmail',[App\Http\Controllers\MailController::class, 'sendmail'])->name('sendmail');
+
+ Route::get('/contact-em', [App\Http\Controllers\ContactController::class, 'getContact'])->name('contact-em');
+ Route::post('/contact-em', [App\Http\Controllers\ContactController::class, 'saveContact'])->name('contact-em');
+
+
+
 
 //ADMIN
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');

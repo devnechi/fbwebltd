@@ -497,48 +497,73 @@
                             </ul>
                         </div>
                       @endif
-                        <form action="{{ route('sendmail') }}" method="post" class="register-form">
+                        <form action="{{ route('contact-em') }}" method="post" class="register-form">
                             @csrf
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label for="firstName" class="mb-1">First name <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="firstName" required placeholder="First name" aria-label="First name">
+                                        <input type="text" class="form-control" name="firstName" id="firstName" required placeholder="First name" aria-label="First name">
+                                        @error('firstName')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                     </div>
                                 </div>
                                 <div class="col-sm-6 ">
                                     <label for="lastName" class="mb-1">Last name</label>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+                                        <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Last name" aria-label="Last name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="phone" class="mb-1">Phone <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="phone" required placeholder="Phone" aria-label="Phone">
+                                        <input type="text" class="form-control" name="phone" id="phone" required placeholder="Phone" aria-label="Phone">
+                                        @error('phone')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                     </div>
                                 </div>
                                 <div class="col-sm-6 ">
                                     <label for="subject" class="mb-1">Subject</label>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" aria-label="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" aria-label="Subject">
+                                        @error('subject')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="email" class="mb-1">Email<span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control" id="email" required placeholder="Email" aria-label="Email">
+                                        <input type="email" class="form-control" name="email" id="email" required placeholder="Email" aria-label="Email">
+                                        @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label for="yourMessage" class="mb-1">Message <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <textarea class="form-control" id="yourMessage" required placeholder="How can we help you?" style="height: 120px"></textarea>
+                                        <textarea class="form-control" name="message" id="message" required placeholder="How can we help you?" style="height: 120px"></textarea>
+                                        @error('message')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary mt-4">Get in Touch</button>
+                            <button type="submit" name="submit" value="submit" class="btn btn-primary mt-4">Get in Touch</button>
                         </form>
                     </div>
                     <div class="col-lg-5 col-md-10">
