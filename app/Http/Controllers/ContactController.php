@@ -35,19 +35,20 @@ class ContactController extends Controller
         ]);
          $contact->save();
 
-        Mail::send('contact-us',
-        array(
+        Mail::send('email.email',
+        [
             'fname' => $request->firstName,
-            'email' => $request->contactemail,
+            'contactemail' => $request->contactemail,
             'subject' => $request->subject,
             'phone_number' =>$request->phone,
             'user_message' =>  $request->message
-        ), function($message) use ($request)
+        ], function($message)
           {
-             $message->from($request->contactemail);
-             $message->to('info@futurebasics.co.tz');
+             $message->from('info@futurebasics.co.tz', 'Future Basics Website');
+             $message->to('info@futurebasics.co.tz', 'Future Basics Company')
+                     ->subject('New Contact');
           });
-         return back()->with('success', 'Thank you for contacting us!');
+         return back()->with('success', 'Thank you for contacting us, We will get back to you soon!');
 
      }
  }
