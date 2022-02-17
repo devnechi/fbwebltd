@@ -24,7 +24,7 @@ class Contact extends Model
         'fname',
         'lname',
         'phone',
-        'email',
+        'contactemail',
         'message',
         'subject'
     ];

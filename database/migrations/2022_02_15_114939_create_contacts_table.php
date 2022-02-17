@@ -17,7 +17,7 @@ class CreateContactsTable extends Migration
             $table->increments('cid');
             $table->string('fname');
             $table->string('lname');
-            $table->string('email');
+            $table->string('contactemail');
             $table->string('phone_number')->nullable();
             $table->string('subject')->nullable();
             $table->text('message');

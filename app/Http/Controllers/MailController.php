@@ -22,14 +22,15 @@ class MailController extends Controller
                  'phone'=> 'required',
                  'subject'=> 'required',
                  'message'=>'required',
-                 'email'=>'required',
+                 'contactemail'=>'required|email',
                 ]);
        //dd($request);
        $data = array(
          'subject' => $request->subject,
          'message'=> $request->message,
           );
-         Mail::to($request->email)->send(new Email($data));
+         Mail::to('info@futurebasics.co.tz')
+               ->send(new Email($data));
          return back()->with('success', 'Sent Successfully !');
 
         }

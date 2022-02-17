@@ -18,25 +18,17 @@ class ContactController extends Controller
          $this->validate($request, [
              'firstName' => 'required',
              'lastName' => 'required',
-             'email' => 'required|email',
+             'contactemail' => 'required|email',
              'subject' => 'required',
              'phone' => 'required',
              'message' => 'required'
          ]);
 
-        //  $contact = new Contact;
-        //  $contact->fname = $request->firstName;
-        //  $contact->lname = $request->lastName;
-        //  $contact->email = $request->email;
-        //  $contact->subject = $request->subject;
-        //  $contact->phone_number = $request->phone;
-        //  $contact->message = $request->message;
-
-
+        //  save contact to db
          $contact = new Contact([
             'fname' => $request->firstName,
             'lname' => $request->lastName,
-            'email'=>$request->email,
+            'contactemail'=>$request->contactemail,
             'subject' => $request->subject,
             'phone_number' => $request->phone,
             'message' => $request->message
@@ -46,13 +38,13 @@ class ContactController extends Controller
         Mail::send('contact-us',
         array(
             'fname' => $request->firstName,
-            'email' => $request->email,
+            'email' => $request->contactemail,
             'subject' => $request->subject,
             'phone_number' =>$request->phone,
             'user_message' =>  $request->message
         ), function($message) use ($request)
           {
-             $message->from($request->email);
+             $message->from($request->contactemail);
              $message->to('info@futurebasics.co.tz');
           });
          return back()->with('success', 'Thank you for contacting us!');
