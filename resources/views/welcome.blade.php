@@ -505,6 +505,7 @@
         </div> --}}
         <!--customer section end-->
 
+
         <!--highlight promo start-->
         <section class="promo-section ptb-120">
             <div class="container">
@@ -548,6 +549,49 @@
             </div>
         </section>
         <!--highlight promo end-->
+   <!-- app two video promo start -->
+   <section class="video-promo-with-icon">
+    <div class="container">
+        <div class="video-bg-with-icon" style="background: url('img/video-bg.jpg')no-repeat center center / cover">
+            <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="popup-youtube"><i class="fas fa-play"></i></a>
+        </div>
+    </div>
+    <div class="video-promo-icon-wrapper bg-light pt-80 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                    <div class="single-icon-box p-0 p-lg-4">
+                        <i class="far fa-chart-pie-alt icon-one"></i>
+                        <h5 class="h6">Fully Functional</h5>
+                        <p>Eaton cheeky blimy bog bugger all mate simplify fully pardon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                    <div class="single-icon-box p-0 p-lg-4">
+                        <i class="far fa-pen-nib icon-two"></i>
+                        <h5 class="h6">UX Design</h5>
+                        <p>Eaton cheeky simplify fully bog bugger all mate pardon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                    <div class="single-icon-box p-0 p-lg-4">
+                        <i class="far fa-chart-network icon-three"></i>
+                        <h5 class="h6">Stay Connected</h5>
+                        <p>Eaton cheeky blimy bog bugger simplify fully all mate pardon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                    <div class="single-icon-box p-0 p-lg-4">
+                        <i class="far fa-bezier-curve icon-four"></i>
+                        <h5 class="h6">Easy to customized</h5>
+                        <p>Eaton cheeky blimy bog bugger all mate pardon simplify fully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- app two video promo end -->
 
         <!--feature section start-->
         <section class="feature-section-two pt-60 pb-120">

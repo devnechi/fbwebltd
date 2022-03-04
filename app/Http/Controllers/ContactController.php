@@ -13,6 +13,20 @@ class ContactController extends Controller
         return view('contact-us');
       }
 
+      /**
+         * The response to always send back to the frontend
+         *
+         * @return \Illuminate\Http\Response
+         */
+        protected function formResponse()
+        {
+
+            return redirect()->back()
+            ->withSuccess('Email sent');
+
+        }
+
+
        public function saveContact(Request $request) {
 
          $this->validate($request, [
@@ -23,6 +37,10 @@ class ContactController extends Controller
              'phone' => 'required',
              'message' => 'required'
          ]);
+
+         if ($request->faxonly) {
+            return $this->formResponse();
+        }else{
 
         //  save contact to db
          $contact = new Contact([
@@ -48,7 +66,9 @@ class ContactController extends Controller
              $message->to('info@futurebasics.co.tz', 'Future Basics Company')
                      ->subject('New Contact');
           });
-         return back()->with('success', 'Thank you for contacting us, We will get back to you soon!');
+         return back()->with('success', 'Thank you! for contacting us, We will get back to you soon!');
+
+        }
 
      }
  }

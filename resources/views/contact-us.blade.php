@@ -485,6 +485,7 @@
                                             @enderror
                                             </div>
                                         </div>
+                                       <div class="row">
                                         <div class="col-sm-6 ">
                                             <label for="subject" class="mb-1">Subject</label>
                                             <div class="input-group mb-3">
@@ -496,6 +497,7 @@
                                             @enderror
                                             </div>
                                         </div>
+                                    </div>
                                         <div class="col-sm-6">
                                             <label for="contactemail" class="mb-1">Email
                                                 @error('contactemail')
@@ -511,13 +513,20 @@
                                         <div class="col-12">
                                             <label for="yourMessage" class="mb-1">Message <span class="text-danger">*</span></label>
                                             <div class="input-group mb-3">
-                                                <textarea class="form-control" name="message" id="message" required placeholder="How can we help you?" style="height: 120px"></textarea>
+                                                <textarea class="form-control" name="message" id="message" required placeholder="How can we help you?" style="height: 160px"></textarea>
                                                 @error('message')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
                                             </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group" style="display: none;">
+                                                <label for="faxonly">Fax Only
+                                                 <input type="checkbox" name="faxonly" id="faxonly" />
+                                                </label>
+                                               </div>
                                         </div>
                                     </div>
                                     <button type="submit" name="submit" value="submit" class="btn btn-primary mt-4">Get in Touch</button>
