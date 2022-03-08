@@ -38,7 +38,7 @@ class ContactController extends Controller
              'message' => 'required'
          ]);
 
-         if ($request->faxonly) {
+         if ($request->filled('simpfill')) {
             return $this->formResponse();
         }else{
 
@@ -67,7 +67,6 @@ class ContactController extends Controller
                      ->subject('New Contact');
           });
          return back()->with('success', 'Thank you! for contacting us, We will get back to you soon!');
-
         }
 
      }

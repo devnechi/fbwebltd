@@ -85,28 +85,24 @@
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">More about us</h6>
                                             <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Vision & Mission</div>
                                                     {{-- <p>It's for <strong>SaaS Software</strong> Company</p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Team</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Culture</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#office-location" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Offices</div>
                                                     {{-- <p><strong>Web Software</strong> Company</p> --}}
@@ -261,27 +257,23 @@
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">More about us</h6>
                                                 <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Vision & Mission</div>
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Team</div>
                                                         {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Culture</div>
                                                         {{-- <p><strong>Web Software</strong> Company</p> --}}
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}#office-location" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">4</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Offices</div>
                                                         {{-- <p>App and <strong>Software</strong> Landing</p> --}}

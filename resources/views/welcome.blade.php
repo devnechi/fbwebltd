@@ -98,28 +98,24 @@
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">More about us</h6>
                                             <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Vision & Mission</div>
                                                     {{-- <p>It's for <strong>SaaS Software</strong> Company</p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Team</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Culture</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#office-location" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Offices</div>
                                                     {{-- <p><strong>Web Software</strong> Company</p> --}}
@@ -274,27 +270,23 @@
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">More about us</h6>
                                                 <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Vision & Mission</div>
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Team</div>
                                                         {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Culture</div>
                                                         {{-- <p><strong>Web Software</strong> Company</p> --}}
                                                     </div>
                                                 </a>
                                                 <a href="{{ route('about') }}#office-location" class="dropdown-link">
-                                                    <span class="demo-list bg-primary rounded text-white fw-bold">4</span>
                                                     <div class="dropdown-info">
                                                         <div class="drop-title">Our Offices</div>
                                                         {{-- <p>App and <strong>Software</strong> Landing</p> --}}
@@ -562,29 +554,30 @@
                 <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                     <div class="single-icon-box p-0 p-lg-4">
                         <i class="far fa-chart-pie-alt icon-one"></i>
-                        <h5 class="h6">Fully Functional</h5>
-                        <p>Eaton cheeky blimy bog bugger all mate simplify fully pardon.</p>
+                        <h5 class="h6">Practical Solutions</h5>
+                        <p>Digital solutions that are of concern and fitting to your business.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                     <div class="single-icon-box p-0 p-lg-4">
                         <i class="far fa-pen-nib icon-two"></i>
-                        <h5 class="h6">UX Design</h5>
-                        <p>Eaton cheeky simplify fully bog bugger all mate pardon.</p>
+                        <h5 class="h6">Personalized Design</h5>
+                        <p>Get solutions that built with intended user in mind.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                     <div class="single-icon-box p-0 p-lg-4">
                         <i class="far fa-chart-network icon-three"></i>
-                        <h5 class="h6">Stay Connected</h5>
-                        <p>Eaton cheeky blimy bog bugger simplify fully all mate pardon.</p>
+                        <h5 class="h6">Adaptability (PWA's)</h5>
+                        <p>Digital solutions that work both online and offline situations.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                     <div class="single-icon-box p-0 p-lg-4">
                         <i class="far fa-bezier-curve icon-four"></i>
-                        <h5 class="h6">Easy to customized</h5>
-                        <p>Eaton cheeky blimy bog bugger all mate pardon simplify fully.</p>
+                        <h5 class="h6">Tailored Solutions </h5>
+                        <p>Solutions that fit you current business process and operations.</p>
                     </div>
                 </div>
             </div>

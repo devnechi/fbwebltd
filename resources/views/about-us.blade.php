@@ -88,28 +88,24 @@
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">More about us</h6>
                                             <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Vision & Mission</div>
                                                     {{-- <p>It's for <strong>SaaS Software</strong> Company</p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Team</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Culture</div>
                                                     {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                 </div>
                                             </a>
                                             <a href="{{ route('about') }}#office-location" class="dropdown-link">
-                                                <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                 <div class="dropdown-info">
                                                     <div class="drop-title">Our Offices</div>
                                                     {{-- <p><strong>Web Software</strong> Company</p> --}}
@@ -263,26 +259,22 @@
                                                 <div class="dropdown-grid-item">
                                                     <h6 class="drop-heading">More about us</h6>
                                                     <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                        <span class="demo-list bg-primary rounded text-white fw-bold">1</span>
                                                         <div class="dropdown-info">
                                                             <div class="drop-title">Vision & Mission</div>
                                                         </div>
                                                     </a>
                                                     <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                        <span class="demo-list bg-primary rounded text-white fw-bold">2</span>
                                                         <div class="dropdown-info">
                                                             <div class="drop-title">Our Team</div>
                                                             {{-- <p>Modern <strong>Saas agency</strong></p> --}}
                                                         </div>
                                                     </a>
                                                     <a href="{{ route('about') }}" class="dropdown-link">
-                                                        <span class="demo-list bg-primary rounded text-white fw-bold">3</span>
                                                         <div class="dropdown-info">
                                                             <div class="drop-title">Our Culture</div>
                                                             {{-- <p><strong>Web Software</strong> Company</p> --}}
                                                         </div>
                                                     </a>
-                                                    <a href="{{ route('about') }}#office-location" class="dropdown-link">
                                                         <span class="demo-list bg-primary rounded text-white fw-bold">4</span>
                                                         <div class="dropdown-info">
                                                             <div class="drop-title">Our Offices</div>
@@ -427,7 +419,7 @@
                                     <p class="lead">
                                         Our mission is to blend creativity with technology capabilities to bring value and increase productivity. We make our customers' steps to the future easier, smarter and valuable.
                                     </p>
-                                    <a href="career.html" class="btn btn-primary mt-4 me-3">Open Positions</a>
+                                    <a href="career.html" class="btn btn-primary mt-4 me-3">Join Us</a>
                                     <a href="#our-team" class="btn btn-soft-primary mt-4">Meet Our Team</a>
                                 </div>
                                 <img src="img/about/buildbus.jpg" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
@@ -609,8 +601,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Dennis Michael Kilawila</h5>
+                                <p class="text-muted small mb-0">Senior Developer/ Founder</p>
                             </div>
                         </div>
                     </div>
@@ -626,8 +618,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Daniel Kikumbo</h5>
+                                <p class="text-muted small mb-0">Senior Developer</p>
                             </div>
                         </div>
                     </div>
@@ -643,8 +635,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Felix Msimbo</h5>
+                                <p class="text-muted small mb-0">Senior Developers</p>
                             </div>
                         </div>
                     </div>
@@ -660,8 +652,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Emmanuel Kisoki</h5>
+                                <p class="text-muted small mb-0">Junior Developer </p>
                             </div>
                         </div>
                     </div>
@@ -677,8 +669,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Amina Mollel</h5>
+                                <p class="text-muted small mb-0">Head of Design/Front End Developer</p>
                             </div>
                         </div>
                     </div>
@@ -694,8 +686,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Jerome Mhinga</h5>
+                                <p class="text-muted small mb-0">Junior / Backend Developer</p>
                             </div>
                         </div>
                     </div>
@@ -711,8 +703,8 @@
                                 </ul>
                             </div>
                             <div class="team-info mt-4 text-center">
-                                <h5 class="h6 mb-1">John Sullivan</h5>
-                                <p class="text-muted small mb-0">Front End Developer</p>
+                                <h5 class="h6 mb-1">Fiona Swai</h5>
+                                <p class="text-muted small mb-0">Digital Strategiest</p>
                             </div>
                         </div>
                     </div>
