@@ -541,50 +541,50 @@
             </div>
         </section>
         <!--highlight promo end-->
-   <!-- app two video promo start -->
-   <section class="video-promo-with-icon">
-    <div class="container">
-        <div class="video-bg-with-icon" style="background: url('img/video-bg.jpg')no-repeat center center / cover">
-            <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="popup-youtube"><i class="fas fa-play"></i></a>
-        </div>
-    </div>
-    <div class="video-promo-icon-wrapper bg-light pt-80 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
-                    <div class="single-icon-box p-0 p-lg-4">
-                        <i class="far fa-chart-pie-alt icon-one"></i>
-                        <h5 class="h6">Practical Solutions</h5>
-                        <p>Digital solutions that are of concern and fitting to your business.
-                        </p>
-                    </div>
+        <!-- app two video promo start -->
+        <section class="video-promo-with-icon">
+            <div class="container">
+                <div class="video-bg-with-icon" style="background: url('img/video-bg.jpg')no-repeat center center / cover">
+                    <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="popup-youtube"><i class="fas fa-play"></i></a>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
-                    <div class="single-icon-box p-0 p-lg-4">
-                        <i class="far fa-pen-nib icon-two"></i>
-                        <h5 class="h6">Personalized Design</h5>
-                        <p>Get solutions that built with intended user in mind.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
-                    <div class="single-icon-box p-0 p-lg-4">
-                        <i class="far fa-chart-network icon-three"></i>
-                        <h5 class="h6">Adaptability (PWA's)</h5>
-                        <p>Digital solutions that work both online and offline situations.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
-                    <div class="single-icon-box p-0 p-lg-4">
-                        <i class="far fa-bezier-curve icon-four"></i>
-                        <h5 class="h6">Tailored Solutions </h5>
-                        <p>Solutions that fit you current business process and operations.</p>
+            </div>
+            <div class="video-promo-icon-wrapper bg-light pt-80 pb-120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                            <div class="single-icon-box p-0 p-lg-4">
+                                <i class="far fa-chart-pie-alt icon-one"></i>
+                                <h5 class="h6">Practical Solutions</h5>
+                                <p>Digital solutions that are of concern and fitting to your business.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                            <div class="single-icon-box p-0 p-lg-4">
+                                <i class="far fa-pen-nib icon-two"></i>
+                                <h5 class="h6">Personalized Design</h5>
+                                <p>Get solutions that built with intended user in mind.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                            <div class="single-icon-box p-0 p-lg-4">
+                                <i class="far fa-chart-network icon-three"></i>
+                                <h5 class="h6">Adaptability (PWA's)</h5>
+                                <p>Digital solutions that work both online and offline situations.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
+                            <div class="single-icon-box p-0 p-lg-4">
+                                <i class="far fa-bezier-curve icon-four"></i>
+                                <h5 class="h6">Tailored Solutions </h5>
+                                <p>Solutions that fit you current business process and operations.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- app two video promo end -->
+        </section>
+        <!-- app two video promo end -->
 
         <!--feature section start-->
         <section class="feature-section-two pt-60 pb-120">

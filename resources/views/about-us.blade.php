@@ -574,7 +574,7 @@
         <!--feature section two end-->
 
         <!--team section start-->
-        <section id="our-team" class="team-section ptb-120">
+        {{-- <section id="our-team" class="team-section ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-12">
@@ -711,7 +711,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--team section end-->
 
         <!--testimonial section start-->
@@ -859,8 +859,8 @@
         <!--testimonial section end-->
 
         <!--our location address start-->
-        <section id="office-location" class="office-address-section ptb-120">
-            <div class="container">
+        {{--<section id="office-location" class="office-address-section ptb-120">
+             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="section-heading text-center">
@@ -918,18 +918,53 @@
                                 <span class="office-overlay"></span>
                                 <div class="office-info">
                                     <h5>Mbeya</h5>
-                                    {{-- <address>
+                                     <address>
                                         Brandenburgische Straße <br> DE. Berlin Kreuzberg, <br>Berlin(CA), 10997
-                                    </address> --}}
+                                    </address> -
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--}}
         <!--our location address end-->
 
+
+           <!--address and map section start-->
+           <section class="feature-section pt-60 pb-120">
+            <div class="container">
+                <div class="row align-items-lg-center justify-content-between">
+                    <div class="col-lg-4 order-lg-1 mb-7 mb-lg-0">
+                        <div class="mb-4" data-aos="fade-up">
+                            <h2>Our location</h2>
+                            <p>
+                              Find us on google maps and visit our offices
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap list-two-col mt-5" data-aos="fade-up" data-aos-delay="50">
+                            <li>
+                                <span class="d-block mb-4"><i class="fal fa-user fa-2x text-primary"></i></span>
+                                <h3 class="h5">Address</h3>
+                                <p>Phone Number: </p>
+                                <p>Address: </p>
+                                <p>P.O.Box: </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 order-lg-2">
+                        {{-- <div class="pr-lg-4">
+                            <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-3 mx-lg-auto" data-aos="fade-up" data-aos-delay="50">
+                               --}}
+                               <img src="img/dashboard-img.svg" alt="" class="img-fluid">
+                                <div class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
+                            {{-- </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!--end of address and map -->
 
         <!--cat subscribe start-->
         <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
