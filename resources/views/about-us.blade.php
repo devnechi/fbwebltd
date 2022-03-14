@@ -958,11 +958,11 @@
                             <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-3 mx-lg-auto" data-aos="fade-up" data-aos-delay="50">
                                --}}
                                {{-- <img src="img/dashboard-img.svg" alt="" class="img-fluid"> --}}
-                               <div style="width: 100%; height: 500px;">
+                               {{-- <div style="width: 100%; height: 500px;">
                                 {!! Mapper::render() !!}
                             </div>
                                 <div class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
-                            {{-- </div>
+                             </div>
                         </div> --}}
                     </div>
                 </div>
