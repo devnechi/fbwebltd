@@ -930,46 +930,6 @@
         </section>--}}
         <!--our location address end-->
 
-           <!--address and map section start-->
-        <section class="feature-section pt-60 pb-120">
-            <div class="container">
-                <div class="row align-items-lg-center justify-content-between">
-                    <div class="col-lg-5 order-lg-1 mb-7 mb-lg-0">
-                        <div class="mb-4" data-aos="fade-up">
-                            <h2>Our location</h2>
-                            <p>
-                              Find us on google maps and visit our offices.
-                            </p>
-                        </div>
-                        <ul class="list-unstyled d-flex flex-wrap list-two-col mt-5" data-aos="fade-up" data-aos-delay="50">
-                            <li>
-                                <span class="d-block mb-4"><i class="fal fa-user fa-2x text-primary"></i></span>
-                                <h3 class="h5">Address</h3>
-                                <p>Dar es Salaam, Tanzania</p>
-                                <p>Kinondoni, Rashid Kawawa Road</p>
-                                <p>Phone No: + 255 687 859 500 </p>
-                                <p>P.O.Box 95145.</p>
-                                <p> Dar es salaam, Tanzania.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-7 order-lg-2">
-                        {{-- <div class="pr-lg-4">
-                            <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-3 mx-lg-auto" data-aos="fade-up" data-aos-delay="50">
-                               --}}
-                               {{-- <img src="img/dashboard-img.svg" alt="" class="img-fluid"> --}}
-                               {{-- <div style="width: 100%; height: 500px;">
-                                {!! Mapper::render() !!}
-                            </div>
-                                <div class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
-                             </div>
-                        </div> --}}
-                    </div>
-                </div>
-            </div>
-        </section>
-           <!--end of address and map -->
-
         <!--cat subscribe start-->
         <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
             <div class="container">
