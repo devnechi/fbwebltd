@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mapper;
 
 class PublicPagesController extends Controller
 {
@@ -14,6 +15,8 @@ class PublicPagesController extends Controller
      */
     public function about()
     {
+        // Mapper::map(-6.782482, 39.263381);
+        Mapper::map(-6.782482, 39.263381, ['zoom' => 18]);
         return view('about-us');
     }
 
