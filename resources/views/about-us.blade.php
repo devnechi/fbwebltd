@@ -79,33 +79,34 @@
                         <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                             <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
                             <li><a href="{{ route('about') }}" class="nav-link">About us</a></li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ route('our-services') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full-3">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Digital Solutions</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-eject"></i></span>
                                                 <div class="drop-title">Graphics Design</div>
                                             </a>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bolt"></i></span>
-                                                <div class="drop-title">Wireframing & Prototyping</div>
-                                            </a>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bars"></i></span>
-                                                <div class="drop-title">Software Engineering</div>
-                                            </a>
 
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bolt"></i></span>
+                                                <div class="drop-title">Prototyping</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bars"></i></span>
+                                                <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
                                                 <div class="drop-title">Business Systems</div>
                                             </a>
@@ -119,8 +120,8 @@
                                             </a>
                                             <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                                <div class="drop-title">Augumented Solutions</div>
-                                            </a>
+                                                <div class="drop-title">Augumented Sol.</div>
+                                            </a> --}}
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                             <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -178,146 +179,105 @@
                         <a href="{{ route('login') }}" class="btn btn-link text-decoration-none me-2">Sign In</a>
                         <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
                     </div>
-                        <!--offcanvas menu start-->
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
-                            <div class="offcanvas-header d-flex align-items-center mt-4">
-                                <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
-                                </a>
-                                <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <i class="far fa-close"></i>
-                                </button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="nav col-12 col-md-auto justify-content-center main-menu">
-                                    <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="{{ route('about') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            About Us
-                                        </a>
-                                        <div class=" dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                            <div class="dropdown-grid rounded-custom width-half">
-                                                <div class="dropdown-grid-item">
-                                                    <h6 class="drop-heading">More about us</h6>
-                                                    <a href="{{ route('about') }}#valuenmission" class="dropdown-link">
-                                                        <div class="dropdown-info">
-                                                            <div class="drop-title">About Us</div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="{{ route('about') }}#our-team" class="dropdown-link">
-                                                        <div class="dropdown-info">
-                                                            <div class="drop-title">Vision & Mission</div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="{{ route('about') }}" class="dropdown-link">
-                                                        <div class="dropdown-info">
-                                                            <div class="drop-title">Our Offices</div>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                       <!--offcanvas menu start-->
+                       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+                        <div class="offcanvas-header d-flex align-items-center mt-4">
+                            <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
+                                <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
+                            </a>
+                            <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="far fa-close"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                                <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
+                                <li><a href="{{ url('about') }}" class="nav-link">About us</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                                    <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                        <div class="dropdown-grid rounded-custom width-full-3">
+                                            <div class="dropdown-grid-item">
+                                                <h6 class="drop-heading">Digital Solutions</h6>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-bars"></i></span>
+                                                    <div class="drop-title">Graphics Design</div>
+                                                </a>
+
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                    <div class="drop-title">Data Science</div>
+                                                </a>
+
+                                            </div>
+                                            <div class="dropdown-grid-item">
+                                                <h6 class="drop-heading">Business Solutions</h6>
+                                                <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-usd-square"></i></span>
+                                                    <div class="drop-title">Prototyping</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-th-list"></i></span>
+                                                    <div class="drop-title">Software Eng.</div>
+                                                </a>
+
+                                            </div>
+                                            <div class="dropdown-grid-item last-item bg-light radius-right-side">
+                                                <a href="{{ route('about') }}"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
-                                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                            <div class="dropdown-grid rounded-custom width-full-3">
-                                                <div class="dropdown-grid-item">
-                                                    <h6 class="drop-heading">Digital Solutions</h6>
-                                                    <a href="{{ route('business') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-bars"></i></span>
-                                                        <div class="drop-title">Graphics Design</div>
-                                                    </a>
-                                                    <a href="{{ route('business') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-browser"></i></span>
-                                                        <div class="drop-title">Wireframing & Prototyping</div>
-                                                    </a>
-                                                    <a href="{{ route('business') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                        <div class="drop-title">Sofware Engineering</div>
-                                                    </a>
-
-                                                    <a href="{{ route('business') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                        <div class="drop-title">Data Science</div>
-                                                    </a>
-
-                                                </div>
-                                                <div class="dropdown-grid-item">
-                                                    <h6 class="drop-heading">Business Solutions</h6>
-                                                    <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                        <div class="drop-title">Business Systems</div>
-                                                    </a>
-                                                    <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                        <div class="drop-title">Digital Strategies</div>
-                                                    </a>
-                                                    <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-chart-network"></i></span>
-                                                        <div class="drop-title">Business Analytics</div>
-                                                    </a>
-                                                    <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-closed-captioning"></i></span>
-                                                        <div class="drop-title">Augumented Solutions</div>
-                                                    </a>
-                                                </div>
-                                                <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                                    <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
-                                                </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                    <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                        <div class="dropdown-grid rounded-custom width-full">
+                                            <div class="dropdown-grid-item">
+                                                <h6 class="drop-heading">Enterprise Solutions</h6>
+                                                <a href="https/:www.livestoka.com" class="dropdown-link px-0">
+                                                    <span class="me-2" ><i class="far fa-fingerprint"></i></span>
+                                                    <div class="drop-title">Livestoka</div>
+                                                </a>
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                                    <span class="me-2"><i class="far fa-address-book"></i></span>
+                                                    <div class="drop-title">Radarmile</div>
+                                                </a>
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                    <div class="drop-title">Nakwalify</div>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown-grid-item radius-right-side bg-light">
+                                                <h6 class="drop-heading">Innovations</h6>
+                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                    <div class="drop-title">Smart Risiti</div>
+                                                </a>
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-life-ring"></i></span>
+                                                    <div class="drop-title">Wakala +</div>
+                                                </a>
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-headset"></i></span>
+                                                    <div class="drop-title">Wakili</div>
+                                                </a>
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                    <span class="me-2" ><i class="far fa-laptop-code"></i ></span>
+                                                    <div class="drop-title">Avorra</div>
+                                                </a>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                        <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                            <div class="dropdown-grid rounded-custom width-full">
-                                                <div class="dropdown-grid-item">
-                                                    <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                    <a href="https/:www.livestoka.com" class="dropdown-link px-0">
-                                                        <span class="me-2" ><i class="far fa-fingerprint"></i></span>
-                                                        <div class="drop-title">Livestoka</div>
-                                                    </a>
-                                                    <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
-                                                        <span class="me-2"><i class="far fa-address-book"></i></span>
-                                                        <div class="drop-title">Radarmile</div>
-                                                    </a>
-                                                    <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                        <div class="drop-title">Nakwalify</div>
-                                                    </a>
-                                                </div>
-                                                <div class="dropdown-grid-item radius-right-side bg-light">
-                                                    <h6 class="drop-heading">Innovations</h6>
-                                                    <a href="{{ route('business') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                        <div class="drop-title">Smart Risiti</div>
-                                                    </a>
-                                                    <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                        <div class="drop-title">Wakala +</div>
-                                                    </a>
-                                                    <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                        <span class="me-2"><i class="far fa-headset"></i></span>
-                                                        <div class="drop-title">Wakili</div>
-                                                    </a>
-                                                    <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                        <span class="me-2" ><i class="far fa-laptop-code"></i ></span>
-                                                        <div class="drop-title">Avorra</div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="action-btns mt-4 ps-3">
-                                    <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
-                                    <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
-                                </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="action-btns mt-4 ps-3">
+                                <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
                             </div>
                         </div>
-                        <!--offcanvas menu end-->
+                       </div>
+                    <!--offcanvas menu end-->
                 </div>
             </nav>
         </header>
@@ -336,7 +296,7 @@
                                     <p class="lead">
                                         Our mission is to blend creativity with technology capabilities to bring value and increase productivity. We make our customers' steps to the future easier, smarter and valuable.
                                     </p>
-                                    <a href="career.html" class="btn btn-primary mt-4 me-3">Join Us</a>
+                                    <a href="{{ route('careers-with-us') }}" class="btn btn-primary mt-4 me-3">Join Us</a>
                                     <a href="#our-team" class="btn btn-soft-primary mt-4">Meet Our Team</a>
                                 </div>
                                 <img src="img/about/buildbus.jpg" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
@@ -859,7 +819,7 @@
                                 <p>We can assist you in building a tailored digital solutions for your business.</p>
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
-                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact with Us</a>
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
                                 <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
                                         class="fas fa-play"></i> Watch Demo </a>
                             </div>
@@ -886,8 +846,8 @@
         </section>
         <!--cat subscribe end-->
 
-        <!--footer section start-->
-        <footer class="footer-section">
+           <!--footer section start-->
+           <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
             <div class="footer-top footer-light ptb-120">
@@ -927,7 +887,7 @@
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
                                             <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
-                                            <li><a href="career.html" class="text-decoration-none">Our Portfolio</a></li>
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -937,7 +897,7 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="blog-single.html" class="text-decoration-none">Latest news</a></li>
                                             <li><a href="pricing.html" class="text-decoration-none">Blog</a></li>
-                                            <li><a href="blog.html" class="text-decoration-none">Career</a></li>
+                                            {{-- <li><a href="blog.html" class="text-decoration-none">Career</a></li> --}}
 
                                         </ul>
                                     </div>
@@ -946,11 +906,11 @@
                                     <div class="footer-single-col">
                                         <h3>Quick access</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="contact-us.html" class="text-decoration-none">Contact us</a></li>
-                                            <li><a href="support.html" class="text-decoration-none">Support</a></li>
+                                            <li><a href="{{ route('contact-us') }}" class="text-decoration-none">Contact us</a></li>
+                                            {{-- <li><a href="support.html" class="text-decoration-none">Support</a></li>
                                             <li><a href="support-single.html" class="text-decoration-none">Support center</a></li>
-                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li>
-                                            <li><a href="career-single.html" class="text-decoration-none">Careers</a>
+                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li> --}}
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -990,8 +950,6 @@
             <!--footer bottom end-->
         </footer>
         <!--footer section end-->
-
-
     </div>
 
     <!--build:js-->

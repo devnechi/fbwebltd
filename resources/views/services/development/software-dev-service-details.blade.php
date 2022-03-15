@@ -32,7 +32,7 @@
     <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>{{ config('app.name', 'Service Details - FutureBasics') }}</title>
+    <title>{{ config('app.name', 'Graphics Services - FutureBasics') }}</title>
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -76,34 +76,33 @@
                         <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                             <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
                             <li><a href="{{ route('about') }}" class="nav-link">About us</a></li>
-
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ route('our-services') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full-3">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Digital Solutions</h6>
-                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                            <a href="{{ route('business') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-eject"></i></span>
                                                 <div class="drop-title">Graphics Design</div>
                                             </a>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bolt"></i></span>
+                                                <div class="drop-title">Wireframing & Prototyping</div>
+                                            </a>
+                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bars"></i></span>
+                                                <div class="drop-title">Software Engineering</div>
+                                            </a>
 
-                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                            <a href="{{ route('business') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
-                                            <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bolt"></i></span>
-                                                <div class="drop-title">Prototyping</div>
-                                            </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bars"></i></span>
-                                                <div class="drop-title">Software Eng.</div>
-                                            </a>
-                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
                                                 <div class="drop-title">Business Systems</div>
                                             </a>
@@ -117,8 +116,8 @@
                                             </a>
                                             <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                                <div class="drop-title">Augumented Sol.</div>
-                                            </a> --}}
+                                                <div class="drop-title">Augumented Solutions</div>
+                                            </a>
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                             <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -190,19 +189,27 @@
                         <div class="offcanvas-body">
                             <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                                 <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                                <li><a href="{{ url('about') }}" class="nav-link">About us</a></li>
+                                <li><a href="{{ url('about') }}" class="nav-link">about</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
                                     <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                         <div class="dropdown-grid rounded-custom width-full-3">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Digital Solutions</h6>
-                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-bars"></i></span>
                                                     <div class="drop-title">Graphics Design</div>
                                                 </a>
+                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-browser"></i></span>
+                                                    <div class="drop-title">Wireframing & Prototyping</div>
+                                                </a>
+                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                    <div class="drop-title">Sofware Engineering</div>
+                                                </a>
 
-                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <a href="{{ route('business') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
@@ -210,15 +217,22 @@
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
-                                                <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
+                                                <a href="{{ route('our-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                    <div class="drop-title">Prototyping</div>
+                                                    <div class="drop-title">Business Systems</div>
                                                 </a>
-                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <a href="{{ route('our-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                    <div class="drop-title">Software Eng.</div>
+                                                    <div class="drop-title">Digital Strategies</div>
                                                 </a>
-
+                                                <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-chart-network"></i></span>
+                                                    <div class="drop-title">Business Analytics</div>
+                                                </a>
+                                                <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-closed-captioning"></i></span>
+                                                    <div class="drop-title">Augumented Solutions</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -273,7 +287,7 @@
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
                             </div>
                         </div>
-                       </div>
+                    </div>
                     <!--offcanvas menu end-->
                 </div>
             </nav>
@@ -285,7 +299,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Quality Software Services</h1>
+                        <h1 class="display-5 fw-bold">Quality Software Engineering Services</h1>
                         <p class="lead">Seamlessly actualize client-based users after out-of-the-box value. Globally embrace
                             strategic data through frictionless expertise.</p>
                     </div>
@@ -321,7 +335,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="pr-lg-4 mt-md-4 position-relative">
                             <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-4 mx-lg-auto">
-                                <img src="assets/img/dashboard-img.png" alt="" class="img-fluid shadow-sm rounded-custom">
+                                <img src="img/dashboard-img.png" alt="" class="img-fluid shadow-sm rounded-custom">
                                 <div class="position-absolute bg-secondary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                             </div>
                         </div>
@@ -357,7 +371,7 @@
                     <div class="col-lg-6 order-lg-2">
                         <div class="pr-lg-4 position-relative">
                             <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-4 mx-lg-auto">
-                                <img src="assets/img/dashboard-img-4.png" alt="" class="img-fluid rounded-custom shadow-sm">
+                                <img src="img/dashboard-img-4.png" alt="" class="img-fluid rounded-custom shadow-sm">
                                 <div class="position-absolute bg-secondary-dark z--1 dot-mask dm-size-16 dm-wh-350 bottom--40 right--40 bottom-right"></div>
                             </div>
                         </div>
@@ -366,95 +380,6 @@
             </div>
         </section>
         <!--feature section end-->
-
-           <!--features grid section start-->
-           <section class="feature-section ptb-120 bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">Services</h4>
-                            <h2>Best Services for Your Business</h2>
-                            <p>Globally actualize cost effective with resource maximizing leadership skills value and leveraged expertise whereas just in time experiences.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feature-grid">
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">User Journey Flow</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Compare A/B Testing</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Easy Customization</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Integrations Useful Apps</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Fast Development Process</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Beautiful UI</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--features grid section end-->
-
 
         <!--register section start-->
         <section class="sign-up-in-section bg-dark ptb-120 position-relative overflow-hidden">
@@ -506,17 +431,17 @@
                             <ul class="nav nav-pills mb-0 testimonial-tab-indicator mt-5" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#testimonial-tab-1" type="button" role="tab" aria-selected="true">
-                                        <img src="assets/img/testimonial/1.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="img/testimonial/1.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#testimonial-tab-2" type="button" role="tab" aria-selected="false">
-                                        <img src="assets/img/testimonial/4.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="img/testimonial/4.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#testimonial-tab-3" type="button" role="tab" aria-selected="false">
-                                        <img src="assets/img/testimonial/6.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="img/testimonial/6.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                             </ul>
@@ -847,8 +772,8 @@
         </section>
         <!--register section end-->
 
-        <!--footer section start-->
-        <footer class="footer-section">
+          <!--footer section start-->
+          <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
             <div class="footer-top footer-light ptb-120">
@@ -883,43 +808,35 @@
                             <div class="row">
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
-                                        <h3>Primary Pages</h3>
+                                        <h3>Navigation</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="index.html" class="text-decoration-none">Home</a></li>
-                                            <li><a href="about-us.html" class="text-decoration-none">About Us</a></li>
-                                            <li><a href="services.html" class="text-decoration-none">Services</a></li>
-                                            <li><a href="career.html" class="text-decoration-none">Career</a></li>
-                                            <li><a href="integrations.html" class="text-decoration-none">Integrations</a>
-                                            </li>
-                                            <li><a href="integration-single.html" class="text-decoration-none">Integration Single</a></li>
+                                            <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
+                                            <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
+                                            <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
-                                        <h3>Pages</h3>
+                                        <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="pricing.html" class="text-decoration-none">Pricing</a></li>
-                                            <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
-                                            <li><a href="blog-single.html" class="text-decoration-none">Blog Details</a></li>
-                                            <li><a href="contact-us.html" class="text-decoration-none">Contact</a></li>
-                                            <li><a href="career-single.html" class="text-decoration-none">Career Single</a>
-                                            </li>
-                                            <li><a href="service-single.html" class="text-decoration-none">Services
-                                                    Single</a></li>
+                                            <li><a href="blog-single.html" class="text-decoration-none">Latest news</a></li>
+                                            <li><a href="pricing.html" class="text-decoration-none">Blog</a></li>
+                                            {{-- <li><a href="blog.html" class="text-decoration-none">Career</a></li> --}}
+
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
-                                        <h3>Template</h3>
+                                        <h3>Quick access</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="contact-us.html" class="text-decoration-none">Contact</a></li>
-                                            <li><a href="support.html" class="text-decoration-none">Support</a></li>
-                                            <li><a href="support-single.html" class="text-decoration-none">Support Single</a></li>
-                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li>
-                                            <li><a href="client-review.html" class="text-decoration-none">Customer Review</a></li>
-                                            <li><a href="career-single.html" class="text-decoration-none">Career Single</a>
+                                            <li><a href="{{ route('contact-us') }}" class="text-decoration-none">Contact us</a></li>
+                                            {{-- <li><a href="support.html" class="text-decoration-none">Support</a></li>
+                                            <li><a href="support-single.html" class="text-decoration-none">Support center</a></li>
+                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li> --}}
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -938,7 +855,9 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
-                                <p class="mb-lg-0 mb-md-0">&copy; 2021 Quiety Rights Reserved. Designed By <a href="https://themetags.com/" class="text-decoration-none">ThemeTags</a></p>
+                                {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4">
@@ -946,8 +865,8 @@
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -955,19 +874,19 @@
                 </div>
             </div>
             <!--footer bottom end-->
-        </footer>
+         </footer>
         <!--footer section end-->
 
     </div>
 
     <!--build:js-->
-    <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/vendors/parallax.min.js"></script>
-    <script src="assets/js/vendors/aos.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="js/vendors/jquery-3.6.0.min.js"></script>
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="js/vendors/parallax.min.js"></script>
+    <script src="js/vendors/aos.js"></script>
+    <script src="js/app.js"></script>
     <!--endbuild-->
 </body>
 

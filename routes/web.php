@@ -48,13 +48,29 @@ Route::get('/user-management', [App\Http\Controllers\AdminController::class, 'to
 //public pages
 Route::get('/about', [App\Http\Controllers\PublicPagesController::class, 'about'])->name('about');
 Route::get('/business', [App\Http\Controllers\PublicPagesController::class, 'business'])->name('business');
-Route::get('/our-services', [App\Http\Controllers\PublicPagesController::class, 'singelservice'])->name('our-services');
+// Route::get('/our-services', [App\Http\Controllers\PublicPagesController::class, 'singelservice'])->name('our-services');
 Route::get('/contact-us', [App\Http\Controllers\PublicPagesController::class, 'contactus'])->name('contact-us');
 Route::get('/coming-soon', [App\Http\Controllers\PublicPagesController::class, 'comingsoon'])->name('coming-soon');
+
 Route::get('/our-services', [App\Http\Controllers\PublicPagesController::class, 'generalServices'])->name('our-services');
+Route::get('/all-graphic-designs-services', [App\Http\Controllers\PublicPagesController::class, 'graphicAllservices'])->name('all-graphic-designs-services');
+Route::get('/graphic-design-service-details', [App\Http\Controllers\PublicPagesController::class, 'graphicServicesDetails'])->name('graphic-design-service-details');
 
-//generalServices
+Route::get('/all-prototyping-services', [App\Http\Controllers\PublicPagesController::class, 'protoAllservices'])->name('all-prototyping-services');
+Route::get('/prototyping-service-details', [App\Http\Controllers\PublicPagesController::class, 'protoServicesDetails'])->name('prototyping-service-details');
 
+Route::get('/all-software-development-services', [App\Http\Controllers\PublicPagesController::class, 'softDevAllservices'])->name('all-software-development-services');
+Route::get('/software-development-service-details', [App\Http\Controllers\PublicPagesController::class, 'softDevServicesDetails'])->name('software-development-service-details');
+
+Route::get('/all-data-science-services', [App\Http\Controllers\PublicPagesController::class, 'alldataScienceservices'])->name('all-data-science-services');
+Route::get('/data-science-service-details', [App\Http\Controllers\PublicPagesController::class, 'dataScienceServicesDetails'])->name('data-science-service-details');
+
+
+//careers
+Route::get('/careers-with-us', [App\Http\Controllers\PublicPagesController::class, 'careersWithUs'])->name('careers-with-us');
+Route::get('/career-details', [App\Http\Controllers\PublicPagesController::class, 'jobDetails'])->name('career-details');
+
+//developers pool forms
 
 
 // Route::get('/about', 'PublicPagesController@about')->name('about');

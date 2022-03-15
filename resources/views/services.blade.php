@@ -76,33 +76,34 @@
                         <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                             <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
                             <li><a href="{{ route('about') }}" class="nav-link">About us</a></li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ route('our-services') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full-3">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Digital Solutions</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-eject"></i></span>
                                                 <div class="drop-title">Graphics Design</div>
                                             </a>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bolt"></i></span>
-                                                <div class="drop-title">Wireframing & Prototyping</div>
-                                            </a>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bars"></i></span>
-                                                <div class="drop-title">Software Engineering</div>
-                                            </a>
 
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bolt"></i></span>
+                                                <div class="drop-title">Prototyping</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-bars"></i></span>
+                                                <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
                                                 <div class="drop-title">Business Systems</div>
                                             </a>
@@ -116,8 +117,8 @@
                                             </a>
                                             <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                                <div class="drop-title">Augumented Solutions</div>
-                                            </a>
+                                                <div class="drop-title">Augumented Sol.</div>
+                                            </a> --}}
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                             <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -189,27 +190,19 @@
                         <div class="offcanvas-body">
                             <ul class="nav col-12 col-md-auto justify-content-center main-menu">
                                 <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                                <li><a href="{{ url('about') }}" class="nav-link">about</a></li>
+                                <li><a href="{{ url('about') }}" class="nav-link">About us</a></li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
                                     <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                         <div class="dropdown-grid rounded-custom width-full-3">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Digital Solutions</h6>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-bars"></i></span>
                                                     <div class="drop-title">Graphics Design</div>
                                                 </a>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-browser"></i></span>
-                                                    <div class="drop-title">Wireframing & Prototyping</div>
-                                                </a>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                    <div class="drop-title">Sofware Engineering</div>
-                                                </a>
 
-                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
@@ -217,22 +210,15 @@
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
-                                                <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                    <div class="drop-title">Business Systems</div>
+                                                    <div class="drop-title">Prototyping</div>
                                                 </a>
-                                                <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                    <div class="drop-title">Digital Strategies</div>
+                                                    <div class="drop-title">Software Eng.</div>
                                                 </a>
-                                                <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-chart-network"></i></span>
-                                                    <div class="drop-title">Business Analytics</div>
-                                                </a>
-                                                <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-closed-captioning"></i></span>
-                                                    <div class="drop-title">Augumented Solutions</div>
-                                                </a>
+
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -287,7 +273,7 @@
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
                             </div>
                         </div>
-                    </div>
+                       </div>
                     <!--offcanvas menu end-->
                 </div>
             </nav>
@@ -586,8 +572,8 @@
         </section>
         <!--cat subscribe end-->
 
-        <!--footer section start-->
-        <footer class="footer-section">
+         <!--footer section start-->
+         <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
             <div class="footer-top footer-light ptb-120">
@@ -627,7 +613,7 @@
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
                                             <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
-                                            <li><a href="career.html" class="text-decoration-none">Our Portfolio</a></li>
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -637,7 +623,8 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="blog-single.html" class="text-decoration-none">Latest news</a></li>
                                             <li><a href="pricing.html" class="text-decoration-none">Blog</a></li>
-                                            <li><a href="blog.html" class="text-decoration-none">Career</a></li>
+                                            {{-- <li><a href="blog.html" class="text-decoration-none">Career</a></li> --}}
+
                                         </ul>
                                     </div>
                                 </div>
@@ -645,11 +632,11 @@
                                     <div class="footer-single-col">
                                         <h3>Quick access</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="contact-us.html" class="text-decoration-none">Contact us</a></li>
-                                            <li><a href="support.html" class="text-decoration-none">Support</a></li>
+                                            <li><a href="{{ route('contact-us') }}" class="text-decoration-none">Contact us</a></li>
+                                            {{-- <li><a href="support.html" class="text-decoration-none">Support</a></li>
                                             <li><a href="support-single.html" class="text-decoration-none">Support center</a></li>
-                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li>
-                                            <li><a href="career-single.html" class="text-decoration-none">Careers</a>
+                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li> --}}
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -668,7 +655,9 @@
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
-                                <p class="mb-lg-0 mb-md-0">&copy; 2021 Quiety Rights Reserved. Designed By <a href="https://futurebasics.co.tz/" class="text-decoration-none">Future Basics</a></p>
+                                {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4">
@@ -687,6 +676,7 @@
             <!--footer bottom end-->
         </footer>
         <!--footer section end-->
+
 
     </div>
 
