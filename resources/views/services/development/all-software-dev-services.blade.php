@@ -285,9 +285,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">All Our Software Engineering Services</h1>
-                        <p class="lead">Seamlessly actualize client-based users after out-of-the-box value. Globally embrace
-                            strategic data through frictionless expertise.</p>
+                        <h1 class="display-5 fw-bold">Our Software Development Services</h1>
+                        <p class="lead">With our profound knowledge in modern technologies,
+                             a creative and dedicated team of engineers we assist our partners gain a competitive advantage by leveraging digital solutions that change how businesses operate.</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -295,95 +295,278 @@
         </section>
         <!--page header section end-->
 
-
-           <!--features grid section start-->
-           <section class="feature-section ptb-120 bg-light">
+        <!--services section start-->
+        <section class="services-section ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help</h4>
-                            <h2>Various Desings Services For Your Business</h2>
-                            <p>Globally actualize cost effective with resource maximizing leadership skills value and leveraged expertise whereas just in time experiences.</p>
+                            <h4 class="h5 text-primary">engineering services</h4>
+                            <h2>Digital Solutions for Everyone for Any Business</h2>
+                            <p>We offer cost effective digital solutions for a variety of individuals, businesses, organizations and Development spaces,
+                                 our solutions intend to automate your business processes and increase operational efficiency.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="feature-grid">
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Personalized Logo Design</h3>
+                        <div class="position-relative w-100">
+                            <div class="feature-grid position-relative">
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-primary mb-32">
+                                        <i class="fal fa-share-alt fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Applications development</h3>
+                                        <p>
+                                            We a full cycle software development firm,
+                                            we build various application that are compatible in all platforms and available in most if not all devices.
+                                            FBC leads the entire development process from ideation, data gathering, design and development.
+                                        </p>
+                                        <h6 class="mt-4">Development in...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
                                 </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-danger mb-32">
+                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Cyber Security</h3>
+                                        <p class="mb-0">
+                                            We implement Security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
+                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
+                                        </p>
+                                        <h6 class="mt-4">Include...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
                                 </div>
-                                <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-dark mb-32">
+                                        <i class="fal fa-sync-alt fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Software product development</h3>
+                                        <p class="mb-0">
+                                            Various development scenarios that we operate in as a firm,
+                                             there situation were individuals have ideas that require software,
+                                             or need a product upgrade. we are always ready to support from the start,
+                                             when you are on deadline or need assistance during the development period.
+                                        </p>
+                                        <h6 class="mt-4">Included with...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product consulting</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product UX design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>MVP development</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-product analytics</li>
+
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
+                                </div>
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-success mb-32">
+                                        <i class="fal fa-spell-check fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Q/A Testing</h3>
+                                        <p class="mb-0">
+                                            With cyber security concerns are always on the rise, We examine and audit your web app components,
+                                            check you desktop app compatibility of your software with hardware & operating systems and ensure
+                                            stability under normal and critical conditions, and data integrity.
+                                        </p>
+                                        <h6 class="mt-4">Tests Included...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Ads A/B Testing</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>CR Optimization</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Content Optimization</li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
+                                </div>
+                                {{-- <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-primary mb-32">
+                                        <i class="fal fa-chart-pie fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Advanced Analytics</h3>
+                                        <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
+                                            imperatives. Professionally architect unique.</p>
+                                        <h6 class="mt-4">Included with...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Goals, Targets Setup</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Users Analytics</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Optimization Content</li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
+                                </div> --}}
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-warning mb-32">
+                                        <i class="fal fa-filter fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Maintenance and Support</h3>
+                                        <p class="mb-0">We assist our partners with maintaining their IT Infrastructure,
+                                             Continuously optimize total cost of ownership by ensuring its operable,
+                                              flexible, and secure. </p>
+                                        <h6 class="mt-4">Maintaince in...</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Existing software</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Developed software</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Adopted software </li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
+                                </div>
                             </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">UX/UI Design</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Graphic Illustrations</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Publishing designers</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Branding & Packaging Designs</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Marketing & Advertising</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-           </section>
-          <!--features grid section end-->
+        </section>
+        <!--services section end-->
 
+          <!--our work process start-->
+          <section class="work-process ptb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="section-heading text-center">
+                            <h4 class="h5 text-primary">Our Process</h4>
+                            <h2> Our Development Process</h2>
+                            <p>
+                                We utilize best practices and efficient methodologies for software engineering,
+                                 that guide us during the development process in a structured and systematic way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5 col-md-12 order-1 order-lg-0">
+                        <div class="img-wrap">
+                            <img src="img/efficent.jpg" alt="work process" class="img-fluid rounded-custom">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-0 order-lg-1">
+                        <ul class="work-process-list list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-folder-tree fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 1</span>
+                                    <h3 class="h5 mb-2">Research and Data gathering</h3>
+                                    <p>
+                                        We collect all relevant data, evaluate the goal of the solution and collect required feedback
+                                         from stakeholders or anyone who stands to benefit from the digital solution.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-bezier-curve fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 2</span>
+                                    <h3 class="h5 mb-2"> Defining</h3>
+                                    <p>
+                                        Once the data is gathered and business processes identified,
+                                        the next step is to define and document the requirements and architecture of the proposed software.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-solid fa-compass-drafting fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 3</span>
+                                    <h3 class="h5 mb-2">Designing & Wireframing</h3>
+                                    <p>
+                                        Once the system requirements are documented and approved we will then design
+                                        illustrations that will visualize how the system will archive its intended goal, the goal is
+                                        to have an iterative software development model that entails a basic idea of how the application looks and works.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4 mb-lg-0">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-solid fa-code fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 4</span>
+                                    <h3 class="h5 mb-2">Development</h3>
+                                    <p>
+                                        This is the best part, where the developers do their magic to craft and build
+                                        the proposed solution by using the chosen programming language,
+                                         architecture, techniques and methodologies.
+
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4 mb-lg-0">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-solid fa-microscope fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 5</span>
+                                    <h3 class="h5 mb-2">Testing</h3>
+                                    <p>
+                                        This is a crucial step, where the proposed solution is evaluated and put into tests that are aimed to find and fix errors, bugs and defect. The idea here is  to ensure the system functions as required.
+
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4 mb-lg-0">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-solid fa-rocket-launch fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 6</span>
+                                    <h3 class="h5 mb-2">Deployment</h3>
+                                    <p>
+                                        Here the system is launched, its live and available for public use,
+                                        At this step  we check for deployment issues or issues that might arise if at all they are any.
+                                         We also ensure the deployment process is always automated.
+
+                                        </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4 mb-lg-0">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-solid fa-arrows-repeat fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 7</span>
+                                    <h3 class="h5 mb-2">Maintenance & Up-keep</h3>
+                                    <p>
+                                        According to the Maintenance service level agreement,
+                                        we ensure the needs and requirements of the systems continue to be met and the developed
+                                        software continues to efficiently perform as per the requirements mentioned in the first step.
+
+
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <!--our work process end-->
            <!--footer section start-->
            <footer class="footer-section">
             <!--footer top start-->

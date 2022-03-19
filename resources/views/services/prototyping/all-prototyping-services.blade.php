@@ -285,9 +285,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">All Prototyping and Wireframing Design Services</h1>
-                        <p class="lead">Seamlessly actualize client-based users after out-of-the-box value. Globally embrace
-                            strategic data through frictionless expertise.</p>
+                        <h1 class="display-5 fw-bold">Digital Solutions Prototyping and Wireframing</h1>
+                        <p class="lead">
+                            You might have an Idea that requires a technology touch to reach its massive impact envisioned by the innovator,
+                             here at FBC we help with the ideation process, we support and guide you through the innovation process.
+                        </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -296,99 +298,112 @@
         <!--page header section end-->
 
 
-           <!--features grid section start-->
-           <section class="feature-section ptb-120 bg-light">
+        <!--services section start-->
+        <section class="services-section ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help</h4>
-                            <h2>Various Desings Services For Your Business</h2>
-                            <p>Globally actualize cost effective with resource maximizing leadership skills value and leveraged expertise whereas just in time experiences.</p>
+                            <h4 class="h5 text-primary">How we can help
+                            </h4>
+                            <h2>Prototypes Pave Way to Realizing a Vision.</h2>
+                            <p>
+                             With technologies and tools today it has never been easier to develop your "Most Valuable Product" in a matter of weeks, that would help you understand a product Market potential.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="feature-grid">
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Personalized Logo Design</h3>
+                            <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
+                                <div class="feature-icon rounded bg-primary mb-32">
+                                    <i class="fal fa-share-alt fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
+                                    <h3 class="h5">User story Mapping</h3>
+                                    <p>
+                                        Its important to understand your idea and ensure the business process are properly identified, ensuring we all understand the proposed solution goals.
+                                    </p>
+                                    {{--<h6 class="mt-4">Included with...</h6>
+                                     <ul class="list-unstyled mb-0">
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>PPC/SEM</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>High-converting</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Google Advertising</li>
+                                    </ul> --}}
                                 </div>
-                                <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">UX/UI Design</h3>
+                            <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
+                                <div class="feature-icon rounded bg-danger mb-32">
+                                    <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
+                                    <h3 class="h5">Illustrations and documentations</h3>
+                                    <p class="mb-0">
+                                        Building visuals of the intended prototype, showing how data will
+                                         flow and mark the input requirements and the output expected.
+                                         ensure the process are visually mapped.
+                                    </p>
+                                   {{-- <h6 class="mt-4">Included with...</h6>
+                                     <ul class="list-unstyled mb-0">
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Content Creation</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Copyright Checker</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>SEO Friendly Content</li>
+                                    </ul> --}}
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Graphic Illustrations</h3>
+                            <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
+                                <div class="feature-icon rounded bg-dark mb-32">
+                                    <i class="fal fa-sync-alt fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
+                                    <h3 class="h5">Visualized processes</h3>
+                                    <p class="mb-0">We use prototyping techniques and tools that illustrate the proposed idea into visualized automated steps that mimic the intended system as how its meant to function.</p>
+                                    {{-- <h6 class="mt-4">Included with...</h6>
+                                     <ul class="list-unstyled mb-0">
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Keyword Research</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Title Optimize</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Link Building Strategy</li>
+                                    </ul> --}}
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Publishing designers</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Branding & Packaging Designs</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Marketing & Advertising</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-           </section>
-          <!--features grid section end-->
+        </section>
+        <!--services section end-->
+
+         <!--cat subscribe start-->
+         <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="subscribe-info-wrap text-center position-relative z-2">
+                            <div class="section-heading" data-aos="fade-up">
+                                <h4 class="h5 text-warning">Lets Build Your Prototype Get Free Support.</h4>
+                                <h2>Start Your Prototyping Journey With Us.</h2>
+                                <p>We can assist you in building a tailored digital solutions for your business.</p>
+                            </div>
+                            <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+                                <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
+                                        class="fas fa-play"></i> Watch Demo </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+                <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
+            </div>
+        </section>
+        <!--cat subscribe end-->
 
           <!--footer section start-->
           <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top bg-dark text-white ptb-120">
+            <div class="footer-top footer-light ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -462,7 +477,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom bg-dark text-white py-4">
+            <div class="footer-bottom footer-light  py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">

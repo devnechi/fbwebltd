@@ -295,94 +295,82 @@
         </section>
         <!--page header section end-->
 
-
-           <!--features grid section start-->
-           <section class="feature-section ptb-120 bg-light">
+          <!--our work process start-->
+          <section class="work-process ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help</h4>
-                            <h2>Various Desings Services For Your Business</h2>
-                            <p>Globally actualize cost effective with resource maximizing leadership skills value and leveraged expertise whereas just in time experiences.</p>
+                            <h4 class="h5 text-primary">Process</h4>
+                            <h2>We Follow Our Work Process</h2>
+                            <p>Enthusiastically engage cross-media leadership skills for alternative experiences.
+                                Proactively drive vertical systems than intuitive architectures.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feature-grid">
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Personalized Logo Design</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">UX/UI Design</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Graphic Illustrations</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Publishing designers</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Branding & Packaging Designs</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Marketing & Advertising</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                        imperatives. Professionally architect unique.</p>
-                                </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
-                            </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5 col-md-12 order-1 order-lg-0">
+                        <div class="img-wrap">
+                            <img src="img/bs-ppl.jpg" alt="work process" class="img-fluid rounded-custom">
                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-0 order-lg-1">
+                        <ul class="work-process-list list-unstyled">
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-folder-tree fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 1</span>
+                                    <h3 class="h5 mb-2">Research and Content Planing</h3>
+                                    <p>Progressively foster enterprise-wide systems whereas equity invested
+                                        web-readiness harness installed base bandwidth.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-bezier-curve fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 2</span>
+                                    <h3 class="h5 mb-2">Publishing and Execution</h3>
+                                    <p>Dramatically administrate progressive metrics without error-free globally simplify
+                                        standardized alignments plagiarize distributed.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-layer-group fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 3</span>
+                                    <h3 class="h5 mb-2">Product Prototyping</h3>
+                                    <p>Interactively whiteboard transparent testing procedures before
+                                        bricks-and-clicks initiatives administrate competencies.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-4 mb-lg-0">
+                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
+                                    <i class="far fa-truck fa-2x"></i>
+                                </div>
+                                <div class="icon-content">
+                                    <span class="text-primary h6">Step 4</span>
+                                    <h3 class="h5 mb-2">Deliver the Final Product</h3>
+                                    <p>Dramatically plagiarize distributed progressive metrics without error-free globally simplify
+                                        standardized alignments.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-           </section>
-          <!--features grid section end-->
+        </section>
+        <!--our work process end-->
+
 
           <!--footer section start-->
           <footer class="footer-section">
