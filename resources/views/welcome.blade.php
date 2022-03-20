@@ -145,11 +145,11 @@
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Enterprise Solutions</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link px-0">
+                                            <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-fingerprint"></i></span>
                                                 <div class="drop-title">Livestoka</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                            <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
@@ -162,7 +162,7 @@
                                         </div>
                                         <div class="dropdown-grid-item radius-right-side bg-light">
                                             <h6 class="drop-heading">Innovations</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="https://smartrisiti.com/" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
@@ -245,11 +245,11 @@
                                         <div class="dropdown-grid rounded-custom width-full">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                <a href="https/:www.livestoka.com" class="dropdown-link px-0">
+                                                <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                     <span class="me-2" ><i class="far fa-fingerprint"></i></span>
                                                     <div class="drop-title">Livestoka</div>
                                                 </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                                <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
@@ -260,7 +260,7 @@
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                <a href="https://smartrisiti.com/" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Smart Risiti</div>
                                                 </a>
@@ -300,7 +300,7 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-xl-5 col-lg-5">
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start mt-5 mt-lg-0 mt-xl-0" data-aos="fade-up">
-                            <h1 class="fw-bold display-5">Advanced Solutions for Your Business</h1>
+                            <h1 class="fw-bold display-5">Simplified Tailored Innovative Solutions</h1>
                             <p class="lead"> Proactively integrating communities, businesses and individuals with the use of technology and digital solutions.</p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
                                 {{-- <form id="subscribe-form" name="email-form" class="hero-subscribe-form d-block d-lg-flex d-md-flex">
@@ -319,7 +319,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mt-lg-5 mt-4">
-                        <div class="hero-img-wrap position-relative" data-aos="fade-up">
+                        <div class="hero-img-wrap position-relative" style="display: none;" data-aos="fade-up">
                             <div class="hero-screen-wrap">
                                 <div class="phone-screen">
                                     <img src="img/screen/phn-hd.png" alt="hero image" class="position-relative img-fluid">
@@ -385,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-md-6 col-lg-4">
                         <div class="promo-card-wrap promo-border-hover border border-2 bg-white rounded-custom p-5 mb-4 mb-lg-0 mb-md-4" data-aos="fade-up" data-aos-delay="50">
                             <div class="promo-card-info">
@@ -414,14 +414,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </section>
         <!--highlight promo end-->
         <!-- app two video promo start -->
         <section class="video-promo-with-icon">
             <div class="container">
-                <div class="video-bg-with-icon" style="background: url('img/1.png')no-repeat center center / cover">
-                    <a href="https://www.youtube.com/embed/MuJQnSe1R5k" class="popup-youtube"><i class="fas fa-play"></i></a>
+                <div class="video-bg-with-icon" style="height: 680px; background: url('img/1.png')no-repeat center center / cover">
+                    {{-- <a href="https://www.youtube.com/embed/MuJQnSe1R5k" class="popup-youtube"><i class="fas fa-play"></i></a> --}}
 
                 </div>
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MuJQnSe1R5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
@@ -596,7 +596,7 @@
 
                                     </ul>
                                 </div>
-                                <a href="{{ route('business') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-success-soft mb-32">
@@ -606,7 +606,7 @@
                                     <h3 class="h5">Applications development</h3>
                                     <p class="mb-0">With more users available on the internet, we develop solutions are accessible via across the web, available via mobile and can be in on desktop operating system.</p>
                                 </div>
-                                <a href="{{ route('business') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-danger-soft mb-32">
@@ -618,7 +618,7 @@
                                         Digital solutions offer a cost-efficient way to offer your product and services across a wide audience of potential customers.
                                     </p>
                                 </div>
-                                <a href="{{ route('business') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-prototyping-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-dark-soft mb-32">
@@ -630,7 +630,7 @@
                                         Modern business decisions are made and  backed by data,  a system should enable automated business reports and analytics that influence strategic business decisions.
                                     </p>
                                 </div>
-                                <a href="{{ route('business') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-data-science-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-warning-soft mb-32">
@@ -642,9 +642,10 @@
                                         From ideas, small businesses, NGO's, co-operations and Large scale enterprises its significant to have a well defined online presence that provides an enabling environment for businesses and your customers.
                                     </p>
                                 </div>
-                                <a href="{{ route('business') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-graphic-designs-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -1027,8 +1028,8 @@
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact with Us</a>
-                                <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
-                                        class="fas fa-play"></i> Watch Demo </a>
+                                {{-- <a href="https://www.youtube.com/MuJQnSe1R5k"" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
+                                        class="fas fa-play"></i> Watch Demo </a> --}}
                             </div>
                             {{-- <ul class="nav justify-content-center subscribe-feature-list mt-4" data-aos="fade-up" data-aos-delay="100">
                                 <li class="nav-item">
@@ -1066,13 +1067,13 @@
                                     <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
                                     <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
                                 </div>
-                                <p>Our latest news, articles, and resources, we will sent to
+                                {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
 
                                 <form class="newsletter-form position-relative d-block d-lg-flex d-md-flex">
                                     <input type="text" class="input-newsletter form-control me-2" placeholder="Enter your email" name="email" required="" autocomplete="off">
                                     <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
-                                </form>
+                                </form> --}}
                                 <div class="ratting-wrap mt-4">
                                     <h6 class="mb-0">10/10 Overall rating</h6>
                                     <ul class="list-unstyled rating-list list-inline mb-0">
@@ -1144,9 +1145,9 @@
                         <div class="col-md-4 col-lg-4">
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
                                 </ul>
                             </div>

@@ -7,11 +7,10 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-5 col-md-8 col-12">
                         <a href="{{ url('/') }}" class="mb-4 d-block text-center">
-                            <img src="img/logo-white.png" alt="logo" class="img-fluid"></a>
+                            <img src="img/fb_og_logo.png" alt="logo" class="img-fluid"></a>
                         <div class="register-wrap p-5 bg-light shadow rounded-custom">
                             <h1 class="h3">Nice to Seeing You Again</h1>
-                            <p class="text-muted">Please log in to access your account web-enabled methods of innovative
-                                niches.</p>
+                            <p class="text-muted">Please log in to gain access.</p>
 
                             <div class="action-btns">
                                 <a href="#" class="btn google-btn bg-white shadow-sm mt-4 d-block d-flex align-items-center text-decoration-none justify-content-center">
@@ -68,15 +67,16 @@
                                     </div>
                                 </div>
                                 <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">Don’t have an
-                                    account? <a href="register.html" class="text-decoration-none">Sign up Today</a>
+                                    account? <a href="{{ route('contact-us') }}" class="text-decoration-none">Contact Us</a>
                                     <br>
-                                    <a href="password-reset.html" class="text-decoration-none">
-                                        Forgot password
-                                    </a>
+
                                     @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
-                                    </a>
+                                    </a> --}}
+                                    {{-- <a href="{{ route('password.request') }}" class="text-decoration-none">
+                                        Forgot password
+                                    </a> --}}
                                     @endif
                                 </p>
                             </form>

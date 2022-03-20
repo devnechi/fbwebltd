@@ -133,11 +133,11 @@
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Enterprise Solutions</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link px-0">
+                                            <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-fingerprint"></i></span>
                                                 <div class="drop-title">Livestoka</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                            <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
@@ -150,7 +150,7 @@
                                         </div>
                                         <div class="dropdown-grid-item radius-right-side bg-light">
                                             <h6 class="drop-heading">Innovations</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="https://smartrisiti.com/" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
@@ -233,11 +233,11 @@
                                         <div class="dropdown-grid rounded-custom width-full">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                <a href="https/:www.livestoka.com" class="dropdown-link px-0">
+                                                <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                     <span class="me-2" ><i class="far fa-fingerprint"></i></span>
                                                     <div class="drop-title">Livestoka</div>
                                                 </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                                <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
@@ -248,7 +248,7 @@
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                <a href="https://smartrisiti.com/" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Smart Risiti</div>
                                                 </a>
@@ -413,7 +413,7 @@
                 <section class="contact-promo ptb-120">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                            {{-- <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
                                 <div class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
                                     <span class="fad fa-comment-alt-lines fa-3x text-primary"></span>
                                     <div class="contact-promo-info mb-4">
@@ -422,9 +422,9 @@
                                             <strong>9am to 5pm EAT.</strong>
                                         </p>
                                     </div>
-                                    <a href="mailto:hellothemetags@gmail.com" class="btn btn-link mt-auto">Chat with us</a>
+                                    <a href="mailto:info@futurebasics.co.tz" class="btn btn-link mt-auto">Chat with us</a>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
                                 <div class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
                                     <span class="fad fa-envelope fa-3x text-primary"></span>
@@ -546,9 +546,9 @@
                         <div class="col-md-4 col-lg-4">
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
                                 </ul>
                             </div>

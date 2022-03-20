@@ -132,11 +132,11 @@
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Enterprise Solutions</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link px-0">
+                                            <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-fingerprint"></i></span>
                                                 <div class="drop-title">Livestoka</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                            <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
@@ -149,7 +149,7 @@
                                         </div>
                                         <div class="dropdown-grid-item radius-right-side bg-light">
                                             <h6 class="drop-heading">Innovations</h6>
-                                            <a href="{{ route('business') }}" class="dropdown-link">
+                                            <a href="https://smartrisiti.com/" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
@@ -232,11 +232,11 @@
                                         <div class="dropdown-grid rounded-custom width-full">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                <a href="https/:www.livestoka.com" class="dropdown-link px-0">
+                                                <a href="http://livestoka.com/" class="dropdown-link px-0">
                                                     <span class="me-2" ><i class="far fa-fingerprint"></i></span>
                                                     <div class="drop-title">Livestoka</div>
                                                 </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
+                                                <a href="https://radarmile.com/" class="dropdown-link px-0">
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
@@ -247,7 +247,7 @@
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                <a href="{{ route('business') }}" class="dropdown-link">
+                                                <a href="https://smartrisiti.com/" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Smart Risiti</div>
                                                 </a>

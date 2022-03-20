@@ -87,10 +87,10 @@
 
                             <div class="social-list-wrap mt-100">
                                 <ul class="list-unstyled author-social-list social-bg-ts list-inline mb-0">
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git""><i class="fab fa-github"></i></a></li>
+                                    {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
                                 </ul>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                                 <input type="submit" value="Subscribe!" data-wait="Please wait..." class="btn btn-primary">
                             </form>
                         </div>
-                        <ul class="nav justify-content-center subscribe-feature-list mt-3">
+                        {{-- <ul class="nav justify-content-center subscribe-feature-list mt-3">
                             <li class="nav-item">
                                 <span><i class="fad fa-dot-circle text-primary me-2"></i>No credit card required</span>
                             </li>
@@ -119,7 +119,7 @@
                             <li class="nav-item">
                                 <span><i class="fad fa-dot-circle text-primary me-2"></i>Cancel anytime</span>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <!--popup form end-->

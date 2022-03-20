@@ -36,7 +36,7 @@
     <meta name="author" content="ThemeTags">
 
     <!--favicon icon-->
-    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'FutureBasics') }}</title>
@@ -64,7 +64,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/favicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>

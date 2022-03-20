@@ -771,13 +771,13 @@
                                     <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
                                     <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
                                 </div>
-                                <p>Our latest news, articles, and resources, we will sent to
+                                {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
 
                                 <form class="newsletter-form position-relative d-block d-lg-flex d-md-flex">
                                     <input type="text" class="input-newsletter form-control me-2" placeholder="Enter your email" name="email" required="" autocomplete="off">
                                     <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
-                                </form>
+                                </form> --}}
                                 <div class="ratting-wrap mt-4">
                                     <h6 class="mb-0">10/10 Overall rating</h6>
                                     <ul class="list-unstyled rating-list list-inline mb-0">
