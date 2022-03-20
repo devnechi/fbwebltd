@@ -300,7 +300,7 @@
                 <div class="row align-items-center justify-content-lg-between">
                     <div class="col-xl-5 col-lg-5">
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start mt-5 mt-lg-0 mt-xl-0" data-aos="fade-up">
-                            <h1 class="fw-bold display-5">Simplified Tailored Innovative Solutions</h1>
+                            <h1 class="fw-bold display-5">Simplified, Tailored and Innovative Digital Solutions</h1>
                             <p class="lead"> Proactively integrating communities, businesses and individuals with the use of technology and digital solutions.</p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
                                 {{-- <form id="subscribe-form" name="email-form" class="hero-subscribe-form d-block d-lg-flex d-md-flex">
@@ -1094,7 +1094,7 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
-                                            <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
+                                            {{-- <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li> --}}
                                             <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
                                         </ul>
                                     </div>

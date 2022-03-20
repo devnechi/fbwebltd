@@ -287,8 +287,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <h1 class="display-5 fw-bold">Contact Us</h1>
-                        <p class="lead">Seamlessly actualize client-based users after out-of-the-box value data through
-                            frictionless expertise.</p>
+                        <p class="lead">Reach out to Us We can't wait to hear from you</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -303,8 +302,7 @@
                             <div class="col-lg-6 col-md-8">
                                 <div class="section-heading">
                                     <h2>Talk to Our Support and Customer service Department Team</h2>
-                                    <p>Collaboratively promote client-focused convergence vis-a-vis customer directed alignments via
-                                        standardized infrastructures.</p>
+                                    <p>We are always anytime for coffee, quick chat or a meeting. just reach out to us and We will contact you.</p>
                                 </div>
                                 <br/><br/>
                                 @if (Session::has('success'))
@@ -401,9 +399,9 @@
                                 </form>
                             </div>
                             <div class="col-lg-5 col-md-10">
-                                <div class="contact-us-img">
+                                {{-- <div class="contact-us-img">
                                     <img src="img/contact-us-img-2.svg" alt="contact us" class="img-fluid">
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -459,7 +457,7 @@
         <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top footer-light ptb-120">
+            <div class="footer-top bg-dark text-white ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -468,13 +466,13 @@
                                     <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
                                     <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
                                 </div>
-                                <p>Our latest news, articles, and resources, we will sent to
+                                {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
 
                                 <form class="newsletter-form position-relative d-block d-lg-flex d-md-flex">
                                     <input type="text" class="input-newsletter form-control me-2" placeholder="Enter your email" name="email" required="" autocomplete="off">
                                     <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
-                                </form>
+                                </form> --}}
                                 <div class="ratting-wrap mt-4">
                                     <h6 class="mb-0">10/10 Overall rating</h6>
                                     <ul class="list-unstyled rating-list list-inline mb-0">
@@ -495,8 +493,8 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
-                                            <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
-                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
+                                            {{-- <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li> --}}
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Join Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -533,7 +531,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom footer-light py-4">
+            <div class="footer-bottom bg-dark text-white py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
