@@ -894,8 +894,8 @@
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="blog-single.html" class="text-decoration-none">Latest news</a></li>
-                                            <li><a href="pricing.html" class="text-decoration-none">Blog</a></li>
+                                            <li><a href="{{ route('coming-soon') }}" class="text-decoration-none">Latest news</a></li>
+                                            <li><a href="{{ route('coming-soon') }}" class="text-decoration-none">Blog</a></li>
                                             {{-- <li><a href="blog.html" class="text-decoration-none">Career</a></li> --}}
 
                                         </ul>

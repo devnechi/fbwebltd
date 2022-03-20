@@ -659,7 +659,7 @@
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
                             <h4 class="h5 text-primary">Process</h4>
-                            <h2>A Development Process That You Can Depend On</h2>
+                            <h2>A Development Process You Can Depend On</h2>
                             <p>
                                 We conveniently follow modern development methodologies that are affordable and  ensure they archive the intended results for both customers and stakeholders.                             </p>
                         </div>
@@ -1095,7 +1095,7 @@
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
                                             {{-- <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li> --}}
-                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Join Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1103,8 +1103,8 @@
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
-                                            <li><a href="blog-single.html" class="text-decoration-none">Latest news</a></li>
-                                            <li><a href="pricing.html" class="text-decoration-none">Blog</a></li>
+                                            <li><a href="{{ route('coming-soon') }}" class="text-decoration-none">Latest news</a></li>
+                                            <li><a href="{{ route('coming-soon') }}" class="text-decoration-none">Blog</a></li>
                                             {{-- <li><a href="blog.html" class="text-decoration-none">Career</a></li> --}}
 
                                         </ul>

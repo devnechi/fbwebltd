@@ -82,7 +82,10 @@
                             <h5 class="text-white">We are Coming Soon...</h5>
                             <h1 class="text-white">We are Working Our New Website, Please Stay With us!</h1>
                             <div class="action-btns">
-                                <a href="#notify-form" class="btn btn-primary mt-5 popup-with-form">Notify Me!</a>
+                                {{-- <a href="#notify-form" class="btn btn-primary mt-5 popup-with-form">Notify Me!</a> --}}
+                                {{-- <a href="https://futurebasics.co.tz/contact-us" class="btn btn-primary mt-5 popup-with-form">Notify Me!</a> --}}
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+
                             </div>
 
                             <div class="social-list-wrap mt-100">

@@ -323,7 +323,7 @@
                                 <div class="feature-content">
                                     <p class="mb-0">All Major brands logos are the first impression of the company, We've narrowed it to a science, a process of building logos that are unforgettable and sustain themselves over time.</p>
                                 </div>
-                                <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
@@ -334,7 +334,7 @@
                                     <p class="mb-0">
                                         Its well known High-quality info-graphics are more likely to be read than blunt Text, We understand the need to properly convey ideas and information visually in away that appeals to the intended user.</p>
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
@@ -345,7 +345,7 @@
                                     <p class="mb-0">
                                         We'll ensure that your print persona - from posters, reports, brochures to invitations to personalized cards - communicate your message to increase customer convention.</p>
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
@@ -355,7 +355,7 @@
                                 <div class="feature-content">
                                     <p class="mb-0">Whether its for  a product, magazine, poster, or billboard creative designs play a major role in your marketing and advertising strategy, we at FBC can create ads that are both engaging and speak for you.</p>
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
@@ -366,7 +366,7 @@
                                     <p class="mb-0">
                                         We'll assist you in crafting your intended message, help you target the right audience and help you build a interactive community around your content objective.</p>
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
@@ -376,7 +376,7 @@
                                 <div class="feature-content">
                                     <p class="mb-0">Its actually true  although many don't admit that people do judge a book by its cover and products by its package. We can make your first impression memorable and enticing.</p>
                                 </div>
-                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
                         </div>
                     </div>
