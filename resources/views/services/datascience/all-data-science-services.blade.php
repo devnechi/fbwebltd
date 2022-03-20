@@ -412,8 +412,7 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
-                                            <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
-                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Join Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
