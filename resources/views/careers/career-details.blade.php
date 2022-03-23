@@ -436,7 +436,7 @@
         <!--job details section end-->
 
         <!--related job start-->
-        <section class="related-job-list ptb-120 bg-light">
+        {{-- <section class="related-job-list ptb-120 bg-light">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-4 col-md-12">
@@ -503,7 +503,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--related job end-->
 
            <!--cat subscribe start-->
