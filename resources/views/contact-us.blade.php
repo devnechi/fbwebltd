@@ -391,11 +391,19 @@
                                             @enderror
                                             </div>
                                         </div>
-                                        @if(config('services.recaptcha.key'))
+
+                                        <div class="col-sm-6">
+                                            {{-- @if(config('services.recaptcha.key'))
                                             <div class="g-recaptcha"
                                                 data-sitekey="{{config('services.recaptcha.key')}}">
                                             </div>
-                                        @endif
+                                        @endif --}}
+                                        <div class="form-group">
+                                            <strong>Google recaptcha :</strong>
+                                            {!! NoCaptcha::renderJs() !!}
+                                            {!! NoCaptcha::display() !!}
+                                         </div>
+                                        </div>
                                         <div class="col-sm-6">
                                             <div class="form-group" style="display: none;">
                                                 <label for="simpfill">not to fill
