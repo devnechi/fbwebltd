@@ -50,6 +50,7 @@ Route::get('/about', [App\Http\Controllers\PublicPagesController::class, 'about'
 Route::get('/business', [App\Http\Controllers\PublicPagesController::class, 'business'])->name('business');
 // Route::get('/our-services', [App\Http\Controllers\PublicPagesController::class, 'singelservice'])->name('our-services');
 Route::get('/contact-us', [App\Http\Controllers\PublicPagesController::class, 'contactus'])->name('contact-us');
+
 Route::get('/coming-soon', [App\Http\Controllers\PublicPagesController::class, 'comingsoon'])->name('coming-soon');
 
 Route::get('/our-services', [App\Http\Controllers\PublicPagesController::class, 'generalServices'])->name('our-services');

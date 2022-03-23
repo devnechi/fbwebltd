@@ -35,7 +35,8 @@ class ContactController extends Controller
              'contactemail' => 'required|email',
              'subject' => 'required',
              'phone' => 'required',
-             'message' => 'required'
+             'message' => 'required',
+             'g-recaptcha-response' => 'required|recaptcha'
          ]);
 
          if ($request->filled('simpfill')) {

@@ -45,6 +45,9 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <!--custom css end-->
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
 </head>
 
 <body>
@@ -287,7 +290,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <h1 class="display-5 fw-bold">Contact Us</h1>
-                        <p class="lead">Reach out to Us We can't wait to hear from you</p>
+                        <p class="lead">Reach out to Us We can't wait to hear from you!!</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -302,7 +305,7 @@
                             <div class="col-lg-6 col-md-8">
                                 <div class="section-heading">
                                     <h2>Talk to Our Support and Customer service Department Team</h2>
-                                    <p>We are always anytime for coffee, quick chat or a meeting. just reach out to us and We will contact you.</p>
+                                    <p>We are always available anytime for coffee, a quick chat, phone call or a meeting. just reach out to us and We will contact you.</p>
                                 </div>
                                 <br/><br/>
                                 @if (Session::has('success'))
@@ -318,6 +321,7 @@
                                         @endforeach
                                     </ul>
                                 </div>
+                                {{-- start of contact form --}}
                               @endif
                                 <form action="{{ route('contact-em') }}" method="post" class="register-form">
                                     @csrf
@@ -387,6 +391,11 @@
                                             @enderror
                                             </div>
                                         </div>
+                                        @if(config('services.recaptcha.key'))
+                                            <div class="g-recaptcha"
+                                                data-sitekey="{{config('services.recaptcha.key')}}">
+                                            </div>
+                                        @endif
                                         <div class="col-sm-6">
                                             <div class="form-group" style="display: none;">
                                                 <label for="simpfill">not to fill
