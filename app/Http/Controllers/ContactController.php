@@ -36,8 +36,11 @@ class ContactController extends Controller
              'subject' => 'required',
              'phone' => 'required',
              'message' => 'required',
-             'g-recaptcha-response' => 'required|recaptcha'
+             'g-recaptcha-response.required' => 'Please complete the captcha',
+
          ]);
+
+         // 'g-recaptcha-response' => 'required|recaptcha'
 
          if ($request->filled('simpfill')) {
             return $this->formResponse();
