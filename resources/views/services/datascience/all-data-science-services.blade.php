@@ -285,9 +285,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">All Our Data Science Services</h1>
-                        <p class="lead">Seamlessly actualize client-based users after out-of-the-box value. Globally embrace
-                            strategic data through frictionless expertise.</p>
+                        <h1 class="display-5 fw-bold">Data Science Service</h1>
+                        <p class="lead">
+                            Do you want to gain insight on a field, industry, market or business.
+                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
+
+                        </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -302,9 +305,9 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             <h4 class="h5 text-primary">Process</h4>
-                            <h2>We Follow Our Work Process</h2>
-                            <p>Enthusiastically engage cross-media leadership skills for alternative experiences.
-                                Proactively drive vertical systems than intuitive architectures.</p>
+                            <h2>Explore Our Data Science Process</h2>
+                            <p>Do you want to gain insight on a field, industry, market or business.
+                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
                         </div>
                     </div>
                 </div>
@@ -322,9 +325,10 @@
                                 </div>
                                 <div class="icon-content">
                                     <span class="text-primary h6">Step 1</span>
-                                    <h3 class="h5 mb-2">Research and Content Planing</h3>
-                                    <p>Progressively foster enterprise-wide systems whereas equity invested
-                                        web-readiness harness installed base bandwidth.
+                                    <h3 class="h5 mb-2">Data Exploration and Value Extraction Workflow</h3>
+                                    <p>
+                                        Data is obtained and cleaned of "noise" and ensure the data is rid of unnecessary data.
+                                         The process entails of data sampling and Transformation.
                                     </p>
                                 </div>
                             </li>
@@ -334,9 +338,11 @@
                                 </div>
                                 <div class="icon-content">
                                     <span class="text-primary h6">Step 2</span>
-                                    <h3 class="h5 mb-2">Publishing and Execution</h3>
-                                    <p>Dramatically administrate progressive metrics without error-free globally simplify
-                                        standardized alignments plagiarize distributed.
+                                    <h3 class="h5 mb-2">Data Modeling</h3>
+                                    <p>
+                                        Once the data has been cleaned and prep, the next process follows,
+                                         we implement Machine learning algorithms which is where the Data is fitted into the model whereby
+                                         the model is derived from data selected and business requirement to be fulfilled.
                                     </p>
                                 </div>
                             </li>
@@ -346,9 +352,11 @@
                                 </div>
                                 <div class="icon-content">
                                     <span class="text-primary h6">Step 3</span>
-                                    <h3 class="h5 mb-2">Product Prototyping</h3>
-                                    <p>Interactively whiteboard transparent testing procedures before
-                                        bricks-and-clicks initiatives administrate competencies.
+                                    <h3 class="h5 mb-2">Testing the Models</h3>
+                                    <p>
+                                        This is the most critical stage of the process whereby the model is tested
+                                         with Test Data to evaluate the accuracy of data and has relevant desirable properties,
+                                         if not Data modelling process is repeated or other alternative approaches are executed.
                                     </p>
                                 </div>
                             </li>
@@ -358,9 +366,10 @@
                                 </div>
                                 <div class="icon-content">
                                     <span class="text-primary h6">Step 4</span>
-                                    <h3 class="h5 mb-2">Deliver the Final Product</h3>
-                                    <p>Dramatically plagiarize distributed progressive metrics without error-free globally simplify
-                                        standardized alignments.
+                                    <h3 class="h5 mb-2">Deploy Models</h3>
+                                    <p>
+                                        The model that produces the accurate results based on the assessed
+                                         findings is complete its delivered and deployed in the production environment.
                                     </p>
                                 </div>
                             </li>
@@ -371,12 +380,36 @@
         </section>
         <!--our work process end-->
 
+   <!--cat subscribe start-->
+   <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="subscribe-info-wrap text-center position-relative z-2">
+                    <div class="section-heading" data-aos="fade-up">
+                        <h4 class="h5 text-warning">Lets Build Your Data Mining Get Free Support.</h4>
+                        <h2>Start Your Data Mining Journey With Us.</h2>
+                        <p>We can assist you in building a tailored digital solutions for your business.</p>
+                    </div>
+                    <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+                        {{-- <a href="http://www.youtube.com/watch?v=hAP2QF--2Dg" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
+                                class="fas fa-play"></i> Watch Demo </a> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+        <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
+    </div>
+</section>
+<!--cat subscribe end-->
 
           <!--footer section start-->
           <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top bg-dark text-white ptb-120">
+            <div class="footer-top footer-light ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -449,7 +482,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom bg-dark text-white py-4">
+            <div class="footer-bottom footer-light py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
