@@ -285,7 +285,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Are You a Software Developer?</h1>
+                        <h1 class="display-5 fw-bold">Are You a Designer?</h1>
                         <p class="lead">
 
                             Join our pool of developers, programmers, creative designers and innovators to be shortlisted for a future development project.
@@ -304,10 +304,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-12">
                         <div class="section-heading text-center">
-                            <h5 class="h6 text-primary">Developer Details</h5>
-                            <h2>Join Our Developer Pool</h2>
+                            <h5 class="h6 text-primary">Designer Details</h5>
+                            <h2>Join Our Designers Pool</h2>
                             <p>
-                                Developers and Programmes are encourage to fill the form as accurate as possible so as we can accurately assess your best fit with us.
+                                Designers are encourage to fill the form as accurate as possible so as we can accurately assess your best fit with us.
                             </p>
                         </div>
                     </div>
@@ -426,7 +426,7 @@
                                     <div class="accordion-item border border-2">
                                         <h5 class="accordion-header" id="faq-3-2">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3-2" aria-expanded="false">
-                                                Developer Skills
+                                                Designers Skills
                                             </button>
                                         </h5>
                                         <div id="collapse-3-2" class="accordion-collapse collapse" aria-labelledby="faq-3-2" data-bs-parent="#accordionExample-3">
@@ -437,10 +437,13 @@
                                                             <label for="exampleFormControlSelect1">Category</label>
                                                             <select class="form-control" id="exampleFormControlSelect1">
                                                                 <option>Select</option>
-                                                                <option>Full Stack Developer</option>
-                                                              <option>Front-end developer</option>
-                                                              <option>Back-end developer</option>
-                                                              <option>Fairy programmer</option>
+                                                                <option>Infographs and Publishing</option>
+                                                              <option>Wireframes Designers (Mobile and Web)</option>
+                                                              <option>Graphic Designers</option>
+                                                              <option>UI/UX Designer</option>
+                                                              <option>Animation Designer</option>
+                                                              <option>Industrial <i class="fa fa-product-hunt" aria-hidden="true"></i> Designer</option>
+                                                              <option>Motion Graphics Designer</option>
                                                             </select>
                                                           </div>
                                                     </div>
@@ -451,7 +454,7 @@
                                                     <div class="col-sm-6 ">
                                                         <label for="lastName" class="mb-1">Technical Skills</label>
                                                         <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Ex. React, laravel, java, c#" aria-label="Last name">
+                                                            <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Ex. Photoshop, figma, sketch, adobe illustrator" aria-label="Last name">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-8">
@@ -460,9 +463,9 @@
                                                             <select class="form-control" id="exampleFormControlSelect1">
                                                                 <option>Select</option>
                                                                 <option>Beginner</option>
-                                                                <option>Intermediate</option>
-                                                                <option>Master</option>
-                                                                <option>Professional</option>
+                                                              <option>Intermediate</option>
+                                                              <option>Master</option>
+                                                              <option>Professional</option>
                                                             </select>
                                                           </div>
                                                     </div>
@@ -488,7 +491,6 @@
                                                     <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="ex. github.com/dev" aria-label="Last name">
                                                 </div>
                                             </div>
-
                                         {{-- end dynamic fieds --}}
                                             </div>
                                         </div>
