@@ -129,6 +129,15 @@ class PublicPagesController extends Controller
     }
 
 
+    public function alldevPoolForms(){
+        return view('recruit.all-coll-forms-access');
+
+    }
+
+    public function devRecruitForm(){
+        return view('recruit.dev-pool-coll-form');
+    }
+
          /**
      * Show the application dashboard.
      *

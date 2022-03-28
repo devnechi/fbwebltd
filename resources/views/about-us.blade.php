@@ -297,6 +297,9 @@
                                         Our mission is to blend creativity with technology capabilities to bring value and increase productivity. We make our customers' steps to the future easier, smarter and valuable.
                                     </p>
                                     <a href="{{ route('careers-with-us') }}" class="btn btn-primary mt-4 me-3">Join Us</a>
+                                    <a href="{{ route('developers-info-entery-form') }}" class="btn btn-primary mt-4 me-3">Join Our Dev Pool</a>
+                                    <a href="{{ route('collection-of-innovators') }}" class="btn btn-primary mt-4 me-3">Join Our Talent Pool</a>
+
                                     {{-- <a href="#our-team" class="btn btn-soft-primary mt-4">Meet Our Team</a> --}}
                                 </div>
                                 <img src="img/about/buildbus.jpg" style="display: none;" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
