@@ -138,6 +138,10 @@ class PublicPagesController extends Controller
         return view('recruit.dev-pool-coll-form');
     }
 
+    public function designersRecruitForm(){
+        return view('recruit.designers-details-form');
+    }
+
          /**
      * Show the application dashboard.
      *

@@ -281,7 +281,7 @@
         <!--header section end-->
 
         <!--page header section start-->
-        <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
+        <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('img/page-header-bg.svg')no-repeat bottom left">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
@@ -305,9 +305,9 @@
                     <div class="row justify-content-center align-content-center">
                         <div class="col-md-10 col-lg-8">
                             <div class="section-heading text-center mb-4">
-                                <h5 class="h6 text-primary">Features</h5>
-                                <h2>Simple Powerful Advanced Features</h2>
-                                <p>Continually promote equity invested process improvements whereas go forward leadership. Completely unleash cross-media methodologies whereas intermandated outsourcing.</p>
+                                <h5 class="h6 text-primary">Our talent pool</h5>
+                                <h2>Join Our Talent Pool</h2>
+                                <p>Join our pool to stand a chance to be shortlisted in the upcoming projects and opportunities</p>
                             </div>
                         </div>
                     </div>
@@ -316,83 +316,184 @@
                             <ul class="nav justify-content-center feature-tab-list-2 mt-4" id="nav-tab-2" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#tab-2-1" data-bs-toggle="tab" data-bs-target="#tab-2-1" role="tab" aria-selected="false">
-                                        AI & Data Science
+                                       Design and Digital content
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tab-2-2" data-bs-toggle="tab" data-bs-target="#tab-2-2" role="tab" aria-selected="false">
-                                        Automation Power
+                                       Development and Engineering
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tab-2-3" data-bs-toggle="tab" data-bs-target="#tab-2-3" role="tab" aria-selected="false">
-                                        Advanced Technology
+                                        Data Mining and Analytics
                                     </a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="nav-tabContent-2">
                                 <div class="tab-pane fade pt-60 active show" id="tab-2-1" role="tabpanel">
                                     <div class="row justify-content-center align-items-center justify-content-around">
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-12">
                                             <div class="feature-tab-info">
-                                                <h3>AI & Data Science</h3>
-                                                <p>Continually network effective bandwidth whereas goal-oriented schemas.
-                                                    Intrinsicly incentivize corporate synergy with accurate meta-services.
-                                                    Rapidiously parallel task bricks-and-clicks leadership skills with
-                                                    revolutionary convergence. </p>
-                                                <p>Conveniently develop innovative infomediaries for
-                                                    enabled functionalities. Dynamically coordinate leading-edge deliverables
-                                                    after virtual potentialities drive multidisciplinary infrastructures.</p>
-                                                <a href="about-us.html" class="read-more-link text-decoration-none mt-4 d-block">Know More About Us
-                                                    <i class="far fa-arrow-right ms-2"></i></a>
+                                                <div class="container">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col-lg-4 col-md-12">
+                                                            <div class="section-heading">
+                                                                <h5 class="h6 text-primary">Designers</h5>
+                                                                <h2>Opportunities for Designers and Digita content creators</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-12">
+                                                            <div class="text-end">
+                                                                <a href="{{ route('designers-info-entery-form') }}" class="btn btn-primary">Join Our Designer Pool</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Graphic Designers</h5>
+                                                                    <p class="mb-0 text-muted">Be shortlisted for a design opportunities with us.</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/2.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Wireframes Designers</h5>
+                                                                    <p class="mb-0 text-muted">Be shortlisted for a wireframing opportunities with us.</p>
+                                                                </div>
+                                                                {{-- <span class="badge position-absolute integration-badge bg-primary-soft px-3 py-2 text-primary">New</span> --}}
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/3.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>UI/UX Designers</h5>
+                                                                    <p class="mb-0 text-muted">
+                                                                        Be shortlisted for a UI/UX design opportunities with us.
+                                                                    </p>
+                                                                </div>
+                                                                {{-- <span class="badge position-absolute integration-badge bg-danger-soft px-3 py-2 text-danger">Premium</span> --}}
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-5">
-                                            <img src="assets/img/screen/widget-12.png" alt="feature tab" class="img-fluid mt-4 mt-lg-0 mt-xl-0">
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="tab-pane fade pt-60" id="tab-2-2" role="tabpanel">
                                     <div class="row justify-content-center align-items-center justify-content-around">
-                                        <div class="col-lg-5">
-                                            <img src="assets/img/screen/widget-8.png" alt="feature tab" class="img-fluid mb-4 mb-lg-0 mb-xl-0">
-                                        </div>
-                                        <div class="col-lg-5">
+
+                                        <div class="col-lg-12">
                                             <div class="feature-tab-info">
-                                                <h3>Automation Power</h3>
-                                                <p>Conveniently develop innovative infomediaries for
-                                                    enabled functionalities. Dynamically coordinate leading-edge incentivize
-                                                    corporate synergy deliverables
-                                                    after virtual potentialities.</p>
-                                                <p>Continually network effective bandwidth whereas goal-oriented schemas.
-                                                    Intrinsicly with accurate meta-services.
-                                                    Rapidiously parallel task bricks-and-clicks leadership skills with
-                                                    revolutionary. </p>
-                                                <a href="about-us.html" class="read-more-link text-decoration-none mt-4 d-block">Know More About Us
-                                                    <i class="far fa-arrow-right ms-2"></i></a>
+                                                <div class="container">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col-lg-4 col-md-12">
+                                                            <div class="section-heading">
+                                                                <h5 class="h6 text-primary">Developers</h5>
+                                                                <h2>Opportunities for Developers, programmers and Software Engineers</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-12">
+                                                            <div class="text-end">
+                                                                <a href="{{ route('developers-info-entery-form') }}" class="btn btn-primary">Join Our Developer Pool</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Intranet-Extranet Distributed systems development</h5>
+                                                                    <p class="mb-0 text-muted">Be shortlisted for a design opportunities with us.</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/2.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Mobile Application Development</h5>
+                                                                    <p class="mb-0 text-muted">Be shortlisted for a Mobile applications opportunities with us.</p>
+                                                                </div>
+                                                                {{-- <span class="badge position-absolute integration-badge bg-primary-soft px-3 py-2 text-primary">New</span> --}}
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/3.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Web Applications Development</h5>
+                                                                    <p class="mb-0 text-muted">
+                                                                        Be shortlisted for Web application opportunities with us.
+                                                                    </p>
+                                                                </div>
+                                                                {{-- <span class="badge position-absolute integration-badge bg-danger-soft px-3 py-2 text-danger">Premium</span> --}}
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade pt-60" id="tab-2-3" role="tabpanel">
                                     <div class="row justify-content-center align-items-center justify-content-around">
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-12">
                                             <div class="feature-tab-info">
-                                                <h3>Advanced Technology</h3>
-                                                <p>Intrinsicly incentivize corporate synergy with accurate meta-services.
-                                                    Rapidiously parallel task bricks-and-clicks. Leadership skills with
-                                                    revolutionary convergence conveniently develop.</p>
-                                                <p>Continually expedite business systems without premier testing procedures.
-                                                    Phosfluorescently architect principle-centered e-tailers for progressive
-                                                    infomediaries. Distinctively maintain open-source solutions for
-                                                    process-centric imperatives. </p>
-                                                <a href="about-us.html" class="read-more-link text-decoration-none mt-4 d-block">Know More About Us
-                                                    <i class="far fa-arrow-right ms-2"></i></a>
+                                                <div class="container">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col-lg-4 col-md-12">
+                                                            <div class="section-heading">
+                                                                <h5 class="h6 text-primary">Developers</h5>
+                                                                <h2>Opportunities for Developers, programmers and Software Engineers</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 col-md-12">
+                                                            <div class="text-end">
+                                                                <a href="{{ route('developers-info-entery-form') }}" class="btn btn-primary">Join Our Developer Pool</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
+                                                                <div class="position-relative connected-app-content">
+                                                                    <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
+                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                    </div>
+                                                                    <h5>Data Science</h5>
+                                                                    <p class="mb-0 text-muted">Be shortlisted for data science opportunities with us.</p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-5">
-                                            <img src="assets/img/screen/widget-11.png" alt="feature tab" class="img-fluid mt-4 mt-lg-0 mt-xl-0">
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -406,7 +507,7 @@
           <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top footer-light ptb-120">
+            <div class="footer-top bg-dark text-white ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -479,7 +580,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom footer-light py-4">
+            <div class="footer-bottom bg-dark text-white py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">

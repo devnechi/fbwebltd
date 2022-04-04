@@ -74,6 +74,7 @@ Route::get('/career-details', [App\Http\Controllers\PublicPagesController::class
 //developers pool forms
 Route::get('/collection-of-innovators', [App\Http\Controllers\PublicPagesController::class, 'alldevPoolForms'])->name('collection-of-innovators');
 Route::get('/developers-info-entery-form', [App\Http\Controllers\PublicPagesController::class, 'devRecruitForm'])->name('developers-info-entery-form');
+Route::get('/designers-info-entery-form', [App\Http\Controllers\PublicPagesController::class, 'designersRecruitForm'])->name('designers-info-entery-form');
 
 
 // Route::get('/about', 'PublicPagesController@about')->name('about');
