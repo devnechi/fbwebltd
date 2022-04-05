@@ -540,17 +540,19 @@
                                                     {{-- start dynamic fieds --}}
                                                     <div class="form-group col-lg-12">
                                                         <div class="form-group multiple-form-group" data-max=6>
-
                                                             <label for="formGroupExampleInput2">Link to</label>
                                                             <div class="form-group input-group">
-                                                              <input type="text" class="form-control" name="phonenumbers[]" id="phonenumbers" value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>" >
-                                                              <br />
-                                                            <label for="formGroupExampleInput2">URL</label>
-                                                            <input type="text" class="form-control" name="phonenumbers[]" id="phonenumbers" value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>" >
-                                                            <span class="input-group-btn"><button type="button" class="btn btn btn-primary mt-4 btn-add">+
-                                                            </button></span>
-                                                          </div>
-                                                      </div>
+                                                                <input type="text" class="form-control"
+                                                                    name="phonenumbers[]" placeholder="Ex. github" id="phonenumbers"
+                                                                    value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>">
+
+                                                                <label for="formGroupExampleInput2">URL</label>
+                                                                <input type="text" class="form-control"
+                                                                    name="phonenumbers[]" id="phonenumbers" placeholder="ex. github.com/dev"
+                                                                    value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>">
+                                                                <a href="#" class="btn btn-primary btn-add ">add +</a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     {{-- end dynamic fieds --}}
                                                 </div>
@@ -933,13 +935,15 @@
 
         function addob(e) {
 
-const obv = document.getElementById('pob');
-var n = '<a href="" class=" list-group-item" onclick="remofond(event)">' + obv.value + ' <span>&times;</span><input type="hidden" value="' + obv.value + '" name="project_objectives[]"></a>';
-if(obv.value!=""){
-$('.listob').append(n);
-obv.value="";
-}
-}
+            const obv = document.getElementById('pob');
+            var n = '<a href="" class=" list-group-item" onclick="remofond(event)">' + obv.value +
+                ' <span>&times;</span><input type="hidden" value="' + obv.value + '" name="project_objectives[]"></a>';
+            if (obv.value != "") {
+                $('.listob').append(n);
+                obv.value = "";
+            }
+        }
+
     </script>
 
 

@@ -353,9 +353,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 ">
-                                                        <label for="lastName" class="mb-1">Middle name</label>
+                                                        <label for="middleName" class="mb-1">Middle name</label>
                                                         <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Last name" aria-label="Last name">
+                                                            <input type="text" class="form-control" name="middleName" id="middleName" required placeholder="Middle name" aria-label="Middle name">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 ">
@@ -377,7 +377,7 @@
                                                     <div class="col-sm-6 ">
                                                         <label for="lastName" class="mb-1">Date of Birth</label>
                                                         <div class="input-group mb-3">
-                                                            <input type="date" class="form-control" name="lastName" id="lastName" required placeholder="Last name" aria-label="Last name">
+                                                            <input type="date" class="form-control" name="dob" id="dob" required placeholder="Date of Birth" aria-label="Date of Birth">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -406,9 +406,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 ">
-                                                        <label for="lastName" class="mb-1">Phone Number</label>
+                                                        <label for="phoneNumber" class="mb-1">Phone Number</label>
                                                         <div class="input-group mb-3">
-                                                            <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Last name" aria-label="Last name">
+                                                            <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" required placeholder="Phone number" aria-label="Last name">
                                                         </div>
                                                     </div>
 
