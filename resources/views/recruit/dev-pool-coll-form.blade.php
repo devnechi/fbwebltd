@@ -309,7 +309,7 @@
                         <p class="lead">
 
                             Join our pool of developers, programmers, creative designers and innovators to be
-                            shortlisted for a future projects.
+                            shortlisted in future projects.
                         </p>
                     </div>
                 </div>
@@ -338,15 +338,14 @@
                     <div class="col-lg-3 col-md-4 d-none d-md-block d-lg-block">
                         <div class="support-article-sidebar sticky-sidebar bg-light rounded-custom p-4 mt-5">
                             <ul class="nav flex-column nav-pills support-article-tab accordion-list w-100">
-                                <li class="nav-link"><a href="#faq-accordion-1" class="text-decoration-none">Personal
+                                <li class="nav-link"><a href="#dev-personal-info" class="text-decoration-none">Personal
                                         Details</a></li>
-                                <li class="nav-link"><a href="#faq-accordion-2" class="text-decoration-none"> Skills</a>
+                                <li class="nav-link"><a href="#dev-skills-info" class="text-decoration-none"> Skills</a>
                                 </li>
-                                <li class="nav-link"><a href="#faq-accordion-3"
-                                        class="text-decoration-none">Protfolio</a></li>
-                                <li class="nav-link"><a href="#faq-accordion-4"
+
+                                <li class="nav-link"><a href="#dev-education-info"
                                         class="text-decoration-none">Education</a></li>
-                                <li class="nav-link"><a href="#faq-accordion-4" class="text-decoration-none">Upload
+                                <li class="nav-link"><a href="#dev-documentaion-upload" class="text-decoration-none">Upload
                                         Documents</a></li>
                             </ul>
                         </div>
@@ -355,7 +354,7 @@
                         <form action="#" method="post" class="register-form">
                             @csrf
                             <div class="accordion-faq-content-wrap">
-                                <div id="faq-accordion-1" class="py-4">
+                                <div id="dev-personal-info" class="py-4">
                                     <h4>Fill all required areas</h4>
                                     <div class="accordion faq-accordion my-5" id="accordionExample-2">
                                         <div class="accordion-item border border-2 active">
@@ -466,7 +465,7 @@
 
                                     </div>
                                 </div>
-                                <div id="faq-accordion-2" class="py-4">
+                                <div id="dev-skills-info" class="py-4">
                                     <h4>Personal Skills</h4>
                                     <div class="accordion faq-accordion my-5" id="accordionExample-3">
                                         <div class="accordion-item border border-2">
@@ -561,7 +560,7 @@
                                     </div>
                                 </div>
 
-                                <div id="faq-accordion-3" class="py-4">
+                                <div id="dev-education-info" class="py-4">
                                     <h4>Education Level</h4>
                                     <div class="accordion faq-accordion my-5" id="accordionExample-4">
                                         <div class="accordion-item border border-2">
@@ -619,7 +618,7 @@
 
                                     </div>
                                 </div>
-                                <div id="faq-accordion-3" class="py-4">
+                                <div id="dev-documentaion-upload" class="py-4">
                                     <h4>Upload Documents</h4>
                                     <div class="accordion faq-accordion my-5" id="accordionExample-4">
                                         <div class="accordion-item border border-2">
@@ -692,61 +691,6 @@
 
                                     </div>
                                 </div>
-                                {{-- <div id="faq-accordion-4" class="py-4">
-                                <h4>Goals</h4>
-                                <div class="accordion faq-accordion my-5" id="accordionExample-5">
-                                    <div class="accordion-item border border-2">
-                                        <h5 class="accordion-header" id="faq-5-2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5-2" aria-expanded="false">
-                                                Future Goals
-                                            </button>
-                                        </h5>
-                                        <div id="collapse-5-2" class="accordion-collapse collapse" aria-labelledby="faq-5-2" data-bs-parent="#accordionExample-5">
-                                            <div class="accordion-body">
-                                                Continually innovate technically sound internal or "organic" sources
-                                                with market positioning content. Completely drive optimal intellectual
-                                                capital vis-a-vis global human capital. Intrinsicly administrate robust
-                                                materials and bleeding-edge resources. Dynamically envisioneer
-                                                next-generation markets vis-a-vis market-driven applications
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item border border-2">
-                                        <h5 class="accordion-header" id="faq-5-3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5-3" aria-expanded="false">
-                                                 Career Vision
-                                            </button>
-                                        </h5>
-                                        <div id="collapse-5-3" class="accordion-collapse collapse" aria-labelledby="faq-5-3" data-bs-parent="#accordionExample-5">
-                                            <div class="accordion-body">
-                                                Phosfluorescently deliver cooperative testing procedures after
-                                                integrated communities. Dramatically simplify resource-leveling models
-                                                with unique outsourcing. Professionally simplify covalent partnerships
-                                                whereas market positioning best practices. Collaboratively utilize
-                                                magnetic technology for robust technology.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item border border-2">
-                                        <h5 class="accordion-header" id="faq-5-4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5-4" aria-expanded="false">
-                                                Salary expectations
-                                            </button>
-                                        </h5>
-                                        <div id="collapse-5-4" class="accordion-collapse collapse" aria-labelledby="faq-5-4" data-bs-parent="#accordionExample-5">
-                                            <div class="accordion-body">
-                                                Credibly facilitate leveraged process improvements for equity invested
-                                                infrastructures. Continually mesh top-line human capital with
-                                                backward-compatible outsourcing. Rapidiously coordinate intuitive
-                                                deliverables rather than parallel metrics. Interactively monetize
-                                                customer directed convergence and parallel sources. Enthusiastically
-                                                architect client-centric e-services whereas granular e-commerce.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> --}}
                             </div>
                             <button type="submit" name="submit" value="submit"
                                 class="btn btn-primary mt-4">Submit</button>
