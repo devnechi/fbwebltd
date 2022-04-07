@@ -479,50 +479,58 @@
                                             <div id="collapse-3-2" class="accordion-collapse collapse"
                                                 aria-labelledby="faq-3-2" data-bs-parent="#accordionExample-3">
                                                 <div class="accordion-body">
-                                                    <div class="row">
-                                                        <div class="col-sm-6 ">
-                                                            <div class="form-group form-control-sm">
-                                                                <label for="exampleFormControlSelect1">Category</label>
-                                                                <select class="form-control"
-                                                                    id="exampleFormControlSelect1">
-                                                                    <option>Select</option>
-                                                                    <option>Full Stack Developer</option>
-                                                                    <option>Front-end developer</option>
-                                                                    <option>Back-end developer</option>
-                                                                    <option>Fairy programmer</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
 
-                                                    </div>
                                                     {{-- start dynamic fieds --}}
-                                                    <div class="row">
-                                                        <div class="col-sm-6 ">
-                                                            <label for="lastName" class="mb-1">Technical Skills</label>
-                                                            <div class="input-group mb-3">
-                                                                <input type="text" class="form-control" name="lastName"
-                                                                    id="lastName" required
-                                                                    placeholder="Ex. React, laravel, java, c#"
-                                                                    aria-label="Last name">
+                                                    <div class="form-group">
+                                                        <div class="form-group multiple-form-group" data-max=6>
+                                                            <div class="row">
+                                                                <div class="col-sm-6 ">
+                                                                    <div class="form-group form-control-sm">
+                                                                        <label for="exampleFormControlSelect1">Category</label>
+                                                                        <select class="form-control"
+                                                                            id="exampleFormControlSelect1">
+                                                                            <option>Select</option>
+                                                                            <option>Full Stack Developer</option>
+                                                                            <option>Front-end developer</option>
+                                                                            <option>Back-end developer</option>
+                                                                            <option>Fairy programmer</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-8">
-                                                            <div class="form-group form-control-sm">
-                                                                <label for="exampleFormControlSelect1">Level of
-                                                                    Technical Skill</label>
-                                                                <select class="form-control"
-                                                                    id="exampleFormControlSelect1">
-                                                                    <option>Select</option>
-                                                                    <option>Beginner</option>
-                                                                    <option>Intermediate</option>
-                                                                    <option>Master</option>
-                                                                    <option>Professional</option>
-                                                                </select>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-6 ">
+                                                                    <label for="lastName" class="mb-1">Technical Skills</label>
+                                                                    <div class="input-group mb-3">
+                                                                        <input type="text" class="form-control" name="lastName"
+                                                                            id="lastName" required
+                                                                            placeholder="Ex. React, laravel, java, c#"
+                                                                            aria-label="Last name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-8">
+                                                                    <div class="form-group form-control-sm">
+                                                                        <label for="exampleFormControlSelect1">Level of
+                                                                            Technical Skill</label>
+                                                                        <select class="form-control"
+                                                                            id="exampleFormControlSelect1">
+                                                                            <option>Select</option>
+                                                                            <option>Beginner</option>
+                                                                            <option>Intermediate</option>
+                                                                            <option>Master</option>
+                                                                            <option>Professional</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                <a href="#" class="btn btn-primary btn-add ">add +</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     {{-- end dynamic fieds --}}
-                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="accordion-item border border-2">
@@ -536,19 +544,37 @@
                                             <div id="collapse-3-3" class="accordion-collapse collapse"
                                                 aria-labelledby="faq-3-3" data-bs-parent="#accordionExample-3">
                                                 <div class="accordion-body">
-                                                    {{-- start dynamic fieds --}}
-                                                    <div class="form-group col-lg-12">
-                                                        <div class="form-group multiple-form-group" data-max=6>
-                                                            <label for="formGroupExampleInput2">Link to</label>
-                                                            <div class="form-group input-group">
-                                                                <input type="text" class="form-control"
-                                                                    name="phonenumbers[]" placeholder="Ex. github" id="phonenumbers"
-                                                                    value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>">
 
-                                                                <label for="formGroupExampleInput2">URL</label>
-                                                                <input type="text" class="form-control"
-                                                                    name="phonenumbers[]" id="phonenumbers" placeholder="ex. github.com/dev"
-                                                                    value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>">
+                                                    {{-- start dynamic fieds --}}
+                                                    <div class="form-group">
+                                                        <div class="form-group multiple-form-group" data-max=6>
+                                                            <div class="row">
+                                                                <div class="col-sm-6 ">
+                                                                    <div class="form-group form-control-sm">
+                                                                        <label for="exampleFormControlSelect1"> Link to <small>eg. instagram, codepen, stackoverflow etc</label>
+
+                                                                        <input type="text" class="form-control"
+                                                                        name="phonenumbers[]" placeholder="Ex. github" id="phonenumbers"
+                                                                        value="<?= isset($_POST['pobox']) ? $_POST['pobox'] : ''; ?>">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-8">
+                                                                    <label for="contactemail" class="mb-1">Url Link
+                                                                        @error('contactemail')
+                                                                        <span class="invalid-feedback" role="alert">
+                                                                            <span class="text-danger">*</span>
+                                                                        </span>
+                                                                        @enderror
+                                                                    </label>
+                                                                    <div class="input-group mb-3">
+                                                                        <input type="email" class="form-control"
+                                                                            name="contactemail" id="contactemail"
+                                                                            @error('contactemail') is-invalid @enderror required
+                                                                            placeholder="ex. github.com/dev" aria-label="Email">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                                 <a href="#" class="btn btn-primary btn-add ">add +</a>
                                                             </div>
                                                         </div>
@@ -558,8 +584,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
                                 <div id="dev-education-info" class="py-4">
                                     <h4>Education Level</h4>
                                     <div class="accordion faq-accordion my-5" id="accordionExample-4">
@@ -574,42 +598,54 @@
                                             <div id="collapse-4-4" class="accordion-collapse collapse"
                                                 aria-labelledby="faq-4-4" data-bs-parent="#accordionExample-4">
                                                 <div class="accordion-body">
-
                                                     <div class="row">
-                                                        <div class="col-sm-6 ">
-                                                            <div class="form-group form-control-sm">
-                                                                <label for="exampleFormControlSelect1">Level of
-                                                                    Education</label>
-                                                                <select class="form-control"
-                                                                    id="exampleFormControlSelect1">
-                                                                    <option>Select</option>
-                                                                    <option>Primary</option>
-                                                                    <option>Secondary</option>
-                                                                    <option>Diploma</option>
-                                                                    <option>Barchelors Degree</option>
-                                                                    <option>Masters Degree</option>
-                                                                    <option>Doctrate</option>
-                                                                    <option>Vacational Training</option>
+                                                        <div class="col-md-8">
+                                                            {{-- start dynamic fieds --}}
+                                                            <div class="form-group">
+                                                                <div class="form-group multiple-form-group" data-max=6>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6 ">
+                                                                            <div class="form-group form-control-sm">
+                                                                                <label for="exampleFormControlSelect1">Level of
+                                                                                    Education</label>
+                                                                                <select class="form-control"
+                                                                                    id="exampleFormControlSelect1">
+                                                                                    <option>Select</option>
+                                                                                    <option>Primary</option>
+                                                                                    <option>Secondary</option>
+                                                                                    <option>Diploma</option>
+                                                                                    <option>Barchelors Degree</option>
+                                                                                    <option>Masters Degree</option>
+                                                                                    <option>Doctrate</option>
+                                                                                    <option>Vacational Training</option>
 
-                                                                </select>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-8">
+                                                                            <label for="contactemail" class="mb-1">Name of Institution
+                                                                                @error('contactemail')
+                                                                                <span class="invalid-feedback" role="alert">
+                                                                                    <span class="text-danger">*</span>
+                                                                                </span>
+                                                                                @enderror
+                                                                            </label>
+                                                                            <div class="input-group mb-3">
+                                                                                <input type="email" class="form-control"
+                                                                                    name="contactemail" id="contactemail"
+                                                                                    @error('contactemail') is-invalid @enderror required
+                                                                                    placeholder="Ex. School" aria-label="Email">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                        <a href="#" class="btn btn-primary btn-add ">add +</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-8">
-                                                            <label for="contactemail" class="mb-1">Name of Institution
-                                                                @error('contactemail')
-                                                                <span class="invalid-feedback" role="alert">
-                                                                    <span class="text-danger">*</span>
-                                                                </span>
-                                                                @enderror
-                                                            </label>
-                                                            <div class="input-group mb-3">
-                                                                <input type="email" class="form-control"
-                                                                    name="contactemail" id="contactemail"
-                                                                    @error('contactemail') is-invalid @enderror required
-                                                                    placeholder="Ex. School" aria-label="Email">
-                                                            </div>
+                                                            {{-- end dynamic fieds --}}
                                                         </div>
                                                     </div>
+
 
                                                 </div>
                                             </div>
@@ -691,9 +727,10 @@
 
                                     </div>
                                 </div>
-                            </div>
-                            <button type="submit" name="submit" value="submit"
+                                <button type="submit" name="submit" value="submit"
                                 class="btn btn-primary mt-4">Submit</button>
+
+                            </div>
 
                         </form>
                     </div>
