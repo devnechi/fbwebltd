@@ -530,7 +530,6 @@
                                                         </div>
                                                     </div>
                                                     {{-- end dynamic fieds --}}
-
                                             </div>
                                         </div>
                                         <div class="accordion-item border border-2">

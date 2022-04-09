@@ -36,7 +36,7 @@ class ContactController extends Controller
              'subject' => 'required',
              'phone' => 'required',
              'message' => 'required',
-             'g-recaptcha-response.required' => 'Please complete the captcha',
+             'g-recaptcha-response' => 'required|recaptchav3:register,0.5',
 
          ]);
 
