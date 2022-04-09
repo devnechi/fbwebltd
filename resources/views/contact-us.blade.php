@@ -48,6 +48,7 @@
     {{-- <script src='https://www.google.com/recaptcha/api.js'></script> --}}
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {!! RecaptchaV3::initJs() !!}
 
 </head>
 
@@ -401,14 +402,14 @@
                                             </div>
                                         @endif --}}
                                         {{-- <div class="form-group">
-                                            <strong>Are you human?? :</strong>
+                                            <strong>Just making sure you are not a robot :</strong>
                                             {!! NoCaptcha::renderJs() !!}
                                             {!! NoCaptcha::display() !!}
                                          </div>
                                         </div> --}}
                                         <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
                                             <div class="col-md-6">
-                                                {!! RecaptchaV3::field('contactfbc') !!}
+                                                {!! RecaptchaV3::field('register') !!}
                                                 @if ($errors->has('g-recaptcha-response'))
                                                     <span class="help-block">
                                                         <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
@@ -416,6 +417,7 @@
                                                 @endif
                                             </div>
                                         </div>
+                                    </div>
                                         <div class="col-sm-6">
                                             <div class="form-group" style="display: none;">
                                                 <label for="simpfill">not to fill
