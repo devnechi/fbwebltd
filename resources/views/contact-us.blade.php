@@ -409,7 +409,7 @@
                                         </div> --}}
                                         <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
                                             <div class="col-md-6">
-                                                {!! RecaptchaV3::field('register') !!}
+                                                {!! RecaptchaV3::field('contactfbc') !!}
                                                 @if ($errors->has('g-recaptcha-response'))
                                                     <span class="help-block">
                                                         <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
