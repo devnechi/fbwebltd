@@ -4,9 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class Admin
+class NormalUser
 {
     /**
      * Handle an incoming request.
@@ -17,15 +16,22 @@ class Admin
      */
     public function handle(Request $request, Closure $next)
     {
-
-        if(!Auth::check()){
+        if (!Auth::check()) {
             return redirect()->route('login');
         }
 
-         //role_id 1 = admin
-         if(Auth::user()->role_id == 1){
+        if (Auth::user()->role_id == 1) {
+            //to superadmin
+            return redirect()->route('main-admin');
+        }
+
+        if (Auth::user()->role_id == 2) {
+            //to admin
+            return redirect()->route('fbc-admin');
+        }
+
+        if (Auth::user()->role_id == 3) {
             return $next($request);
         }
-        // return $next($request);
     }
 }

@@ -67,5 +67,9 @@ class Kernel extends HttpKernel
 
         'usertype_id' => \App\Http\Middleware\UserType::class,
         'admin' => \App\Http\Middleware\Admin::class,
+        'main-admin' => \App\Http\Middleware\SuperAdmin::class,
+        'fbc-admin' => \App\Http\Middleware\Adminstrator::class,
+        'fbc-user' => \App\Http\Middleware\NormalUser::class
+
     ];
 }

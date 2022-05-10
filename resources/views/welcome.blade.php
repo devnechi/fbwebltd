@@ -440,22 +440,22 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-pen-nib icon-two"></i>
-                                <h5 class="h6">Personalized Design</h5>
-                                <p>Get solutions that built with intended user in mind.</p>
+                                <h5 class="h6">Personalized Designs</h5>
+                                <p>Get solutions that are built with the intended end-user in mind.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-chart-network icon-three"></i>
                                 <h5 class="h6">Adaptability (PWA's)</h5>
-                                <p>Digital solutions that work both online and offline situations.</p>
+                                <p>Digital solutions that work both online and offline situations and off-the-grid enviroments.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-bezier-curve icon-four"></i>
                                 <h5 class="h6">Tailored Solutions </h5>
-                                <p>Solutions that fit you current business process and operations.</p>
+                                <p>Solutions that fit your current business processes and operations.</p>
                             </div>
                         </div>
                     </div>
@@ -472,7 +472,7 @@
                         <div class="section-heading" data-aos="fade-up">
                             <h4 class="h5 text-primary">Features</h4>
                             <h2>Powerful Solutions for Your Business Needs</h2>
-                            <p>Implement digital strategies that are tailored for needs of your business with knowledge of what works for you.</p>
+                            <p>Implement digital strategies that are tailored for needs of your business with the knowledge of what works for you.</p>
                             <ul class="list-unstyled mt-5">
                                 <li class="d-flex align-items-start mb-4">
                                     <div class="icon-box bg-primary rounded me-4">

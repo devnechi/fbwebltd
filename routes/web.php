@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
- Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 // Route::get('/admin', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin');
 
 //email
@@ -82,3 +82,34 @@ Route::get('/designers-info-entery-form', [App\Http\Controllers\PublicPagesContr
 // Route::get('/business', 'PublicPagesController@business')->name('business');
 
 
+//member redirection routes
+//super admin
+
+//adminstator/admin/nomarl admin
+//nuser/normaluser
+// Route::get('/main-admin', 'SuperAdminController@index')->name('main-admin')->middleware('main-admin');
+// Route::get('/fbc-admin', 'NormalAdminController@index')->name('fbc-admin')->middleware('fbc-admin');
+// Route::get('/fbc-user', 'NormalUserController@index')->name('fbc-user')->middleware('fbc-user');
+// //previous/old controller below
+// Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');
+
+
+// Route::get('/main-admin', 'SuperAdminController@index')->name('main-admin');
+Route::get('/main-admin', [App\Http\Controllers\SuperAdminController::class, 'index'])->name('main-admin');
+//super admin routes
+Route::get('/manage-users', [App\Http\Controllers\SuperAdminController::class, 'navManageUsers'])->name('manage-users');
+Route::get('/add-new-user', [App\Http\Controllers\SuperAdminController::class, 'navManageUsers'])->name('add-new-user');
+Route::get('/manage-projects', [App\Http\Controllers\SuperAdminController::class, 'navManageProjects'])->name('manage-projects');
+Route::get('/add-new-project', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewProject'])->name('add-new-project');
+Route::get('/manage-human-resource-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageHRactivities'])->name('manage-human-resource-activities');
+Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
+Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
+
+
+
+Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');
+Route::get('/fbc-user', [App\Http\Controllers\NormalUserController::class, 'index'])->name('fbc-user');
+
+
+Route::get('/fbc-admin', 'NormalAdminController@index')->name('fbc-admin');
+Route::get('/fbc-user', 'NormalUserController@index')->name('fbc-user');

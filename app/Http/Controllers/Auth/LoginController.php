@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -33,12 +34,36 @@ class LoginController extends Controller
      protected $redirectTo;
     public function redirectTo(){
 
-        if (Auth::user()->usertype_id == 1){
-            $this->redirectTo = '/admin';
-                return $this->redirectTo;
-        }else{
-            $this->redirectTo = '/login';
+        // if (Auth::user()->usertype_id == 1){
+        //     $this->redirectTo = '/admin';
+        //         return $this->redirectTo;
+        // }else{
+        //     $this->redirectTo = '/login';
+        //     return $this->redirectTo;
+        // }
+
+
+        // dd(Auth::user()->role_id);
+
+        switch(Auth::user()->role_id){
+            case 1:
+                //to super admin
+            $this->redirectTo = '/main-admin';
             return $this->redirectTo;
+                break;
+            case 2:
+                //to future basics admin
+                $this->redirectTo = '/fbc-admin';
+                return $this->redirectTo;
+                break;
+            case 3:
+                //to normal user
+                $this->redirectTo = '/fbc-user';
+                return $this->redirectTo;
+                break;
+            default:
+                $this->redirectTo = '/login';
+                return $this->redirectTo;
         }
     }
 
