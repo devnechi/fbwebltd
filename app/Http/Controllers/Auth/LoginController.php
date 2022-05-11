@@ -68,34 +68,6 @@ class LoginController extends Controller
     }
 
 
-    // public function login(Request $request)
-    // {
-    //     $input = $request->all();
-
-    //     $this->validate($request, [
-    //         'email' => 'required|email',
-    //         'password' => 'required',
-    //     ]);
-
-    //     // var_dump($input);
-    //     if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
-    //     {
-    //         if (auth()->user()->usertype_id == 1) {
-    //              return redirect()->route('home');
-    //              //$u = auth()->user()->usertype_id;
-    //             //var_dump($u);
-    //         }else{
-    //             return redirect()->route('home');
-    //         }
-    //         // var_dump($input['usertype_id']);
-    //     }else{
-    //         return redirect()->route('login')
-    //             ->with('error','Email-Address And Password Are Wrong.');
-    //     }
-
-    // }
-
-
       /**
      * Create a new controller instance.
      *
