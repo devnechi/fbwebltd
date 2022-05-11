@@ -19,14 +19,11 @@ class SuperAdminController extends Controller
     {
         //to super admin dashboard
          return view('main-admin.sadmin-dashboard');
-
-       //return dd(Auth::user()->role_id);
     }
 
     // super admin manage users
     public function navManageUsers(){
         return view('main-admin.fbc-users.user-management');
-
     }
 
     // super admin add new users
@@ -41,7 +38,6 @@ class SuperAdminController extends Controller
 
     // create new fbc-project
     public function navCreateNewProject(){
-
         return view('main-admin.fbc-projects.add-new-project');
     }
 
@@ -56,5 +52,26 @@ class SuperAdminController extends Controller
     public function navCreateNewPV(){
         return view('main-admin.fbc-fm.create-new-pv');
     }
+
+    public function navManageDevPool(){
+        return view('main-admin.careers.dev-pool.manage-engineers');
+    }
+
+    public function navCreateTalentPoster(){
+        return view('main-admin.careers.dev-pool.create-new-job-poster');
+    }
+
+    public function navManageCareerOppo(){
+        return view('main-admin.careers.oppo.manage-careers');
+    }
+
+    public function navManageApplicants(){
+        return view('main-admin.careers.oppo.applicants.manage-applicants');
+    }
+
+    public function navViewFullDetails(){
+        return view('main-admin.careers.oppo.applicants.view-applicants-full-details');
+    }
+
 }
 

@@ -105,6 +105,10 @@ Route::get('/manage-human-resource-activities', [App\Http\Controllers\SuperAdmin
 Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
 Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
 
+Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
+Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
+Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
+Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
 
 
 Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');
