@@ -10,9 +10,8 @@
                 <div class="col-lg-5 col-md-8 col-12">
                     <a href="{{ url('/') }}" class="mb-4 d-block text-center"><img src="img/fb_og_logo.png" alt="logo" class="img-fluid"></a>
                     <div class="register-wrap p-5 bg-light shadow rounded-custom">
-                        <h1 class="fw-bold h3">Forgot your Password?</h1>
-                        <p class="text-muted">Don't worry. Type your email and we will send a password recovery link to
-                            your email..</p>
+                        <h1 class="fw-bold h3">Create New Password</h1>
+                        <p class="text-muted">Enter your new password..</p>
 
                             @if (Session::has('message'))
                             <div class="alert alert-success" role="alert">
@@ -20,7 +19,10 @@
                            </div>
                        @endif
 
-                        <form action="{{ route('forget.password.post') }}" class="mt-5 register-form" method="POST">
+                        <form action="{{ route('reset.password.post') }}" class="mt-5 register-form" method="POST">
+                            @csrf
+                          <input type="hidden" name="token" value="{{ $token }}">
+
                             <div class="row">
                                 <div class="col-sm-12">
                                     <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
@@ -33,9 +35,34 @@
                                     @enderror
                                     </div>
                                 </div>
+                                <div class="col-sm-12">
+                                    <label for="password" class="mb-1">Password <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                       @enderror
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="password" class="mb-1">Confirm password <span
+                                            class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <input type="password" id="password-confirm" class="form-control" aria-label="Password-confirm" @error('password-confirm') is-invalid @enderror" name="password-confirm" required autocomplete>
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                       @enderror
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary mt-3 d-block w-100">
-                                        {{ __('Send Password reset link') }}
+                                        {{ __('Reset password') }}
                                     </button>
                                 </div>
                             </div>

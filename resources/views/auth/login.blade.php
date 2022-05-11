@@ -12,36 +12,37 @@
                             <h1 class="h3">Nice to Seeing You Again</h1>
                             <p class="text-muted">Please log in to gain access.</p>
 
-                            <div class="action-btns">
+                            {{-- <div class="action-btns">
                                 <a href="#" class="btn google-btn bg-white shadow-sm mt-4 d-block d-flex align-items-center text-decoration-none justify-content-center">
                                     <img src="img/google-icon.svg" alt="google" class="me-3">
                                     <span>Connect with Google</span>
                                 </a>
-                            </div>
-                            <div class="position-relative d-flex align-items-center justify-content-center mt-4 py-4">
+                            </div> --}}
+                            {{-- <div class="position-relative d-flex align-items-center justify-content-center mt-4 py-4">
                                 <span class="divider-bar"></span>
                                 <h6 class="position-absolute text-center divider-text bg-light mb-0">Or</h6>
-                            </div>
+                            </div> --}}
                             <form method="POST" action="{{ route('login') }}" class="mt-4 register-form">
                                 @csrf
 
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <label for="email" class="mb-1">{{ __('E-Mail Address') }} <span class="text-danger">*</span></label>
-                                        <div class="input-group mb-3">
-                                            <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" id="email" required aria-label="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                                            @error('email')
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                    <div class="col-lg-12">
+                                        <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                        </div>
                                     </div>
+                                </div>
+                                <div class="row">
+
                                     <div class="col-sm-12">
                                         <label for="password" class="mb-1">Password <span
                                                 class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
-                                            <input type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                            <input id="password" type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                             @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

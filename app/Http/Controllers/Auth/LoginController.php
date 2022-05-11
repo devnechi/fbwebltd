@@ -33,42 +33,34 @@ class LoginController extends Controller
      protected $redirectTo;
     public function redirectTo(){
 
-        if (Auth::user()->usertype_id == 1){
-            $this->redirectTo = '/admin';
-                return $this->redirectTo;
-        }else{
-            $this->redirectTo = '/login';
+        // if (Auth::user()->role_id == 1){
+        //     $this->redirectTo = '/admin';
+        //         return $this->redirectTo;
+        // }else{
+        //     $this->redirectTo = '/login';
+        //     return $this->redirectTo;
+        // }
+        switch(Auth::user()->role_id){
+            case 1:
+                //to super admin
+            $this->redirectTo = '/main-admin';
             return $this->redirectTo;
+                break;
+            case 2:
+                //to future basics admin
+                $this->redirectTo = '/fbc-admin';
+                return $this->redirectTo;
+                break;
+            case 3:
+                //to normal user
+                $this->redirectTo = '/fbc-user';
+                return $this->redirectTo;
+                break;
+            default:
+                $this->redirectTo = '/login';
+                return $this->redirectTo;
         }
     }
-
-
-    // public function login(Request $request)
-    // {
-    //     $input = $request->all();
-
-    //     $this->validate($request, [
-    //         'email' => 'required|email',
-    //         'password' => 'required',
-    //     ]);
-
-    //     // var_dump($input);
-    //     if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
-    //     {
-    //         if (auth()->user()->usertype_id == 1) {
-    //              return redirect()->route('home');
-    //              //$u = auth()->user()->usertype_id;
-    //             //var_dump($u);
-    //         }else{
-    //             return redirect()->route('home');
-    //         }
-    //         // var_dump($input['usertype_id']);
-    //     }else{
-    //         return redirect()->route('login')
-    //             ->with('error','Email-Address And Password Are Wrong.');
-    //     }
-
-    // }
 
 
       /**
