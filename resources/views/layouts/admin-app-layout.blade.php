@@ -43,7 +43,7 @@
      {{-- <script src='https://www.google.com/recaptcha/api.js'></script> --}}
 
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     {!! RecaptchaV3::initJs() !!}
+     {{-- {!! RecaptchaV3::initJs() !!} --}}
     <style>
         @import url(https://fonts.googleapis.com/css?family=Nunito);
         @charset "UTF-8";
@@ -11696,6 +11696,14 @@
 
 <body>
     <div id="app">
+     {{-- <!--preloader start-->
+    <div id="preloader">
+        <div class="preloader-wrap">
+            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <!--preloader end--> --}}
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">

@@ -7,7 +7,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-5 col-md-8 col-12">
                         <a href="{{ url('/') }}" class="mb-4 d-block text-center">
-                            <img src="img/fb_og_logo.png" alt="logo" class="img-fluid"></a>
+                            <img src="img/fb_og_logo.png" alt="Future Basics" class="img-fluid"></a>
                         <div class="register-wrap p-5 bg-light shadow rounded-custom">
                             <h1 class="h3">Nice to Seeing You Again</h1>
                             <p class="text-muted">Please log in to gain access.</p>
@@ -79,6 +79,10 @@
                                         Forgot password
                                     </a> --}}
                                     @endif
+                                </p>
+                                <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">Did you forget your password?
+                                     <a href="{{ route('forget.password.get') }}" class="text-decoration-none">click here</a>
+                                    <br>
                                 </p>
                             </form>
                         </div>

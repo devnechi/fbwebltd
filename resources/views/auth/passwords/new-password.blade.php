@@ -8,7 +8,9 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-5 col-md-8 col-12">
-                    <a href="{{ url('/') }}" class="mb-4 d-block text-center"><img src="img/fb_og_logo.png" alt="logo" class="img-fluid"></a>
+                    {{-- <a href="{{ url('/') }}" class="mb-4 d-block text-center">
+                        <img src="public/img/fb_og_logo.png" alt="logo" class="img-fluid">
+                    </a> --}}
                     <div class="register-wrap p-5 bg-light shadow rounded-custom">
                         <h1 class="fw-bold h3">Create New Password</h1>
                         <p class="text-muted">Enter your new password..</p>
@@ -27,36 +29,41 @@
                                 <div class="col-sm-12">
                                     <label for="email" class="mb-1">Email <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" id="email" required aria-label="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                         @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    @if ($errors->has('email'))
+                                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                                      @endif
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <label for="password" class="mb-1">Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                        <input id="password" type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                        @enderror
+                                       @if ($errors->has('password'))
+                                       <span class="text-danger">{{ $errors->first('password') }}</span>
+                                   @endif
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
-                                    <label for="password" class="mb-1">Confirm password <span
+                                    <label for="confirm-password" class="mb-1">Confirm password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="password" id="password-confirm" class="form-control" aria-label="Password-confirm" @error('password-confirm') is-invalid @enderror" name="password-confirm" required autocomplete>
-                                        @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                       @enderror
+                                        <input type="password" id="password-confirm" class="form-control" aria-label="Password-confirm" @error('password-confirm') is-invalid @enderror" name="password_confirmation" required autocomplete>
+
+                                       @if ($errors->has('password_confirmation'))
+                                       <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
+                                       @endif
                                     </div>
                                 </div>
 

@@ -140,7 +140,21 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                {{-- <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a> --}}
+                                @guest
+                                @if (Route::has('login'))
+                                    <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                @endif
+                            @else
+                            <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+
+                            @endguest
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
@@ -282,7 +296,20 @@
                                 </li>
                             </ul>
                             <div class="action-btns mt-4 ps-3">
-                                <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                    @guest
+                                        @if (Route::has('login'))
+                                            <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                        @endif
+                                    @else
+                                    <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+
+                                    @endguest
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
                             </div>
                         </div>
