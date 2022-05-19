@@ -22,13 +22,13 @@ class CreateUsersTable extends Migration
             $table->string('gender_id')->nullable();
             $table->integer('role_id');
             $table->string('job_title');
-            $table->string('job_desc');
+            $table->longText('job_desc');
             $table->string('phonenumber');
             $table->string('type_of_employee');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('user_photo_id');
-            $table->string('user_contract_id');
+            $table->string('user_photo_id')->nullable();
+            $table->string('user_contract_id')->nullable();
             $table->integer('acc_status')->nullable();
             $table->integer('created_by');
             $table->string('last_active');

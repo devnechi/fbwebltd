@@ -86,6 +86,8 @@ Route::get('forget-password', [App\Http\Controllers\Auth\ForgotPasswordControlle
 Route::post('forget-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
 Route::get('reset-password/{token}', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+Route::get('/changePassword', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showChangePasswordGet'])->name('changePasswordGet');
+Route::post('/changePassword', [App\Http\Controllers\Auth\ResetPasswordController::class, 'changePasswordPost'])->name('changePasswordPost');
 
 // Route::get('/about', 'PublicPagesController@about')->name('about');
 
@@ -108,12 +110,18 @@ Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController
 Route::get('/main-admin', [App\Http\Controllers\SuperAdminController::class, 'index'])->name('main-admin');
 //super admin routes
 Route::get('/manage-users', [App\Http\Controllers\SuperAdminController::class, 'navManageUsers'])->name('manage-users');
-Route::get('/add-new-user', [App\Http\Controllers\SuperAdminController::class, 'navManageUsers'])->name('add-new-user');
+Route::get('/add-new-user', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewUser'])->name('add-new-user');
+Route::post('create-new-user', [App\Http\Controllers\SuperAdminController::class, 'storeNewUser'])->name('create-new-user');
+
+
+
 Route::get('/manage-projects', [App\Http\Controllers\SuperAdminController::class, 'navManageProjects'])->name('manage-projects');
 Route::get('/add-new-project', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewProject'])->name('add-new-project');
 Route::get('/manage-human-resource-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageHRactivities'])->name('manage-human-resource-activities');
 Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
 Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
+Route::get('/manage-careers-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageDevPool'])->name('manage-careers-opportunities');
+Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateTalentPoster'])->name('create-new-career-opportunity');
 
 
 

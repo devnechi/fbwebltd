@@ -42,7 +42,6 @@ class LoginController extends Controller
         //     return $this->redirectTo;
         // }
 
-
         // dd(Auth::user()->role_id);
 
         switch(Auth::user()->role_id){

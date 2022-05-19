@@ -11690,6 +11690,10 @@
             background-color: #0488ae;
         }
 
+        .currentColor{
+            color: #0f323c;
+        }
+
     </style>
 
 </head>
@@ -11724,7 +11728,7 @@
                     <li><a href="{{ route('manage-human-resource-activities') }}">HR Management</a></li>
 
                     <!-- <li><a href="dlab_data_tests.php"> Data Mapping</a></li> -->
-                    <li><a href="#">Careers and Opportunities</a></li>
+                    <li><a href="{{ route('manage-careers-opportunities') }}">Careers and Opportunities</a></li>
                     <li>
                         <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">

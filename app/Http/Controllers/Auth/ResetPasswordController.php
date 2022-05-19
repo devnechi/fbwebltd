@@ -13,6 +13,9 @@ use Mail;
 use Hash;
 use Illuminate\Support\Str;
 
+
+use Auth;
+
 class ResetPasswordController extends Controller
 {
     /*
@@ -59,7 +62,7 @@ class ResetPasswordController extends Controller
               $message->subject('Reset Password');
           });
 
-           return back()->with('message', 'We have e-mailed your password reset link!');
+           return back()->with('message', 'We have e-mailed your password a reset link!');
         //dd(Auth::user()->role_id);
       }
 
@@ -94,4 +97,40 @@ class ResetPasswordController extends Controller
 
           return redirect('/login')->with('message', 'Your password has been changed!');
       }
+
+
+       /**
+       * Write code on Method to submit new password
+       *
+       * @return response()
+       */
+      public function showChangePasswordGet() {
+        return view('auth.passwords.change-password');
+    }
+
+    public function changePasswordPost(Request $request) {
+        if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
+            // The passwords matches
+            return redirect()->back()->with("error","Your current password does not matches with the password.");
+        }
+
+        if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
+            // Current password and new password same
+            return redirect()->back()->with("error","New Password cannot be same as your current password.");
+        }
+
+        $validatedData = $request->validate([
+            'current-password' => 'required',
+            'new-password' => 'required|string|min:8|confirmed',
+        ]);
+
+
+        //Change Password
+        $user = Auth::user();
+        $user->password = bcrypt($request->get('new-password'));
+        $user->save();
+        return redirect()->back()->with("success","Password successfully changed!");
+    }
+
+
 }

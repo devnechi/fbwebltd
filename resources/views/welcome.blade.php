@@ -141,7 +141,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 {{-- <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a> --}}
-                                @guest
+                                {{-- @guest
                                 @if (Route::has('login'))
                                     <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
                                 @endif
@@ -154,7 +154,7 @@
                                     @csrf
                                 </form>
 
-                            @endguest
+                            @endguest --}}
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">

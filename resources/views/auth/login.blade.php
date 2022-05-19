@@ -77,13 +77,20 @@
                                     </a> --}}
                                     {{-- <a href="{{ route('password.request') }}" class="text-decoration-none">
                                         Forgot password
-                                    </a> --}}
+                                    </a>
+                                     <a class="dropdown-item" href="{{ route('changePasswordGet') }}">Change Password </a>
+
+                                       --}}
                                     @endif
                                 </p>
                                 <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">Did you forget your password?
                                      <a href="{{ route('forget.password.get') }}" class="text-decoration-none">click here</a>
                                     <br>
                                 </p>
+                                <p class="font-monospace fw-medium text-center text-muted mt-3 pt-4 mb-0">Did you forget your password?
+                                    <a href="{{ route('changePasswordGet') }}" class="text-decoration-none">click here</a>
+                                   <br>
+                               </p>
                             </form>
                         </div>
                     </div>
