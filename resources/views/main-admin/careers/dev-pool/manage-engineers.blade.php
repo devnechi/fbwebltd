@@ -5,38 +5,59 @@
   <!--contact us form start-->
   <section class="contact-us-form pt-60 pb-120" style="background: url('img/shape/contact-us-bg.svg')no-repeat center bottom">
     <div class="container">
-        <br/><br/>
-        @if (Session::has('success'))
-                <div class="alert alert-info" id="al">{{ Session::get('success') }}
-                  <button class="close" onclick="document.getElementById('al').style.display='none'" >&cross;</button>
-                </div>
-        @endif
-        @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        {{-- start of contact form --}}
-      @endif
+
         <div class="row justify-content-lg-between align-items-center">
-            <div class="col-lg-6 col-md-8">
+            <div class="col-lg-12 col-md-8">
                 <div class="section-heading">
-                    <h2>Manage Talents</h2>
+                    <h2>Manage Dev Pool Career</h2>
                     <p>We are always available anytime for coffee, a quick chat, phone call or a meeting. just reach out to us and We will contact you.</p>
                 </div>
+
                 <div class="col-lg-12 col-md-8">
-                    <a href="{{ route('create-new-career-opportunity') }}" class="btn btn-primary">Add New Opportunity</a>
-                    </div>
-                    <br />
+                <a href="{{ route('create-new-dev-pool-opportunity') }}" class="btn btn-primary">Add </a>
+                </div>
+                <br />
+                {{-- <div class="clearfix"></div> --}}
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Short Description</th>
+                        <th scope="col">Date created</th>
+                        <th scope="col">Date updated</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
-            <div class="col-lg-5 col-md-10">
-                {{-- <div class="contact-us-img">
-                    <img src="img/contact-us-img-2.svg" alt="contact us" class="img-fluid">
-                </div> --}}
-            </div>
+
         </div>
     </div>
 </section>

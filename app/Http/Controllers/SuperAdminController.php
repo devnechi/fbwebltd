@@ -158,12 +158,63 @@ class SuperAdminController extends Controller
         return view('main-admin.careers.dev-pool.manage-engineers');
     }
 
+
     public function navCreateTalentPoster(){
+
+        $dt = new \Carbon\Carbon();
+
+            $legal_date = $request-> get('dob');
+            $before = $dt->subYears(20)->format('Y-m-d');
+
+                $request->validate([
+                    'category'=>'required',
+                    'title'=>'required',
+                    'company'=>'required',
+                    'added_by'=>'required|date|before:' . $before,
+                    'job-position'=>'required',
+                    'type-of-offer'=>'required',
+                    'upload-banner-photo'=>'required|unique:users,job_title',
+                    'job_desc'=>'required',
+                    'phonenumber'=>'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+                    'type_of_employee'=>'required',
+                    'acc_status'=>'required',
+                    'job_icon' => 'required|image|mimes:jpg,png,jpeg,gif,svg|min:1|max:2048'
+                ],
+                [
+                    'email.required'    => 'Please Provide an Email Address For the user, Thank You.',
+                    'email.unique'      => 'Denied, This emails is already in use, Provide another.',
+                    'password.required' => 'Password is Required, Thank You.',
+                    'password.min'      => 'Please select a Strong Password, Thank You.',
+                    'dob.before'      => 'User should be atleast 20 years of age.',
+                    'userPhoto.image'      => 'User Photo should be an image.',
+                    'userPhoto.mimes'      => 'File exestion is not supported.',
+                    'userPhoto.max'      => 'User photo should be less than 25MB.'
+
+
+                ]);
+
         return view('main-admin.careers.dev-pool.create-new-job-poster');
     }
 
+    public function storeNewCareerOppo(Request $request)
+    {
+        $dt = new \Carbon\Carbon();
+        $request->validate([
+            'addedby',
+            'category-type',
+            'title',
+            'company',
+            'job-icon',
+            'job_desc']);
+
+    }
+
+
     public function navManageCareerOppo(){
         return view('main-admin.careers.oppo.manage-careers');
+    }
+    public function navCreateCareerPoster(){
+        return view('main-admin.careers.oppo.create-new-opportunity');
     }
 
     public function navManageApplicants(){

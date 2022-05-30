@@ -140,7 +140,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                {{-- <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a> --}}
+                                <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                                 {{-- @guest
                                 @if (Route::has('login'))
                                     <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>

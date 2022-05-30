@@ -120,14 +120,17 @@ Route::get('/add-new-project', [App\Http\Controllers\SuperAdminController::class
 Route::get('/manage-human-resource-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageHRactivities'])->name('manage-human-resource-activities');
 Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminController::class, 'navManageFMactivities'])->name('manage-financial-activities');
 Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
-Route::get('/manage-careers-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageDevPool'])->name('manage-careers-opportunities');
-Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateTalentPoster'])->name('create-new-career-opportunity');
 
+Route::get('/manage-career-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageCareerOppo'])->name('manage-career-opportunities');
+Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateCareerPoster'])->name('create-new-career-opportunity');
+Route::post('submit-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewCareerOppo'])->name('submit-new-career-opportunity');
+
+Route::get('/manage-dev-pool-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageDevPool'])->name('manage-dev-pool-opportunities');
+Route::get('/create-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateTalentPoster'])->name('create-new-dev-pool-opportunity');
+Route::post('submit-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewDevPoolOppo'])->name('submit-new-dev-pool-opportunity');
 
 
 Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');
 Route::get('/fbc-user', [App\Http\Controllers\NormalUserController::class, 'index'])->name('fbc-user');
-
-
 Route::get('/fbc-admin', 'NormalAdminController@index')->name('fbc-admin');
 Route::get('/fbc-user', 'NormalUserController@index')->name('fbc-user');
