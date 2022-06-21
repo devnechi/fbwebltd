@@ -48,5 +48,14 @@ class ForgotPasswordController extends Controller
          return view('auth.passwords.new-password', ['token' => $token]);
       }
 
+          /**
+       * Write code on Method
+       *
+       * @return response()
+       */
+      public function showChangePasswordForm($token) {
+        return view('auth.passwords.change-password', ['token' => $token]);
+     }
+
 
 }

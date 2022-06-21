@@ -91,13 +91,49 @@ class ResetPasswordController extends Controller
           }
 
           $user = User::where('email', $request->email)
-                      ->update(['password' => Hash::make($request->password)]);
+                      ->update(['password' => Hash::make($request->password),
+                                'email_verified_at' => Now(),
+                                'updated_at' => Now()]);
 
           DB::table('password_reset')->where(['email'=> $request->email])->delete();
 
           return redirect('/login')->with('message', 'Your password has been changed!');
       }
 
+      /**
+       * Write code on Method to submit new password
+       *
+       * @return response()
+       */
+      public function submitChangePasswordForm(Request $request)
+      {
+          $request->validate([
+              'email' => 'required|email|exists:users',
+              'current_password' => 'required',
+              'password' => 'required|string|min:6|confirmed',
+              'password_confirmation' => 'required'
+          ]);
+
+          $updatePassword = DB::table('password_reset')
+                              ->where([
+                                'email' => $request->email,
+                                'token' => $request->token
+                              ])
+                              ->first();
+
+          if(!$updatePassword){
+              return back()->withInput()->with('error', 'Invalid token!');
+          }
+
+          $user = User::where('email', $request->email)
+                      ->update(['password' => Hash::make($request->password),
+                      'email_verified_at' => Now(),
+                      'updated_at' => Now()]);
+
+          DB::table('password_reset')->where(['email'=> $request->email])->delete();
+
+          return redirect('/login')->with('message', 'Your password has been changed!');
+      }
 
        /**
        * Write code on Method to submit new password
@@ -109,25 +145,25 @@ class ResetPasswordController extends Controller
     }
 
     public function changePasswordPost(Request $request) {
-        if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
+        if (!(Hash::check($request->get('current_password'), Auth::user()->password))) {
             // The passwords matches
             return redirect()->back()->with("error","Your current password does not matches with the password.");
         }
 
-        if(strcmp($request->get('current-password'), $request->get('new-password')) == 0){
+        if(strcmp($request->get('current_password'), $request->get('password')) == 0){
             // Current password and new password same
             return redirect()->back()->with("error","New Password cannot be same as your current password.");
         }
 
         $validatedData = $request->validate([
-            'current-password' => 'required',
-            'new-password' => 'required|string|min:8|confirmed',
+            'current_password' => 'required',
+            'password' => 'required|string|min:8|confirmed',
         ]);
 
 
         //Change Password
         $user = Auth::user();
-        $user->password = bcrypt($request->get('new-password'));
+        $user->password = bcrypt($request->get('password'));
         $user->save();
         return redirect()->back()->with("success","Password successfully changed!");
     }

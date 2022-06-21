@@ -85,6 +85,12 @@ Route::get('/designers-info-entery-form', [App\Http\Controllers\PublicPagesContr
 Route::get('forget-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
 Route::get('reset-password/{token}', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::get('change-password/{token}', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showChangePasswordForm'])->name('change.password.get');
+Route::post('change-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitChangePasswordForm'])->name('change.password.post');
+
+//Route::post('forget-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
+
+
 Route::post('reset-password', [App\Http\Controllers\Auth\ResetPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
 Route::get('/changePassword', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showChangePasswordGet'])->name('changePasswordGet');
 Route::post('/changePassword', [App\Http\Controllers\Auth\ResetPasswordController::class, 'changePasswordPost'])->name('changePasswordPost');
@@ -122,12 +128,12 @@ Route::get('/manage-financial-activities', [App\Http\Controllers\SuperAdminContr
 Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminController::class, 'navCreateNewPV'])->name('create-new-payment-voucher');
 
 Route::get('/manage-career-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageCareerOppo'])->name('manage-career-opportunities');
-Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateCareerPoster'])->name('create-new-career-opportunity');
+Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateCareerOppo'])->name('create-new-career-opportunity');
 Route::post('submit-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewCareerOppo'])->name('submit-new-career-opportunity');
 
 Route::get('/manage-dev-pool-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageDevPool'])->name('manage-dev-pool-opportunities');
-Route::get('/create-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateTalentPoster'])->name('create-new-dev-pool-opportunity');
-Route::post('submit-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewDevPoolOppo'])->name('submit-new-dev-pool-opportunity');
+Route::get('/create-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateDevPoolOppo'])->name('create-new-dev-pool-opportunity');
+Route::post('submit-new-dev-oppo-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewDevPoolOppo'])->name('submit-new-career-opportunity');
 
 
 Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');

@@ -11772,6 +11772,15 @@
     </div>
     </div>
 
+        <!--build:js-->
+        <script src="js/vendors/jquery-3.6.0.min.js"></script>
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <script src="js/vendors/swiper-bundle.min.js"></script>
+        <script src="js/vendors/jquery.magnific-popup.min.js"></script>
+        <script src="js/vendors/parallax.min.js"></script>
+        <script src="js/vendors/aos.js"></script>
+        <script src="js/app.js"></script>
+        <!--endbuild-->
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->

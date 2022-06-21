@@ -197,9 +197,9 @@
                                     <div class="input-group mb-3">
                                         <select class="form-select" name="acc_status" value="{{ old('acc_status') }}" id="acc_status" aria-label="Default select example">
                                             <option selected>Account status</option>
-                                            <option value="active">Active</option>
-                                            <option value="standby">Stand by</option>
-                                            <option value="deactivated">Deactivated</option>
+                                            <option value="1">Active</option>
+                                            <option value="2">Stand by</option>
+                                            <option value="3">Deactivated</option>
                                           </select>
                                     </div>
                                 </div>

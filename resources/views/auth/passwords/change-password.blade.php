@@ -38,36 +38,51 @@
                             @endif
                         <form action="{{ route('changePasswordPost') }}" class="mt-5 register-form" method="POST">
                             @csrf
-                          {{-- <input type="hidden" name="token" value="{{ $token }}"> --}}
+                          <input type="hidden" name="token" value="{{ $token }}">
 
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <label for="current-password" class="mb-1">Enter Current Password <span
+                                    <label for="email" class="mb-1">Your Email <span class="text-danger">*</span></label>
+                                    <div class="input-group mb-3">
+                                        <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    @if ($errors->has('email'))
+                                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                                      @endif
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="current-password" class="mb-1">Your Enter Current Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input id="current-password" type="current-password" class="form-control {{ $errors->has('new-password') ? ' has-error' : '' }}" aria-label="cureent password" @error('current-password') is-invalid @enderror" name="current-password" required autocomplete="current-password">
-                                        @error('current-password')
+                                        <input id="current_password" type="password" class="form-control {{ $errors->has('new-password') ? ' has-error' : '' }}" aria-label="cureent password" @error('current-password') is-invalid @enderror" name="current_password" required autocomplete="current-password">
+                                        @error('current_password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                        @enderror
-                                       @if ($errors->has('current-password'))
-                                       <span class="text-danger">{{ $errors->first('current-password') }}</span>
+                                       @if ($errors->has('current_password'))
+                                       <span class="text-danger">{{ $errors->first('current_password') }}</span>
                                    @endif
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
+                                    <p>New password entry</p>
                                     <label for="password" class="mb-1">New Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input id="password" type="new-password" class="form-control" aria-label="Password" @error('new-password') is-invalid @enderror" name="new-password" required autocomplete="new-password">
-                                        @error('new-password')
+                                        <input id="password" type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="password">
+                                        @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                        @enderror
-                                       @if ($errors->has('new-password'))
-                                       <span class="text-danger">{{ $errors->first('new-password') }}</span>
+                                       @if ($errors->has('password'))
+                                       <span class="text-danger">{{ $errors->first('password') }}</span>
                                    @endif
                                     </div>
                                 </div>
@@ -75,10 +90,10 @@
                                     <label for="new-confirm-password" class="mb-1">Confirm New Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="password" id="new-password-confirm" class="form-control" aria-label="new-password-confirm" @error('new-password-confirm') is-invalid @enderror" name="new-password-confirmation" required autocomplete>
+                                        <input type="password" id="confirm_pass" class="form-control" aria-label="confirm_pass" @error('confirm_pass') is-invalid @enderror" name="confirm_pass" required autocomplete>
 
-                                       @if ($errors->has('new-password-confirmation'))
-                                       <span class="text-danger">{{ $errors->first('new-password-confirmation') }}</span>
+                                       @if ($errors->has('confirm_pass'))
+                                       <span class="text-danger">{{ $errors->first('confirm_pass') }}</span>
                                        @endif
                                     </div>
                                 </div>
@@ -89,9 +104,9 @@
                                     </button>
                                 </div>
                             </div>
-                            <p class="font-monospace fw-medium text-center mt-3 pt-4 mb-0">
+                            {{-- <p class="font-monospace fw-medium text-center mt-3 pt-4 mb-0">
                                 <a href="{{ route('login') }}" class="text-decoration-none">Back to login page</a>
-                            </p>
+                            </p> --}}
                         </form>
                     </div>
                 </div>
