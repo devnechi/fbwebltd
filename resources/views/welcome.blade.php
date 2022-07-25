@@ -433,8 +433,8 @@
                                 Future.</h2>
                             <p>
                                 We believe the future is digital ,
-and through innovation and techonology,
-we are leading our community into it.
+                                and through innovation and techonology,
+                                we are leading our community into it.
                             </p>
                         </div>
                     </div>
@@ -475,7 +475,7 @@ we are leading our community into it.
         <section class="video-promo-with-icon">
             <div class="container">
                 <div class="video-bg-with-icon" style="height: 680px; background: url('img/1.png')no-repeat center center / cover">
-                    {{-- <a href="https://www.youtube.com/embed/MuJQnSe1R5k" class="popup-youtube"><i class="fas fa-play"></i></a> --}}
+                    <a href="https://www.youtube.com/watch?v=MuJQnSe1R5k" class="popup-youtube"><i class="fas fa-play"></i></a>
 
                 </div>
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MuJQnSe1R5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
