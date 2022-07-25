@@ -2,13 +2,10 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-
     <!--required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
     <!--twitter og-->
     <meta name="twitter:site" content="@themetags">
     <meta name="twitter:creator" content="@themetags">
@@ -16,7 +13,6 @@
     <meta name="twitter:title" content="Future Basics - Creators of livestoka, radarmile and avorra.">
     <meta name="twitter:description" content="Future Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="twitter:image" content="#">
-
     <!--facebook og-->
     <meta property="og:url" content="#">
     <meta name="twitter:title" content="Future Basics - Creators of livestoka, radarmile and avorra">
@@ -26,17 +22,13 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
-
     <!--meta-->
     <meta name="description" content="Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
-
     <!--favicon icon-->
     <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
-
     <!--title-->
     <title>{{ config('app.name', 'FutureBasics') }}</title>
-
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -44,18 +36,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
     <!-- endbuild -->
-
     <!--custom css start-->
     {{-- <link rel="stylesheet" href="css/custom.css"> --}}
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
     <!--custom css end-->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-
-
 </head>
 
 <body>
@@ -105,6 +91,15 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-globe"></i></span>
+                                                <div class="drop-title">Website Development</div>
+                                            </a>
+
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                <div class="drop-title">Mobile App Development</div>
+                                            </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
@@ -113,8 +108,16 @@
                                                 <div class="drop-title">Prototyping</div>
                                             </a>
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bars"></i></span>
+                                                <span class="me-2"><i class="far fa-code-fork"></i></span>
                                                 <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                <div class="drop-title">Business System Development</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
                                             {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
@@ -233,7 +236,15 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-globe"></i></span>
+                                                    <div class="drop-title">Website Development</div>
+                                                </a>
 
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                    <div class="drop-title">Mobile App Development</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
@@ -245,7 +256,14 @@
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
                                                     <div class="drop-title">Software Eng.</div>
                                                 </a>
-
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                    <div class="drop-title">Business System Development</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                    <div class="drop-title">Branding & Digital Strategizing</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -328,7 +346,11 @@
                     <div class="col-xl-5 col-lg-5">
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start mt-5 mt-lg-0 mt-xl-0" data-aos="fade-up">
                             <h1 class="fw-bold display-5">Simplified, Tailored and Innovative Digital Solutions</h1>
-                            <p class="lead"> Proactively integrating communities, businesses and individuals with the use of technology and digital solutions.</p>
+                            <p class="lead">
+                                We support business, corporate and
+                                community development through
+                                innovation and technology.
+                            </p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
                                 {{-- <form id="subscribe-form" name="email-form" class="hero-subscribe-form d-block d-lg-flex d-md-flex">
                                     <input type="email" class="form-control me-2" name="Email" data-name="Email" placeholder="Enter Your Email Address" id="email-address" required="">
@@ -407,8 +429,13 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
-                            <h2>We Are Passionate in Everything We Do</h2>
-                            <p>Progressively increasing customer satisfaction, automating business processes and building digital strategies that improve customer acquisition. </p>
+                            <h2>Leading Our Community Into The
+                                Future.</h2>
+                            <p>
+                                We believe the future is digital ,
+and through innovation and techonology,
+we are leading our community into it.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -459,8 +486,10 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-chart-pie-alt icon-one"></i>
-                                <h5 class="h6">Practical Solutions</h5>
-                                <p>Digital solutions that are of concern and fitting to your business.
+                                <h5 class="h6">Effective Solutions</h5>
+                                <p>
+                                    Efficient solutions that work
+in the real world.
                                 </p>
                             </div>
                         </div>
@@ -474,15 +503,20 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-chart-network icon-three"></i>
-                                <h5 class="h6">Adaptability (PWA's)</h5>
-                                <p>Digital solutions that work both online and offline situations and off-the-grid enviroments.</p>
+                                <h5 class="h6">Versatile Solutions</h5>
+                                <p>
+                                    Digital solutions that
+                                    continoulsy adapt to their
+                                    intended environment
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-bezier-curve icon-four"></i>
                                 <h5 class="h6">Tailored Solutions </h5>
-                                <p>Solutions that fit your current business processes and operations.</p>
+                                <p>Customised solutions that fit
+                                    each unique context.</p>
                             </div>
                         </div>
                     </div>
@@ -498,17 +532,24 @@
                     <div class="col-lg-5 col-md-12">
                         <div class="section-heading" data-aos="fade-up">
                             <h4 class="h5 text-primary">Features</h4>
-                            <h2>Powerful Solutions for Your Business Needs</h2>
-                            <p>Implement digital strategies that are tailored for needs of your business with the knowledge of what works for you.</p>
+                            <h2>Powerful Solutions for Your Business</h2>
+                            <p>
+                                Implement digital strategies that are
+                                tailored to your business needs with
+                                the knowledge of what works for you.
+                            </p>
                             <ul class="list-unstyled mt-5">
                                 <li class="d-flex align-items-start mb-4">
                                     <div class="icon-box bg-primary rounded me-4">
                                         <i class="fas fa-bezier-curve text-white"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h3 class="h5">Automated Business Processes</h3>
+                                        <h3 class="h5">Automate your business processes</h3>
                                         <p>
-                                            Digital strategies need to align perfectly with how a business runs,  with the use of technology we implement e-services that revolutionize how we do business.
+                                            We create digital software and strategies
+                                            that automate various tasks within your
+                                            business, thus improving efficiency,
+                                            accuracy and ease of work.
                                         </p>
                                     </div>
                                 </li>
@@ -519,7 +560,10 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Customized  &amp; Tailored Solutions</h3>
                                         <p>
-                                            Out of the box solutions are good, but solutions that are developed for your business are even better, With unique tailored solutions one gains competitive advantage in the market.
+                                            Out of the box solutions are good, but
+                                            solutions that are developed specifically for
+                                            your business are even better. We develop
+                                            solutions specifically designed for your needs.
                                         </p>
                                     </div>
                                 </li>
@@ -535,11 +579,14 @@
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="100">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Transparency and visibility for your Audience</h6>
+                                    <h6 class="mb-0">Automate your business
+                                        processes for increased
+                                        efficiency. </h6>
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="150">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Make business decision with Data</h6>
+                                    <h6 class="mb-0">Make effective business
+                                        decisions using data</h6>
                                 </li>
                             </ul>
                             <img src="img/bs-ppl.jpg" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
@@ -548,7 +595,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature-section pt-60 pb-120">
+        {{-- <section class="feature-section pt-60 pb-120">
             <div class="container">
                 <div class="row align-items-lg-center justify-content-between">
                     <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
@@ -582,7 +629,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--feature section end-->
 
         <!--feature service grid section start-->
@@ -686,9 +733,14 @@
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
                             <h4 class="h5 text-primary">Process</h4>
-                            <h2>A Development Process You Can Depend On</h2>
+                            <h2>A Development Process You Can Trust</h2>
                             <p>
-                                We conveniently follow modern development methodologies that are affordable and  ensure they archive the intended results for both customers and stakeholders.                             </p>
+                                Using world standard development
+                                methodoligies, we design efficient
+                                and high performing softwares
+                                that address our clients needs
+                                regardless of their size or industry.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -700,7 +752,8 @@
                             </div>
                             <h3 class="h5">Research</h3>
                             <p class="mb-0">
-                               Assess business needs and requirements.
+                                Analysis of target market
+                                and concept feasibility.
                             </p>
                         </div>
                     </div>
@@ -710,8 +763,11 @@
                             <div class="process-icon border border-light bg-custom-light rounded-custom p-3">
                                 <span class="h2 mb-0 text-primary fw-bold">2</span>
                             </div>
-                            <h3 class="h5">Designing</h3>
-                            <p class="mb-0"> Prototypes that illustrates automated business processes. </p>
+                            <h3 class="h5">Design</h3>
+                            <p class="mb-0">
+                                Transformation of concepts
+                                    into effective prototypes.
+                                </p>
                         </div>
                     </div>
                     <div class="dots-line first"></div>
@@ -721,7 +777,11 @@
                                 <span class="h2 mb-0 text-primary fw-bold">3</span>
                             </div>
                             <h3 class="h5">Development</h3>
-                            <p class="mb-0">Clients here watch ideas come to life.</p>
+                            <p class="mb-0">
+                                Materialisation of
+                                prototypes into finalised
+                                digital products.
+                            </p>
                         </div>
                     </div>
                     <div class="dots-line first"></div>
@@ -731,7 +791,11 @@
                                 <span class="h2 mb-0 text-primary fw-bold">4</span>
                             </div>
                             <h3 class="h5">Deliver</h3>
-                            <p class="mb-0">We deliver quality digital solutions in record time.</p>
+                            <p class="mb-0">
+                                Product launching, followed by
+                                continous monitoring and
+                                improvement.
+                            </p>
                         </div>
                     </div>
                     {{-- <div class="dots-line first"></div>
@@ -1049,9 +1113,12 @@
                     <div class="col-lg-8 col-md-10">
                         <div class="subscribe-info-wrap text-center position-relative z-2">
                             <div class="section-heading" data-aos="fade-up">
-                                <h4 class="h5 text-warning">Lets Build Your Solution Get Free Support.</h4>
-                                <h2>Start Your Development Journey With Us.</h2>
-                                <p>We can assist you in building a tailored digital solutions for your business.</p>
+                                <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                    Get Free Support.</h4>
+                                <h2>Start Your Digital Solution Journey
+                                    Today.</h2>
+                                <p>Customised Digital Solutions For:
+                                    Businesses, Communities & Corporations.</p>
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
@@ -1126,7 +1193,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                <div style="display: none;" class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -1173,6 +1240,7 @@
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-whatsapp"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>

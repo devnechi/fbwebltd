@@ -92,6 +92,15 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-globe"></i></span>
+                                                <div class="drop-title">Website Development</div>
+                                            </a>
+
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                <div class="drop-title">Mobile App Development</div>
+                                            </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
@@ -102,6 +111,14 @@
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-bars"></i></span>
                                                 <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                <div class="drop-title">Business System Development</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
                                             {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
@@ -206,7 +223,15 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-globe"></i></span>
+                                                    <div class="drop-title">Website Development</div>
+                                                </a>
 
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                    <div class="drop-title">Mobile App Development</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
@@ -218,7 +243,14 @@
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
                                                     <div class="drop-title">Software Eng.</div>
                                                 </a>
-
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                    <div class="drop-title">Business System Development</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                    <div class="drop-title">Branding & Digital Strategizing</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -285,11 +317,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Digital Solutions Prototyping and Wireframing</h1>
+                        <h1 class="display-5 fw-bold">Prototyping and Wireframing</h1>
                         <p class="lead">
-                            You might have an Idea that requires a technology touch to reach its massive impact envisioned by the innovator,
-                             here at FBC we help with the ideation process, we support and guide you through the innovation process.
-                        </p>
+                            We breathe life into ideas by
+                            transforming concepts into detailed
+                            prototypes that help visualise and
+                            perfect the final product.
+                            </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -304,11 +338,16 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help
-                            </h4>
-                            <h2>Prototypes Pave Way to Realizing a Vision.</h2>
+                            {{-- <h4 class="h5 text-primary">How we can help
+                            </h4> --}}
+                            <h2>Bringing Ideas To Life.</h2>
                             <p>
-                             With technologies and tools today it has never been easier to develop your "Most Valuable Product" in a matter of weeks, that would help you understand a product Market potential.</p>
+                                With the technology and tools
+                                available today, it has never been
+                                easier to materialise your idea into a
+                                tangible product. We can help you
+                                bring your ideas into the real world.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -320,9 +359,13 @@
                                     <i class="fal fa-share-alt fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">User story Mapping</h3>
+                                    <h3 class="h5">Structuring the idea</h3>
                                     <p>
-                                        Its important to understand your idea and ensure the business process are properly identified, ensuring we all understand the proposed solution goals.
+                                        In order to ensure success, it is important to
+                                        fully understand your idea and how best to
+                                        structure it. We provide guidance through
+                                        this process to help you build your idea in the
+                                        most effective way possible.
                                     </p>
                                     {{--<h6 class="mt-4">Included with...</h6>
                                      <ul class="list-unstyled mb-0">
@@ -337,11 +380,12 @@
                                     <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Illustrations and documentations</h3>
+                                    <h3 class="h5">Mapping the user flow</h3>
                                     <p class="mb-0">
-                                        Building visuals of the intended prototype, showing how data will
-                                         flow and mark the input requirements and the output expected.
-                                         ensure the process are visually mapped.
+                                        We combine creativity with world
+                                        standard practices to create an effecient
+                                        prototype layout and flow that ensures
+                                        performance of the highest level.
                                     </p>
                                    {{-- <h6 class="mt-4">Included with...</h6>
                                      <ul class="list-unstyled mb-0">
@@ -356,8 +400,13 @@
                                     <i class="fal fa-sync-alt fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Visualized processes</h3>
-                                    <p class="mb-0">We use prototyping techniques and tools that illustrate the proposed idea into visualized automated steps that mimic the intended system as how its meant to function.</p>
+                                    <h3 class="h5">Interactive visual prototypes</h3>
+                                    <p class="mb-0">
+                                        We use prototyping techniques and tools that
+                                        illustrate the proposed idea into visualized automated
+                                        steps that mimic the intended system as how its meant to
+                                         function.
+                                        </p>
                                     {{-- <h6 class="mt-4">Included with...</h6>
                                      <ul class="list-unstyled mb-0">
                                         <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Keyword Research</li>
@@ -381,9 +430,12 @@
                     <div class="col-lg-8 col-md-10">
                         <div class="subscribe-info-wrap text-center position-relative z-2">
                             <div class="section-heading" data-aos="fade-up">
-                                <h4 class="h5 text-warning">Lets Build Your Prototype Get Free Support.</h4>
-                                <h2>Start Your Prototyping Journey With Us.</h2>
-                                <p>We can assist you in building a tailored digital solutions for your business.</p>
+                                <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                    Get Free Support.</h4>
+                                <h2>Start Your Prototyping Journey
+                                    Today.</h2>
+                                <p>Customised Digital Solutions For:
+                                    Businesses, Communities & Corporations.</p>
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
@@ -399,8 +451,8 @@
         </section>
         <!--cat subscribe end-->
 
-          <!--footer section start-->
-          <footer class="footer-section">
+           <!--footer section start-->
+           <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
             <div class="footer-top footer-light ptb-120">
@@ -439,11 +491,12 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
+                                            {{-- <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li> --}}
                                             <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Join Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                <div style="display: none;" class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -476,7 +529,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom footer-light  py-4">
+            <div class="footer-bottom footer-light py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
@@ -490,6 +543,7 @@
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-whatsapp"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
@@ -502,6 +556,7 @@
             <!--footer bottom end-->
         </footer>
         <!--footer section end-->
+
 
     </div>
 

@@ -130,6 +130,10 @@ class SuperAdminController extends Controller
                 $newuser->save();
                 //send email to user
                 $token = Str::random(64);
+                $pass = $request->get('password');
+                $uname = $request->get('fname');
+                $uemail = $request->get('email');
+
 
                 DB::table('password_reset')->insert([
                     'email' => $request->email,
@@ -138,9 +142,16 @@ class SuperAdminController extends Controller
                   ]);
 
                   // send email link
-                Mail::send('email.changePassword', ['token' => $token], function($message) use($request){
+                Mail::send('email.changePassword',
+                 ['token' => $token,
+                  'password' => $pass,
+                  'name' => $uname,
+                  'email' => $uemail
+
+                 ],
+                  function($message) use($request){
                     $message->to($request->email);
-                    $message->subject('Reset Password');
+                    $message->subject('FBC New User Registration');
                 });
 
                 return back()->with('message')->with('success', 'A new user was successfully added!');

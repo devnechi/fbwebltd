@@ -71,29 +71,29 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
-                                    <p>New password entry</p>
+                                    {{-- <p>New password entry</p> --}}
                                     <label for="password" class="mb-1">New Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <input id="password" type="password" class="form-control" aria-label="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="password">
-                                        @error('password')
+                                    </div>
+                                        {{-- @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
-                                       @enderror
+                                       @enderror --}}
                                        @if ($errors->has('password'))
                                        <span class="text-danger">{{ $errors->first('password') }}</span>
                                    @endif
-                                    </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <label for="new-confirm-password" class="mb-1">Confirm New Password <span
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
-                                        <input type="password" id="confirm_pass" class="form-control" aria-label="confirm_pass" @error('confirm_pass') is-invalid @enderror" name="confirm_pass" required autocomplete>
+                                        <input type="password" id="password_confirmation" class="form-control" aria-label="password_confirmation" @error('password_confirmation') is-invalid @enderror" name="password_confirmation" required>
 
-                                       @if ($errors->has('confirm_pass'))
-                                       <span class="text-danger">{{ $errors->first('confirm_pass') }}</span>
+                                       @if ($errors->has('password_confirmation'))
+                                       <span class="text-danger">{{ $errors->first('password_confirmation') }}</span>
                                        @endif
                                     </div>
                                 </div>

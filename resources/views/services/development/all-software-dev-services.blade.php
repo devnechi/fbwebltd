@@ -87,10 +87,18 @@
                                                 <span class="me-2"><i class="far fa-eject"></i></span>
                                                 <div class="drop-title">Graphics Design</div>
                                             </a>
-
                                             <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
+                                            </a>
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-globe"></i></span>
+                                                <div class="drop-title">Website Development</div>
+                                            </a>
+
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                <div class="drop-title">Mobile App Development</div>
                                             </a>
                                         </div>
                                         <div class="dropdown-grid-item">
@@ -102,6 +110,14 @@
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-bars"></i></span>
                                                 <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                <div class="drop-title">Business System Development</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
                                             {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
@@ -206,7 +222,15 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-globe"></i></span>
+                                                    <div class="drop-title">Website Development</div>
+                                                </a>
 
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                    <div class="drop-title">Mobile App Development</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
@@ -218,7 +242,14 @@
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
                                                     <div class="drop-title">Software Eng.</div>
                                                 </a>
-
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                    <div class="drop-title">Business System Development</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                    <div class="drop-title">Branding & Digital Strategizing</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -285,9 +316,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Our Software Development Services</h1>
-                        <p class="lead">With our profound knowledge in modern technologies,
-                             a creative and dedicated team of engineers we assist our partners gain a competitive advantage by leveraging digital solutions that change how businesses operate.</p>
+                        <h1 class="display-5 fw-bold">Software Development Services</h1>
+                        <p class="lead">
+                            With our profound knowledge in modern
+technologies, along with a creative and
+dedicated team of experts, we design and
+develop software tailored to your needs that
+helps you achieve your goals more efficiently.</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -301,10 +336,13 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">engineering services</h4>
-                            <h2>Digital Solutions for Everyone for Any Business</h2>
-                            <p>We offer cost effective digital solutions for a variety of individuals, businesses, organizations and Development spaces,
-                                 our solutions intend to automate your business processes and increase operational efficiency.</p>
+                            {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
+                            <h2>Offering Software Solutions For Everyone</h2>
+                            <p>
+                                We offer software solutions for clients at
+                                individual, business and corporate level
+                                regardless of their industry or size.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -319,12 +357,17 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Applications development</h3>
                                         <p>
-                                            We a full cycle software development firm,
-                                            we build various application that are compatible in all platforms and available in most if not all devices.
-                                            FBC leads the entire development process from ideation, data gathering, design and development.
+                                            We design and develop a wide range of
+                                            robust high quality applications that are
+                                            compatible across all devices and platforms.
+                                            We provide guidance and leadership
+                                            throughout the entire development process
+                                            from ideation, to data gathering and
+                                            development.
                                         </p>
                                         <h6 class="mt-4">Development in...</h6>
                                         <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Intranet and Extranet Solutions</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
@@ -339,7 +382,7 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Cyber Security</h3>
                                         <p class="mb-0">
-                                            We implement Security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
+                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
                                             Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
                                         </p>
                                         <h6 class="mt-4">Include...</h6>
@@ -358,10 +401,12 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Software product development</h3>
                                         <p class="mb-0">
-                                            Various development scenarios that we operate in as a firm,
-                                             there situation were individuals have ideas that require software,
-                                             or need a product upgrade. we are always ready to support from the start,
-                                             when you are on deadline or need assistance during the development period.
+                                            We provide development services to a wide
+                                            range of clients. Whether you have idea that
+                                            requires materialisation or need help with
+                                            maintaining or upgrading your software, we
+                                            are happy to offer our services at any stage of
+                                            the process.
                                         </p>
                                         <h6 class="mt-4">Included with...</h6>
                                         <ul class="list-unstyled mb-0">
@@ -379,11 +424,14 @@
                                         <i class="fal fa-spell-check fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Q/A Testing</h3>
+                                        <h3 class="h5">Quality Assurance Testing</h3>
                                         <p class="mb-0">
-                                            With cyber security concerns are always on the rise, We examine and audit your web app components,
-                                            check you desktop app compatibility of your software with hardware & operating systems and ensure
-                                            stability under normal and critical conditions, and data integrity.
+                                            We believe in quality, therefore we offer
+                                            Quliaty Assurance (QA) Testing services that
+                                            ensure your digital products are of the
+                                            highest standard possible, thus ensuring
+                                            better user experience and product
+                                            performance.
                                         </p>
                                         <h6 class="mt-4">Tests Included...</h6>
                                         <ul class="list-unstyled mb-0">
@@ -417,9 +465,12 @@
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Maintenance and Support</h3>
-                                        <p class="mb-0">We assist our partners with maintaining their IT Infrastructure,
-                                             Continuously optimize total cost of ownership by ensuring its operable,
-                                              flexible, and secure. </p>
+                                        <p class="mb-0">
+                                            We assist clients with the maintenance of
+                                        their IT software and infrastructure. We help
+                                        them to continoulsy optimize their IT
+                                        structures and performance.
+                                        </p>
                                         <h6 class="mt-4">Maintaince in...</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Existing software</li>
@@ -481,7 +532,7 @@
                                     <span class="text-primary h6">Step 2</span>
                                     <h3 class="h5 mb-2"> Defining</h3>
                                     <p>
-                                        Once the data is gathered and business processes identified,
+                                        Once the data is gathered and business processes are identified,
                                         the next step is to define and document the requirements and architecture of the proposed software.
                                     </p>
                                 </div>
@@ -494,9 +545,12 @@
                                     <span class="text-primary h6">Step 3</span>
                                     <h3 class="h5 mb-2">Designing & Wireframing</h3>
                                     <p>
-                                        Once the system requirements are documented and approved we will then design
-                                        illustrations that will visualize how the system will archive its intended goal, the goal is
-                                        to have an iterative software development model that entails a basic idea of how the application looks and works.
+                                        Once the system requirements are
+                                        documented and approved, the illustrations
+                                        that will visualize the software are then
+                                        designed. The aim is to produce an iteractive
+                                        prototype that provides a look and feel of the
+                                        final product.
                                     </p>
                                 </div>
                             </li>
@@ -508,11 +562,12 @@
                                     <span class="text-primary h6">Step 4</span>
                                     <h3 class="h5 mb-2">Development</h3>
                                     <p>
-                                        This is the best part, where the developers do their magic to craft and build
-                                        the proposed solution by using the chosen programming language,
-                                         architecture, techniques and methodologies.
-
-
+                                        After a prototype is finalised, the
+                                        development process of materialising the
+                                        prototype into a fully funtctional software
+                                        product begins. This step uses the most
+                                        effective tools and technologies chosen
+                                        carefully by our experts.
                                     </p>
                                 </div>
                             </li>
@@ -524,9 +579,10 @@
                                     <span class="text-primary h6">Step 5</span>
                                     <h3 class="h5 mb-2">Testing</h3>
                                     <p>
-                                        This is a crucial step, where the proposed solution is evaluated and put into tests that are aimed to find and fix errors, bugs and defect. The idea here is  to ensure the system functions as required.
-
-
+                                        In this crucial step the developed software is
+                                        evaluated and put through tests that aim to
+                                        find and fix; errors, bugs and defects so to
+                                        ensure the system functions as required.
                                     </p>
                                 </div>
                             </li>
@@ -538,9 +594,10 @@
                                     <span class="text-primary h6">Step 6</span>
                                     <h3 class="h5 mb-2">Deployment</h3>
                                     <p>
-                                        Here the system is launched, its live and available for public use,
-                                        At this step  we check for deployment issues or issues that might arise if at all they are any.
-                                         We also ensure the deployment process is always automated.
+                                        Here the system is launched and made
+                                        available for the target audience to use. The
+                                        deployment process is also monitored
+                                        closely, and any arising issues are attend to.
 
                                         </p>
                                 </div>
@@ -553,11 +610,12 @@
                                     <span class="text-primary h6">Step 7</span>
                                     <h3 class="h5 mb-2">Maintenance & Up-keep</h3>
                                     <p>
-                                        According to the Maintenance service level agreement,
-                                        we ensure the needs and requirements of the systems continue to be met and the developed
-                                        software continues to efficiently perform as per the requirements mentioned in the first step.
-
-
+                                        Once the software is deployed, we provide
+                                        our clients with maintenance and up-keep
+                                        services as this is another crucial element in
+                                        the life span of a software. During this phase,
+                                        the software is maintained and impoved
+                                        accordingly.
                                     </p>
                                 </div>
                             </li>
@@ -567,11 +625,12 @@
             </div>
           </section>
           <!--our work process end-->
-           <!--footer section start-->
-           <footer class="footer-section">
+
+                  <!--footer section start-->
+        <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top bg-dark text-white ptb-120">
+            <div class="footer-top  bg-dark text-white ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -607,12 +666,12 @@
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ url('/') }}" class="text-decoration-none">Home</a></li>
                                             <li><a href="{{ route('about') }}" class="text-decoration-none">About Us</a></li>
-                                            <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li>
-                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Our Portfolio</a></li>
+                                            {{-- <li><a href="{{ route('business') }}" class="text-decoration-none">Services</a></li> --}}
+                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Join Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                <div style="display: none;" class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -645,7 +704,7 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom bg-dark text-white py-4">
+            <div class="footer-bottom  bg-dark text-white py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
@@ -659,6 +718,7 @@
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-whatsapp"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
@@ -669,8 +729,9 @@
                 </div>
             </div>
             <!--footer bottom end-->
-           </footer>
-           <!--footer section end-->
+        </footer>
+        <!--footer section end-->
+
 
     </div>
 

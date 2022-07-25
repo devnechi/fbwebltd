@@ -98,6 +98,15 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-globe"></i></span>
+                                                <div class="drop-title">Website Development</div>
+                                            </a>
+
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                <div class="drop-title">Mobile App Development</div>
+                                            </a>
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
@@ -108,6 +117,14 @@
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-bars"></i></span>
                                                 <div class="drop-title">Software Eng.</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                <div class="drop-title">Business System Development</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
                                             {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
@@ -212,6 +229,15 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-globe"></i></span>
+                                                    <div class="drop-title">Website Development</div>
+                                                </a>
+
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                    <div class="drop-title">Mobile App Development</div>
+                                                </a>
 
                                             </div>
                                             <div class="dropdown-grid-item">
@@ -224,7 +250,14 @@
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
                                                     <div class="drop-title">Software Eng.</div>
                                                 </a>
-
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                    <div class="drop-title">Business System Development</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                    <div class="drop-title">Branding & Digital Strategizing</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -322,8 +355,11 @@
                         <div class="row justify-content-lg-between align-items-center">
                             <div class="col-lg-6 col-md-8">
                                 <div class="section-heading">
-                                    <h2>Talk to Our Support and Customer service Department Team</h2>
-                                    <p>We are always available anytime for coffee, a quick chat, phone call or a meeting. just reach out to us and We will contact you.</p>
+                                    <h2>Talk to Our Customer service Department</h2>
+                                    <p>
+                                        Leave us a message and we will get back to
+                                        you as soon as possible.
+                                        </p>
                                 </div>
 
                                 <form action="{{ route('contact-em') }}" method="post" class="register-form">
@@ -373,11 +409,8 @@
                                     </div>
                                         <div class="col-sm-6">
                                             <label for="contactemail" class="mb-1">Email
-                                                @error('contactemail')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <span class="text-danger">*</span>
-                                                </span>
-                                            @enderror
+                                                <span
+                                                class="text-danger">*</span>
                                             </label>
                                             <div class="input-group mb-3">
                                                 <input type="email" class="form-control" name="contactemail" id="contactemail" @error('contactemail') is-invalid @enderror required placeholder="Email" aria-label="Email">
@@ -459,8 +492,8 @@
                                     <span class="fad fa-envelope fa-3x text-primary"></span>
                                     <div class="contact-promo-info mb-4">
                                         <h5>Email Us</h5>
-                                        <p>Simple drop us an email at <strong>info@futurebasics.co.tz</strong>
-                                            and you'll receive a reply within 24 hours</p>
+                                        <p>Send us an email at <strong>info@futurebasics.co.tz</strong>
+                                            and we will reply as soon as possible.</p>
                                     </div>
                                     <a href="mailto:hellothemetags@gmail.com" class="btn btn-primary mt-auto">Email Us</a>
                                 </div>
@@ -470,11 +503,11 @@
                                     <span class="fad fa-phone fa-3x text-primary"></span>
                                     <div class="contact-promo-info mb-4">
                                         <h5>Give us a call</h5>
-                                        <p>Give us a ring.Our Experts are standing by <strong>monday to friday</strong> from
-                                            <strong>9am to 5pm EAT.</strong>
+                                        <p>Give us a call. We are open <strong>monday to friday</strong> from
+                                            <strong>9am to 5pm</strong>  EAT.
                                         </p>
                                     </div>
-                                    <a href="tel:00-976-561-008" class="btn btn-link mt-auto"> + 255 687 859 500</a>
+                                    <a href="tel:00-255-743-728-990" class="btn btn-link mt-auto"> + 255 743 728 990 </a>
                                 </div>
                             </div>
                         </div>
@@ -529,7 +562,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                <div style="display: none;"  class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -576,6 +609,7 @@
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-whatsapp"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>

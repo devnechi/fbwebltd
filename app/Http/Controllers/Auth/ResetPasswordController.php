@@ -12,6 +12,7 @@ use App\Models\User;
 use Mail;
 use Hash;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Input;
 
 
 use Auth;
@@ -126,9 +127,11 @@ class ResetPasswordController extends Controller
           }
 
           $user = User::where('email', $request->email)
-                      ->update(['password' => Hash::make($request->password),
+                      ->update([
+                      'password' => Hash::make($request->password),
                       'email_verified_at' => Now(),
-                      'updated_at' => Now()]);
+                      'updated_at' => Now()
+                    ]);
 
           DB::table('password_reset')->where(['email'=> $request->email])->delete();
 
@@ -145,9 +148,21 @@ class ResetPasswordController extends Controller
     }
 
     public function changePasswordPost(Request $request) {
-        if (!(Hash::check($request->get('current_password'), Auth::user()->password))) {
+        // if (!(Hash::check($request->get('current_password'), Auth::user()->password))) {
+            // if (!(Hash::check(User::where('password', '=', $request->current_password))->exists())) {
+
+        $validatedData = $request->validate([
+            'current_password' => 'required',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
+        $pass = $request->get('password');
+
+        //dd($pass);
+
+        if (password_verify('password', $request->current_password)) {
+                //User::where('email', '=', Input::get('email'))->exists()
             // The passwords matches
-            return redirect()->back()->with("error","Your current password does not matches with the password.");
+            return redirect()->back()->with("error","Your current password does not matches with the registered password.");
         }
 
         if(strcmp($request->get('current_password'), $request->get('password')) == 0){
@@ -155,17 +170,19 @@ class ResetPasswordController extends Controller
             return redirect()->back()->with("error","New Password cannot be same as your current password.");
         }
 
-        $validatedData = $request->validate([
-            'current_password' => 'required',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
-
-
         //Change Password
         $user = Auth::user();
-        $user->password = bcrypt($request->get('password'));
-        $user->save();
-        return redirect()->back()->with("success","Password successfully changed!");
+        // $user->password = bcrypt($pass);
+        $user = User::where('email', $request->email)
+        ->update([
+        'password' => Hash::make($request->password),
+        'email_verified_at' => Now(),
+        'updated_at' => Now()
+      ]);
+       // $user->save();
+        DB::table('password_reset')->where(['email'=> $request->email])->delete();
+        // return redirect()->back()->with("success","Password successfully changed!");
+        return redirect('/login')->with('message', 'Your account has been verified!');
     }
 
 

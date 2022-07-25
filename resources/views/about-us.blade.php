@@ -95,6 +95,16 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
+                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-globe"></i></span>
+                                                <div class="drop-title">Website Development</div>
+                                            </a>
+
+                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                <div class="drop-title">Mobile App Development</div>
+                                            </a>
+
                                         </div>
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Business Solutions</h6>
@@ -106,6 +116,15 @@
                                                 <span class="me-2"><i class="far fa-bars"></i></span>
                                                 <div class="drop-title">Software Eng.</div>
                                             </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                <div class="drop-title">Business System Development</div>
+                                            </a>
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                <div class="drop-title">Branding & Digital Strategizing</div>
+                                            </a>
+
                                             {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-usd-square"></i></span>
                                                 <div class="drop-title">Business Systems</div>
@@ -209,7 +228,15 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
+                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-globe"></i></span>
+                                                    <div class="drop-title">Website Development</div>
+                                                </a>
 
+                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
+                                                    <div class="drop-title">Mobile App Development</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Business Solutions</h6>
@@ -221,7 +248,14 @@
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
                                                     <div class="drop-title">Software Eng.</div>
                                                 </a>
-
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
+                                                    <div class="drop-title">Business System Development</div>
+                                                </a>
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
+                                                    <div class="drop-title">Branding & Digital Strategizing</div>
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                                 <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -291,10 +325,21 @@
                         <div class="section-heading-wrap d-flex justify-content-between z-5 position-relative">
                             <div class="about-content-left">
                                 <div class="about-info mb-5">
-                                    <h1 class="fw-bold display-5">Grow your Business & Customer Satisfaction with
-                                        Future Basics</h1>
+                                    <h1 class="fw-bold display-5">
+                                        We are leading our community into the
+                                        future. Are you coming?
+                                    </h1>
                                     <p class="lead">
-                                        Our mission is to blend creativity with technology capabilities to bring value and increase productivity. We make our customers' steps to the future easier, smarter and valuable.
+                                        Future Basics aims to respond to the widely un-acknowledged and un-
+                                        attended need for digitization in our surrounding society at a corporate,
+                                        business and community level. We believe the future is digital, and we aim
+                                        to be part of the frontliners that lead our community into this digital future.
+                                    </p>
+                                   <p class="lead">
+                                        Through innovation and technology, we are successfully implimenting the
+                                        concept of digitization in various parts of our society, which in turn
+                                        progressively improves local business effeciency and the ease of life for our
+                                        community members.
                                     </p>
                                     <a href="{{ route('careers-with-us') }}" class="btn btn-primary mt-4 me-3">Join Us</a>
                                     <a href="{{ route('developers-info-entery-form') }}" class="btn btn-primary mt-4 me-3">Join Our Dev Pool</a>
@@ -302,6 +347,20 @@
 
                                     {{-- <a href="#our-team" class="btn btn-soft-primary mt-4">Meet Our Team</a> --}}
                                 </div>
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <img src="img/about/buildbus.jpg" style="display: none;" alt="about" class="img-fluid about-img-first mt-5 rounded-custom shadow">
                             </div>
                             <div class="about-content-right">
@@ -388,18 +447,23 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="section-heading">
                             <h4 class="h5 text-primary">Our Values</h4>
-                            <h2>The Core Values that Drive Everything</h2>
-                            <p> A commitment to Lead, be innovative and to constantly improve communities and businesses around us.</p>
+                            <h2>The Core Values That Drive Us</h2>
+                            <p>
+                                A commitment to lead, innovate and
+                                continously improve the communities and
+                                businesses around us.
+                            </p>
                             <ul class="list-unstyled mt-5">
                                 <li class="d-flex align-items-start mb-4">
                                     <div class="icon-box bg-primary rounded me-4">
                                         <i class="fas fa-bezier-curve text-white"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h3 class="h5">Leadership by example</h3>
+                                        <h3 class="h5">Community Obligation</h3>
                                         <p>
-                                            With our professionals your businesses will always have access to modern and
-                                             recent technology solutions ensuring you maintain a competitive advantage.
+                                            We believe in unanimous development.
+                                            Therefore to us, progress only exists if it
+                                            includes each member of our societies.
                                         </p>
                                     </div>
                                 </li>
@@ -408,9 +472,12 @@
                                         <i class="fas fa-fingerprint text-white"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h3 class="h5">Cost Efficient Solutions</h3>
+                                        <h3 class="h5">Innovative Thinking</h3>
                                         <p>
-                                            Our solutions are developed to increase productivity while improving overall customers experience at the right price.
+                                            We focus on creating modern and
+                                            unprecedented methods of tackling different
+                                            types of issues in our surrounding business
+                                            and community environments.
                                         </p>
                                     </div>
                                 </li>
@@ -421,8 +488,10 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Accountability & Transparency</h3>
                                         <p>
-                                            One of our many goals is improving accountability across industries and ensure traceability of data,
-                                            business processes and how your business interacts with your audience.
+                                            We maintain trust and integrity in all our
+                                            activities, conducting them in an ethical and
+                                            traceable way that ensures safety and comfort
+                                            to all our clients.
                                         </p>
                                     </div>
                                 </li>
@@ -434,15 +503,15 @@
                             <ul class="img-overlay-list list-unstyled position-absolute">
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Improve customer experience </h6>
+                                    <h6 class="mb-0">Digitizing businesses and communities </h6>
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Increase productivity</h6>
+                                    <h6 class="mb-0">Providing access to solutions</h6>
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Maintain a competitive advantage</h6>
+                                    <h6 class="mb-0">Facilitating development</h6>
                                 </li>
                             </ul>
                             <img src="img/efficent.jpg" alt="feature image" class="img-fluid rounded-custom">
@@ -817,9 +886,13 @@
                     <div class="col-lg-8 col-md-10">
                         <div class="subscribe-info-wrap text-center position-relative z-2">
                             <div class="section-heading" data-aos="fade-up">
-                                <h4 class="h5 text-warning">Lets Build Your Solution Get Free Support.</h4>
-                                <h2>Start Your Development Journey With Us.</h2>
-                                <p>We can assist you in building a tailored digital solutions for your business.</p>
+                                <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                    Get Free Support.</h4>
+                                <h2>Start Your Digital Solution Journey
+                                    Today.</h2>
+                                <p>Customised Digital Solutions For:
+                                    Businesses, Communities & Corporations.
+                                </p>
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
@@ -893,7 +966,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                                <div style="display: none;" class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                     <div class="footer-single-col">
                                         <h3>Information</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
@@ -940,6 +1013,7 @@
                             <div class="footer-single-col text-start text-lg-end text-md-end">
                                 <ul class="list-unstyled list-inline footer-social-list mb-0">
                                     {{-- <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li> --}}
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-whatsapp"></i></a></li>
                                     <li class="list-inline-item"><a href="https://www.instagram.com/futurebasicsltd/"><i class="fab fa-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="https://twitter.com/futurebasicsltd"><i class="fab fa-twitter"></i></a></li>
                                     <li class="list-inline-item"><a href="https://github.com/devnechi/fbwebltd.git"><i class="fab fa-github"></i></a></li>
