@@ -129,11 +129,11 @@ Route::get('/create-new-payment-voucher', [App\Http\Controllers\SuperAdminContro
 
 Route::get('/manage-career-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageCareerOppo'])->name('manage-career-opportunities');
 Route::get('/create-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateCareerOppo'])->name('create-new-career-opportunity');
-Route::post('submit-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewCareerOppo'])->name('submit-new-career-opportunity');
+//Route::post('submit-new-career-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewCareerOppo'])->name('submit-new-career-opportunity');
 
 Route::get('/manage-dev-pool-opportunities', [App\Http\Controllers\SuperAdminController::class, 'navManageDevPool'])->name('manage-dev-pool-opportunities');
 Route::get('/create-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminController::class, 'navCreateDevPoolOppo'])->name('create-new-dev-pool-opportunity');
-Route::post('submit-new-dev-oppo-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewDevPoolOppo'])->name('submit-new-career-opportunity');
+//Route::post('submit-new-dev-oppo-opportunity', [App\Http\Controllers\SuperAdminController::class, 'storeNewDevPoolOppo'])->name('submit-new-dev-oppo-opportunity');
 
 
 Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');
