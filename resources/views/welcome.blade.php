@@ -790,7 +790,7 @@ in the real world.
                             <div class="process-icon border border-light bg-custom-light rounded-custom p-3">
                                 <span class="h2 mb-0 text-primary fw-bold">4</span>
                             </div>
-                            <h3 class="h5">Deliver</h3>
+                            <h3 class="h5">Delivery & Maintaince</h3>
                             <p class="mb-0">
                                 Product launching, followed by
                                 continous monitoring and

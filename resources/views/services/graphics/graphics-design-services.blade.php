@@ -348,7 +348,7 @@
                             </p>
                             <p>
                                 We offer professional graphic design services
-                                that willhelp you do exactly that.
+                                that will help you do exactly that.
                             </p>
                         </div>
                     </div>

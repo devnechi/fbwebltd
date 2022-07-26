@@ -378,13 +378,19 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-6 ">
-                                            <label for="lastName" class="mb-1">Last name</label>
+                                            <label for="lastName" class="mb-1">
+                                                Last name
+                                                <span class="text-danger">*</span>
+                                            </label>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" name="lastName" id="lastName" required placeholder="Last name" aria-label="Last name">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <label for="phone" class="mb-1">Phone <span class="text-danger">*</span></label>
+                                            <label for="phone" class="mb-1">
+                                                Phone
+                                                <span class="text-danger">*</span>
+                                            </label>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" name="phone" id="phone" required placeholder="Phone" aria-label="Phone">
                                                 @error('phone')

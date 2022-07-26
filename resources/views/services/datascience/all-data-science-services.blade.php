@@ -360,7 +360,7 @@
                                     <h3 class="h5 mb-2">Data Exploration and Value Extraction Workflow</h3>
                                     <p>
                                         Data is obtained and cleaned of "noise" and rid of in-complete data.
-                                         The process entails of data sampling and Transformation.
+                                         The process entails of data sampling and transformation.
                                     </p>
                                 </div>
                             </li>
@@ -373,7 +373,7 @@
                                     <h3 class="h5 mb-2">Data Modeling</h3>
                                     <p>
                                         Once the data has been cleaned and prepped,
-                                         we implement Machine learning algorithms which is where the Data is fitted into the model whereby
+                                         we implement machine learning algorithms which is where the data is fitted into the model whereby
                                          the model is derived from data selected and business requirement to be fulfilled.
                                     </p>
                                 </div>
@@ -387,8 +387,8 @@
                                     <h3 class="h5 mb-2">Testing the Models</h3>
                                     <p>
                                         This is the most critical stage of the process whereby the model is tested
-                                         with Test Data to evaluate the accuracy of data and has relevant desirable properties.
-                                         if not Data modelling process is repeated or other alternative approaches are executed.
+                                         with test data to evaluate the accuracy of data and has relevant desirable properties.
+                                         If not xata modelling process is repeated or other alternative approaches are executed.
                                     </p>
                                 </div>
                             </li>
