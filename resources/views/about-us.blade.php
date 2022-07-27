@@ -365,7 +365,9 @@
                             </div>
                             <div class="about-content-right">
                                 <img src="img/about/school-kids.jpg" alt="about" class="img-fluid mb-5 rounded-custom shadow">
-                                <img src="img/about/auto-tina.jpg" alt="about" class="rounded-custom about-img-last shadow">
+                                {{-- <img src="img/about/auto-tina.jpg" alt="about" class="rounded-custom about-img-last shadow"> --}}
+                                <img src="img/1.png" alt="about" class="rounded-custom about-img-last shadow">
+
                             </div>
                         </div>
                     </div>
@@ -514,7 +516,7 @@
                                     <h6 class="mb-0">Facilitating development</h6>
                                 </li>
                             </ul>
-                            <img src="img/efficent.jpg" alt="feature image" class="img-fluid rounded-custom">
+                            <img src="img/image-4.png" alt="feature image" class="img-fluid rounded-custom">
                         </div>
                     </div>
                 </div>

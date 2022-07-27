@@ -474,7 +474,7 @@
         <!-- app two video promo start -->
         <section class="video-promo-with-icon">
             <div class="container">
-                <div class="video-bg-with-icon" style="height: 680px; background: url('img/1.png')no-repeat center center / cover">
+                <div class="video-bg-with-icon" style="height: 680px; background: url('img/image-1.png')no-repeat center center / cover">
                     <a href="https://www.youtube.com/watch?v=MuJQnSe1R5k" class="popup-youtube"><i class="fas fa-play"></i></a>
 
                 </div>
@@ -589,7 +589,7 @@ in the real world.
                                         decisions using data</h6>
                                 </li>
                             </ul>
-                            <img src="img/bs-ppl.jpg" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
+                            <img src="img/image-2.png" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
