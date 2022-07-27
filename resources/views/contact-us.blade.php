@@ -325,7 +325,9 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <h1 class="display-5 fw-bold">Contact Us</h1>
-                        <p class="lead">Reach out to Us We can't wait to hear from you!!</p>
+                        <p class="lead">We are always happy to hear from
+                            you, so don't hesitate to get in
+                            touch with us.</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -402,7 +404,11 @@
                                         </div>
                                        <div class="row">
                                         <div class="col-sm-6 ">
-                                            <label for="subject" class="mb-1">Subject</label>
+                                            <label for="subject" class="mb-1">
+                                                Subject
+                                                <span
+                                                    class="text-danger">*</span>
+                                            </label>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control"  id="subject" name="subject" placeholder="Subject" aria-label="Subject">
                                                 @error('subject')

@@ -79,8 +79,8 @@
                         <div class="coming-soon-content-wrap position-relative z-2">
                             <a href="{{ url('/') }}" class="mb-5 d-block"><img src="img/fb_og_logo.png" alt="logo" class="img-fluid"></a>
 
-                            <h5 class="text-white">We are Coming Soon...</h5>
-                            <h1 class="text-white">We are Working Our New Website, Please Stay With us!</h1>
+                            <h5 class="text-white">This is Coming Soon...</h5>
+                            <h1 class="text-white">We are Developing A New Tool, Please Stay With us!</h1>
                             <div class="action-btns">
                                 {{-- <a href="#notify-form" class="btn btn-primary mt-5 popup-with-form">Notify Me!</a> --}}
                                 {{-- <a href="https://futurebasics.co.tz/contact-us" class="btn btn-primary mt-5 popup-with-form">Notify Me!</a> --}}
