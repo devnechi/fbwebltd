@@ -5,6 +5,7 @@ use App\Validators\ReCaptcha;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
+use Auth;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -28,6 +29,10 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Validator::extend('recaptcha', 'App\\Validators\\ReCaptcha@validate');
-
+        // if(Auth::check() && Auth::user()->email == "devnechi@gmail.com" ){
+        //   \Debugbar::enable();
+        // }else{
+        //   \Debugbar::disable();
+        // }
     }
 }
