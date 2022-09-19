@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!--twitter og-->
-    <meta name="twitter:site" content="@themetags">
-    <meta name="twitter:creator" content="@themetags">
+    <meta name="twitter:site" content="@futurebasicsltd">
+    <meta name="twitter:creator" content="@futurebasicsltd">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Future Basics - Creators of livestoka, radarmile and avorra.">
     <meta name="twitter:description" content="Future Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
@@ -91,12 +91,12 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
-                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
                                                 <div class="drop-title">Website Development</div>
                                             </a>
 
-                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-mobile"></i></span>
                                                 <div class="drop-title">Mobile App Development</div>
                                             </a>
@@ -170,10 +170,10 @@
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Nakwalify</div>
-                                            </a>
+                                            </a> --}}
 
 
                                         </div>
@@ -183,7 +183,7 @@
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-life-ring"></i></span>
                                                 <div class="drop-title">Wakala +</div>
                                             </a>
@@ -194,7 +194,7 @@
                                             <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-laptop-code"></i></span>
                                                 <div class="drop-title">Avorra</div>
-                                            </a>
+                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -236,12 +236,12 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
-                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
                                                     <div class="drop-title">Website Development</div>
                                                 </a>
 
-                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-mobile"></i></span>
                                                     <div class="drop-title">Mobile App Development</div>
                                                 </a>
@@ -285,14 +285,14 @@
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Nakwalify</div>
-                                                </a>
+                                                </a> --}}
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                <a href="https://smartrisiti.com/" class="dropdown-link">
+                                                {{-- <a href="https://smartrisiti.com/" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Smart Risiti</div>
                                                 </a>
@@ -307,7 +307,7 @@
                                                 <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                     <span class="me-2" ><i class="far fa-laptop-code"></i ></span>
                                                     <div class="drop-title">Avorra</div>
-                                                </a>
+                                                </a> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -368,7 +368,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 mt-lg-5 mt-4">
-                        <div class="hero-img-wrap position-relative" style="display: none;" data-aos="fade-up">
+                        <div class="hero-img-wrap position-relative" style="" data-aos="fade-up">
                             <div class="hero-screen-wrap">
                                 <div class="phone-screen">
                                     <img src="img/screen/phn-hd.png" alt="hero image" class="position-relative img-fluid">
