@@ -109,7 +109,7 @@
                                             </a>
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-fork"></i></span>
-                                                <div class="drop-title">Software Eng.</div>
+                                                <div class="drop-title">Software Engineering</div>
                                             </a>
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-briefcase"></i></span>
@@ -254,7 +254,7 @@
                                                 </a>
                                                 <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                    <div class="drop-title">Software Eng.</div>
+                                                    <div class="drop-title">Software Engineering</div>
                                                 </a>
                                                 <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-briefcase"></i></span>
@@ -432,7 +432,7 @@
                             <h2>Leading Our Community Into The
                                 Future.</h2>
                             <p>
-                                We believe the future is digital ,
+                                We believe the future is digital,
                                 and through innovation and techonology,
                                 we are leading our community into it.
                             </p>
@@ -489,7 +489,7 @@
                                 <h5 class="h6">Effective Solutions</h5>
                                 <p>
                                     Efficient solutions that work
-in the real world.
+                                    in the real world.
                                 </p>
                             </div>
                         </div>
@@ -639,7 +639,7 @@ in the real world.
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center" data-aos="fade-up">
                             <h2>Services We Offer</h2>
-                            <p>Widely actualize cost effective solutions to maximize output and assert leadership across the market.</p>
+                            <p>Choose your digitalsolution today</p>
                         </div>
                     </div>
                 </div>
@@ -651,10 +651,23 @@ in the real world.
                                     <i class="fal fa-analytics icon-sm text-primary"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Tailored business solution </h3>
+                                    <h3 class="h5">Business analysis & system
+                                        development</h3>
                                     <p>
-                                        We offer solutions that align with your business processes, we deeply understand your customer needs what is required to improve the customer experience and enabling business stakeholder operate efficiently.
-
+                                        Get custommade businesssoftware
+                                        solutionsthat addressyourspecific
+                                        business needs, context and
+                                        processes.
+                                        We analise our client's businesses
+                                        and provide expert advice on how
+                                        they can implement newsoftware
+                                        solutions orimprove existing onesin
+                                        orderto:
+                                        Increase business efficiency
+                                        Increase ease ofwork
+                                        Increasemarket competetiveness
+                                        Improve customer engagement
+                                        Expand their business.
                                     </p>
                                     <p>Our solution are built to be user-centered, increasing customer satisfaction which is optimal in growing a business.</p>
                                     <h6 class="mt-4">Included with...</h6>
@@ -677,8 +690,12 @@ in the real world.
                                     <i class="fal fa-file-chart-line icon-sm text-success"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Applications development</h3>
-                                    <p class="mb-0">With more users available on the internet, we develop solutions are accessible via across the web, available via mobile and can be in on desktop operating system.</p>
+                                    <h3 class="h5">Mobile app development</h3>
+                                    <p class="mb-0">
+                                        Get a tailor made mobile app for
+                                        your business or corporation, or even
+                                        simply bring your app idea to life.
+                                        </p>
                                 </div>
                                 <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
@@ -687,9 +704,12 @@ in the real world.
                                     <i class="fal fa-user-friends icon-sm text-danger"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Business systems development</h3>
+                                    <h3 class="h5">Software Engineering</h3>
                                     <p class="mb-0">
-                                        Digital solutions offer a cost-efficient way to offer your product and services across a wide audience of potential customers.
+                                        Get custom made digital software that
+                                        increases your business performance and
+                                        efficiency as well as ease ofwork at any
+                                        level,regardless of your industry or size.
                                     </p>
                                 </div>
                                 <a href="{{ route('all-prototyping-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
@@ -699,9 +719,11 @@ in the real world.
                                     <i class="fal fa-spell-check icon-sm text-dark"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Automated Reports</h3>
+                                    <h3 class="h5">Digital Marketing & Strategizing</h3>
                                     <p class="mb-0">
-                                        Modern business decisions are made and  backed by data,  a system should enable automated business reports and analytics that influence strategic business decisions.
+                                        Find out how you can stand out in today's
+                                        crowded online scene and get more eyes
+                                        on your business or project.
                                     </p>
                                 </div>
                                 <a href="{{ route('all-data-science-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
@@ -711,9 +733,11 @@ in the real world.
                                     <i class="fal fa-cog icon-sm text-warning"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Digital Strategy</h3>
+                                    <h3 class="h5">Graphic design</h3>
                                     <p class="mb-0">
-                                        From ideas, small businesses, NGO's, co-operations and Large scale enterprises its significant to have a well defined online presence that provides an enabling environment for businesses and your customers.
+                                        Give your business and brand a
+                                        proffessional essence with custom made
+                                        graphic content.
                                     </p>
                                 </div>
                                 <a href="{{ route('all-graphic-designs-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>

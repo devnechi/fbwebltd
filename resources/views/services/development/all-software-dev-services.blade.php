@@ -316,13 +316,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Software Development Services</h1>
+                        <h1 class="display-5 fw-bold">Software Engineering Services</h1>
                         <p class="lead">
-                            With our profound knowledge in modern
-technologies, along with a creative and
-dedicated team of experts, we design and
-develop software tailored to your needs that
-helps you achieve your goals more efficiently.</p>
+                                                        With our profound knowledge in modern
+                            technologies, along with a creative and
+                            dedicated team of experts, we design and
+                            develop software tailored to your needs that
+                            helps you achieve your goals more efficiently.</p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>

@@ -9,7 +9,7 @@
                         <a href="{{ url('/') }}" class="mb-4 d-block text-center">
                             <img src="img/fb_og_logo.png" alt="Future Basics" class="img-fluid"></a>
                         <div class="register-wrap p-5 bg-light shadow rounded-custom">
-                            <h1 class="h3">Nice to Seeing You Again</h1>
+                            <h1 class="h3">Nice to See You Again</h1>
                             <p class="text-muted">Please log in to gain access.</p>
 
                             {{-- <div class="action-btns">
