@@ -441,7 +441,7 @@
                                 <i class="far fa-chart-pie-alt icon-one"></i>
                                 <h5 class="h6">Effective</h5>
                                 <p>
-                                    Efficient solutions that work
+                                   Solutions that work
                                     in the real world.
                                 </p>
                             </div>
@@ -450,7 +450,7 @@
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-pen-nib icon-two"></i>
                                 <h5 class="h6">Personalized</h5>
-                                <p>Get solutions that are built with the intended end-user in mind.</p>
+                                <p>Solutions that are built with the intended end-user in mind.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
@@ -458,7 +458,7 @@
                                 <i class="far fa-chart-network icon-three"></i>
                                 <h5 class="h6">Versatile</h5>
                                 <p>
-                                    Digital solutions that
+                                    Solutions that
                                     continuously adapt to their
                                     intended environment
                                 </p>
@@ -468,7 +468,7 @@
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-bezier-curve icon-four"></i>
                                 <h5 class="h6">Tailored </h5>
-                                <p>Customised solutions that fit
+                                <p>Solutions that fit
                                     each unique context.</p>
                             </div>
                         </div>
