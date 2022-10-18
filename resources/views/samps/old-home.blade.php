@@ -355,7 +355,18 @@
                                 innovation and technology.
                             </p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
-
+                                {{-- <form id="subscribe-form" name="email-form" class="hero-subscribe-form d-block d-lg-flex d-md-flex">
+                                    <input type="email" class="form-control me-2" name="Email" data-name="Email" placeholder="Enter Your Email Address" id="email-address" required="">
+                                    <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
+                                </form>
+                                <ul class="nav subscribe-feature-list mt-3 justify-content-lg-start justify-content-md-center">
+                                    <li class="nav-item">
+                                        <span class="ms-0"><i class="far fa-check-circle text-primary me-2"></i>Free for ever</span>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span><i class="far fa-check-circle text-primary me-2"></i>No credit card required</span>
+                                    </li>
+                                </ul> --}}
                             </div>
                         </div>
                     </div>
@@ -375,6 +386,45 @@
             </div>
         </section>
         <!--hero section end-->
+
+        <!--customer section start-->
+        {{-- <div class="customer-section pb-120 bg-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-12">
+                        <ul class="customer-logos-grid text-center list-unstyled mb-0">
+                            <li>
+                                <img src="img/clients/client-logo-1.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="50">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-2.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="50">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-3.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="50">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-4.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="50">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-5.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="100">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-6.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="100">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-7.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="100">
+                            </li>
+                            <li>
+                                <img src="img/clients/client-logo-8.svg" width="150" alt="clients logo" class="img-fluid customer-logo p-1 p-md-2 p-lg-3 m-auto" data-aos="fade-up" data-aos-delay="100">
+                            </li>
+                        </ul>
+                        <p class="text-center mt-lg-5 mt-4 mb-0" data-aos="fade-up" data-aos-delay="200">Trusted More than 25,00+ Companies Around the World</p>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+        <!--customer section end-->
+
 
         <!--highlight promo start-->
         <section class="promo-section ptb-120">
@@ -548,6 +598,42 @@
                 </div>
             </div>
         </section>
+        {{-- <section class="feature-section pt-60 pb-120">
+            <div class="container">
+                <div class="row align-items-lg-center justify-content-between">
+                    <div class="col-lg-5 order-lg-2 mb-7 mb-lg-0">
+                        <div class="mb-4" data-aos="fade-up">
+                            <h2>Experience your Product with Integration</h2>
+                            <p>
+                                Conveniently deliver your services and products to a wide-range of clients and businesses, improve customer acquisition and enthusiastically drive customer satisfaction.
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex flex-wrap list-two-col mt-5" data-aos="fade-up" data-aos-delay="50">
+                            <li>
+                                <span class="d-block mb-4"><i class="fal fa-user fa-2x text-primary"></i></span>
+                                <h3 class="h5">Customer analysis</h3>
+                                <p>Objectively understand your customer needs and wants, Make strategic business decisions using internal solutions data analysis metrics.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="d-block mb-4"><i class="fal fa-watch fa-2x text-primary"></i></span>
+                                <h3 class="h5">Real time metrics</h3>
+                                <p>Utilize technology to map, track and increase transparency on how customers interact with your product. </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="pr-lg-4">
+                            <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-3 mx-lg-auto" data-aos="fade-up" data-aos-delay="50">
+                                <img src="img/dashboard-img.svg" alt="" class="img-fluid">
+                                <div class="position-absolute bg-primary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+        <!--feature section end-->
 
         <!--feature service grid section start-->
         <section class="feature-section ptb-120 bg-dark text-white ">
@@ -739,12 +825,313 @@
                             </p>
                         </div>
                     </div>
-
+                    {{-- <div class="dots-line first"></div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="process-card text-center px-4 py-lg-5 py-4 rounded-custom shadow-hover mb-0" data-aos="fade-up" data-aos-delay="200">
+                            <div class="process-icon border border-light bg-custom-light rounded-custom p-3">
+                                <span class="h2 mb-0 text-primary fw-bold">5</span>
+                            </div>
+                            <h3 class="h5">Maintain</h3>
+                            <p class="mb-0">Uniquely for compelling initiatives expanded interactive.</p>
+                        </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
         <!--work process section end-->
 
+        <!--integration section start-->
+        {{-- <section class="integration-section pt-60 pb-120">
+            <div class="container">
+                <div class="row align-items-center justify-content-lg-between">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="section-heading" data-aos="fade-up">
+                            <h4 class="h5 text-primary">Integration</h4>
+                            <h2>We Collaborate with Top Software Company</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="text-lg-end mb-5 mb-lg-0" data-aos="fade-up">
+                            <a href="integrations.html" class="btn btn-primary">View All Integrations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="integration-wrapper position-relative w-100">
+                            <!--animated shape start-->
+                            <ul class="position-absolute animate-element parallax-element shape-service z--1 d-none d-lg-none d-xl-block">
+
+                                <li class="layer" data-depth="0.02">
+                                    <img src="img/color-shape/feature-2.svg" alt="shape" class="img-fluid position-absolute color-shape-2 z-5">
+                                </li>
+                                <li class="layer" data-depth="0.03">
+                                    <img src="img/color-shape/feature-3.svg" alt="shape" class="img-fluid position-absolute color-shape-3">
+                                </li>
+                            </ul>
+                            <!--animated shape end-->
+                            <ul class="integration-list list-unstyled mb-0">
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/airbnb.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/figma.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/facebook.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/sales-force.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/atlassian.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="50">
+                                    <div class="single-integration">
+                                        <img src="img/integations/dropbox-2.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/dynamic-365.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/erecruiter.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/evernote.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/google-icon.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/slack.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <div class="single-integration">
+                                        <img src="img/integations/google-analytics.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/google-drive.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/hubspot.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/instagram.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/linkedin.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/mailchimp.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="150">
+                                    <div class="single-integration">
+                                        <img src="img/integations/marekto.png" alt="integration" class="img-fluid">
+                                        <h6 class="mb-0 mt-4">Brand Name</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+        <!--integration section end-->
+
+        <!--customer review tab section start-->
+        {{-- <section class="testimonial-section ptb-120 bg-light">
+            <div class="container">
+                <div class="row justify-content-center align-content-center">
+                    <div class="col-md-10 col-lg-6">
+                        <div class="section-heading text-center" data-aos="fade-up">
+                            <h4 class="h5 text-primary">Testimonial</h4>
+                            <h2>What They Say About Us</h2>
+                            <p>Uniquely promote adaptive quality vectors rather than stand-alone e-markets pontificate alternative architectures with accurate schemas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="position-relative w-100" data-aos="fade-up" data-aos-delay="50">
+                            <div class="swiper-container testimonialSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
+                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <div class="d-flex mb-32 align-items-center">
+                                            <img src="img/testimonial/1.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <div class="author-info">
+                                                <h6 class="mb-0">Mr.Rupan Oberoi</h6>
+                                                <small>Founder and CEO at Amaara Herbs</small>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <h6>The Best Template You Got to Have it!</h6>
+                                            Globally network long-term high-impact schemas vis-a-vis distinctive e-commerce
+                                            cross-media infrastructures rather than ethical
+                                        </blockquote>
+                                        <ul class="review-rate mb-0 mt-2 list-unstyled list-inline">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                    </div>
+                                    <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
+                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <div class="d-flex mb-32 align-items-center">
+                                            <img src="img/testimonial/3.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <div class="author-info">
+                                                <h6 class="mb-0">Oberoi R.</h6>
+                                                <small>CEO at Herbs</small>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <h6>Embarrassed by the First Version.</h6>
+                                            Dynamically create innovative core competencies with effective best
+                                            practices promote innovative infrastructures.
+                                        </blockquote>
+                                        <ul class="review-rate mb-0 mt-2 list-unstyled list-inline">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                    </div>
+                                    <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
+                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <div class="d-flex mb-32 align-items-center">
+                                            <img src="img/testimonial/2.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <div class="author-info">
+                                                <h6 class="mb-0">Mr.Rupan Oberoi</h6>
+                                                <small>Founder and CEO</small>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <h6>Amazing Future Basics template!</h6>
+                                            Appropriately negotiate interactive niches rather than parallel strategic theme incubate premium total linkage areas.
+                                        </blockquote>
+                                        <ul class="review-rate mb-0 mt-2 list-unstyled list-inline">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                    </div>
+                                    <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
+                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <div class="d-flex mb-32 align-items-center">
+                                            <img src="img/testimonial/4.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <div class="author-info">
+                                                <h6 class="mb-0">Joan Dho</h6>
+                                                <small>Founder and CTO</small>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <h6>Best Template for SAAS Company!</h6>
+                                            Dynamically create innovative core competencies with effective best
+                                            practices promote innovative infrastructures.
+                                        </blockquote>
+                                        <ul class="review-rate mb-0 mt-2 list-unstyled list-inline">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                    </div>
+                                    <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
+                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <div class="d-flex mb-32 align-items-center">
+                                            <img src="img/testimonial/5.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <div class="author-info">
+                                                <h6 class="mb-0">Ranu Mondal</h6>
+                                                <small>Lead Developer</small>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <h6>It is undeniably good!</h6>
+                                            Rapidiously supply client-centric e-markets and maintainable processes progressively engineer
+                                        </blockquote>
+                                        <ul class="review-rate mb-0 mt-2 list-unstyled list-inline">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="swiper-button-next"></span>
+                            <span class="swiper-button-prev"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+        <!--customer review tab section end-->
 
         <!--cat subscribe start-->
         <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
@@ -762,9 +1149,23 @@
                             </div>
                             <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
                                 <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
-
+                                {{-- <a href="https://www.youtube.com/MuJQnSe1R5k"" class="text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> <i
+                                        class="fas fa-play"></i> Watch Demo </a> --}}
                             </div>
-
+                            {{-- <ul class="nav justify-content-center subscribe-feature-list mt-4" data-aos="fade-up" data-aos-delay="100">
+                                <li class="nav-item">
+                                    <span><i class="far fa-check-circle text-primary me-2"></i>No hidden charges</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span><i class="far fa-check-circle text-primary me-2"></i>No credit card required</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span><i class="far fa-check-circle text-primary me-2"></i>Support 24/7</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span><i class="far fa-check-circle text-primary me-2"></i>Be part of the development</span>
+                                </li>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -787,7 +1188,13 @@
                                     <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
                                     <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
                                 </div>
+                                {{-- <p>Our latest news, articles, and resources, we will sent to
+                                    your inbox weekly.</p>
 
+                                <form class="newsletter-form position-relative d-block d-lg-flex d-md-flex">
+                                    <input type="text" class="input-newsletter form-control me-2" placeholder="Enter your email" name="email" required="" autocomplete="off">
+                                    <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
+                                </form> --}}
                                 <div class="ratting-wrap mt-4">
                                     <h6 class="mb-0">10/10 Overall rating</h6>
                                     <ul class="list-unstyled rating-list list-inline mb-0">
@@ -829,6 +1236,9 @@
                                         <h3>Quick access</h3>
                                         <ul class="list-unstyled footer-nav-list mb-lg-0">
                                             <li><a href="{{ route('contact-us') }}" class="text-decoration-none">Contact us</a></li>
+                                            {{-- <li><a href="support.html" class="text-decoration-none">Support</a></li>
+                                            <li><a href="support-single.html" class="text-decoration-none">Support center</a></li>
+                                            <li><a href="team.html" class="text-decoration-none">Our Team</a></li> --}}
                                             <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a>
                                             </li>
                                         </ul>
@@ -873,6 +1283,7 @@
 
 
     </div>
+
     <!--build:js-->
     <script src="js/vendors/jquery-3.6.0.min.js"></script>
     <script src="js/vendors/bootstrap.bundle.min.js"></script>
