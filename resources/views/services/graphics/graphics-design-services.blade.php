@@ -337,7 +337,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help?</h4>
+                            <h4 class="h5 text-primary">How we can help</h4>
                             <h2>Graphic Designs That help You Stand Out From The Rest.</h2>
                             <p>
                                 In today's conjested digital world full of pictures,
