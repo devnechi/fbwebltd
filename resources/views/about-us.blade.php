@@ -346,16 +346,16 @@
                                         future. Are you coming?
                                     </h1>
                                     <p class="lead">
-                                        Future Basics aims to respond to the widely un-acknowledged and un-
-                                        attended need for digitization in our surrounding society at a corporate,
+                                        Future Basics aims to respond to the widely un-acknowledged and un-attended need
+                                         for digitization in our society at corporate,
                                         business and community level. We believe the future is digital, and we aim
-                                        to be part of the frontliners that lead our community into this digital future.
+                                        to be part of the frontliners that lead our community into this future.
                                     </p>
                                    <p class="lead">
-                                        Through innovation and technology, we are successfully implimenting the
+                                        Through innovation and technology, we implement the
                                         concept of digitization in various parts of our society, which in turn
-                                        progressively improves local business effeciency and the ease of life for our
-                                        community members.
+                                        improves local business effeciency and the ease of life our
+                                        community.
                                     </p>
                                     <a href="{{ route('careers-with-us') }}" class="btn btn-primary mt-4 me-3">Join Us</a>
                                     <a href="{{ route('developers-info-entery-form') }}" class="btn btn-primary mt-4 me-3">Join Our Dev Pool</a>
