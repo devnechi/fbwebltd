@@ -382,7 +382,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
-                            <h2>Leading Our Community Into The
+                            <h2>Are You Coming With Us Into The
                                 Future.</h2>
                             <p>
                                 We believe the future is digital,
@@ -727,7 +727,7 @@
                             <div class="process-icon border border-light bg-custom-light rounded-custom p-3">
                                 <span class="h2 mb-0 text-primary fw-bold">4</span>
                             </div>
-                            <h3 class="h5">Delivery & Maintaince</h3>
+                            <h3 class="h5"><br/> Delivery & Maintaince</h3>
                             <p class="mb-0">
                                 Product launching, followed by
                                 continous monitoring and
