@@ -337,13 +337,12 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             <h4 class="h5 text-primary">How we can help</h4>
-                            <h2>Make data driven decisions.</h2>
+                            <h2>Make data driven decisions</h2>
                             <p>
                                 Data predicts your future
-
                             </p>
                             <p>
-                                making sense of data
+                                Making sense of data
                             </p>
                         </div>
                     </div>
@@ -355,16 +354,13 @@
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
                                     <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Data science capacity assessment strategies</h3>
+                                    <h3 class="h5 mb-0">Data science capacity strategies</h3>
                                 </div>
                                 <div class="feature-content">
                                     <p class="mb-0">
-                                        In today's world, packaging is almost
-                                        as important as the quality and
-                                        content of your product or service.
-                                        We design quality packaging that
-                                        helps your product or service give
-                                        the first impression it deserves.
+                                        We support businesses to establish
+                                         data science potential, capacity
+                                         requirements and strategies.
                                         </p>
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
@@ -375,9 +371,9 @@
                                     <h3 class="h5 mb-0">Data collection strategies</h3>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">All major brands logos are the first impression of the company.
+                                    {{-- <p class="mb-0">All major brands logos are the first impression of the company.
                                         We've narrowed it to a science, a process of building logos that are unforgettable
-                                         and sustain themselves over time.</p>
+                                         and sustain themselves over time.</p> --}}
                                 </div>
                                 {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -387,10 +383,10 @@
                                     <h3 class="h5 mb-0">Big Data Mining</h3>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">
+                                    {{-- <p class="mb-0">
                                         Its well known high-quality info-graphics are more likely to be read than blunt text.
                                         We understand the need to properly convey ideas and information visually in away
-                                        that appeals to the intended user.</p>
+                                        that appeals to the intended user.</p> --}}
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -400,14 +396,14 @@
                                     <h3 class="h5 mb-0">Data Modeling</h3>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">
+                                    {{-- <p class="mb-0">
                                         We help you design and print your
                                         content (posters, brochures,
                                         advertisements, business cards
                                         etc...) in way that effectively
                                         communicates your message to
                                         your audience
-                                        </p>
+                                        </p> --}}
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -417,14 +413,14 @@
                                     <h3 class="h5 mb-0">Machine  Learning </h3>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">
+                                    {{-- <p class="mb-0">
                                         Whether it is for a product,
                                         service, event or raising
                                         awareness, we offer effective
                                         advice and strategies on how to
                                         best carry out the advertisement
                                         and deployment.
-                                        </p>
+                                        </p> --}}
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -434,14 +430,14 @@
                                     <h3 class="h5 mb-0">Artificial Intelligence</h3>
                                 </div>
                                 <div class="feature-content">
-                                    <p class="mb-0">
+                                    {{-- <p class="mb-0">
                                         In today's world, packaging is almost
                                         as important as the quality and
                                         content of your product or service.
                                         We design quality packaging that
                                         helps your product or service give
                                         the first impression it deserves.
-                                    </p>
+                                    </p> --}}
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
