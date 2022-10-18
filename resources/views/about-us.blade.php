@@ -471,8 +471,8 @@
                             <h2>The Core Values That Drive Us</h2>
                             <p>
                                 A commitment to lead, innovate and
-                                continously improve the communities and
-                                businesses around us.
+                                continously improve businesses and
+                                communities around us.
                             </p>
                             <ul class="list-unstyled mt-5">
                                 <li class="d-flex align-items-start mb-4">
@@ -482,9 +482,7 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Community Obligation</h3>
                                         <p>
-                                            We believe in unanimous development.
-                                            Therefore to us, progress only exists if it
-                                            includes each member of our societies.
+                                            We believe in equitable growth, we everbody is included.
                                         </p>
                                     </div>
                                 </li>
