@@ -350,8 +350,8 @@
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start mt-5 mt-lg-0 mt-xl-0" data-aos="fade-up">
                             <h1 class="fw-bold display-5">Simplified, Tailored and Innovative Digital Solutions</h1>
                             <p class="lead">
-                                We support business, corporate and
-                                community through
+                                We support businesses, corporates and
+                                communities through
                                 innovation and technology.
                             </p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
@@ -484,7 +484,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-5 col-md-12">
                         <div class="section-heading" data-aos="fade-up">
-                            <h4 class="h5 text-primary">Features</h4>
+                            {{-- <h4 class="h5 text-primary">Features</h4> --}}
                             <h2>Powerful Solutions for Your Business</h2>
                             <p>
                                 Implement digital strategies that are
@@ -528,18 +528,19 @@
                             <ul class="img-overlay-list list-unstyled position-absolute">
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="50">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Improve Business performance  </h6>
+                                    <h6 class="mb-0">Improve business performance  </h6>
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="100">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Automate your business
-                                        processes for increased
-                                        efficiency. </h6>
+                                    <h6 class="mb-0">Automate business processes. </h6>
                                 </li>
                                 <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="150">
                                     <i class="fas fa-check bg-primary text-white rounded-circle"></i>
-                                    <h6 class="mb-0">Make effective business
-                                        decisions using data</h6>
+                                    <h6 class="mb-0">Make effective business decisions using data</h6>
+                                </li>
+                                <li class="d-flex align-items-center bg-white rounded shadow-sm p-3" data-aos="fade-up" data-aos-delay="150">
+                                    <i class="fas fa-check bg-primary text-white rounded-circle"></i>
+                                    <h6 class="mb-0">Improve online business strategies</h6>
                                 </li>
                             </ul>
                             <img src="img/image-2.png" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
@@ -556,7 +557,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center" data-aos="fade-up">
                             <h2>Services We Offer</h2>
-                            <p>Choose your digitalsolution today</p>
+                            <p>Choose your digital solution today</p>
                         </div>
                     </div>
                 </div>
