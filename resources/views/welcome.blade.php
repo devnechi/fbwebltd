@@ -578,12 +578,9 @@
                                         We provide expert advice on how
                                         to implement new software
                                         solutions or improve existing ones in
-                                        order to:
-                                        Increase business efficiency
-                                        Increase ease of work
-                                        Increase market competetiveness
-                                        Improve customer engagement
-                                        Expand their business.
+                                        order to, increase business efficiency, ease of work,
+                                        market competetiveness, customer engagement
+                                        and expand their business.
                                     </p>
                                     <p>Our solutions are built to be user-centered, increasing customer satisfaction which is optimal in growing a business.</p>
                                     <h6 class="mt-4">Included with...</h6>
