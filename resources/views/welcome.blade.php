@@ -622,7 +622,7 @@
                                         Get custom made digital software that
                                         increases your business performance and
                                         efficiency as well as ease of work at any
-                                        level,regardless of your industry or size.
+                                        level, regardless of your industry or size.
                                     </p>
                                 </div>
                                 <a href="{{ route('all-prototyping-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
@@ -646,7 +646,7 @@
                                     <i class="fal fa-cog icon-sm text-warning"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Graphic design</h3>
+                                    <h3 class="h5">Graphic Design</h3>
                                     <p class="mb-0">
                                         Give your business and brand a
                                         proffessional essence with custom made
@@ -669,7 +669,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
-                            <h4 class="h5 text-primary">Process</h4>
+                            {{-- <h4 class="h5 text-primary">Process</h4> --}}
                             <h2>A Development Process You Can Trust</h2>
                             <p>
                                 Using world standard development
