@@ -482,7 +482,7 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Community Obligation</h3>
                                         <p>
-                                            We believe in equitable growth, we everbody is included.
+                                            We believe in equitable growth, where everbody is included.
                                         </p>
                                     </div>
                                 </li>
@@ -493,10 +493,8 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Innovative Thinking</h3>
                                         <p>
-                                            We focus on creating modern and
-                                            unprecedented methods of tackling different
-                                            types of issues in our surrounding business
-                                            and community environments.
+                                            We belive in taking the road less travelled while using technology to
+                                            shape the future of our businesses and communities.
                                         </p>
                                     </div>
                                 </li>
@@ -507,10 +505,8 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Accountability & Transparency</h3>
                                         <p>
-                                            We maintain trust and integrity in all our
-                                            activities, conducting them in an ethical and
-                                            traceable way that ensures safety and comfort
-                                            to all our clients.
+                                            We maintain trust, practise ethics and intergirty to
+                                             ensure safety and comfort to all our clients.
                                         </p>
                                     </div>
                                 </li>
