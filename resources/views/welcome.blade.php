@@ -351,7 +351,7 @@
                             <h1 class="fw-bold display-5">Simplified, Tailored and Innovative Digital Solutions</h1>
                             <p class="lead">
                                 We support business, corporate and
-                                community development through
+                                community through
                                 innovation and technology.
                             </p>
                             <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
@@ -439,7 +439,7 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-chart-pie-alt icon-one"></i>
-                                <h5 class="h6">Effective Solutions</h5>
+                                <h5 class="h6">Effective</h5>
                                 <p>
                                     Efficient solutions that work
                                     in the real world.
@@ -449,17 +449,17 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-pen-nib icon-two"></i>
-                                <h5 class="h6">Personalized Designs</h5>
+                                <h5 class="h6">Personalized</h5>
                                 <p>Get solutions that are built with the intended end-user in mind.</p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-chart-network icon-three"></i>
-                                <h5 class="h6">Versatile Solutions</h5>
+                                <h5 class="h6">Versatile</h5>
                                 <p>
                                     Digital solutions that
-                                    continoulsy adapt to their
+                                    continuously adapt to their
                                     intended environment
                                 </p>
                             </div>
@@ -467,7 +467,7 @@
                         <div class="col-lg-3 col-xl-3 col-md-6 mt-4 mt-md-4 mt-lg-0">
                             <div class="single-icon-box p-0 p-lg-4">
                                 <i class="far fa-bezier-curve icon-four"></i>
-                                <h5 class="h6">Tailored Solutions </h5>
+                                <h5 class="h6">Tailored </h5>
                                 <p>Customised solutions that fit
                                     each unique context.</p>
                             </div>
