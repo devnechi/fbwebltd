@@ -569,16 +569,14 @@
                                     <i class="fal fa-analytics icon-sm text-primary"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h3 class="h5">Business analysis & system
-                                        development</h3>
-                                    <p>
-                                        Get custom made business software
+                                    <h3 class="h5">Business analysis & system development</h3>
+                                    {{-- <p>
+                                        Get custom-made software
                                         solutions that address your specific
-                                        business needs, context and
-                                        processes.
-                                        We analyse our client's businesses
-                                        and provide expert advice on how
-                                        they can implement new software
+                                        business needs. --}}
+                                        <p>
+                                        We provide expert advice on how
+                                        to implement new software
                                         solutions or improve existing ones in
                                         order to:
                                         Increase business efficiency
@@ -587,10 +585,10 @@
                                         Improve customer engagement
                                         Expand their business.
                                     </p>
-                                    <p>Our solution are built to be user-centered, increasing customer satisfaction which is optimal in growing a business.</p>
+                                    <p>Our solutions are built to be user-centered, increasing customer satisfaction which is optimal in growing a business.</p>
                                     <h6 class="mt-4">Included with...</h6>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>High-convertion</li>
+                                        <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>High-convertion rate</li>
                                         <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Personal Branding</li>
                                         <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Performance optimized</li>
                                         <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>User friendly (UI/UX)</li>
