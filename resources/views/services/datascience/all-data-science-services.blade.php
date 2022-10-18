@@ -351,6 +351,24 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="feature-grid">
+
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Data science capacity assessment strategies</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        In today's world, packaging is almost
+                                        as important as the quality and
+                                        content of your product or service.
+                                        We design quality packaging that
+                                        helps your product or service give
+                                        the first impression it deserves.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
                             <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
                                     <i class="far fa-user-friends fa-2x text-primary me-3"></i>
@@ -406,23 +424,6 @@
                                         advice and strategies on how to
                                         best carry out the advertisement
                                         and deployment.
-                                        </p>
-                                </div>
-                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                <div class="rounded mb-2 d-flex align-items-center">
-                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                    <h3 class="h5 mb-0">Natural Language Processing</h3>
-                                </div>
-                                <div class="feature-content">
-                                    <p class="mb-0">
-                                        In today's world, packaging is almost
-                                        as important as the quality and
-                                        content of your product or service.
-                                        We design quality packaging that
-                                        helps your product or service give
-                                        the first impression it deserves.
                                         </p>
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
