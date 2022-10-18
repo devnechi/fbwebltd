@@ -311,6 +311,25 @@
             </nav>
         </header>
         <!--header section end-->
+
+        <!--page header section start-->
+        <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <h1 class="display-5 fw-bold">Data Science Services</h1>
+                        <p class="lead">
+                            Do you want to gain insight on a field, industry, market or business.
+                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
+            </div>
+        </section>
+        <!--page header section end-->
+
            <!--features grid section start-->
            <section class="feature-section ptb-120 bg-light">
             <div class="container">
@@ -431,24 +450,6 @@
             </div>
            </section>
           <!--features grid section end-->
-
-        <!--page header section start-->
-        <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Data Science Services</h1>
-                        <p class="lead">
-                            Do you want to gain insight on a field, industry, market or business.
-                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
-
-                        </p>
-                    </div>
-                </div>
-                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
-            </div>
-        </section>
-        <!--page header section end-->
 
           <!--our work process start-->
           <section class="work-process ptb-120">
