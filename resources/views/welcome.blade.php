@@ -362,11 +362,11 @@
                     <div class="col-xl-6 col-lg-6 mt-lg-5 mt-4">
                         <div class="hero-img-wrap position-relative" style="" data-aos="fade-up">
                             <div class="hero-screen-wrap">
-                                <div class="phone-screen">
+                                {{-- <div class="phone-screen">
                                     <img src="img/screen/phn-hd.png" alt="hero image" class="position-relative img-fluid">
-                                </div>
+                                </div> --}}
                                 <div class="mac-screen">
-                                    <img src="img/screen/dash-hero.png" alt="hero image" class="position-relative img-fluid rounded-custom">
+                                    <img src="img/screen/leading.png" alt="hero image" class="position-relative img-fluid rounded-custom">
                                 </div>
                             </div>
                         </div>
@@ -486,18 +486,18 @@
                         <div class="section-heading" data-aos="fade-up">
                             {{-- <h4 class="h5 text-primary">Features</h4> --}}
                             <h2>Powerful Solutions for Your Business</h2>
-                            <p>
+                            {{-- <p>
                                 Implement digital strategies that are
                                 tailored to your business needs with
                                 the knowledge of what works for you.
-                            </p>
+                            </p> --}}
                             <ul class="list-unstyled mt-5">
                                 <li class="d-flex align-items-start mb-4">
                                     <div class="icon-box bg-primary rounded me-4">
                                         <i class="fas fa-bezier-curve text-white"></i>
                                     </div>
                                     <div class="icon-content">
-                                        <h3 class="h5">Automate your business processes</h3>
+                                        <h3 class="h5">Automating your business processes</h3>
                                         <p>
                                             We create digital software and strategies
                                             that automate various tasks within your
