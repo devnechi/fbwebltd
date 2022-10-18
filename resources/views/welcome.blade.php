@@ -350,7 +350,7 @@
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start mt-5 mt-lg-0 mt-xl-0" data-aos="fade-up">
                             <h1 class="fw-bold display-5">Simplified, Tailored and Innovative Digital Solutions</h1>
                             <p class="lead">
-                                We support businesses, corporates and
+                                We support businesses, corporations and
                                 communities through
                                 innovation and technology.
                             </p>
