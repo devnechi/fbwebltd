@@ -311,6 +311,126 @@
             </nav>
         </header>
         <!--header section end-->
+           <!--features grid section start-->
+           <section class="feature-section ptb-120 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="section-heading text-center">
+                            <h4 class="h5 text-primary">How we can help</h4>
+                            <h2>Make data driven decisions.</h2>
+                            <p>
+                                Data predicts your future
+
+                            </p>
+                            <p>
+                                making sense of data
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature-grid">
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Data collection strategies</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">All major brands logos are the first impression of the company.
+                                        We've narrowed it to a science, a process of building logos that are unforgettable
+                                         and sustain themselves over time.</p>
+                                </div>
+                                {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Big Data Mining</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Its well known high-quality info-graphics are more likely to be read than blunt text.
+                                        We understand the need to properly convey ideas and information visually in away
+                                        that appeals to the intended user.</p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Data Modeling</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        We help you design and print your
+                                        content (posters, brochures,
+                                        advertisements, business cards
+                                        etc...) in way that effectively
+                                        communicates your message to
+                                        your audience
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Machine  Learning </h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Whether it is for a product,
+                                        service, event or raising
+                                        awareness, we offer effective
+                                        advice and strategies on how to
+                                        best carry out the advertisement
+                                        and deployment.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Natural Language Processing</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        In today's world, packaging is almost
+                                        as important as the quality and
+                                        content of your product or service.
+                                        We design quality packaging that
+                                        helps your product or service give
+                                        the first impression it deserves.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Artificial Intelligence</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        In today's world, packaging is almost
+                                        as important as the quality and
+                                        content of your product or service.
+                                        We design quality packaging that
+                                        helps your product or service give
+                                        the first impression it deserves.
+                                    </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+          <!--features grid section end-->
 
         <!--page header section start-->
         <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
