@@ -87,16 +87,17 @@
                                                 <span class="me-2"><i class="far fa-eject"></i></span>
                                                 <div class="drop-title">Graphics Design</div>
                                             </a>
+
                                             <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
-                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
                                                 <div class="drop-title">Website Development</div>
                                             </a>
 
-                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-mobile"></i></span>
                                                 <div class="drop-title">Mobile App Development</div>
                                             </a>
@@ -108,14 +109,14 @@
                                                 <div class="drop-title">Prototyping</div>
                                             </a>
                                             <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bars"></i></span>
-                                                <div class="drop-title">Software Eng.</div>
+                                                <span class="me-2"><i class="far fa-code-fork"></i></span>
+                                                <div class="drop-title">Software Engineering</div>
                                             </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-bus-sys-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-briefcase"></i></span>
                                                 <div class="drop-title">Business System Development</div>
                                             </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-branding-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-heartbeat"></i></span>
                                                 <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
@@ -144,6 +145,20 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                                {{-- @guest
+                                @if (Route::has('login'))
+                                    <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                @endif
+                            @else
+                            <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+
+                            @endguest --}}
                                 <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
@@ -156,10 +171,10 @@
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Nakwalify</div>
-                                            </a>
+                                            </a> --}}
 
 
                                         </div>
@@ -169,7 +184,7 @@
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-life-ring"></i></span>
                                                 <div class="drop-title">Wakala +</div>
                                             </a>
@@ -180,7 +195,7 @@
                                             <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-laptop-code"></i></span>
                                                 <div class="drop-title">Avorra</div>
-                                            </a>
+                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -222,12 +237,12 @@
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Data Science</div>
                                                 </a>
-                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
                                                     <div class="drop-title">Website Development</div>
                                                 </a>
 
-                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
+                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-mobile"></i></span>
                                                     <div class="drop-title">Mobile App Development</div>
                                                 </a>
@@ -240,7 +255,7 @@
                                                 </a>
                                                 <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                    <div class="drop-title">Software Eng.</div>
+                                                    <div class="drop-title">Software Engineering</div>
                                                 </a>
                                                 <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-briefcase"></i></span>
@@ -271,14 +286,14 @@
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Nakwalify</div>
-                                                </a>
+                                                </a> --}}
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                <a href="https://smartrisiti.com/" class="dropdown-link">
+                                                {{-- <a href="https://smartrisiti.com/" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Smart Risiti</div>
                                                 </a>
@@ -293,16 +308,32 @@
                                                 <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                     <span class="me-2" ><i class="far fa-laptop-code"></i ></span>
                                                     <div class="drop-title">Avorra</div>
-                                                </a>
+                                                </a> --}}
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                             <div class="action-btns mt-4 ps-3">
-                                <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
-                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
+                                    @guest
+                                        @if (Route::has('login'))
+                                            <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
+                                        @endif
+                                    @else
+                                    <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+
+                                    @endguest
+                                    <div>
+                                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
+                                    </div>
                             </div>
+
                         </div>
                        </div>
                     <!--offcanvas menu end-->

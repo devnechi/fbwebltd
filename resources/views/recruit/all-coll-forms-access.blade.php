@@ -320,11 +320,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Data Science Service</h1>
+                        <h1 class="display-5 fw-bold">We are always looking for new Team Members</h1>
                         <p class="lead">
-                            Do you want to gain insight on a field, industry, market or business.
-                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
-
+                         Select an area of your interest and join a pool of developers in our system.
                         </p>
                     </div>
                 </div>
