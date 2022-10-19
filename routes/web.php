@@ -62,6 +62,14 @@ Route::get('/prototyping-service-details', [App\Http\Controllers\PublicPagesCont
 
 Route::get('/all-software-development-services', [App\Http\Controllers\PublicPagesController::class, 'softDevAllservices'])->name('all-software-development-services');
 Route::get('/software-development-service-details', [App\Http\Controllers\PublicPagesController::class, 'softDevServicesDetails'])->name('software-development-service-details');
+//web application
+Route::get('/all-web-development-services', [App\Http\Controllers\PublicPagesController::class, 'allWebDevServices'])->name('all-web-development-services');
+//mobile application
+Route::get('/all-mobile-development-services', [App\Http\Controllers\PublicPagesController::class, 'allMobileDevServices'])->name('all-mobile-development-services');
+//business system all-bus-sys-development-services
+Route::get('/all-bus-sys-development-services', [App\Http\Controllers\PublicPagesController::class, 'allBusSysDevServices'])->name('all-bus-sys-development-services');
+//branding and services
+Route::get('/all-branding-services', [App\Http\Controllers\PublicPagesController::class, 'allBrandingServices'])->name('all-branding-services');
 
 Route::get('/all-data-science-services', [App\Http\Controllers\PublicPagesController::class, 'alldataScienceservices'])->name('all-data-science-services');
 Route::get('/data-science-service-details', [App\Http\Controllers\PublicPagesController::class, 'dataScienceServicesDetails'])->name('data-science-service-details');

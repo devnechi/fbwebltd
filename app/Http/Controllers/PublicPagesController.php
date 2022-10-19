@@ -91,7 +91,28 @@ class PublicPagesController extends Controller
         return view('services.development.software-dev-service-details');
     }
 
-          /**
+    //all web development services
+    public function allWebDevServices(){
+        return view('services.development.web-dev.all-web-development-services');
+    }
+
+    //all mobile development services
+    public function allMobileDevServices(){
+        return view('services.development.mobile-dev.all-mobile-development-services');
+    }
+
+    // all business system development services
+    public function allBusSysDevServices(){
+        return view('services.development.bus-sys-dev.all-bus-sys-dev-services');
+
+    }
+
+    // all branding service
+    public function allBrandingServices(){
+        return view('services.branding.all-branding-services');
+
+    }
+    /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable

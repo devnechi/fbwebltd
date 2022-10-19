@@ -316,7 +316,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Software Engineering Services</h1>
+                        <h1 class="display-5 fw-bold">Business and Enterprise Systems Development Services</h1>
                         <p class="lead">
                             With our profound knowledge in modern
                             technologies, along with a creative and
@@ -337,7 +337,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Software Solutions For Everyone</h2>
+                            <h2>Offering Business Systems Development For Everyone</h2>
                             <p>
                                 We offer software solutions for clients at
                                 individual, business and corporate level
@@ -355,7 +355,7 @@
                                         <i class="fal fa-share-alt fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Applications development</h3>
+                                        <h3 class="h5">Intranets Solutions</h3>
                                         <p>
                                             We design and develop a wide range of
                                             robust high quality applications that are
@@ -380,7 +380,7 @@
                                         <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Cyber Security</h3>
+                                        <h3 class="h5">Extranet Solutions</h3>
                                         <p class="mb-0">
                                             We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
                                             Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
@@ -394,92 +394,6 @@
                                     </div>
                                     <span class="border-line"></span>
                                 </div>
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-dark mb-32">
-                                        <i class="fal fa-sync-alt fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Software product development</h3>
-                                        <p class="mb-0">
-                                            We provide development services to a wide
-                                            range of clients. Whether you have idea that
-                                            requires materialisation or need help with
-                                            maintaining or upgrading your software, we
-                                            are happy to offer our services at any stage of
-                                            the process.
-                                        </p>
-                                        <h6 class="mt-4">Included with...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product consulting</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product UX design</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>MVP development</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-product analytics</li>
-
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-success mb-32">
-                                        <i class="fal fa-spell-check fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Quality Assurance Testing</h3>
-                                        <p class="mb-0">
-                                            We believe in quality, therefore we offer
-                                            Quliaty Assurance (QA) Testing services that
-                                            ensure your digital products are of the
-                                            highest standard possible, thus ensuring
-                                            better user experience and product
-                                            performance.
-                                        </p>
-                                        <h6 class="mt-4">Tests Included...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Ads A/B Testing</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>CR Optimization</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Content Optimization</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
-                                {{-- <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-chart-pie fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Advanced Analytics</h3>
-                                        <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                            imperatives. Professionally architect unique.</p>
-                                        <h6 class="mt-4">Included with...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Goals, Targets Setup</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Users Analytics</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Optimization Content</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div> --}}
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-warning mb-32">
-                                        <i class="fal fa-filter fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Maintenance and Support</h3>
-                                        <p class="mb-0">
-                                            We assist clients with the maintenance of
-                                        their IT software and infrastructure. We help
-                                        them to continoulsy optimize their IT
-                                        structures and performance.
-                                        </p>
-                                        <h6 class="mt-4">Maintaince in...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Existing software</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Developed software</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Adopted software </li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
                             </div>
 
                         </div>
@@ -489,7 +403,7 @@
         </section>
         <!--services section end-->
 
-          <!--our work process start-->
+          {{-- <!--our work process start-->
           <section class="work-process ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
@@ -624,7 +538,7 @@
                 </div>
             </div>
           </section>
-          <!--our work process end-->
+          <!--our work process end--> --}}
 
                   <!--footer section start-->
         <footer class="footer-section">

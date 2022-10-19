@@ -91,12 +91,12 @@
                                                 <span class="me-2"><i class="far fa-browser"></i></span>
                                                 <div class="drop-title">Data Science</div>
                                             </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
                                                 <div class="drop-title">Website Development</div>
                                             </a>
 
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-mobile"></i></span>
                                                 <div class="drop-title">Mobile App Development</div>
                                             </a>
@@ -111,11 +111,11 @@
                                                 <span class="me-2"><i class="far fa-code-fork"></i></span>
                                                 <div class="drop-title">Software Engineering</div>
                                             </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-bus-sys-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-briefcase"></i></span>
                                                 <div class="drop-title">Business System Development</div>
                                             </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
+                                            <a href="{{ route('all-branding-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-heartbeat"></i></span>
                                                 <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>

@@ -316,7 +316,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Software Engineering Services</h1>
+                        <h1 class="display-5 fw-bold">Web Application Development Services</h1>
                         <p class="lead">
                             With our profound knowledge in modern
                             technologies, along with a creative and
@@ -337,7 +337,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Software Solutions For Everyone</h2>
+                            <h2>Offering Web Application Development For Everyone</h2>
                             <p>
                                 We offer software solutions for clients at
                                 individual, business and corporate level
@@ -355,7 +355,7 @@
                                         <i class="fal fa-share-alt fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Applications development</h3>
+                                        <h3 class="h5">Static Website development</h3>
                                         <p>
                                             We design and develop a wide range of
                                             robust high quality applications that are
@@ -380,7 +380,7 @@
                                         <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Cyber Security</h3>
+                                        <h3 class="h5">Dynamic Web Applications</h3>
                                         <p class="mb-0">
                                             We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
                                             Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
@@ -399,7 +399,7 @@
                                         <i class="fal fa-sync-alt fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Software product development</h3>
+                                        <h3 class="h5">Content Management Systems (CMS)</h3>
                                         <p class="mb-0">
                                             We provide development services to a wide
                                             range of clients. Whether you have idea that
@@ -424,7 +424,7 @@
                                         <i class="fal fa-spell-check fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Quality Assurance Testing</h3>
+                                        <h3 class="h5">Progressive Web Applications (PWA's)</h3>
                                         <p class="mb-0">
                                             We believe in quality, therefore we offer
                                             Quliaty Assurance (QA) Testing services that
@@ -464,7 +464,7 @@
                                         <i class="fal fa-filter fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Maintenance and Support</h3>
+                                        <h3 class="h5">Multi-page Applications</h3>
                                         <p class="mb-0">
                                             We assist clients with the maintenance of
                                         their IT software and infrastructure. We help
@@ -489,7 +489,7 @@
         </section>
         <!--services section end-->
 
-          <!--our work process start-->
+          {{-- <!--our work process start-->
           <section class="work-process ptb-120">
             <div class="container">
                 <div class="row justify-content-center">
@@ -624,7 +624,7 @@
                 </div>
             </div>
           </section>
-          <!--our work process end-->
+          <!--our work process end--> --}}
 
                   <!--footer section start-->
         <footer class="footer-section">
