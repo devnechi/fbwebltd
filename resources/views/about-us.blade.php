@@ -519,7 +519,7 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Innovative Thinking</h3>
                                         <p>
-                                            We belive in taking the road less travelled while using technology to
+                                            We believe in taking the road less travelled while using technology to
                                             shape the future of our businesses and communities.
                                         </p>
                                     </div>

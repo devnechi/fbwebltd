@@ -366,7 +366,7 @@
                                     <img src="img/screen/phn-hd.png" alt="hero image" class="position-relative img-fluid">
                                 </div> --}}
                                 <div class="mac-screen">
-                                    <img src="img/screen/leading.png" alt="hero image" class="position-relative img-fluid rounded-custom">
+                                    <img src="img/screen/nheader.png" alt="hero image" class="position-relative img-fluid rounded-custom">
                                 </div>
                             </div>
                         </div>
