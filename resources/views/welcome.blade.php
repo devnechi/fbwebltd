@@ -382,7 +382,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
-                            <h2>Coming With Us Into The
+                            <h2>Come With Us Into The
                                 Future.</h2>
                             <p>
                                 We believe the future is digital,
