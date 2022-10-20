@@ -369,8 +369,10 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Developing Systems That Take Your Business
-                                To The Next Level</h2>
+                            <h2>
+                                Developing Systems That Take Your Business
+                                To The Next Level
+                            </h2>
                             <p>
                                 Improve business performance and
                                 efficiency by implementing tailor-made
