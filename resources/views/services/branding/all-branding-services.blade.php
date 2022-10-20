@@ -350,11 +350,10 @@
                     <div class="col-lg-8 col-md-12">
                         <h1 class="display-5 fw-bold">Branding and Digital Strategizing Services</h1>
                         <p class="lead">
-                            With our profound knowledge in modern
-                            technologies, along with a creative and
-                            dedicated team of experts, we design and
-                            develop software tailored to your needs that
-                            helps you achieve your goals more efficiently.</p>
+                            We help you build a brand that stands out
+                            and guide you on how to effectively navigate
+                            your brand through the digital world.
+                        </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -369,11 +368,11 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Branding and Digital Strategies For Everyone</h2>
+                            <h2>Take Your Brand To A Whole New Digital Level</h2>
                             <p>
-                                We offer software solutions for clients at
-                                individual, business and corporate level
-                                regardless of their industry or size.
+                                Find out how you can move your brand
+                                through the digital world with your best foot
+                                forward with each step.
                             </p>
                         </div>
                     </div>
@@ -387,22 +386,21 @@
                                         <i class="fal fa-share-alt fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Building a brand</h3>
+                                        <h3 class="h5">Social Media Management</h3>
                                         <p>
-                                            We design and develop a wide range of
-                                            robust high quality applications that are
-                                            compatible across all devices and platforms.
-                                            We provide guidance and leadership
-                                            throughout the entire development process
-                                            from ideation, to data gathering and
-                                            development.
+                                            Social media has become a
+                                            powerful tool for businesses
+                                            worldwide. We offer expert
+                                            advice and managemnet
+                                            services for your businesses'
+                                            social media pages across
+                                            all platforms
                                         </p>
                                         <h6 class="mt-4">Development in...</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Intranet and Extranet Solutions</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Social media handling</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Content creation</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Social media advice</li>
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
@@ -412,16 +410,24 @@
                                         <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Target audience identification</h3>
+                                        <h3 class="h5">Digital Advertising & Marketing</h3>
                                         <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
+                                            Today the world has become one big online community, so
+                                            advertising your business online has never been more important.
+                                            We help you take your busniess online and get it onto the screens
+                                            of the right people.
+                                        </p>
+                                        <p class="mb-0">
+                                            Whether it is for a product, service, event or raising awareness,
+                                            we offer effective advice and strategies on how to best carry out
+                                            the advertisement and deployment.
                                         </p>
                                         <h6 class="mt-4">Include...</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Online advertising</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Prinitng services</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Custom online ads</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Consultation/advice</li>
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
@@ -431,58 +437,27 @@
                                         <i class="fal fa-file-chart-line fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Visual Brand Identification</h3>
+                                        <h3 class="h5">Online Customer Engangement</h3>
                                         <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
+                                            In today's digital world, most
+                                            of your customers are part of
+                                            the growing online
+                                            community. We help you to
+                                            communicate and tend to
+                                            them in the most effective
+                                            way possible.
                                         </p>
                                         <h6 class="mt-4">Include...</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Targeted content</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Automated replies</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Customer data analysis</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Consultation/advice</li>
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
                                 </div>
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-danger mb-32">
-                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Brand Messaging</h3>
-                                        <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
-                                        </p>
-                                        <h6 class="mt-4">Include...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-danger mb-32">
-                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">PR and Marketing</h3>
-                                        <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
-                                        </p>
-                                        <h6 class="mt-4">Include...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
+
                             </div>
 
                         </div>

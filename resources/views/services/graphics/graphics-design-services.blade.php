@@ -50,12 +50,12 @@
 <body>
 
     <!--preloader start-->
-    {{-- <div id="preloader">
+    <div id="preloader">
         <div class="preloader-wrap">
             <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
-    </div> --}}
+    </div>
     <!--preloader end-->
     <!--main content wrapper start-->
     <div class="main-wrapper">

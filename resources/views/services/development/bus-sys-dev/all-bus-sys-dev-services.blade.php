@@ -347,13 +347,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Business and Enterprise Systems Development Services</h1>
+                        <h1 class="display-5 fw-bold">Business System Development Services</h1>
                         <p class="lead">
-                            With our profound knowledge in modern
-                            technologies, along with a creative and
-                            dedicated team of experts, we design and
-                            develop software tailored to your needs that
-                            helps you achieve your goals more efficiently.</p>
+                            Digitizing your business has never been
+                            more essential. We develop custom-made
+                            softwares that automate processes
+                            throughout your business thus improving
+                            business performance and efficiency.
+                        </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -368,65 +369,105 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Business Systems Development For Everyone</h2>
+                            <h2>Developing Systems That Take Your Business
+                                To The Next Level</h2>
                             <p>
-                                We offer software solutions for clients at
-                                individual, business and corporate level
-                                regardless of their industry or size.
+                                Improve business performance and
+                                efficiency by implementing tailor-made
+                                software in your business processes.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="position-relative w-100">
-                            <div class="feature-grid position-relative">
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-share-alt fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Intranets Solutions</h3>
-                                        <p>
-                                            We design and develop a wide range of
-                                            robust high quality applications that are
-                                            compatible across all devices and platforms.
-                                            We provide guidance and leadership
-                                            throughout the entire development process
-                                            from ideation, to data gathering and
-                                            development.
-                                        </p>
-                                        <h6 class="mt-4">Development in...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Intranet and Extranet Solutions</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
+                        <div class="feature-grid">
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-user-friends fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">HR Systems</h3>
                                 </div>
-                                <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-danger mb-32">
-                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Extranet Solutions</h3>
-                                        <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
-                                        </p>
-                                        <h6 class="mt-4">Include...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
-                            </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Software that helps you
+                                        handle your humna resource
+                                        digitally.
 
+                                    </p>
+                                </div>
+                                {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-spell-check fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Point Of Sale Systems</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Revolutionise the way your
+                                        business handles sale
+                                        transactions.
+                                    </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-cog fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Per Request Systems</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        In collaboration with you, we
+                                        develop software precisely
+                                        aimed at your specific needs.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-network-wired fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Project & Field Monitoring Systems </h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Digitally track your remote field
+                                        projects from wherever you are
+                                        with precision and ease.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-layer-group fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Business Data Systems</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Easily collect, store and analyse
+                                        valuable business data in oder to
+                                        effectively evaluate and monitor
+                                        your business.
+                                        </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
+                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <div class="rounded mb-2 d-flex align-items-center">
+                                    <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
+                                    <h3 class="h5 mb-0">Business Management Systems</h3>
+                                </div>
+                                <div class="feature-content">
+                                    <p class="mb-0">
+                                        Software that helps you easily
+                                        manage you rbusiness from all
+                                        aspects.
+                                    </p>
+                                </div>
+                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
