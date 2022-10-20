@@ -375,7 +375,7 @@
                                     <p class="lead">
                                         Through innovation and technology, we implement the
                                         concept of digitization in various parts of our society, which in turn
-                                        improves local business effeciency and the ease of life our
+                                        improves local business efficiency and the ease of life in our
                                         community.
                                     </p>
                                     {{-- <a href="{{ route('careers-with-us') }}"
@@ -497,7 +497,7 @@
                             <h2>The Core Values That Drive Us</h2>
                             <p>
                                 A commitment to lead, innovate and
-                                continously improve businesses and
+                                continuously improve businesses and
                                 communities around us.
                             </p>
                             <ul class="list-unstyled mt-5">
