@@ -531,7 +531,7 @@
                                     <div class="icon-content">
                                         <h3 class="h5">Accountability & Transparency</h3>
                                         <p>
-                                            We maintain trust, practise ethics and intergirty to
+                                            We maintain trust, ethics and integrity to
                                             ensure safety and comfort to all our clients.
                                         </p>
                                     </div>

@@ -388,13 +388,15 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Android Applications Development</h3>
                                         <p>
-                                            We design and develop a wide range of
-                                            robust high quality applications that are
-                                            compatible across all devices and platforms.
-                                            We provide guidance and leadership
-                                            throughout the entire development process
-                                            from ideation, to data gathering and
-                                            development.
+                                            In a competitive market, it is
+                                            important to develop and
+                                            implement quickly:
+                                            Our team, using Android
+                                            development tools can facilitate a
+                                            quicker development with an
+                                            easy integration of desired
+                                            features, reducing TTM (Time To
+                                            Market).
                                         </p>
                                         <h6 class="mt-4">Development in...</h6>
                                         <ul class="list-unstyled mb-0">
@@ -413,8 +415,13 @@
                                     <div class="feature-content">
                                         <h3 class="h5">iOS Applications Development</h3>
                                         <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
+                                            Excellent user experience
+                                            supported by the inherent
+                                            capabilities of iOS, and the
+                                            cohesion between software and
+                                            hardware enable our developers
+                                            to build products with efficiency
+                                            and reliability
                                         </p>
                                         <h6 class="mt-4">Include...</h6>
                                         <ul class="list-unstyled mb-0">

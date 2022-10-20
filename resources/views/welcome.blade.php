@@ -93,7 +93,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -382,7 +382,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6">
                         <div class="section-heading text-center" data-aos="fade-up">
-                            <h2>Are You Coming With Us Into The
+                            <h2>Coming With Us Into The
                                 Future.</h2>
                             <p>
                                 We believe the future is digital,
