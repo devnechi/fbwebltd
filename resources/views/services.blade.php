@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -120,22 +120,6 @@
                                                 <span class="me-2"><i class="far fa-heartbeat"></i></span>
                                                 <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
-                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                <div class="drop-title">Business Systems</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                <div class="drop-title">Digital Strategies</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-chart-network"></i></span>
-                                                <div class="drop-title">Business Analytics</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                                <div class="drop-title">Augumented Sol.</div>
-                                            </a> --}}
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                             <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -184,18 +168,6 @@
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
-                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                <div class="drop-title">Wakala +</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-headset"></i></span>
-                                                <div class="drop-title">Wakili</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-laptop-code"></i></span>
-                                                <div class="drop-title">Avorra</div>
-                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +211,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -717,7 +689,7 @@
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited Rights Reserved.</a></p>
 
                             </div>
                         </div>

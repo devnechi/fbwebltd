@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
@@ -225,7 +225,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">

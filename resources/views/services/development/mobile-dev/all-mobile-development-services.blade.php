@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -239,7 +239,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -383,7 +383,7 @@
                             <div class="feature-grid position-relative">
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-share-alt fa-2x text-white"></i>
+                                        <i class="fal fa-robot fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Android Applications Development</h3>
@@ -410,7 +410,7 @@
                                 </div>
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-danger mb-32">
-                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
+                                        <i class="fal fa-apple-whole fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">iOS Applications Development</h3>
@@ -459,7 +459,7 @@
                                 </div>
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-success mb-32">
-                                        <i class="fal fa-spell-check fa-2x text-white"></i>
+                                        <i class="fal fa-arrows-cross fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Cross device Applications</h3>
@@ -480,44 +480,6 @@
                                     </div>
                                     <span class="border-line"></span>
                                 </div>
-                                {{-- <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-chart-pie fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Advanced Analytics</h3>
-                                        <p class="mb-0">Synergistically pursue accurate initiatives without economically sound
-                                            imperatives. Professionally architect unique.</p>
-                                        <h6 class="mt-4">Included with...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Goals, Targets Setup</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Users Analytics</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Optimization Content</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div> --}}
-                                {{-- <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-warning mb-32">
-                                        <i class="fal fa-filter fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Multi-page Applications</h3>
-                                        <p class="mb-0">
-                                            We assist clients with the maintenance of
-                                        their IT software and infrastructure. We help
-                                        them to continoulsy optimize their IT
-                                        structures and performance.
-                                        </p>
-                                        <h6 class="mt-4">Maintaince in...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Existing software</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Developed software</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Adopted software </li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div> --}}
                             </div>
 
                         </div>
@@ -526,149 +488,41 @@
             </div>
         </section>
         <!--services section end-->
+                <!--cat subscribe start-->
+                <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10">
+                                <div class="subscribe-info-wrap text-center position-relative z-2">
+                                    <div class="section-heading" data-aos="fade-up">
+                                        <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                            Get Free Support.</h4>
+                                        <h2>Start Your Digital Solution Journey
+                                            Today.</h2>
+                                        <p>Customised Digital Solutions For:
+                                            Businesses, Communities & Corporations.</p>
+                                    </div>
+                                    <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
 
-          {{-- <!--our work process start-->
-          <section class="work-process ptb-120">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">Our Process</h4>
-                            <h2> Our Development Process</h2>
-                            <p>
-                                We utilize best practices and efficient methodologies for software engineering,
-                                 that guide us during the development process in a structured and systematic way.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-5 col-md-12 order-1 order-lg-0">
-                        <div class="img-wrap">
-                            <img src="img/se.png" alt="work process" class="img-fluid rounded-custom">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 order-0 order-lg-1">
-                        <ul class="work-process-list list-unstyled">
-                            <li class="d-flex align-items-start mb-4">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-folder-tree fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 1</span>
-                                    <h3 class="h5 mb-2">Research and Data gathering</h3>
-                                    <p>
-                                        We collect all relevant data, evaluate the goal of the solution and collect required feedback
-                                         from stakeholders or anyone who stands to benefit from the digital solution.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-bezier-curve fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 2</span>
-                                    <h3 class="h5 mb-2"> Defining</h3>
-                                    <p>
-                                        Once the data is gathered and business processes are identified,
-                                        the next step is to define and document the requirements and architecture of the proposed software.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-solid fa-compass-drafting fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 3</span>
-                                    <h3 class="h5 mb-2">Designing & Wireframing</h3>
-                                    <p>
-                                        Once the system requirements are
-                                        documented and approved, the illustrations
-                                        that will visualize the software are then
-                                        designed. The aim is to produce an iteractive
-                                        prototype that provides a look and feel of the
-                                        final product.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4 mb-lg-0">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-solid fa-code fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 4</span>
-                                    <h3 class="h5 mb-2">Development</h3>
-                                    <p>
-                                        After a prototype is finalised, the
-                                        development process of materialising the
-                                        prototype into a fully funtctional software
-                                        product begins. This step uses the most
-                                        effective tools and technologies chosen
-                                        carefully by our experts.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4 mb-lg-0">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-solid fa-microscope fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 5</span>
-                                    <h3 class="h5 mb-2">Testing</h3>
-                                    <p>
-                                        In this crucial step the developed software is
-                                        evaluated and put through tests that aim to
-                                        find and fix; errors, bugs and defects so to
-                                        ensure the system functions as required.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4 mb-lg-0">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-solid fa-rocket-launch fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 6</span>
-                                    <h3 class="h5 mb-2">Deployment</h3>
-                                    <p>
-                                        Here the system is launched and made
-                                        available for the target audience to use. The
-                                        deployment process is also monitored
-                                        closely, and any arising issues are attend to.
+                                    </div>
 
-                                        </p>
                                 </div>
-                            </li>
-                            <li class="d-flex align-items-start mb-4 mb-lg-0">
-                                <div class="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                                    <i class="far fa-solid fa-arrows-repeat fa-2x"></i>
-                                </div>
-                                <div class="icon-content">
-                                    <span class="text-primary h6">Step 7</span>
-                                    <h3 class="h5 mb-2">Maintenance & Up-keep</h3>
-                                    <p>
-                                        Once the software is deployed, we provide
-                                        our clients with maintenance and up-keep
-                                        services as this is another crucial element in
-                                        the life span of a software. During this phase,
-                                        the software is maintained and impoved
-                                        accordingly.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+                        <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
                     </div>
-                </div>
-            </div>
-          </section>
-          <!--our work process end--> --}}
+                </section>
+                <!--cat subscribe end-->
+
+
 
                   <!--footer section start-->
         <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top  bg-dark text-white ptb-120">
+            <div class="footer-top  footer-light ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -742,13 +596,13 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom  bg-dark text-white py-4">
+            <div class="footer-bottom footer-light py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited All Rights Reserved.</a></p>
 
                             </div>
                         </div>

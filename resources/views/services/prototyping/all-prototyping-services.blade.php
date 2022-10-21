@@ -386,7 +386,7 @@
                         <div class="feature-grid">
                             <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
                                 <div class="feature-icon rounded bg-primary mb-32">
-                                    <i class="fal fa-share-alt fa-2x text-white"></i>
+                                    <i class="fal fa-memo-circle-check fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h3 class="h5">Structuring the idea</h3>
@@ -407,7 +407,7 @@
                             </div>
                             <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
                                 <div class="feature-icon rounded bg-danger mb-32">
-                                    <i class="fal fa-file-chart-line fa-2x text-white"></i>
+                                    <i class="fal fa-chart-network fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h3 class="h5">Mapping the user flow</h3>
@@ -427,7 +427,7 @@
                             </div>
                             <div class="feature-card border border-light border-2 bg-white rounded-custom p-5">
                                 <div class="feature-icon rounded bg-dark mb-32">
-                                    <i class="fal fa-sync-alt fa-2x text-white"></i>
+                                    <i class="fal fa-pen-nib fa-2x text-white"></i>
                                 </div>
                                 <div class="feature-content">
                                     <h3 class="h5">Interactive visual prototypes</h3>
@@ -565,7 +565,7 @@
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited Rights Reserved.</a></p>
 
                             </div>
                         </div>

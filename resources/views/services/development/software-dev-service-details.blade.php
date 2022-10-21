@@ -820,6 +820,35 @@
         </section>
         <!--register section end-->
 
+                <!--cat subscribe start-->
+                <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10">
+                                <div class="subscribe-info-wrap text-center position-relative z-2">
+                                    <div class="section-heading" data-aos="fade-up">
+                                        <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                            Get Free Support.</h4>
+                                        <h2>Start Your Digital Solution Journey
+                                            Today.</h2>
+                                        <p>Customised Digital Solutions For:
+                                            Businesses, Communities & Corporations.</p>
+                                    </div>
+                                    <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+                        <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
+                    </div>
+                </section>
+                <!--cat subscribe end-->
+
+
                <!--footer section start-->
                <footer class="footer-section">
                 <!--footer top start-->

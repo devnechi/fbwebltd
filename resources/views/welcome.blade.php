@@ -238,7 +238,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -596,7 +596,7 @@
 
                                     </ul>
                                 </div>
-                                <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-bus-sys-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-success-soft mb-32">
@@ -610,7 +610,7 @@
                                         simply bring your app idea to life.
                                         </p>
                                 </div>
-                                <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-mobile-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-danger-soft mb-32">
@@ -625,7 +625,7 @@
                                         level, regardless of your industry or size.
                                     </p>
                                 </div>
-                                <a href="{{ route('all-prototyping-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-software-development-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-dark-soft mb-32">
@@ -639,7 +639,7 @@
                                         on your business or project.
                                     </p>
                                 </div>
-                                <a href="{{ route('all-data-science-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('all-branding-services') }}" class="link-with-icon text-decoration-none mt-3">View Details <i class="far fa-arrow-right"></i></a>
                             </div>
                             <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
                                 <div class="icon-box d-inline-block rounded-circle bg-warning-soft mb-32">
@@ -845,7 +845,7 @@
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited All Rights Reserved.</a></p>
 
                             </div>
                         </div>

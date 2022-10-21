@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -239,7 +239,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -486,6 +486,34 @@
            </section>
           <!--features grid section end-->
 
+        <!--cat subscribe start-->
+        <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="subscribe-info-wrap text-center position-relative z-2">
+                            <div class="section-heading" data-aos="fade-up">
+                                <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                    Get Free Support.</h4>
+                                <h2>Start Your Digital Solution Journey
+                                    Today.</h2>
+                                <p>Customised Digital Solutions For:
+                                    Businesses, Communities & Corporations.</p>
+                            </div>
+                            <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+                <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
+            </div>
+        </section>
+        <!--cat subscribe end-->
+
 
                     <!--footer section start-->
         <footer class="footer-section">
@@ -571,7 +599,7 @@
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited All Rights Reserved.</a></p>
 
                             </div>
                         </div>

@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -239,7 +239,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -383,7 +383,7 @@
                             <div class="feature-grid position-relative">
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-share-alt fa-2x text-white"></i>
+                                        <i class="fal fa-solar-system fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Applications development</h3>
@@ -408,7 +408,7 @@
                                 </div>
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-danger mb-32">
-                                        <i class="fal fa-file-chart-line fa-2x text-white"></i>
+                                        <i class="fal fa-solid fa-shield-check fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Cyber Security</h3>
@@ -427,7 +427,7 @@
                                 </div>
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-dark mb-32">
-                                        <i class="fal fa-sync-alt fa-2x text-white"></i>
+                                        <i class="fal fa-solid fa-database fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Software product development</h3>
@@ -452,7 +452,7 @@
                                 </div>
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-success mb-32">
-                                        <i class="fal fa-spell-check fa-2x text-white"></i>
+                                        <i class="fal fa-solid fa-vial fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Quality Assurance Testing</h3>
@@ -492,7 +492,7 @@
                                 </div> --}}
                                 <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-warning mb-32">
-                                        <i class="fal fa-filter fa-2x text-white"></i>
+                                        <i class="fal fa-solid fa-gears fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">Maintenance and Support</h3>
@@ -657,11 +657,40 @@
           </section>
           <!--our work process end-->
 
+                  <!--cat subscribe start-->
+        <section class="cta-subscribe bg-dark text-white ptb-120 position-relative overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="subscribe-info-wrap text-center position-relative z-2">
+                            <div class="section-heading" data-aos="fade-up">
+                                <h4 class="h5 text-warning">Lets Build Your Digital Solution.
+                                    Get Free Support.</h4>
+                                <h2>Start Your Digital Solution Journey
+                                    Today.</h2>
+                                <p>Customised Digital Solutions For:
+                                    Businesses, Communities & Corporations.</p>
+                            </div>
+                            <div class="form-block-banner mw-60 m-auto mt-5" data-aos="fade-up" data-aos-delay="50">
+                                <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div>
+                <div class="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning right-5"></div>
+            </div>
+        </section>
+        <!--cat subscribe end-->
+
+
                   <!--footer section start-->
         <footer class="footer-section">
             <!--footer top start-->
             <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
-            <div class="footer-top  bg-dark text-white ptb-120">
+            <div class="footer-top  footer-light ptb-120">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -735,13 +764,13 @@
             <!--footer top end-->
 
             <!--footer bottom start-->
-            <div class="footer-bottom  bg-dark text-white py-4">
+            <div class="footer-bottom  footer-light py-4">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited Rights Reserved.</a></p>
 
                             </div>
                         </div>
