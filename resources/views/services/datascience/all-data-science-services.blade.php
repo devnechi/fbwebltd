@@ -350,13 +350,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
-                            <h4 class="h5 text-primary">How we can help</h4>
+                            <h4 class="h5 text-primary">We can help You</h4>
                             <h2>Make data driven decisions</h2>
                             <p>
-                                Data predicts your future
+                                Improve Perfomance By Making Data Driven Decisions
                             </p>
                             <p>
-                                Making sense of data
+                               Optimize your competetiveness and efficiency in today's detail-driven world by making
+                               effective decisions based on data.
                             </p>
                         </div>
                     </div>
