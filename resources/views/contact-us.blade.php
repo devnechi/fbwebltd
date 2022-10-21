@@ -642,7 +642,7 @@
                         <div class="col-md-7 col-lg-7">
                             <div class="copyright-text">
                                 {{-- <p class="mb-lg-0 mb-md-0">&copy; 2021 Future Basics Rights Reserved. Designed By <a href="https://futurebasics.co.tz" class="text-decoration-none">Future </a></p> --}}
-                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Rights Reserved.</a></p>
+                                <p class="mb-lg-0 mb-md-0">&copy; 2022 Future Basics Company Limited Rights Reserved.</a></p>
 
                             </div>
                         </div>

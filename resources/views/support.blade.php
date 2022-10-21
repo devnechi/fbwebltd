@@ -998,7 +998,7 @@
                                             {{-- <li><a href="support.html" class="text-decoration-none">Support</a></li>
                                             <li><a href="support-single.html" class="text-decoration-none">Support center</a></li>
                                             <li><a href="team.html" class="text-decoration-none">Our Team</a></li> --}}
-                                            <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a>
+                                            {{-- <li><a href="{{ route('careers-with-us') }}" class="text-decoration-none">Careers</a> --}}
                                             </li>
                                         </ul>
                                     </div>

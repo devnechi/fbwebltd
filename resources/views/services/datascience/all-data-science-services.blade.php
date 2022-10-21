@@ -384,9 +384,7 @@
                                     <h3 class="h5 mb-0">Data collection strategies</h3>
                                 </div>
                                 <div class="feature-content">
-                                    {{-- <p class="mb-0">All major brands logos are the first impression of the company.
-                                        We've narrowed it to a science, a process of building logos that are unforgettable
-                                         and sustain themselves over time.</p> --}}
+                                    <p class="mb-0">With a strong team of data analysts we help our clients by developing effective strategies for data collection.</p>
                                 </div>
                                 {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -396,10 +394,8 @@
                                     <h3 class="h5 mb-0">Big Data Mining</h3>
                                 </div>
                                 <div class="feature-content">
-                                    {{-- <p class="mb-0">
-                                        Its well known high-quality info-graphics are more likely to be read than blunt text.
-                                        We understand the need to properly convey ideas and information visually in away
-                                        that appeals to the intended user.</p> --}}
+                                    <p class="mb-0">
+                                        We support our clients to extract and retrieve data relevant to their business needs.</p>
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
@@ -409,35 +405,30 @@
                                     <h3 class="h5 mb-0">Data Modeling</h3>
                                 </div>
                                 <div class="feature-content">
-                                    {{-- <p class="mb-0">
-                                        We help you design and print your
-                                        content (posters, brochures,
-                                        advertisements, business cards
-                                        etc...) in way that effectively
-                                        communicates your message to
-                                        your audience
-                                        </p> --}}
+                                    <p class="mb-0">
+                                        We help our clients analyse, define and establish relationships between data
+                                        </p>
                                 </div>
                                 {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                             </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                            {{-- <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
                                     <i class="far fa-network-wired fa-2x text-primary me-3"></i>
                                     <h3 class="h5 mb-0">Machine  Learning </h3>
                                 </div>
                                 <div class="feature-content">
-                                    {{-- <p class="mb-0">
+                                     <p class="mb-0">
                                         Whether it is for a product,
                                         service, event or raising
                                         awareness, we offer effective
                                         advice and strategies on how to
                                         best carry out the advertisement
                                         and deployment.
-                                        </p> --}}
+                                        </p>
                                 </div>
-                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
-                            </div>
-                            <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                            </div> --}}
+                            {{-- <div class="feature-card border border-light border-2 rounded-custom p-5">
                                 <div class="rounded mb-2 d-flex align-items-center">
                                     <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
                                     <h3 class="h5 mb-0">Artificial Intelligence</h3>
@@ -450,10 +441,10 @@
                                         We design quality packaging that
                                         helps your product or service give
                                         the first impression it deserves.
-                                    </p> --}}
+                                    </p>
                                 </div>
-                                {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
-                            </div>
+                                <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
