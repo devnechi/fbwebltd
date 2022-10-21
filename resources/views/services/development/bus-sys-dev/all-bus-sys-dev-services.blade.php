@@ -396,105 +396,101 @@
                                         <div class="col-lg-12">
                                             <div class="feature-tab-info">
                                                 <h3>Intranet System Tools</h3>
-                                                <p>Continually network effective bandwidth whereas goal-oriented schemas.
-                                                    Intrinsicly incentivize corporate synergy with accurate meta-services.
-                                                    Rapidiously parallel task bricks-and-clicks leadership skills with
-                                                    revolutionary convergence. </p>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="feature-grid">
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-user-friends fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">HR Systems</h3>
+                                                                    </div>
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            Software that helps you
+                                                                            handle your humna resource
+                                                                            digitally.
 
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="feature-grid">
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-user-friends fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">HR Systems</h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                Software that helps you
-                                                                                handle your humna resource
-                                                                                digitally.
-
+                                                                        </p>
+                                                                    </div>
+                                                                    {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                </div>
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-spell-check fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">Point Of Sale Systems</h3>
+                                                                    </div>
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            Revolutionise the way your
+                                                                            business handles sale
+                                                                            transactions.
+                                                                        </p>
+                                                                    </div>
+                                                                    {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                </div>
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-cog fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">Per Request Systems</h3>
+                                                                    </div>
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            In collaboration with you, we
+                                                                            develop software precisely
+                                                                            aimed at your specific needs.
                                                                             </p>
-                                                                        </div>
-                                                                        {{-- <a href="{{ route('graphic-design-service-details') }}" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                                                                     </div>
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-spell-check fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">Point Of Sale Systems</h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                Revolutionise the way your
-                                                                                business handles sale
-                                                                                transactions.
+                                                                    {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                </div>
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-network-wired fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">Project & Field Monitoring Systems </h3>
+                                                                    </div>
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            Digitally track your remote field
+                                                                            projects from wherever you are
+                                                                            with precision and ease.
                                                                             </p>
-                                                                        </div>
-                                                                        {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                                                                     </div>
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-cog fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">Per Request Systems</h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                In collaboration with you, we
-                                                                                develop software precisely
-                                                                                aimed at your specific needs.
-                                                                                </p>
-                                                                        </div>
-                                                                        {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                    {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                </div>
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-layer-group fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">Business Data Systems</h3>
                                                                     </div>
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-network-wired fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">Project & Field Monitoring Systems </h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                Digitally track your remote field
-                                                                                projects from wherever you are
-                                                                                with precision and ease.
-                                                                                </p>
-                                                                        </div>
-                                                                        {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
-                                                                    </div>
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-layer-group fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">Business Data Systems</h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                Easily collect, store and analyse
-                                                                                valuable business data in oder to
-                                                                                effectively evaluate and monitor
-                                                                                your business.
-                                                                                </p>
-                                                                        </div>
-                                                                        {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
-                                                                    </div>
-                                                                    <div class="feature-card border border-light border-2 rounded-custom p-5">
-                                                                        <div class="rounded mb-2 d-flex align-items-center">
-                                                                            <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
-                                                                            <h3 class="h5 mb-0">Business Management Systems</h3>
-                                                                        </div>
-                                                                        <div class="feature-content">
-                                                                            <p class="mb-0">
-                                                                                Software that helps you easily
-                                                                                manage you rbusiness from all
-                                                                                aspects.
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            Easily collect, store and analyse
+                                                                            valuable business data in oder to
+                                                                            effectively evaluate and monitor
+                                                                            your business.
                                                                             </p>
-                                                                        </div>
-                                                                        {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                                                                     </div>
+                                                                    {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
+                                                                </div>
+                                                                <div class="feature-card border border-light border-2 rounded-custom p-5">
+                                                                    <div class="rounded mb-2 d-flex align-items-center">
+                                                                        <i class="far fa-bezier-curve fa-2x text-primary me-3"></i>
+                                                                        <h3 class="h5 mb-0">Business Management Systems</h3>
+                                                                    </div>
+                                                                    <div class="feature-content">
+                                                                        <p class="mb-0">
+                                                                            Software that helps you easily
+                                                                            manage you rbusiness from all
+                                                                            aspects.
+                                                                        </p>
+                                                                    </div>
+                                                                    {{-- <a href="service-single.html" class="link-with-icon text-decoration-none mt-4">View Details <i class="far fa-arrow-right"></i></a> --}}
                                                                 </div>
                                                             </div>
                                                         </div>
-
-
+                                                    </div>
                                             </div>
                                         </div>
 
@@ -506,11 +502,9 @@
                                         <div class="col-lg-12">
                                             <div class="feature-tab-info">
                                                 <h3>Extranet system</h3>
-                                                <p>Conveniently develop innovative infomediaries for
-                                                    enabled functionalities. Dynamically coordinate leading-edge incentivize
-                                                    corporate synergy deliverables
-                                                    after virtual potentialities.</p>
-
+                                                <br />
+                                                <br />
+                                                <br />
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="feature-grid">

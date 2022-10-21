@@ -382,52 +382,105 @@
                         <div class="position-relative w-100">
                             <div class="feature-grid position-relative">
                                 <div class="feature-card border-line-style px-5 my-4">
-                                    <div class="feature-icon rounded bg-primary mb-32">
-                                        <i class="fal fa-robot fa-2x text-white"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h3 class="h5">Android Applications Development</h3>
-                                        <p>
-                                            In a competitive market, it is
-                                            important to develop and
-                                            implement quickly:
-                                            Our team, using Android
-                                            development tools can facilitate a
-                                            quicker development with an
-                                            easy integration of desired
-                                            features, reducing TTM (Time To
-                                            Market).
-                                        </p>
-                                        <h6 class="mt-4">Development in...</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Intranet and Extranet Solutions</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
-                                        </ul>
-                                    </div>
-                                    <span class="border-line"></span>
-                                </div>
-                                <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-danger mb-32">
                                         <i class="fal fa-apple-whole fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
                                         <h3 class="h5">iOS Applications Development</h3>
                                         <p class="mb-0">
-                                            Excellent user experience
-                                            supported by the inherent
-                                            capabilities of iOS, and the
-                                            cohesion between software and
-                                            hardware enable our developers
-                                            to build products with efficiency
-                                            and reliability
+                                            Excellent user experience supported by the
+                                            inherent capabilities of iOS, and the cohesion
+                                            between software and hardware enable our
+                                            developers to build products with efficiency and
+                                            reliability.
                                         </p>
-                                        <h6 class="mt-4">Include...</h6>
+                                        <p class="mb-0">
+                                            Thanks to powerful programming languages
+                                            such as Objective-C and Swift, iOS apps take
+                                            30-40% less time than competitors'
+                                            development. When compared to other
+                                            operating systems, iOS is faster, easier, and
+                                            affordable to develop.
+                                        </p>
+                                        <h6 class="mt-4">Product:</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Stakeholder mapping</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-depth interviews</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Design Research</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Personas</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Affinity mapping</li>
+
+                                        </ul>
+                                        <h6 class="mt-4">Design:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>UX Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>UI Design</li>
+
+                                        </ul>
+                                        <h6 class="mt-4">Developer:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Swift, SwiftUI, Objective-C</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Combine</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>REST APIs</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>WebSockets</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Cocoa Touch</li>
+
+
+                                        </ul>
+                                    </div>
+                                    <span class="border-line"></span>
+                                </div>
+                                <div class="feature-card border-line-style px-5 my-4">
+                                    <div class="feature-icon rounded bg-primary mb-32">
+                                        <i class="fal fa-robot fa-2x text-white"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h3 class="h5">Android Applications Development</h3>
+                                        <p class="mb-0">
+                                            In a competitive market, it is important to
+                                            develop and implement quickly:
+                                        </p>
+                                        <p class="mb-0">
+                                            Android app development services are thriving
+                                            at a tremendous pace, and thanks to its
+                                            versatility, high flexibility and easy
+                                            customisation options, it allows our developers
+                                            to build and deploy your ideas to market quickly.
+                                        </p>
+                                        <p class="mb-0">
+                                            Our team, using Android development tools can
+                                            facilitate a quicker development with an easy
+                                            integration of desired features, reducing TTM
+                                            (Time To Market).
+                                        </p>
+                                        <h6 class="mt-4">Product:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Stakeholder mapping</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-depth interviews</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Design Research</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Personas</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Affinity mapping</li>
+
+                                        </ul>
+                                        <h6 class="mt-4">Design:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>UX Design</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>UI Design</li>
+
+                                        </ul>
+                                        <h6 class="mt-4">Developer:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Clean and MVVM architecture</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>RxJava2/RxKotlin</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Moshi</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Retrofit</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Dependency injection libraries</li>
+
+
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
@@ -437,27 +490,35 @@
                                         <i class="fal fa-sync-alt fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Hybrid/Native Mobile Applications</h3>
+                                        <h3 class="h5">Hybrid Mobile Applications</h3>
                                         <p class="mb-0">
-                                            We provide development services to a wide
-                                            range of clients. Whether you have idea that
-                                            requires materialisation or need help with
-                                            maintaining or upgrading your software, we
-                                            are happy to offer our services at any stage of
-                                            the process.
+                                            Hybrid applications combine features of both
+                                            native and web apps, can be accessed via a
+                                            web browser and downloaded from app stores.
+                                            and are typically easier and faster to develop
+                                            than native apps, reducing TTM (Time To
+                                            Market).
                                         </p>
-                                        <h6 class="mt-4">Included with...</h6>
+                                        <p class="mb-0">
+                                            Our developers team will craft your hybrid
+                                            application web platform using the latest and
+                                            most innovative technologies. Web platforms
+                                            help you organise your business processes so
+                                            that you can get more done in less time, gaining
+                                            accuracy and greater visibility.
+                                        </p>
+                                        {{-- <h6 class="mt-4">Included with...</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product consulting</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product UX design</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>MVP development</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-product analytics</li>
 
-                                        </ul>
+                                        </ul> --}}
                                     </div>
                                     <span class="border-line"></span>
                                 </div>
-                                <div class="feature-card border-line-style px-5 my-4">
+                                {{-- <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-success mb-32">
                                         <i class="fal fa-arrows-cross fa-2x text-white"></i>
                                     </div>
@@ -479,7 +540,7 @@
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>

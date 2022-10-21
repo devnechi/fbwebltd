@@ -386,22 +386,19 @@
                                         <i class="fal fa-repeat-1 fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Static Website development</h3>
+                                        <h3 class="h5">Static Website</h3>
                                         <p>
-                                            We design and develop a wide range of
-                                            robust high quality applications that are
-                                            compatible across all devices and platforms.
-                                            We provide guidance and leadership
-                                            throughout the entire development process
-                                            from ideation, to data gathering and
-                                            development.
+                                            A static website is made up of webpages
+                                            created using HTML, CSS and Javascript
+                                            Each page on a static website is stored as a
+                                            single HTML file delivered directly from the
+                                            server to the webpage exactly as it is.
                                         </p>
-                                        <h6 class="mt-4">Development in...</h6>
+                                        <h6 class="mt-4">Advantages of Static websites</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Intranet and Extranet Solutions</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Web applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Mobile applications</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Desktop applications</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Faster page loading speed</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Quick creation</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Potential for enhanced security</li>
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
@@ -413,14 +410,27 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Dynamic Web Applications</h3>
                                         <p class="mb-0">
-                                            We implement security protocols into every development solution to guarantee that our products are infallible and operate in secure environments.
-                                            Our security protocols align with the legislation, industry-specific standards, and the corporate policies in place.
+                                            Dynamic websites are built using server side
+                                            language and technology, dynamic websites
+                                            allow for the content of each page to be
+                                            delivered and displayed on-the-fly,
+                                            according to user behaviour or from usergenerated content.
                                         </p>
-                                        <h6 class="mt-4">Include...</h6>
+                                        <p class="mb-0">
+                                            With a dynamic website all of your data and
+                                            content are organised in a database or
+                                            backend Content Management System
+                                            (CMS), which connects to your website
+                                            pages. The way this information is arranged
+                                            and connected to your site’s design controls
+                                            how and when its content is revealed on a
+                                            page.
+                                        </p>
+                                        <h6 class="mt-4">Advantages of Dynamic websites</h6>
                                         <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Operational security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Infrastructure security</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Application security</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Easily updated</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Better user experience</li>
+                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Greater functionality</li>
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
@@ -430,27 +440,35 @@
                                         <i class="fal fa-folder-grid fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Content Management Systems (CMS)</h3>
+                                        <h3 class="h5">Hybrid Web Applications</h3>
                                         <p class="mb-0">
-                                            We provide development services to a wide
-                                            range of clients. Whether you have idea that
-                                            requires materialisation or need help with
-                                            maintaining or upgrading your software, we
-                                            are happy to offer our services at any stage of
-                                            the process.
+                                            Hybrid applications combine features of both
+                                            native and web apps, can be accessed via a
+                                            web browser and downloaded from app stores.
+                                            and are typically easier and faster to develop
+                                            than native apps, reducing TTM (Time To
+                                            Market).
                                         </p>
-                                        <h6 class="mt-4">Included with...</h6>
+                                        <p class="mb-0">
+                                            Our developers team will craft your hybrid
+                                            application web platform using the latest and
+                                            most innovative technologies. Web platforms
+                                            help you organise your business processes so
+                                            that you can get more done in less time, gaining
+                                            accuracy and greater visibility.
+                                        </p>
+                                        {{-- <h6 class="mt-4">Included with...</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product consulting</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Product UX design</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>MVP development</li>
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-product analytics</li>
 
-                                        </ul>
+                                        </ul> --}}
                                     </div>
                                     <span class="border-line"></span>
                                 </div>
-                                <div class="feature-card border-line-style px-5 my-4">
+                                {{-- <div class="feature-card border-line-style px-5 my-4">
                                     <div class="feature-icon rounded bg-success mb-32">
                                         <i class="fal fa-arrow-trend-up fa-2x text-white"></i>
                                     </div>
@@ -493,7 +511,7 @@
                                         </ul>
                                     </div>
                                     <span class="border-line"></span>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
