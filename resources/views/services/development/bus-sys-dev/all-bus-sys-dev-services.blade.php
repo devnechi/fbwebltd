@@ -369,9 +369,14 @@
                     <div class="row justify-content-center align-content-center">
                         <div class="col-md-10 col-lg-8">
                             <div class="section-heading text-center mb-4">
-                                <h5 class="h6 text-primary">Features</h5>
-                                <h2>Simple Powerful Advanced Features</h2>
-                                <p>Continually promote equity invested process improvements whereas go forward leadership. Completely unleash cross-media methodologies whereas intermandated outsourcing.</p>
+                                {{-- <h5 class="h6 text-primary">Features</h5> --}}
+                                <h2>Developing Systems That Take Your Business
+                                    To The Next Level</h2>
+                                <p>
+                                    Improve business performance and
+                                    efficiency by implementing tailor-made
+                                    software in your business processes.
+                                    </p>
                             </div>
                         </div>
                     </div>
