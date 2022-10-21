@@ -351,10 +351,8 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             <h4 class="h5 text-primary">We can help You</h4>
-                            <h2>Make Data Driven Decisions</h2>
-                            <p>
-                                Improve Perfomance By Making Data Driven Decisions
-                            </p>
+                            <h2> Improve Perfomance By Making Data Driven Decisions</h2>
+
                             <p>
                                Optimize your competetiveness and efficiency in today's detail-driven world by making
                                effective decisions based on data.
