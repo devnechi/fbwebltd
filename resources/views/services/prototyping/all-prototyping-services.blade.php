@@ -59,8 +59,8 @@
     <!--preloader end-->
     <!--main content wrapper start-->
     <div class="main-wrapper">
-        <!--header section start-->
-        <header class="main-header w-100">
+         <!--header section start-->
+         <header class="main-header w-100">
             <nav class="navbar navbar-expand-xl navbar-light sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
@@ -94,7 +94,7 @@
                                             </a>
                                             <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Development</div>
+                                                <div class="drop-title">Website Design & Development</div>
                                             </a>
 
                                             <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -208,8 +208,8 @@
                         <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
                     </div>
 
-                      <!--offcanvas menu start-->
-                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+                     <!--offcanvas menu start-->
+                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                         <div class="offcanvas-header d-flex align-items-center mt-4">
                             <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
                                 <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
@@ -239,7 +239,7 @@
                                                 </a>
                                                 <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Development</div>
+                                                    <div class="drop-title">Website Design & Development</div>
                                                 </a>
 
                                                 <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
@@ -341,6 +341,7 @@
             </nav>
         </header>
         <!--header section end-->
+
 
         <!--page header section start-->
         <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
