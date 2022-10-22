@@ -97,7 +97,9 @@ class SuperAdminController extends Controller
                 $image_name = Str::random(20);;
                 $ext = strtolower($request->file('userPhoto')->getClientOriginalExtension()); // You can use also getClientOriginalName()
                 $image_full_name = $image_name.'.'.$ext;
-                $upload_path = 'public/img/user-photos/';    //Creating Sub directory in Public folder to put image
+               $upload_path = '/var/www/futurebasics.co.tz/public_html/fb/current/public/img/user-photos/';    //Creating Sub directory in Public folder to put image
+
+               // $upload_path = 'public/img/user-photos/';    //Creating Sub directory in Public folder to put image
                 $image_url = $upload_path.$image_full_name;
                 $success = $request->file('userPhoto')->move($upload_path,$image_full_name);
 

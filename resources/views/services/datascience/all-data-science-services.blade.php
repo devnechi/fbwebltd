@@ -334,7 +334,7 @@
                         <h1 class="display-5 fw-bold">Data Science Services</h1>
                         <p class="lead">
                             Do you want to gain insight on a field, industry, market or business.
-                                Make data driven decisions with the use of data analytics and data mining concepts and tools.</p>
+                                Make data driven decisions with the use of data analytics along with data mining concepts and tools.</p>
 
                         </p>
                     </div>
