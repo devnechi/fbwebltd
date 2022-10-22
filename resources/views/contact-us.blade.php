@@ -386,7 +386,7 @@
                         <div class="row justify-content-lg-between align-items-center">
                             <div class="col-lg-6 col-md-8">
                                 <div class="section-heading">
-                                    <h2>Talk to Our Customer Service Department</h2>
+                                    <h2>Talk To Our Customer Service Department</h2>
                                     <p>
                                         Leave us a message and we will get back to
                                         you as soon as possible.
