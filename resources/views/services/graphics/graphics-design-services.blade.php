@@ -371,8 +371,7 @@
                             <h2>Graphic Designs That Help You Stand Out From The Rest.</h2>
                             <p>
                                 In today's conjested digital world full of pictures,
-                                videos and visuals, it is important to have well-
-                                designed graphic content that will help you not
+                                videos and visuals, it is important to have well-designed graphic content that will help you not
                                 only catch people's attention, but also
                                 immediately assure them quality.
                             </p>
