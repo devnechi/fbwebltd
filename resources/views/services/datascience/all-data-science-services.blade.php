@@ -120,6 +120,22 @@
                                                 <span class="me-2"><i class="far fa-heartbeat"></i></span>
                                                 <div class="drop-title">Branding & Digital Strategizing</div>
                                             </a>
+                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-usd-square"></i></span>
+                                                <div class="drop-title">Business Systems</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-th-list"></i></span>
+                                                <div class="drop-title">Digital Strategies</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-chart-network"></i></span>
+                                                <div class="drop-title">Business Analytics</div>
+                                            </a>
+                                            <a href="{{ route('our-services') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-paper-plane"></i></span>
+                                                <div class="drop-title">Augumented Sol.</div>
+                                            </a> --}}
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
                                             <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
@@ -147,7 +163,7 @@
                                     <div class="dropdown-grid rounded-custom width-full">
                                         <div class="dropdown-grid-item">
                                             <h6 class="drop-heading">Enterprise Solutions</h6>
-                                            <a href="http://livestoka.com/" class="dropdown-link px-0">
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
                                                 <span class="me-2"><i class="far fa-fingerprint"></i></span>
                                                 <div class="drop-title">Livestoka</div>
                                             </a>
@@ -155,31 +171,31 @@
                                                 <span class="me-2"><i class="far fa-address-book"></i></span>
                                                 <div class="drop-title">Radarmile</div>
                                             </a>
-                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Nakwalify</div>
-                                            </a> --}}
+                                            </a>
 
 
                                         </div>
                                         <div class="dropdown-grid-item radius-right-side bg-light">
                                             <h6 class="drop-heading">Innovations</h6>
-                                            <a href="https://smartrisiti.com/" class="dropdown-link">
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                 <div class="drop-title">Smart Risiti</div>
                                             </a>
-                                            {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                <div class="drop-title">Wakala +</div>
+                                                <div class="drop-title">Mennyu</div>
                                             </a>
                                             <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-headset"></i></span>
-                                                <div class="drop-title">Wakili</div>
+                                                <div class="drop-title">Tavrenni</div>
                                             </a>
                                             <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                 <span class="me-2"><i class="far fa-laptop-code"></i></span>
                                                 <div class="drop-title">Avorra</div>
-                                            </a> --}}
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -192,8 +208,8 @@
                         <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
                     </div>
 
-                     <!--offcanvas menu start-->
-                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+                       <!--offcanvas menu start-->
+                       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                         <div class="offcanvas-header d-flex align-items-center mt-4">
                             <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
                                 <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
@@ -262,7 +278,7 @@
                                         <div class="dropdown-grid rounded-custom width-full">
                                             <div class="dropdown-grid-item">
                                                 <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                <a href="http://livestoka.com/" class="dropdown-link px-0">
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
                                                     <span class="me-2" ><i class="far fa-fingerprint"></i></span>
                                                     <div class="drop-title">Livestoka</div>
                                                 </a>
@@ -270,29 +286,29 @@
                                                     <span class="me-2"><i class="far fa-address-book"></i></span>
                                                     <div class="drop-title">Radarmile</div>
                                                 </a>
-                                                {{-- <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
                                                     <span class="me-2"><i class="far fa-code-branch"></i></span>
                                                     <div class="drop-title">Nakwalify</div>
-                                                </a> --}}
+                                                </a>
                                             </div>
                                             <div class="dropdown-grid-item radius-right-side bg-light">
                                                 <h6 class="drop-heading">Innovations</h6>
-                                                {{-- <a href="https://smartrisiti.com/" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                    <div class="drop-title">Smart Risiti</div>
-                                                </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                    <div class="drop-title">Wakala +</div>
-                                                </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-headset"></i></span>
-                                                    <div class="drop-title">Wakili</div>
-                                                </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                    <span class="me-2" ><i class="far fa-laptop-code"></i ></span>
-                                                    <div class="drop-title">Avorra</div>
-                                                </a> --}}
+
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
+                                                <div class="drop-title">Smart Risiti</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-life-ring"></i></span>
+                                                <div class="drop-title">Mennyu</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-headset"></i></span>
+                                                <div class="drop-title">Tavrenni</div>
+                                            </a>
+                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
+                                                <span class="me-2"><i class="far fa-laptop-code"></i></span>
+                                                <div class="drop-title">Avorra</div>
                                             </div>
                                         </div>
                                     </div>
