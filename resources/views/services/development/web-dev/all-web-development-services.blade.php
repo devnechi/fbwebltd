@@ -347,7 +347,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <h1 class="display-5 fw-bold">Web Application Development Services</h1>
+                        <h1 class="display-5 fw-bold">Website Design & Development Services</h1>
                         <p class="lead">
                          Website design and development tailored to your needs.
                         </p>
@@ -365,11 +365,11 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Web Application Development For Everyone</h2>
+                            <h2>Get AWebsite That Makes You Stand Out</h2>
                             <p>
-                                We offer software solutions for clients at
-                                individual, business and corporate level
-                                regardless of their industry or size.
+                                Your brand and business deserve effective
+                                and professionally aesthetic websites that
+                                assure quality to your customers
                             </p>
                         </div>
                     </div>
@@ -385,11 +385,13 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Static Website</h3>
                                         <p>
-                                            A static website is made up of webpages
-                                            created using HTML, CSS and Javascript
-                                            Each page on a static website is stored as a
-                                            single HTML file delivered directly from the
-                                            server to the webpage exactly as it is.
+                                            Using themost up-to-date
+                                            technologies,we develop
+                                            high performing static
+                                            websites that help you
+                                            professionally showcase
+                                            your brand and business
+                                            online.
                                         </p>
                                         <h6 class="mt-4">Advantages of Static websites</h6>
                                         <ul class="list-unstyled mb-0">
@@ -405,23 +407,15 @@
                                         <i class="fal fa-rectangle-vertical-history fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Dynamic Web Applications</h3>
+                                        <h3 class="h5">Dynamic Website</h3>
                                         <p class="mb-0">
-                                            Dynamic websites are built using server side
-                                            language and technology, dynamic websites
-                                            allow for the content of each page to be
-                                            delivered and displayed on-the-fly,
-                                            according to user behaviour or from usergenerated content.
+                                            Showcase your brand and businesswithmore detailwhile
+                                            giving your customers a better user experiencewith the
+                                            use of dynamicwebsites.
                                         </p>
                                         <p class="mb-0">
-                                            With a dynamic website all of your data and
-                                            content are organised in a database or
-                                            backend Content Management System
-                                            (CMS), which connects to your website
-                                            pages. The way this information is arranged
-                                            and connected to your site’s design controls
-                                            how and when its content is revealed on a
-                                            page.
+                                            Using the latesttechnologies,we develop tailor-made
+                                            websitesthat help you do exactlythat.
                                         </p>
                                         <h6 class="mt-4">Advantages of Dynamic websites</h6>
                                         <ul class="list-unstyled mb-0">
@@ -437,22 +431,17 @@
                                         <i class="fal fa-folder-grid fa-2x text-white"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3 class="h5">Hybrid Web Applications</h3>
+                                        <h3 class="h5">Hybrid Website</h3>
                                         <p class="mb-0">
-                                            Hybrid applications combine features of both
-                                            native and web apps, can be accessed via a
-                                            web browser and downloaded from app stores.
-                                            and are typically easier and faster to develop
-                                            than native apps, reducing TTM (Time To
-                                            Market).
+                                            Aswebsites are becomingmore complex, increasing the
+                                            demand formore functionality and better performance
+                                            from our clientswe take a hybrid approach towards
+                                            developing yourwebsite.
                                         </p>
                                         <p class="mb-0">
-                                            Our developers team will craft your hybrid
-                                            application web platform using the latest and
-                                            most innovative technologies. Web platforms
-                                            help you organise your business processes so
-                                            that you can get more done in less time, gaining
-                                            accuracy and greater visibility.
+                                            We design strategies that combine the implementation of
+                                            both static and dynamic features into your website giving
+                                            you the best of both worlds.
                                         </p>
                                         {{-- <h6 class="mt-4">Included with...</h6>
                                         <ul class="list-unstyled mb-0">

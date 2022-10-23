@@ -349,11 +349,11 @@
                     <div class="col-lg-8 col-md-12">
                         <h1 class="display-5 fw-bold">Mobile Application Development Services</h1>
                         <p class="lead">
-                            With our profound knowledge in modern
-                            technologies, along with a creative and
-                            dedicated team of experts, we design and
-                            develop software tailored to your needs that
-                            helps you achieve your goals more efficiently.</p>
+                            We help you get a spotin today's world of
+                            mobile applications by developing a tailor made
+                             app for your business or by simply
+                            helping you bring your app idea to life.
+                            </p>
                     </div>
                 </div>
                 <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -368,11 +368,11 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Offering Mobile Application Development For Everyone</h2>
+                            <h2>Innovating Our Community One App At A Time </h2>
                             <p>
-                                We offer software solutions for clients at
-                                individual, business and corporate level
-                                regardless of their industry or size.
+                                We develop high-qualitymobile
+                                applicationsthat revolutionise theway our
+                                communityfunctions.
                             </p>
                         </div>
                     </div>
@@ -402,15 +402,7 @@
                                             operating systems, iOS is faster, easier, and
                                             affordable to develop.
                                         </p>
-                                        <h6 class="mt-4">Product:</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Stakeholder mapping</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-depth interviews</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Design Research</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Personas</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Affinity mapping</li>
-
-                                        </ul>
+                                        
                                         <h6 class="mt-4">Design:</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>
@@ -455,15 +447,7 @@
                                             integration of desired features, reducing TTM
                                             (Time To Market).
                                         </p>
-                                        <h6 class="mt-4">Product:</h6>
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Stakeholder mapping</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>In-depth interviews</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Design Research</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Personas</li>
-                                            <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Affinity mapping</li>
-
-                                        </ul>
+                                      
                                         <h6 class="mt-4">Design:</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>
