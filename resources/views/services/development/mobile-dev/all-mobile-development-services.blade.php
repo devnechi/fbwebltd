@@ -349,7 +349,7 @@
                     <div class="col-lg-8 col-md-12">
                         <h1 class="display-5 fw-bold">Mobile Application Development Services</h1>
                         <p class="lead">
-                            We help you get a spotin today's world of
+                            We help you get a spot in today's world of
                             mobile applications by developing a tailor made
                              app for your business or by simply
                             helping you bring your app idea to life.
@@ -370,9 +370,9 @@
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
                             <h2>Innovating Our Community One App At A Time </h2>
                             <p>
-                                We develop high-qualitymobile
-                                applicationsthat revolutionise theway our
-                                communityfunctions.
+                                We develop high-quality mobile
+                                applications that revolutionise the way our
+                                community functions.
                             </p>
                         </div>
                     </div>
@@ -402,7 +402,7 @@
                                             operating systems, iOS is faster, easier, and
                                             affordable to develop.
                                         </p>
-                                        
+
                                         <h6 class="mt-4">Design:</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>
@@ -447,7 +447,7 @@
                                             integration of desired features, reducing TTM
                                             (Time To Market).
                                         </p>
-                                      
+
                                         <h6 class="mt-4">Design:</h6>
                                         <ul class="list-unstyled mb-0">
                                             <li class="py-1"><i class="fad fa-check-circle me-2 text-primary"></i>Brand Design</li>

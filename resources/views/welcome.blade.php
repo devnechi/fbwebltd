@@ -10,12 +10,12 @@
     <meta name="twitter:site" content="@futurebasicsltd">
     <meta name="twitter:creator" content="@futurebasicsltd">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Future Basics - Creators of livestoka, radarmile and avorra.">
+    <meta name="twitter:title" content="Future Basics - Simplified, Tailored and Innovative Digital Solutions">
     <meta name="twitter:description" content="Future Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="twitter:image" content="#">
     <!--facebook og-->
     <meta property="og:url" content="#">
-    <meta name="twitter:title" content="Future Basics - Creators of livestoka, radarmile and avorra">
+    <meta name="twitter:title" content="Future Basics - Simplified, Tailored and Innovative Digital Solutions">
     <meta property="og:description" content="Future Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta property="og:image" content="#">
     <meta property="og:image:secure_url" content="#">

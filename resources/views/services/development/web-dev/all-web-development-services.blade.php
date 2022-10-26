@@ -365,7 +365,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-heading text-center">
                             {{-- <h4 class="h5 text-primary">Software development services</h4> --}}
-                            <h2>Get AWebsite That Makes You Stand Out</h2>
+                            <h2>Get A Website That Makes You Stand Out</h2>
                             <p>
                                 Your brand and business deserve effective
                                 and professionally aesthetic websites that
@@ -385,7 +385,7 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Static Website</h3>
                                         <p>
-                                            Using themost up-to-date
+                                            Using the most up-to-date
                                             technologies,we develop
                                             high performing static
                                             websites that help you
@@ -409,13 +409,13 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Dynamic Website</h3>
                                         <p class="mb-0">
-                                            Showcase your brand and businesswithmore detailwhile
-                                            giving your customers a better user experiencewith the
-                                            use of dynamicwebsites.
+                                            Showcase your brand and business with more detail while
+                                            giving your customers a better user experience with the
+                                            use of dynamic websites.
                                         </p>
                                         <p class="mb-0">
-                                            Using the latesttechnologies,we develop tailor-made
-                                            websitesthat help you do exactlythat.
+                                            Using the latest technologies, we develop tailor-made
+                                            websites that help you do exactly that.
                                         </p>
                                         <h6 class="mt-4">Advantages of Dynamic websites</h6>
                                         <ul class="list-unstyled mb-0">
@@ -433,10 +433,10 @@
                                     <div class="feature-content">
                                         <h3 class="h5">Hybrid Website</h3>
                                         <p class="mb-0">
-                                            Aswebsites are becomingmore complex, increasing the
+                                            As websites are becoming more complex, increasing the
                                             demand formore functionality and better performance
-                                            from our clientswe take a hybrid approach towards
-                                            developing yourwebsite.
+                                            from our clients we take a hybrid approach towards
+                                            developing your website.
                                         </p>
                                         <p class="mb-0">
                                             We design strategies that combine the implementation of
