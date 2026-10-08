@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+cd /srv/apps/fbweb
+/usr/bin/docker compose -f compose.prod.yml config --quiet
+/usr/bin/docker compose -f compose.prod.yml up -d --build --remove-orphans
+/usr/bin/docker compose -f compose.prod.yml exec -T app php artisan optimize:clear
+/usr/bin/docker compose -f compose.prod.yml exec -T app php artisan config:cache
+# Database migrations are intentionally NOT automatic. Back up and review before running them.

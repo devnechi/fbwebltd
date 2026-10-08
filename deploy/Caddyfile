@@ -1,0 +1,14 @@
+{$APP_DOMAIN} {
+    encode zstd gzip
+    root * /srv/public
+    @php path *.php
+    php_fastcgi app:9000 {
+        root /var/www/html/public
+    }
+    file_server
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+    }
+}
