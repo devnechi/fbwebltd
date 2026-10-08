@@ -1,5 +1,8 @@
 name: FBWeb test and deploy
 on:
+  push:
+    branches:
+      - feature/docker-cicd-deployment
   workflow_dispatch:
 permissions:
   contents: read
