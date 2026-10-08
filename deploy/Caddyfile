@@ -1,4 +1,4 @@
-{$APP_DOMAIN} {
+futurebasics.co.tz, www.futurebasics.co.tz {
     encode zstd gzip
     root * /srv/public
     @php path *.php
