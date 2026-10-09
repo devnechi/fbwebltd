@@ -1,30 +1,39 @@
 name: FBWeb test and deploy
+
 on:
   push:
     branches:
       - feature/docker-cicd-deployment
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: production-fbweb
   cancel-in-progress: false
+
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up legacy PHP for compatibility verification
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
           extensions: mbstring, pdo_sqlite, pdo_mysql, gd, intl, zip, bcmath
           coverage: none
+
       - name: Validate PHP syntax
         run: |
           find app routes config database -name '*.php' -print0 | xargs -0 -n1 php -l >/dev/null
+
       - name: Install dependencies from committed lock file
         run: composer install --no-interaction --prefer-dist --no-progress
+
       - name: Execute tests using isolated SQLite database
         env:
           APP_ENV: testing
@@ -35,39 +44,15 @@ jobs:
           SESSION_DRIVER: array
           QUEUE_CONNECTION: sync
         run: vendor/bin/phpunit
+
   deploy:
     if: ${{ false }}
     needs: test
     runs-on: ubuntu-latest
     environment: production
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Configure known SSH host and deploy key
-        env:
-          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-          SSH_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+      - name: Production deployment intentionally disabled
         run: |
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
-      - name: Upload application without server secrets or data
-        env:
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          USER: ${{ secrets.DEPLOY_USER }}
-        run: |
-          rsync -az --delete \
-            --exclude='.git/' --exclude='.env' --exclude='.env.*' --exclude='vendor/' \
-            --exclude='node_modules/' --exclude='storage/' --exclude='public/storage' \
-            --exclude='deploy/runtime/' \
-            -e 'ssh -o StrictHostKeyChecking=yes -i ~/.ssh/id_ed25519' \
-            ./ "$USER@$HOST:/srv/apps/fbweb/"
-      - name: Deploy containers
-        env:
-          HOST: ${{ secrets.DEPLOY_HOST }}
-          USER: ${{ secrets.DEPLOY_USER }}
-        run: |
-          ssh -o StrictHostKeyChecking=yes -i ~/.ssh/id_ed25519 "$USER@$HOST" \
-            'sudo -n /usr/local/sbin/fbweb-deploy'
+          echo "Production deployment remains disabled."
+          echo "Pending trusted release controller and registry verification."
