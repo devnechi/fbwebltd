@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: fbweb-dry-run MANIFEST_PATH" >&2
+    exit 2
+fi
+
+exec /usr/bin/python3 \
+    /usr/local/lib/fbweb-deploy/controller.py \
+    "$1" \
+    --approval-dir /etc/fbweb-deploy/approvals
