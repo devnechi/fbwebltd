@@ -1,4 +1,4 @@
-name: FBWeb test, build and publish
+name: FBWeb test, build, attest and publish
 
 on:
   push:
@@ -46,13 +46,15 @@ jobs:
         run: vendor/bin/phpunit
 
   publish:
-    name: Build and publish release images
+    name: Build, attest and publish release images
     needs: test
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
       packages: write
+      id-token: write
+      attestations: write
 
     steps:
       - name: Checkout exact triggering commit
@@ -92,12 +94,32 @@ jobs:
           tags: ghcr.io/devnechi/fbwebltd-web:sha-${{ github.sha }}
           provenance: mode=min
 
+      - name: Sign Laravel build attestation
+        id: app_attestation
+        uses: actions/attest@v4
+        with:
+          subject-name: ghcr.io/devnechi/fbwebltd-app
+          subject-digest: ${{ steps.app.outputs.digest }}
+          push-to-registry: true
+          create-storage-record: false
+
+      - name: Sign Caddy build attestation
+        id: web_attestation
+        uses: actions/attest@v4
+        with:
+          subject-name: ghcr.io/devnechi/fbwebltd-web
+          subject-digest: ${{ steps.web.outputs.digest }}
+          push-to-registry: true
+          create-storage-record: false
+
       - name: Record immutable image references
         shell: bash
         env:
           COMMIT_SHA: ${{ github.sha }}
           APP_DIGEST: ${{ steps.app.outputs.digest }}
           WEB_DIGEST: ${{ steps.web.outputs.digest }}
+          APP_ATTESTATION: ${{ steps.app_attestation.outputs.attestation-url }}
+          WEB_ATTESTATION: ${{ steps.web_attestation.outputs.attestation-url }}
         run: |
           set -euo pipefail
 
@@ -106,22 +128,25 @@ jobs:
           [[ "$WEB_DIGEST" =~ ^sha256:[0-9a-f]{64}$ ]]
 
           {
-            echo "## Future Basics published images"
+            echo "## Future Basics signed release images"
             echo
             echo "Source commit: \`$COMMIT_SHA\`"
             echo
             echo "### Laravel"
-            echo
             echo "\`ghcr.io/devnechi/fbwebltd-app@$APP_DIGEST\`"
             echo
-            echo "### Caddy"
+            echo "Attestation: $APP_ATTESTATION"
             echo
+            echo "### Caddy"
             echo "\`ghcr.io/devnechi/fbwebltd-web@$WEB_DIGEST\`"
             echo
-            echo "These are publishing results, not production approval."
+            echo "Attestation: $WEB_ATTESTATION"
+            echo
+            echo "Production deployment remains disabled."
+            echo "Signing does not constitute production approval."
           } >> "$GITHUB_STEP_SUMMARY"
 
-          echo "PASS: Both immutable image digests recorded"
+          echo "PASS: Both image digests and attestation links recorded"
 
   deploy:
     if: ${{ false }}
@@ -135,4 +160,4 @@ jobs:
       - name: Production deployment intentionally disabled
         run: |
           echo "Production deployment remains disabled."
-          echo "Pending trusted activation and automatic rollback."
+          echo "Pending signed provenance verification, trusted approval and automatic rollback."
