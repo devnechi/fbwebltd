@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Future Basics release controller: validation and dry-run only."""
+"""Future Basics release controller: authorization-aware dry-run only."""
 
 import argparse
 import json
@@ -8,10 +8,18 @@ from pathlib import Path
 
 from validate_manifest import validate
 from verify_approval import verify
+from verify_authorization import verify_authorization
 
 
-def build_plan(manifest, approval):
+DEFAULT_APPROVAL_DIR = Path("/etc/fbweb-deploy/approvals")
+DEFAULT_AUTHORIZATION_DIR = Path("/etc/fbweb-deploy/authorizations")
+
+
+def build_plan(manifest, approval, authorization):
+    """Build a plan only when both records validate."""
+    validate(manifest)
     verify(manifest, approval)
+    verify_authorization(manifest, authorization)
 
     return {
         "mode": "dry-run",
@@ -20,50 +28,70 @@ def build_plan(manifest, approval):
         "application_image": manifest["application_image"],
         "web_image": manifest["web_image"],
         "approval_reference": manifest["approval_reference"],
+        "authorization_required": True,
+        "authorization_validated": True,
+        "authorization_authenticity_verified": False,
         "operations": [
-            "Verify exact application and web image digests",
-            "Record previously approved image pair",
-            "Preserve MySQL database and persistent volumes",
-            "Activate application and web images only",
-            "Verify application health and public HTTPS",
-            "Restore previous approved image pair if activation fails",
+            "Verify image provenance independently",
+            "Confirm authorized production approval",
+            "Record previous approved image pair",
+            "Preserve database and persistent volumes",
+            "Activate application and web only",
+            "Check application and public HTTPS health",
+            "Restore previous pair if activation fails",
         ],
         "execution_enabled": False,
     }
 
 
+def load_json(path):
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Validate a Future Basics release without deploying it"
+        description="Validate an authorized release without deploying"
     )
     parser.add_argument("manifest", type=Path)
     parser.add_argument(
         "--approval-dir",
         type=Path,
-        default=Path("/etc/fbweb-deploy/approvals"),
+        default=DEFAULT_APPROVAL_DIR,
+    )
+    parser.add_argument(
+        "--authorization-dir",
+        type=Path,
+        default=DEFAULT_AUTHORIZATION_DIR,
     )
     args = parser.parse_args()
 
     try:
-        manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+        manifest = load_json(args.manifest)
         validate(manifest)
 
-        approval_path = args.approval_dir / (
-            manifest["release_id"] + ".json"
+        release_id = manifest["release_id"]
+
+        approval = load_json(
+            args.approval_dir / (release_id + ".json")
+        )
+        authorization = load_json(
+            args.authorization_dir / (release_id + ".json")
         )
 
-        approval = json.loads(
-            approval_path.read_text(encoding="utf-8")
+        plan = build_plan(
+            manifest,
+            approval,
+            authorization,
         )
 
-        plan = build_plan(manifest, approval)
-
-    except (OSError, ValueError, json.JSONDecodeError) as exc:
+    except (OSError, ValueError, TypeError) as exc:
         print(f"FAIL: {exc}", file=sys.stderr)
         return 1
 
     print(json.dumps(plan, indent=2))
-    print("PASS: Approved release matches trusted record")
+    print("PASS: Release records passed content validation")
+    print("NOTE: Approver authenticity is NOT established")
     print("DRY RUN ONLY: No Docker operations executed")
     return 0
 

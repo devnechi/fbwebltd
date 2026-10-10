@@ -6,7 +6,8 @@ if [ "$#" -ne 1 ]; then
     exit 2
 fi
 
-exec /usr/bin/python3 \
+exec /usr/bin/python3 -B \
     /usr/local/lib/fbweb-deploy/controller.py \
     "$1" \
-    --approval-dir /etc/fbweb-deploy/approvals
+    --approval-dir /etc/fbweb-deploy/approvals \
+    --authorization-dir /etc/fbweb-deploy/authorizations
