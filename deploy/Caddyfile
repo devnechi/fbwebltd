@@ -1,0 +1,25 @@
+futurebasics.co.tz, www.futurebasics.co.tz {
+    encode zstd gzip
+
+    root * /srv/public
+
+    handle /storage/* {
+        root * /srv/storage/app/public
+        uri strip_prefix /storage
+        file_server
+    }
+
+    handle {
+        php_fastcgi app:9000 {
+            root /var/www/html/public
+        }
+
+        file_server
+    }
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+    }
+}

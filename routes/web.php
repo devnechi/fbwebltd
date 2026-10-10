@@ -114,8 +114,6 @@ Route::post('/changePassword', [App\Http\Controllers\Auth\ResetPasswordControlle
 //adminstator/admin/nomarl admin
 //nuser/normaluser
 // Route::get('/main-admin', 'SuperAdminController@index')->name('main-admin')->middleware('main-admin');
-// Route::get('/fbc-admin', 'NormalAdminController@index')->name('fbc-admin')->middleware('fbc-admin');
-// Route::get('/fbc-user', 'NormalUserController@index')->name('fbc-user')->middleware('fbc-user');
 // //previous/old controller below
 // Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');
 
@@ -146,5 +144,3 @@ Route::get('/create-new-dev-pool-opportunity', [App\Http\Controllers\SuperAdminC
 
 Route::get('/fbc-admin', [App\Http\Controllers\NormalAdminController::class, 'index'])->name('fbc-admin');
 Route::get('/fbc-user', [App\Http\Controllers\NormalUserController::class, 'index'])->name('fbc-user');
-Route::get('/fbc-admin', 'NormalAdminController@index')->name('fbc-admin');
-Route::get('/fbc-user', 'NormalUserController@index')->name('fbc-user');
