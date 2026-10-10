@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - feature/docker-cicd-deployment
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
@@ -47,6 +50,7 @@ jobs:
 
   publish:
     name: Build, attest and publish release images
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/feature/docker-cicd-deployment' }}
     needs: test
     runs-on: ubuntu-latest
 
