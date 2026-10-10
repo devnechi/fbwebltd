@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies from committed lock file
         run: composer install --no-interaction --prefer-dist --no-progress
 
-      - name: Execute tests using isolated SQLite database
+      - name: Execute Laravel tests using isolated SQLite database
         env:
           APP_ENV: testing
           APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
@@ -47,6 +47,19 @@ jobs:
           SESSION_DRIVER: array
           QUEUE_CONNECTION: sync
         run: vendor/bin/phpunit
+
+      - name: Validate Python deployment modules
+        run: |
+          python3 -m compileall -q deploy/releases deploy/tests
+
+      - name: Execute deployment and recovery security tests
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 -m unittest discover \
+            -s deploy/tests \
+            -p 'test_*.py' \
+            -v
 
   publish:
     name: Build, attest and publish release images
