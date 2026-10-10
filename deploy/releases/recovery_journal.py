@@ -204,9 +204,11 @@ class RecoveryJournal:
                 os.unlink(temporary)
 
     def create(self, release_id, candidate, previous):
+        """Publish only a complete, synchronized journal record."""
         validate_release_id(release_id)
         candidate_dict = pair_to_dict(candidate)
         previous_dict = pair_to_dict(previous)
+
         if candidate_dict == previous_dict:
             raise ValueError("Identical image pairs")
 
@@ -219,21 +221,42 @@ class RecoveryJournal:
             "previous": previous_dict,
             "updated_at": timestamp(),
         }
+        validate_record(record)
 
         with self.locked(release_id):
             destination = self.path(release_id)
+
             if destination.exists() or destination.is_symlink():
                 raise FileExistsError("Recovery journal already exists")
 
-            # Reserve the name to prevent accidental reuse.
-            fd = os.open(
-                destination,
-                os.O_CREAT | os.O_EXCL | os.O_WRONLY | os.O_NOFOLLOW,
-                0o600,
+            fd, temporary = tempfile.mkstemp(
+                prefix=".journal-",
+                dir=self.root,
             )
-            os.close(fd)
+
+            try:
+                os.fchmod(fd, 0o600)
+
+                with os.fdopen(fd, "w", encoding="utf-8") as handle:
+                    fd = -1
+                    json.dump(record, handle, sort_keys=True, indent=2)
+                    handle.write("\\n")
+                    handle.flush()
+                    os.fsync(handle.fileno())
+
+                # Hard-link creation fails if destination exists.
+                # Unlike replacing, it cannot overwrite an existing
+                # release journal.
+                os.link(temporary, destination)
+                self._sync_directory()
+
+            finally:
+                if fd >= 0:
+                    os.close(fd)
+                if os.path.exists(temporary):
+                    os.unlink(temporary)
+
             self._sync_directory()
-            self._replace(release_id, record)
 
         return record
 
