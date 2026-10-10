@@ -1,0 +1,40 @@
+services:
+  app:
+    image: ${LAB_APP_IMAGE:?Required}
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["sleep 600"]
+    read_only: true
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test: ["CMD-SHELL", "true"]
+      interval: 2s
+      timeout: 2s
+      retries: 3
+
+  web:
+    image: ${LAB_WEB_IMAGE:?Required}
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["sleep 600"]
+    read_only: true
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    healthcheck:
+      test: ["CMD-SHELL", "true"]
+      interval: 2s
+      timeout: 2s
+      retries: 3
+
+  db:
+    image: busybox@sha256:73aaf090f3d85aa34ee199857f03fa3a95c8ede2ffd4cc2cdb5b94e566b11662
+    command:
+      - sh
+      - -c
+      - 'test -f /data/marker || echo preserved > /data/marker; sleep 600'
+    volumes:
+      - db_data:/data
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+
+volumes:
+  db_data:
