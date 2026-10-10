@@ -1,0 +1,9 @@
+{
+  "release_id": "fbweb-23e0d1d-001",
+  "repository": "devnechi/fbwebltd",
+  "commit_sha": "23e0d1d0c22bfb31b4f3f4b3897310fade93928c",
+  "application_image": "ghcr.io/devnechi/fbwebltd-app@sha256:5174e318474c8658c81b5fc3723df3549305086e389347b2666c19e33cee1f5a",
+  "web_image": "ghcr.io/devnechi/fbwebltd-web@sha256:964eef5c4a5e718bb919a24240580180115a49ce5392406e41afbe5f7e672cf4",
+  "approval_reference": "pending-manual-review-23e0d1d",
+  "created_at": "2026-10-09T19:55:25.460067Z"
+}
