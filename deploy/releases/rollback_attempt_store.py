@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Durable laboratory rollback attempts with lock-aware operations.
+"""Durable, versioned laboratory rollback attempt storage.
 
-The public methods acquire the deployment lock. Locked methods use an
-already-held matching lease and never reacquire the global lock.
+Legacy attempt records remain readable. Bound version-2 attempts are
+created only after a fresh, lease-held rollback operation evaluation.
 
-No Docker execution, retry authorization or journal finalization.
+No Docker restoration, production authorization, or journal finalization.
 """
 
 import json
@@ -12,6 +12,7 @@ import os
 import re
 import stat
 import tempfile
+import uuid
 from datetime import datetime, timezone
 
 from deployment_lock import DeploymentLease, deployment_lock
@@ -21,6 +22,8 @@ from rollback_planner import State
 
 
 FILE_PATTERN = re.compile(r"^[0-9]{6}\.json$")
+HEX64 = re.compile(r"^[0-9a-f]{64}$")
+HEX32 = re.compile(r"^[0-9a-f]{32}$")
 MAX_ATTEMPTS = 999999
 
 FIELDS = {
@@ -31,6 +34,18 @@ FIELDS = {
     "journal_revision",
     "created_at",
     "updated_at",
+}
+
+BOUND_FIELDS = FIELDS | {
+    "schema_version",
+    "execution_id",
+    "operation_fingerprint",
+    "project",
+    "previous_app",
+    "previous_web",
+    "candidate_app",
+    "candidate_web",
+    "database_identity",
 }
 
 
@@ -63,15 +78,15 @@ def validate_private_directory(path):
 
 
 def validate_attempt_record(record):
-    if not isinstance(record, dict) or set(record) != FIELDS:
-        raise ValueError("Invalid attempt record schema")
+    if not isinstance(record, dict):
+        raise ValueError("Invalid attempt record")
 
-    if not isinstance(record["status"], str):
-        raise ValueError("Invalid attempt status")
+    if set(record) not in (FIELDS, BOUND_FIELDS):
+        raise ValueError("Invalid attempt record schema")
 
     try:
         status = AttemptStatus(record["status"])
-    except ValueError as exc:
+    except (ValueError, TypeError) as exc:
         raise ValueError("Invalid attempt status") from exc
 
     Attempt(record["attempt_id"], status).validate()
@@ -97,13 +112,49 @@ def validate_attempt_record(record):
             raise ValueError("Invalid attempt timestamp") from exc
 
         if timestamp.utcoffset() is None:
-            raise ValueError("Timestamp must include timezone")
+            raise ValueError("Timestamp requires timezone")
+
+    if set(record) == BOUND_FIELDS:
+        if record["schema_version"] != 2:
+            raise ValueError("Invalid bound attempt schema version")
+
+        if (
+            not isinstance(record["execution_id"], str)
+            or not HEX32.fullmatch(record["execution_id"])
+            or not isinstance(record["operation_fingerprint"], str)
+            or not HEX64.fullmatch(record["operation_fingerprint"])
+        ):
+            raise ValueError("Invalid execution binding")
+
+        from lab_rollback_command import LAB_PROJECT
+        from rollback_planner import ImagePair
+
+        if record["project"] != LAB_PROJECT:
+            raise ValueError("Invalid bound project")
+
+        previous = ImagePair(
+            record["previous_app"],
+            record["previous_web"],
+        )
+        candidate = ImagePair(
+            record["candidate_app"],
+            record["candidate_web"],
+        )
+
+        previous.validate()
+        candidate.validate()
+
+        if (
+            not isinstance(record["database_identity"], str)
+            or not HEX64.fullmatch(record["database_identity"])
+        ):
+            raise ValueError("Invalid bound database identity")
 
     return record
 
 
 class RollbackAttemptStore:
-    """Persistent attempt store sharing the deployment-wide lock."""
+    """Persistent attempt store using the deployment-wide lock."""
 
     def __init__(self, simulator):
         if not isinstance(simulator, RecoverySimulator):
@@ -153,7 +204,6 @@ class RollbackAttemptStore:
                     raise ValueError("Invalid temporary attempt file")
 
                 info = path.stat()
-
                 if (
                     not stat.S_ISREG(info.st_mode)
                     or info.st_uid != os.geteuid()
@@ -198,12 +248,21 @@ class RollbackAttemptStore:
             records.append(record)
 
         active = sum(
-            record["status"] == AttemptStatus.STARTED.value
-            for record in records
+            item["status"] == AttemptStatus.STARTED.value
+            for item in records
         )
 
         if active > 1:
             raise ValueError("Multiple unfinished restoration attempts")
+
+        bound_execution_ids = [
+            item["execution_id"]
+            for item in records
+            if item.get("schema_version") == 2
+        ]
+
+        if len(bound_execution_ids) != len(set(bound_execution_ids)):
+            raise ValueError("Duplicate bound execution ID")
 
         return records
 
@@ -247,8 +306,7 @@ class RollbackAttemptStore:
             if os.path.exists(temporary):
                 os.unlink(temporary)
 
-    def begin_locked(self, release_id, lease):
-        """Persist STARTED while caller retains the global lock."""
+    def _prepare_begin_locked(self, release_id, lease):
         self._require_lease(lease)
 
         journal = self.simulator.journal.read(release_id)
@@ -257,11 +315,12 @@ class RollbackAttemptStore:
             raise ValueError("Journal must be ROLLING_BACK")
 
         self.simulator.read_checkpoint(release_id, journal)
+
         records = self._read_unlocked(release_id)
 
         if any(
-            record["status"] == AttemptStatus.STARTED.value
-            for record in records
+            item["status"] == AttemptStatus.STARTED.value
+            for item in records
         ):
             raise ValueError("Unfinished attempt requires reconciliation")
 
@@ -270,7 +329,21 @@ class RollbackAttemptStore:
         if sequence > MAX_ATTEMPTS:
             raise ValueError("Attempt sequence exhausted")
 
+        return journal, records, sequence
+
+    def _publish_begin_locked(self, release_id, sequence, record):
+        validate_attempt_record(record)
         directory = self._ensure_directory(release_id)
+        destination = directory / f"{sequence:06d}.json"
+        self._write(directory, destination, record, replace=False)
+        return record
+
+    def begin_locked(self, release_id, lease):
+        """Legacy unbound attempt path; never use for Docker execution."""
+        journal, _, sequence = self._prepare_begin_locked(
+            release_id, lease
+        )
+
         timestamp = now()
 
         record = {
@@ -283,15 +356,89 @@ class RollbackAttemptStore:
             "updated_at": timestamp,
         }
 
-        validate_attempt_record(record)
+        return self._publish_begin_locked(
+            release_id, sequence, record
+        )
 
-        destination = directory / f"{sequence:06d}.json"
-        self._write(directory, destination, record, replace=False)
+    def begin_bound_locked(
+        self,
+        release_id,
+        project,
+        lease,
+        runner=None,
+    ):
+        """Re-evaluate live eligibility and persist a bound STARTED attempt.
 
-        return record
+        The caller must keep this lease active until execution and
+        verification are complete. This method does not execute Docker.
+        """
+        self._require_lease(lease)
+
+        from rollback_operation_gate import (
+            evaluate_rollback_operation_locked,
+        )
+
+        operation = evaluate_rollback_operation_locked(
+            self.simulator,
+            release_id,
+            project,
+            lease,
+            runner=runner,
+        )
+
+        operation.validate_fingerprint()
+
+        journal, records, sequence = self._prepare_begin_locked(
+            release_id, lease
+        )
+
+        if journal["revision"] != operation.journal_revision:
+            raise ValueError("Journal changed during operation binding")
+
+        if any(
+            item.get("schema_version") == 2
+            and item["operation_fingerprint"] == operation.fingerprint
+            and item["status"] in (
+                AttemptStatus.STARTED.value,
+                AttemptStatus.INTERRUPTED.value,
+            )
+            for item in records
+        ):
+            raise ValueError("Unresolved operation cannot be restarted")
+
+        checkpoint = self.simulator.read_checkpoint(
+            release_id, journal
+        )
+
+        if checkpoint["db_identity"] != operation.database_identity:
+            raise ValueError("Database checkpoint changed")
+
+        timestamp = now()
+
+        record = {
+            "schema_version": 2,
+            "attempt_id": f"attempt-{sequence:06d}",
+            "execution_id": uuid.uuid4().hex,
+            "release_id": release_id,
+            "status": AttemptStatus.STARTED.value,
+            "revision": 0,
+            "journal_revision": journal["revision"],
+            "operation_fingerprint": operation.fingerprint,
+            "project": operation.project,
+            "previous_app": operation.previous_app,
+            "previous_web": operation.previous_web,
+            "candidate_app": operation.candidate_app,
+            "candidate_web": operation.candidate_web,
+            "database_identity": operation.database_identity,
+            "created_at": timestamp,
+            "updated_at": timestamp,
+        }
+
+        return self._publish_begin_locked(
+            release_id, sequence, record
+        )
 
     def begin(self, release_id):
-        """Backward-compatible public method acquiring its own lock."""
         with deployment_lock(self.simulator.lock_dir) as lease:
             return self.begin_locked(release_id, lease)
 
@@ -303,7 +450,6 @@ class RollbackAttemptStore:
         status,
         lease,
     ):
-        """Persist FAILED or INTERRUPTED under an existing lock."""
         self._require_lease(lease)
 
         if status not in (
@@ -323,9 +469,9 @@ class RollbackAttemptStore:
         records = self._read_unlocked(release_id)
 
         matching = [
-            (index, record)
-            for index, record in enumerate(records, start=1)
-            if record["attempt_id"] == attempt_id
+            (index, item)
+            for index, item in enumerate(records, start=1)
+            if item["attempt_id"] == attempt_id
         ]
 
         if len(matching) != 1:
@@ -350,11 +496,9 @@ class RollbackAttemptStore:
         destination = directory / f"{sequence:06d}.json"
 
         self._write(directory, destination, updated, replace=True)
-
         return updated
 
     def finish(self, release_id, attempt_id, expected_revision, status):
-        """Backward-compatible public method acquiring its own lock."""
         with deployment_lock(self.simulator.lock_dir) as lease:
             return self.finish_locked(
                 release_id,
@@ -367,8 +511,8 @@ class RollbackAttemptStore:
     def policy_attempts(self, release_id):
         return [
             Attempt(
-                attempt_id=record["attempt_id"],
-                status=AttemptStatus(record["status"]),
+                attempt_id=item["attempt_id"],
+                status=AttemptStatus(item["status"]),
             )
-            for record in self.read(release_id)
+            for item in self.read(release_id)
         ]
