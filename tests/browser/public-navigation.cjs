@@ -122,6 +122,35 @@ async function main() {
             'Mobile offcanvas remains outside the viewport'
         );
 
+        const finalState = await mobile.evaluate(() => {
+            const element = document.querySelector('#offcanvasWithBackdrop');
+            const style = getComputedStyle(element);
+            const rect = element.getBoundingClientRect();
+
+            return {
+                className: element.className,
+                inlineStyle: element.getAttribute('style'),
+                display: style.display,
+                visibility: style.visibility,
+                opacity: style.opacity,
+                transform: style.transform,
+                transition: style.transition,
+                rect: {
+                    x: rect.x,
+                    right: rect.right,
+                    width: rect.width,
+                    height: rect.height
+                },
+                viewportWidth: window.innerWidth,
+                shownEventReceived: window.__offcanvasShown
+            };
+        });
+
+        console.log(
+            'FINAL OFFCANVAS STATE:',
+            JSON.stringify(finalState, null, 2)
+        );
+
         assert(
             await offcanvas.isVisible(),
             'Mobile offcanvas is not visible'
