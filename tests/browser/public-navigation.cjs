@@ -96,40 +96,14 @@ async function main() {
         const toggle = mobile.locator('button.navbar-toggler');
         const offcanvas = mobile.locator('#offcanvasWithBackdrop');
 
-        await mobile.evaluate(() => {
-            window.__offcanvasShown = false;
-            window.__offcanvasEvents = [];
-
-            const menu = document.querySelector('#offcanvasWithBackdrop');
-
-            for (const eventName of [
-                'show.bs.offcanvas',
-                'shown.bs.offcanvas',
-                'hide.bs.offcanvas',
-                'hidden.bs.offcanvas'
-            ]) {
-                menu.addEventListener(eventName, () => {
-                    window.__offcanvasEvents.push({
-                        event: eventName,
-                        className: menu.className,
-                        visibility: menu.style.visibility,
-                        time: performance.now()
-                    });
-
-                    if (eventName === 'shown.bs.offcanvas') {
-                        window.__offcanvasShown = true;
-                    }
-                });
-            }
-        });
-
         await toggle.click();
 
-        await mobile.waitForFunction(
-            () => window.__offcanvasShown === true,
-            null,
-            { timeout: 10000 }
-        );
+        await mobile.waitForFunction(() => {
+            const menu = document.querySelector('#offcanvasWithBackdrop');
+
+            return menu?.classList.contains('show') &&
+                getComputedStyle(menu).visibility === 'visible';
+        }, null, { timeout: 10000 });
 
         const position = await offcanvas.boundingBox();
 
@@ -138,44 +112,6 @@ async function main() {
         assert(
             position.x < 390 && position.x + position.width > 0,
             'Mobile offcanvas remains outside the viewport'
-        );
-
-        const finalState = await mobile.evaluate(() => {
-            const element = document.querySelector('#offcanvasWithBackdrop');
-            const style = getComputedStyle(element);
-            const rect = element.getBoundingClientRect();
-
-            return {
-                className: element.className,
-                inlineStyle: element.getAttribute('style'),
-                display: style.display,
-                visibility: style.visibility,
-                opacity: style.opacity,
-                transform: style.transform,
-                transition: style.transition,
-                rect: {
-                    x: rect.x,
-                    right: rect.right,
-                    width: rect.width,
-                    height: rect.height
-                },
-                viewportWidth: window.innerWidth,
-                shownEventReceived: window.__offcanvasShown
-            };
-        });
-
-        console.log(
-            'FINAL OFFCANVAS STATE:',
-            JSON.stringify(finalState, null, 2)
-        );
-
-        console.log(
-            'OFFCANVAS EVENT SEQUENCE:',
-            JSON.stringify(
-                await mobile.evaluate(() => window.__offcanvasEvents),
-                null,
-                2
-            )
         );
 
         assert(
@@ -198,10 +134,10 @@ async function main() {
 
         await offcanvas.locator('[data-bs-dismiss="offcanvas"]').click();
 
-        await mobile.waitForFunction(
-            () => !document.querySelector('#offcanvasWithBackdrop')
-                ?.classList.contains('show')
-        );
+        await mobile.waitForFunction(() => {
+            const menu = document.querySelector('#offcanvasWithBackdrop');
+            return !menu?.classList.contains('show');
+        }, null, { timeout: 10000 });
 
         console.log('PASS: Desktop and mobile navigation smoke tests');
         console.log('PASS: Portfolio hidden; /business preserved');
