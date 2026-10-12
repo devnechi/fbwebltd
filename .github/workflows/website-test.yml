@@ -1,0 +1,61 @@
+name: Website validation
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP 8.1
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+
+      - name: Validate PHP syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          find app routes config database \
+            -type f -name '*.php' -print0 \
+            | xargs -0 -r -n1 php -l > /dev/null
+          echo "PHP syntax validation passed"
+
+      - name: Validate contact page update
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          page = Path("resources/views/contact-us.blade.php")
+          content = page.read_text(encoding="utf-8")
+
+          expected = 'href="tel:00-255-687-859-500"'
+          obsolete = 'href="tel:00-255-743-728-990"'
+
+          assert expected in content, "Updated phone number missing"
+          assert obsolete not in content, "Old phone number remains"
+
+          print("Contact page validation passed")
+          PY
+
+      - name: Confirm no deployment commands
+        run: |
+          echo "Validation only."
+          echo "No Docker execution or production deployment."
