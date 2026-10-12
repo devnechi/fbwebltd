@@ -36,6 +36,20 @@ jobs:
             | xargs -0 -r -n1 php -l > /dev/null
           echo "PHP syntax validation passed"
 
+      - name: Install locked Laravel dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Compile Laravel Blade templates
+        env:
+          APP_ENV: testing
+          APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+          DB_CONNECTION: sqlite
+          DB_DATABASE: ':memory:'
+          CACHE_DRIVER: array
+          SESSION_DRIVER: array
+          QUEUE_CONNECTION: sync
+        run: php artisan view:cache
+
       - name: Validate contact page update
         shell: bash
         run: |
