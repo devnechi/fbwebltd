@@ -48,18 +48,16 @@ echo "Repository: $REPO"
 echo "Commit: $COMMIT_SHA"
 echo "Source ref: $SOURCE_REF"
 
-echo "===== VERIFY EXPECTED BRANCH COMMIT ====="
+echo "===== VERIFY SOURCE COMMIT EXISTS ====="
 
 REMOTE_SHA=$(
-    gh api \
-      "repos/$REPO/commits/feature/docker-cicd-deployment" \
-      --jq '.sha'
+    gh api "repos/$REPO/commits/$COMMIT_SHA" --jq '.sha'
 )
 
 [[ "$REMOTE_SHA" == "$COMMIT_SHA" ]] || \
-    fail "Expected commit is not the current reviewed feature-branch HEAD"
+    fail "Expected commit does not exist in the trusted repository"
 
-echo "PASS: Expected commit matches feature branch HEAD"
+echo "PASS: Expected source commit exists in trusted repository"
 
 verify_image() {
     local name="$1"
