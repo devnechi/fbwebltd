@@ -98,11 +98,29 @@ async function main() {
 
         await mobile.evaluate(() => {
             window.__offcanvasShown = false;
+            window.__offcanvasEvents = [];
 
-            document.querySelector('#offcanvasWithBackdrop')
-                .addEventListener('shown.bs.offcanvas', () => {
-                    window.__offcanvasShown = true;
-                }, { once: true });
+            const menu = document.querySelector('#offcanvasWithBackdrop');
+
+            for (const eventName of [
+                'show.bs.offcanvas',
+                'shown.bs.offcanvas',
+                'hide.bs.offcanvas',
+                'hidden.bs.offcanvas'
+            ]) {
+                menu.addEventListener(eventName, () => {
+                    window.__offcanvasEvents.push({
+                        event: eventName,
+                        className: menu.className,
+                        visibility: menu.style.visibility,
+                        time: performance.now()
+                    });
+
+                    if (eventName === 'shown.bs.offcanvas') {
+                        window.__offcanvasShown = true;
+                    }
+                });
+            }
         });
 
         await toggle.click();
@@ -149,6 +167,15 @@ async function main() {
         console.log(
             'FINAL OFFCANVAS STATE:',
             JSON.stringify(finalState, null, 2)
+        );
+
+        console.log(
+            'OFFCANVAS EVENT SEQUENCE:',
+            JSON.stringify(
+                await mobile.evaluate(() => window.__offcanvasEvents),
+                null,
+                2
+            )
         );
 
         assert(
