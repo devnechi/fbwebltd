@@ -100,15 +100,38 @@ async function main() {
 
         await offcanvas.waitFor({ state: 'visible', timeout: 10000 });
 
-        await mobile.waitForFunction(
-            () => document.querySelector('#offcanvasWithBackdrop')
-                ?.classList.contains('show'),
-            { timeout: 10000 }
+        const diagnostics = await mobile.evaluate(() => {
+            const menu = document.querySelector('#offcanvasWithBackdrop');
+            const button = document.querySelector('button.navbar-toggler');
+
+            return {
+                menuClass: menu?.className,
+                menuStyle: menu?.getAttribute('style'),
+                menuVisibility: menu
+                    ? getComputedStyle(menu).visibility
+                    : null,
+                menuDisplay: menu
+                    ? getComputedStyle(menu).display
+                    : null,
+                menuTransform: menu
+                    ? getComputedStyle(menu).transform
+                    : null,
+                buttonAttributes: button?.outerHTML,
+                bootstrapVersion: window.bootstrap?.Offcanvas?.VERSION,
+                bootstrapInstance: Boolean(
+                    menu && window.bootstrap?.Offcanvas?.getInstance(menu)
+                )
+            };
+        });
+
+        console.log(
+            'MOBILE OFFCANVAS DIAGNOSTICS:',
+            JSON.stringify(diagnostics, null, 2)
         );
 
         assert(
             await offcanvas.isVisible(),
-            'Mobile menu did not become visible'
+            'Mobile offcanvas is not visible after toggle'
         );
 
         assert.equal(
