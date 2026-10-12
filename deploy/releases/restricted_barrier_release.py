@@ -141,6 +141,7 @@ def execute_restricted_inert(
         )
 
     finally:
-        # If unreleased, pipe closure causes the inert child
-        # to exit without performing the marker action.
+        # Closing the barrier prevents an unreleased inert child
+        # from executing. Reap it to avoid subprocess warnings.
         binding.close_without_release()
+        binding.wait(timeout=10)
