@@ -50,6 +50,42 @@ jobs:
           QUEUE_CONNECTION: sync
         run: php artisan view:cache
 
+      - name: Install isolated browser test dependency
+        run: |
+          npm install --prefix /tmp/fbweb-browser --no-save --ignore-scripts playwright@1.56.1
+
+      - name: Test rendered public navigation in Chrome
+        env:
+          APP_ENV: testing
+          APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+          APP_URL: http://127.0.0.1:8765
+          DB_CONNECTION: sqlite
+          DB_DATABASE: ':memory:'
+          CACHE_DRIVER: array
+          SESSION_DRIVER: array
+          QUEUE_CONNECTION: sync
+          TEST_BASE_URL: http://127.0.0.1:8765
+          NODE_PATH: /tmp/fbweb-browser/node_modules
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v google-chrome
+          php artisan serve --host=127.0.0.1 --port=8765 > /tmp/fbweb-laravel.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+
+          for attempt in $(seq 1 30); do
+            if curl --silent --output /dev/null http://127.0.0.1:8765/; then
+              break
+            fi
+            sleep 1
+          done
+
+          if ! node tests/browser/public-navigation.cjs; then
+            cat /tmp/fbweb-laravel.log
+            exit 1
+          fi
+
       - name: Validate contact page update
         shell: bash
         run: |
