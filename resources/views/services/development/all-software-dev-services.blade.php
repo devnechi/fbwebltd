@@ -29,7 +29,7 @@
     <meta name="description" content="=Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'Graphics Services - FutureBasics') }}</title>
@@ -52,7 +52,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -258,7 +258,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-5 col-md-12 order-1 order-lg-0">
                         <div class="img-wrap">
-                            <img src="img/se.png" alt="work process" class="img-fluid rounded-custom">
+                            <img src="{{ asset('img/se.png') }}" alt="work process" class="img-fluid rounded-custom">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 order-0 order-lg-1">
@@ -417,8 +417,8 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                    <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                    <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                 </div>
                                 {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
@@ -517,13 +517,13 @@
     </div>
 
     <!--build:js-->
-    <script src="js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script>
-    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendors/parallax.min.js"></script>
-    <script src="js/vendors/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/aos.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!--endbuild-->
 </body>
 

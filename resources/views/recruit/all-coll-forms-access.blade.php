@@ -29,7 +29,7 @@
     <meta name="description" content="=Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'Graphics Services - FutureBasics') }}</title>
@@ -52,7 +52,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -135,7 +135,7 @@
                                                             <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/1.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Graphic Designers</h5>
                                                                     <p class="mb-0 text-muted">Be shortlisted for a design opportunities with us.</p>
@@ -146,7 +146,7 @@
                                                             <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/2.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/2.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Wireframes Designers</h5>
                                                                     <p class="mb-0 text-muted">Be shortlisted for a wireframing opportunities with us.</p>
@@ -158,7 +158,7 @@
                                                             <a href="{{ route('designers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/3.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/3.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>UI/UX Designers</h5>
                                                                     <p class="mb-0 text-muted">
@@ -199,7 +199,7 @@
                                                             <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/1.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Intranet-Extranet Distributed systems development</h5>
                                                                     <p class="mb-0 text-muted">Be shortlisted for a design opportunities with us.</p>
@@ -210,7 +210,7 @@
                                                             <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/2.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/2.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Mobile Application Development</h5>
                                                                     <p class="mb-0 text-muted">Be shortlisted for a Mobile applications opportunities with us.</p>
@@ -222,7 +222,7 @@
                                                             <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/3.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/3.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Web Applications Development</h5>
                                                                     <p class="mb-0 text-muted">
@@ -261,7 +261,7 @@
                                                             <a href="{{ route('developers-info-entery-form') }}" class="position-relative text-decoration-none connected-app-single bg-white border border-2 promo-border-hover bg-white mt-4 transition-base rounded-custom d-block overflow-hidden p-5">
                                                                 <div class="position-relative connected-app-content">
                                                                     <div class="integration-logo bg-white rounded-circle shadow-lg p-2 d-inline-block">
-                                                                        <img src="img/integations/1.png" width="40" alt="integration" class="img-fluid">
+                                                                        <img src="{{ asset('img/integations/1.png') }}" width="40" alt="integration" class="img-fluid">
                                                                     </div>
                                                                     <h5>Data Science</h5>
                                                                     <p class="mb-0 text-muted">Be shortlisted for data science opportunities with us.</p>
@@ -294,8 +294,8 @@
                             <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                                 <div class="footer-single-col">
                                     <div class="footer-single-col mb-4">
-                                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                        <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                        <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                        <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                     </div>
                                     {{-- <p>Our latest news, articles, and resources, we will sent to
                                         your inbox weekly.</p>
@@ -394,13 +394,13 @@
         </div>
 
         <!--build:js-->
-        <script src="js/vendors/jquery-3.6.0.min.js"></script>
-        <script src="js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="js/vendors/swiper-bundle.min.js"></script>
-        <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-        <script src="js/vendors/parallax.min.js"></script>
-        <script src="js/vendors/aos.js"></script>
-        <script src="js/app.js"></script>
+        <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/aos.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
         <!--endbuild-->
      </body>
 

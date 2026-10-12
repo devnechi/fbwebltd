@@ -26,14 +26,14 @@
     <meta name="description" content="Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
     <!--title-->
     <title>{{ config('app.name', 'FutureBasics') }}</title>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!--build:css-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- endbuild -->
@@ -49,7 +49,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -87,7 +87,7 @@
                                     <img src="img/screen/phn-hd.png" alt="hero image" class="position-relative img-fluid">
                                 </div> --}}
                                 <div class="mac-screen">
-                                    <img src="img/screen/nheader.png" alt="hero image" class="position-relative img-fluid rounded-custom">
+                                    <img src="{{ asset('img/screen/nheader.png') }}" alt="hero image" class="position-relative img-fluid rounded-custom">
                                 </div>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                                     <h6 class="mb-0">Improve online business strategies</h6>
                                 </li>
                             </ul>
-                            <img src="img/image-2.png" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
+                            <img src="{{ asset('img/image-2.png') }}" alt="feature image" class="img-fluid rounded-custom" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
@@ -501,8 +501,8 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                    <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                    <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                 </div>
 
                                 <div class="ratting-wrap mt-4">
@@ -591,13 +591,13 @@
 
     </div>
     <!--build:js-->
-    <script src="js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script>
-    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendors/parallax.min.js"></script>
-    <script src="js/vendors/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/aos.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!--endbuild-->
 </body>
 

@@ -29,7 +29,7 @@
     <meta name="description" content="=Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'Graphics Services - FutureBasics') }}</title>
@@ -104,7 +104,7 @@
                     <div class="col-lg-6 order-lg-1">
                         <div class="pr-lg-4 mt-md-4 position-relative">
                             <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-4 mx-lg-auto">
-                                <img src="img/dashboard-img.png" alt="" class="img-fluid shadow-sm rounded-custom">
+                                <img src="{{ asset('img/dashboard-img.png') }}" alt="" class="img-fluid shadow-sm rounded-custom">
                                 <div class="position-absolute bg-secondary-dark z--1 dot-mask dm-size-16 dm-wh-350 top--40 left--40 top-left"></div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                     <div class="col-lg-6 order-lg-2">
                         <div class="pr-lg-4 position-relative">
                             <div class="bg-light text-center rounded-custom overflow-hidden p-lg-5 p-4 mx-lg-auto">
-                                <img src="img/dashboard-img-4.png" alt="" class="img-fluid rounded-custom shadow-sm">
+                                <img src="{{ asset('img/dashboard-img-4.png') }}" alt="" class="img-fluid rounded-custom shadow-sm">
                                 <div class="position-absolute bg-secondary-dark z--1 dot-mask dm-size-16 dm-wh-350 bottom--40 right--40 bottom-right"></div>
                             </div>
                         </div>
@@ -200,17 +200,17 @@
                             <ul class="nav nav-pills mb-0 testimonial-tab-indicator mt-5" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#testimonial-tab-1" type="button" role="tab" aria-selected="true">
-                                        <img src="img/testimonial/1.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="{{ asset('img/testimonial/1.jpg') }}" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#testimonial-tab-2" type="button" role="tab" aria-selected="false">
-                                        <img src="img/testimonial/4.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="{{ asset('img/testimonial/4.jpg') }}" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" data-bs-toggle="pill" data-bs-target="#testimonial-tab-3" type="button" role="tab" aria-selected="false">
-                                        <img src="img/testimonial/6.jpg" alt="testimonial" width="55" class="img-fluid rounded-circle">
+                                        <img src="{{ asset('img/testimonial/6.jpg') }}" alt="testimonial" width="55" class="img-fluid rounded-circle">
                                     </button>
                                 </li>
                             </ul>
@@ -580,8 +580,8 @@
                             <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                                 <div class="footer-single-col">
                                     <div class="footer-single-col mb-4">
-                                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                        <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                        <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                        <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                     </div>
                                     {{-- <p>Our latest news, articles, and resources, we will sent to
                                         your inbox weekly.</p>
@@ -680,13 +680,13 @@
         </div>
 
         <!--build:js-->
-        <script src="js/vendors/jquery-3.6.0.min.js"></script>
-        <script src="js/vendors/bootstrap.bundle.min.js"></script>
-        <script src="js/vendors/swiper-bundle.min.js"></script>
-        <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-        <script src="js/vendors/parallax.min.js"></script>
-        <script src="js/vendors/aos.js"></script>
-        <script src="js/app.js"></script>
+        <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+        <script src="{{ asset('js/vendors/aos.js') }}"></script>
+        <script src="{{ asset('js/app.js') }}"></script>
         <!--endbuild-->
     </body>
 

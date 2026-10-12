@@ -34,7 +34,7 @@
         content="=Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
     <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'About us - FutureBasics') }}</title>
@@ -59,7 +59,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -122,14 +122,14 @@
                                 <br />
                                 <br />
                                 <br />
-                                <img src="img/about/buildbus.jpg" style="display: none;" alt="about"
+                                <img src="{{ asset('img/about/buildbus.jpg') }}" style="display: none;" alt="about"
                                     class="img-fluid about-img-first mt-5 rounded-custom shadow">
                             </div>
                             <div class="about-content-right">
-                                <img src="img/about/school-kids.jpg" alt="about"
+                                <img src="{{ asset('img/about/school-kids.jpg') }}" alt="about"
                                     class="img-fluid mb-5 rounded-custom shadow">
                                 {{-- <img src="img/about/auto-tina.jpg" alt="about" class="rounded-custom about-img-last shadow"> --}}
-                                <img src="img/1.png" alt="about" class="rounded-custom about-img-last shadow">
+                                <img src="{{ asset('img/1.png') }}" alt="about" class="rounded-custom about-img-last shadow">
 
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                                     <h6 class="mb-0">Facilitating development</h6>
                                 </li>
                             </ul>
-                            <img src="img/image-4.png" alt="feature image" class="img-fluid rounded-custom">
+                            <img src="{{ asset('img/image-4.png') }}" alt="feature image" class="img-fluid rounded-custom">
                         </div>
                     </div>
                 </div>
@@ -692,8 +692,8 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                    <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                    <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                 </div>
                                 {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
@@ -800,13 +800,13 @@
     </div>
 
     <!--build:js-->
-    <script src="js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script>
-    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendors/parallax.min.js"></script>
-    <script src="js/vendors/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/aos.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!--endbuild-->
 </body>
 

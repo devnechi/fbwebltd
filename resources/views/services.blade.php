@@ -26,7 +26,7 @@
  <meta name="description" content="Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
  <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'Our services - FutureBasics') }}</title>
@@ -49,7 +49,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -186,9 +186,9 @@
                             <div class="swiper-container testimonialSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/1.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/1.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                 <small>Founder and CEO at Amaara Herbs</small>
@@ -206,12 +206,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/3.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/3.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Oberoi R.</h6>
                                                 <small>CEO at Herbs</small>
@@ -229,12 +229,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/2.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/2.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                 <small>Founder and CEO</small>
@@ -252,12 +252,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/4.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/4.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Joan Dho</h6>
                                                 <small>Founder and CTO</small>
@@ -275,12 +275,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/5.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/5.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Ranu Mondal</h6>
                                                 <small>Lead Developer</small>
@@ -298,7 +298,7 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                 </div>
                             </div>
@@ -362,8 +362,8 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                    <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                    <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                 </div>
                                 {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
@@ -461,13 +461,13 @@
     </div>
 
     <!--build:js-->
-    <script src="js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script>
-    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendors/parallax.min.js"></script>
-    <script src="js/vendors/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/aos.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!--endbuild-->
 </body>
 
