@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for the restricted laboratory rollback executor."""
+"""Restricted laboratory executor and bounded health polling tests."""
 
 import subprocess
 import sys
@@ -15,7 +15,10 @@ sys.path.insert(
 
 from docker_identity import VerifiedIdentity
 from lab_rollback_command import LAB_PROJECT, PREVIOUS
-from lab_rollback_executor import execute_lab_rollback
+from lab_rollback_executor import (
+    _verify_restoration,
+    execute_lab_rollback,
+)
 from recovery_simulator import RecoverySimulator
 from rollback_planner import ImagePair, ReleasePlan
 from rollback_attempt_store import RollbackAttemptStore
@@ -104,11 +107,12 @@ class LaboratoryExecutorTests(unittest.TestCase):
                 self.sim,
                 self.release_id,
                 command_runner=command_runner,
+                verification_attempts=3,
+                verification_interval=0,
             )
 
     def test_successful_restoration_remains_unfinalized(self):
         before = self.sim.journal.read(self.release_id)
-
         result = self.run_executor(self.successful_command)
 
         self.assertTrue(result["restoration_verified"])
@@ -116,7 +120,6 @@ class LaboratoryExecutorTests(unittest.TestCase):
         self.assertEqual(result["attempt_status"], "STARTED")
         self.assertEqual(result["journal_state"], "ROLLING_BACK")
         self.assertEqual(len(self.commands), 1)
-
         self.assertEqual(
             self.sim.journal.read(self.release_id), before
         )
@@ -165,14 +168,13 @@ class LaboratoryExecutorTests(unittest.TestCase):
         def changed_db(command):
             command.validate()
             self.commands.append(command)
-            self.observed = self.identity(
-                PREVIOUS, db="f" * 64
-            )
+            self.observed = self.identity(PREVIOUS, db="f" * 64)
             return subprocess.CompletedProcess(command.argv, 0)
 
         with self.assertRaises(ValueError):
             self.run_executor(changed_db)
 
+        self.assertEqual(len(self.commands), 1)
         self.assertEqual(
             self.sim.journal.read(self.release_id)["state"],
             "ROLLING_BACK",
@@ -182,14 +184,13 @@ class LaboratoryExecutorTests(unittest.TestCase):
         def unhealthy(command):
             command.validate()
             self.commands.append(command)
-            self.observed = self.identity(
-                PREVIOUS, healthy=False
-            )
+            self.observed = self.identity(PREVIOUS, healthy=False)
             return subprocess.CompletedProcess(command.argv, 0)
 
         with self.assertRaises(ValueError):
             self.run_executor(unhealthy)
 
+        self.assertEqual(len(self.commands), 1)
         self.assertEqual(
             self.sim.journal.read(self.release_id)["state"],
             "ROLLING_BACK",
@@ -204,6 +205,92 @@ class LaboratoryExecutorTests(unittest.TestCase):
             self.run_executor(self.successful_command)
 
         self.assertEqual(self.commands, [])
+
+    def test_delayed_health_becomes_ready_without_command_retry(self):
+        observed = [
+            self.identity(PREVIOUS, healthy=False),
+            self.identity(PREVIOUS, healthy=False),
+            self.identity(PREVIOUS, healthy=True),
+        ]
+        calls = []
+
+        def collector(*args, **kwargs):
+            calls.append(1)
+            return observed.pop(0)
+
+        with patch(
+            "lab_rollback_executor.collect_allowed_snapshot",
+            side_effect=collector,
+        ), patch("lab_rollback_executor.time.sleep"):
+            identity = _verify_restoration(
+                LAB_PROJECT,
+                PREVIOUS,
+                self.candidate,
+                self.db_id,
+                attempts=3,
+                interval=0,
+            )
+
+        self.assertTrue(identity.app_healthy)
+        self.assertTrue(identity.web_healthy)
+        self.assertEqual(len(calls), 3)
+
+    def test_persistent_unhealthy_status_exhausts_limit(self):
+        with patch(
+            "lab_rollback_executor.collect_allowed_snapshot",
+            return_value=self.identity(PREVIOUS, healthy=False),
+        ) as collector, patch("lab_rollback_executor.time.sleep"):
+            with self.assertRaisesRegex(
+                ValueError, "did not become healthy"
+            ):
+                _verify_restoration(
+                    LAB_PROJECT,
+                    PREVIOUS,
+                    self.candidate,
+                    self.db_id,
+                    attempts=3,
+                    interval=0,
+                )
+
+        self.assertEqual(collector.call_count, 3)
+
+    def test_unexpected_images_fail_immediately(self):
+        with patch(
+            "lab_rollback_executor.collect_allowed_snapshot",
+            return_value=self.identity(self.candidate),
+        ) as collector:
+            with self.assertRaisesRegex(
+                ValueError, "image pair not restored"
+            ):
+                _verify_restoration(
+                    LAB_PROJECT,
+                    PREVIOUS,
+                    self.candidate,
+                    self.db_id,
+                    attempts=5,
+                    interval=0,
+                )
+
+        self.assertEqual(collector.call_count, 1)
+
+    def test_database_mismatch_fails_immediately(self):
+        with patch(
+            "lab_rollback_executor.collect_allowed_snapshot",
+            return_value=self.identity(PREVIOUS, db="f" * 64),
+        ) as collector:
+            with self.assertRaisesRegex(
+                ValueError, "Database identity changed"
+            ):
+                _verify_restoration(
+                    LAB_PROJECT,
+                    PREVIOUS,
+                    self.candidate,
+                    self.db_id,
+                    attempts=5,
+                    interval=0,
+                )
+
+        self.assertEqual(collector.call_count, 1)
 
 
 if __name__ == "__main__":
