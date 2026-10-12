@@ -43,19 +43,46 @@ source = Path(os.environ["CRASH_LAB_SOURCE"])
 target = Path(os.environ["CRASH_LAB_TEMP"])
 
 content = source.read_text(encoding="utf-8")
-
 anchor = 'echo "===== EXECUTE REAL ROLLBACK ====="'
 
 if content.count(anchor) != 1:
-    raise SystemExit(
-        "FAIL: Source laboratory structure changed"
-    )
+    raise SystemExit("FAIL: Source laboratory structure changed")
 
-# Reuse only the reviewed lab's initialization, checkpoint creation,
-# and candidate activation. Do not run its successful rollback path.
 prefix = content.split(anchor, 1)[0]
 
 suffix = r'''
+echo "===== WAIT FOR CANDIDATE HEALTH ====="
+
+PYTHONDONTWRITEBYTECODE=1 python3 - <<'PYHEALTH'
+import os
+import sys
+import time
+
+sys.path.insert(0, "deploy/releases")
+
+from docker_snapshot_reader import collect_snapshot
+from lab_rollback_command import LAB_PROJECT
+from rollback_planner import ImagePair
+
+candidate = ImagePair(
+    os.environ["NEXT_APP"],
+    os.environ["NEXT_WEB"],
+)
+
+for attempt in range(40):
+    identity = collect_snapshot(LAB_PROJECT, candidate)
+
+    if identity.app_healthy and identity.web_healthy:
+        print("PASS: Candidate images healthy")
+        break
+
+    time.sleep(1)
+else:
+    raise AssertionError(
+        "Candidate containers did not become healthy"
+    )
+PYHEALTH
+
 echo "===== SIGKILL AFTER DURABLE STARTED ====="
 
 PYTHONDONTWRITEBYTECODE=1 python3 - <<'PYWORKER'
@@ -68,8 +95,8 @@ sys.path.insert(0, "deploy/releases")
 
 from docker_snapshot_reader import collect_snapshot
 from lab_rollback_command import LAB_PROJECT
-from lab_rollback_executor import execute_lab_rollback
 from recovery_simulator import RecoverySimulator
+from rollback_attempt_store import RollbackAttemptStore
 from rollback_planner import ImagePair
 
 candidate = ImagePair(
@@ -78,25 +105,8 @@ candidate = ImagePair(
 )
 
 before = collect_snapshot(LAB_PROJECT, candidate)
+
 assert before.app_healthy and before.web_healthy
-
-sim = RecoverySimulator(
-    os.environ["LAB_JOURNALS"],
-    os.environ["LAB_LOCKS"],
-)
-
-release_id = os.environ["RELEASE_ID"]
-
-
-def kill_before_compose(command):
-    command.validate()
-
-    # The executor has already persisted STARTED.
-    # No restoration command has been issued.
-    os.kill(os.getpid(), signal.SIGKILL)
-
-    raise AssertionError("SIGKILL unexpectedly returned")
-
 
 worker = r"""
 import os
@@ -116,7 +126,7 @@ sim = RecoverySimulator(
 def kill_before_compose(command):
     command.validate()
     os.kill(os.getpid(), signal.SIGKILL)
-    raise AssertionError("SIGKILL returned")
+    raise AssertionError("SIGKILL unexpectedly returned")
 
 execute_lab_rollback(
     sim,
@@ -129,19 +139,24 @@ result = subprocess.run(
     [sys.executable, "-c", worker],
     env=os.environ.copy(),
     check=False,
-    timeout=60,
+    timeout=90,
 )
 
 if result.returncode != -signal.SIGKILL:
     raise AssertionError(
-        f"Expected SIGKILL (-9), got {result.returncode}"
+        f"Expected controller SIGKILL (-9), got {result.returncode}"
     )
 
-print("PASS: Actual SIGKILL terminated only the controller worker")
+print("PASS: Actual SIGKILL terminated controller worker")
 
-from rollback_attempt_store import RollbackAttemptStore
+sim = RecoverySimulator(
+    os.environ["LAB_JOURNALS"],
+    os.environ["LAB_LOCKS"],
+)
 
+release_id = os.environ["RELEASE_ID"]
 store = RollbackAttemptStore(sim)
+
 attempts = store.read(release_id)
 journal = sim.journal.read(release_id)
 
@@ -150,33 +165,38 @@ assert attempts[0]["schema_version"] == 2
 assert attempts[0]["status"] == "STARTED"
 assert journal["state"] == "ROLLING_BACK"
 
+print("PASS: Durable STARTED survived SIGKILL")
+print("PASS: Journal remains ROLLING_BACK")
+
 after = collect_snapshot(LAB_PROJECT, candidate)
 
 assert before.app_container_id == after.app_container_id
 assert before.web_container_id == after.web_container_id
 assert before.db_container_id == after.db_container_id
 
-print("PASS: STARTED survived SIGKILL")
-print("PASS: Journal remains ROLLING_BACK")
 print("PASS: Candidate container identities unchanged")
+
+commands = []
+
+def forbidden_command(command):
+    commands.append(command)
+    raise AssertionError("Duplicate restoration executed")
+
+from lab_rollback_executor import execute_lab_rollback
 
 try:
     execute_lab_rollback(
         sim,
         release_id,
-        command_runner=lambda command: (
-            (_ for _ in ()).throw(
-                AssertionError("Duplicate restoration command invoked")
-            )
-        ),
+        command_runner=forbidden_command,
     )
 except ValueError:
+    assert commands == []
     print("PASS: Restarted executor rejected duplicate execution")
 else:
-    raise AssertionError("Duplicate execution was accepted")
+    raise AssertionError("Duplicate execution accepted")
 
 assert len(store.read(release_id)) == 1
-
 print("PASS: Exactly one unresolved attempt remains")
 PYWORKER
 
@@ -192,7 +212,7 @@ DB_ID=$(docker ps -q --no-trunc \
 MARKER=$(docker exec "$DB_ID" cat /data/marker)
 
 [ "$MARKER" = "preserved" ] || {
-    echo "FAIL: Database marker changed"
+    echo "FAIL: Database volume marker changed"
     exit 1
 }
 
@@ -218,7 +238,7 @@ if [ -n "$(docker ps -aq --filter "label=com.docker.compose.project=$PROJECT")" 
 fi
 
 if docker volume inspect "$VOLUME" >/dev/null 2>&1; then
-    echo "FAIL: Laboratory database volume remains"
+    echo "FAIL: Laboratory volume remains"
     exit 1
 fi
 
