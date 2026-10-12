@@ -3,8 +3,8 @@
             <nav class="navbar navbar-expand-xl {{ $navVariant === 'dark' ? 'navbar-dark' : 'navbar-light' }} sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white" />
-                        <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color" />
+                        <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white" />
+                        <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color" />
                     </a>
 
                     <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
@@ -77,7 +77,7 @@
                                             </a> --}}
                                         </div>
                                         <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                            <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
+                                            <a href="#"><img src="{{ asset('img/about/bs-ppl.jpg') }}" alt="add" class="img-fluid rounded-custom" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@
                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
                         <div class="offcanvas-header d-flex align-items-center mt-4">
                             <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
-                                <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
+                                <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid ps-2" />
                             </a>
                             <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
                                 <i class="far fa-close"></i>
@@ -164,7 +164,7 @@
                                 <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
                                 <li><a href="{{ url('about') }}" class="nav-link">About us</a></li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                                    <a class="nav-link dropdown-toggle" href="{{ route('our-services') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
                                     <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                                         <div class="dropdown-grid rounded-custom width-full-3">
                                             <div class="dropdown-grid-item">
@@ -208,7 +208,7 @@
                                                 </a>
                                             </div>
                                             <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                                <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
+                                                <a href="#"><img src="{{ asset('img/about/bs-ppl.jpg') }}" alt="add" class="img-fluid rounded-custom" /></a>
                                             </div>
                                         </div>
                                     </div>
