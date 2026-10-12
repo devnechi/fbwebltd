@@ -100,9 +100,15 @@ async function main() {
 
         await offcanvas.waitFor({ state: 'visible', timeout: 10000 });
 
+        await mobile.waitForFunction(
+            () => document.querySelector('#offcanvasWithBackdrop')
+                ?.classList.contains('show'),
+            { timeout: 10000 }
+        );
+
         assert(
-            await offcanvas.evaluate(el => el.classList.contains('show')),
-            'Mobile menu did not open'
+            await offcanvas.isVisible(),
+            'Mobile menu did not become visible'
         );
 
         assert.equal(
