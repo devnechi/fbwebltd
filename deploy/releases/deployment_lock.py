@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Exclusive deployment lock. No Docker execution."""
+"""Exclusive deployment lock with an explicit active lease.
+
+A lease establishes cooperative lock ownership inside this Python
+process. It is not deployment authorization or Docker isolation.
+"""
 
 import fcntl
 import os
 import stat
+import threading
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -31,13 +36,35 @@ def _validate_directory(directory):
     return directory
 
 
+class DeploymentLease:
+    """Non-transferable, process-local lease for one lock context."""
+
+    __slots__ = ("_directory", "_pid", "_thread", "_active")
+
+    def __init__(self, directory):
+        self._directory = Path(directory).resolve(strict=True)
+        self._pid = os.getpid()
+        self._thread = threading.get_ident()
+        self._active = True
+
+    def require(self, directory):
+        if (
+            not self._active
+            or os.getpid() != self._pid
+            or threading.get_ident() != self._thread
+            or Path(directory).resolve(strict=True) != self._directory
+        ):
+            raise RuntimeError("Active matching deployment lease required")
+
+        return True
+
+    def _invalidate(self):
+        self._active = False
+
+
 @contextmanager
 def deployment_lock(directory):
-    """Acquire a single exclusive nonblocking deployment lock.
-
-    The caller must keep this context active throughout activation,
-    health verification, rollback and final journal updates.
-    """
+    """Acquire and hold the exclusive, nonblocking deployment lock."""
     directory = _validate_directory(directory)
 
     fd = os.open(
@@ -47,6 +74,7 @@ def deployment_lock(directory):
     )
 
     acquired = False
+    lease = None
 
     try:
         info = os.fstat(fd)
@@ -68,7 +96,12 @@ def deployment_lock(directory):
             ) from exc
 
         acquired = True
-        yield
+        lease = DeploymentLease(directory)
+
+        try:
+            yield lease
+        finally:
+            lease._invalidate()
 
     finally:
         if acquired:
