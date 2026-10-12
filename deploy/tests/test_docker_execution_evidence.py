@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Gate 4D.22B.1: durable, fail-closed execution evidence."""
+"""Durable evidence tests with mandatory base-store lease checks."""
 
-from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 import sys
@@ -11,6 +10,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1] / "releases"
 sys.path.insert(0, str(ROOT))
 
+from deployment_lock import deployment_lock
 from docker_execution_evidence import (
     DockerExecutionEvidenceStore,
     PREPARED,
@@ -50,9 +50,23 @@ class EvidenceTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name) / "evidence"
+
+        base = Path(self.temp.name)
+        self.root = base / "evidence"
+        self.locks = base / "locks"
+
         self.root.mkdir(mode=0o700)
-        self.store = DockerExecutionEvidenceStore(self.root)
+        self.locks.mkdir(mode=0o700)
+
+        self.lock_context = deployment_lock(self.locks)
+        self.lease = self.lock_context.__enter__()
+        self.addCleanup(
+            self.lock_context.__exit__, None, None, None
+        )
+
+        self.store = DockerExecutionEvidenceStore(
+            self.root, self.locks, self.lease
+        )
         self.command = plan_lab_rollback(PREVIOUS)
 
     def prepare(self):
@@ -103,6 +117,7 @@ class EvidenceTests(unittest.TestCase):
         record = self.store.observe("gate22b-lab", identity)
         self.assertEqual(record["phase"], OBSERVED)
         self.assertEqual(record["pid"], 1234)
+
         self.assertEqual(
             DockerExecutionEvidenceStore(self.root)
             .read("gate22b-lab")["start_ticks"],
@@ -137,6 +152,7 @@ class EvidenceTests(unittest.TestCase):
         )
         record = self.store.record_exit("gate22b-lab", 0)
         self.assertEqual(record["phase"], EXIT_OBSERVED)
+
         assessment = self.store.assess("gate22b-lab")
         self.assertFalse(assessment.docker_operation_settled)
         self.assertFalse(assessment.automatic_retry_permitted)
@@ -172,6 +188,65 @@ class EvidenceTests(unittest.TestCase):
         assessment = self.store.assess("gate22b-lab")
         self.assertFalse(assessment.automatic_retry_permitted)
         self.assertFalse(assessment.docker_operation_settled)
+
+    def test_unleased_prepare_rejected(self):
+        readonly = DockerExecutionEvidenceStore(self.root)
+        with self.assertRaises(RuntimeError):
+            readonly.prepare(attempt(), self.command)
+
+    def test_unleased_observe_rejected(self):
+        readonly = DockerExecutionEvidenceStore(self.root)
+        with self.assertRaises(RuntimeError):
+            readonly.observe(
+                "gate22b-lab", ProcessIdentity(1234, 56789)
+            )
+
+    def test_unleased_exit_rejected(self):
+        readonly = DockerExecutionEvidenceStore(self.root)
+        with self.assertRaises(RuntimeError):
+            readonly.record_exit("gate22b-lab", 0)
+
+    def test_unleased_direct_writer_rejected(self):
+        record = self.prepare()
+        readonly = DockerExecutionEvidenceStore(self.root)
+        with self.assertRaises(RuntimeError):
+            readonly._write(
+                readonly.path("gate22b-lab"),
+                record,
+                create=False,
+            )
+
+    def test_expired_lease_blocks_base_mutation(self):
+        other = Path(self.temp.name) / "expired-locks"
+        other.mkdir(mode=0o700)
+
+        with deployment_lock(other) as lease:
+            expired = DockerExecutionEvidenceStore(
+                self.root, other, lease
+            )
+
+        with self.assertRaises(RuntimeError):
+            expired.prepare(attempt(), self.command)
+
+    def test_wrong_lock_directory_rejected(self):
+        other = Path(self.temp.name) / "other-locks"
+        other.mkdir(mode=0o700)
+
+        with self.assertRaises(RuntimeError):
+            DockerExecutionEvidenceStore(
+                self.root, other, self.lease
+            )
+
+    def test_partial_lease_binding_rejected(self):
+        with self.assertRaises(RuntimeError):
+            DockerExecutionEvidenceStore(
+                self.root, self.locks
+            )
+
+        with self.assertRaises(RuntimeError):
+            DockerExecutionEvidenceStore(
+                self.root, lease=self.lease
+            )
 
 
 if __name__ == "__main__":

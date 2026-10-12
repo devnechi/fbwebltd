@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Gate 4D.22B.3: inert durable barrier integration tests."""
+"""Inert durable barrier tests using an enforced deployment lease."""
 
 from pathlib import Path
-import json
 import os
 import signal
 import subprocess
@@ -19,6 +18,7 @@ REPO = TESTS.parents[1]
 sys.path.insert(0, str(RELEASES))
 sys.path.insert(0, str(TESTS))
 
+from deployment_lock import deployment_lock
 from docker_execution_evidence import (
     DockerExecutionEvidenceStore,
     PREPARED,
@@ -46,10 +46,20 @@ class DurableBarrierTests(unittest.TestCase):
 
         self.root = Path(self.temp.name)
         self.evidence = self.root / "evidence"
+        self.locks = self.root / "locks"
+
         self.evidence.mkdir(mode=0o700)
+        self.locks.mkdir(mode=0o700)
 
         self.marker = str(self.root / "action-marker")
-        self.store = DockerExecutionEvidenceStore(self.evidence)
+
+        self.context = deployment_lock(self.locks)
+        self.lease = self.context.__enter__()
+        self.addCleanup(self.context.__exit__, None, None, None)
+
+        self.store = DockerExecutionEvidenceStore(
+            self.evidence, self.locks, self.lease
+        )
 
     def assert_denied(self, release_id="gate22b-lab"):
         result = self.store.assess(release_id)
@@ -95,9 +105,12 @@ class DurableBarrierTests(unittest.TestCase):
         binding = prepare_bound_barrier(
             self.store, attempt(), self.marker
         )
+
         binding.close_without_release()
+
         with self.assertRaises(ValueError):
             binding.release()
+
         self.assertEqual(binding.wait(), 76)
         self.assertFalse(Path(self.marker).exists())
 
@@ -108,8 +121,10 @@ class DurableBarrierTests(unittest.TestCase):
         try:
             binding.release()
             self.assertEqual(binding.wait(), 0)
+
             with self.assertRaises(ValueError):
                 binding.release()
+
             self.assert_denied()
         finally:
             binding.close_without_release()
@@ -120,8 +135,10 @@ class DurableBarrierTests(unittest.TestCase):
         )
         try:
             binding.operation_fingerprint = "f" * 64
+
             with self.assertRaises(ValueError):
                 binding.release()
+
             self.assertEqual(binding.wait(), 76)
             self.assertFalse(Path(self.marker).exists())
         finally:
@@ -136,8 +153,10 @@ class DurableBarrierTests(unittest.TestCase):
                 binding.child.identity.pid,
                 binding.child.identity.start_ticks + 1,
             )
+
             with self.assertRaises(ValueError):
                 binding.release()
+
             self.assertEqual(binding.wait(), 76)
             self.assertFalse(Path(self.marker).exists())
         finally:
@@ -167,7 +186,9 @@ class DurableBarrierTests(unittest.TestCase):
         root.mkdir()
 
         evidence = root / "evidence"
+        locks = root / "locks"
         evidence.mkdir(mode=0o700)
+        locks.mkdir(mode=0o700)
 
         marker = root / "marker"
         ready = root / "ready"
@@ -182,6 +203,7 @@ import time
 sys.path.insert(0, os.environ["TEST_RELEASES"])
 sys.path.insert(0, os.environ["TEST_TESTS"])
 
+from deployment_lock import deployment_lock
 from docker_execution_evidence import DockerExecutionEvidenceStore
 from durable_barrier_controller import prepare_bound_barrier
 from docker_start_barrier import spawn_blocked_child
@@ -189,28 +211,32 @@ from lab_rollback_command import PREVIOUS, plan_lab_rollback
 from test_docker_execution_evidence import attempt
 
 root = Path(os.environ["TEST_ROOT"])
-store = DockerExecutionEvidenceStore(root / "evidence")
-phase = os.environ["TEST_PHASE"]
 
-if phase == "before":
-    store.prepare(attempt(), plan_lab_rollback(PREVIOUS))
-    child = spawn_blocked_child(str(root / "marker"))
-else:
-    binding = prepare_bound_barrier(
-        store, attempt(), str(root / "marker")
+with deployment_lock(root / "locks") as lease:
+    store = DockerExecutionEvidenceStore(
+        root / "evidence", root / "locks", lease
     )
-    child = binding.child
+    phase = os.environ["TEST_PHASE"]
 
-with open(root / "child-info", "w") as handle:
-    handle.write(
-        f"{child.identity.pid} "
-        f"{child.identity.start_ticks}\n"
-    )
-    handle.flush()
-    os.fsync(handle.fileno())
+    if phase == "before":
+        store.prepare(attempt(), plan_lab_rollback(PREVIOUS))
+        child = spawn_blocked_child(str(root / "marker"))
+    else:
+        binding = prepare_bound_barrier(
+            store, attempt(), str(root / "marker")
+        )
+        child = binding.child
 
-(root / "ready").write_text("READY\n")
-time.sleep(120)
+    with open(root / "child-info", "w") as handle:
+        handle.write(
+            f"{child.identity.pid} "
+            f"{child.identity.start_ticks}\n"
+        )
+        handle.flush()
+        os.fsync(handle.fileno())
+
+    (root / "ready").write_text("READY\n")
+    time.sleep(120)
 """
 
         env = dict(os.environ)
@@ -251,9 +277,9 @@ time.sleep(120)
             pid, ticks = child_info.read_text().strip().split()
             identity = ProcessIdentity(int(pid), int(ticks))
 
-            current = DockerExecutionEvidenceStore(evidence).read(
-                "gate22b-lab"
-            )
+            current = DockerExecutionEvidenceStore(
+                evidence
+            ).read("gate22b-lab")
 
             self.assertEqual(
                 current["phase"],
@@ -303,12 +329,8 @@ time.sleep(120)
             )
 
             assessment = reopened.assess("gate22b-lab")
-            self.assertFalse(
-                assessment.automatic_retry_permitted
-            )
-            self.assertTrue(
-                assessment.manual_reconciliation_required
-            )
+            self.assertFalse(assessment.automatic_retry_permitted)
+            self.assertTrue(assessment.manual_reconciliation_required)
 
         finally:
             if controller.poll() is None:

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Durable laboratory Docker execution evidence.
+"""Durable, lease-protected laboratory execution evidence.
 
-Records are observations, not authorization or proof of Docker quiescence.
-This module never starts Docker, kills processes, or permits retry.
+Read-only operations require no lease. Every mutation, including the
+internal writer, requires an active matching deployment lease.
+
+No Docker execution, production approval, or automatic retry.
 """
 
 from dataclasses import dataclass
@@ -14,6 +16,7 @@ import re
 import stat
 import tempfile
 
+from deployment_lock import DeploymentLease
 from docker_process_supervision import ProcessIdentity
 from lab_rollback_command import LAB_PROJECT, PREVIOUS, plan_lab_rollback
 
@@ -57,7 +60,6 @@ def canonical(value):
 
 def command_fingerprint(command):
     command.validate()
-
     return hashlib.sha256(canonical({
         "project": command.project,
         "compose_file": command.compose_file,
@@ -108,20 +110,23 @@ def validate_record(value):
         raise ValueError("Invalid execution phase")
 
     if phase == PREPARED:
-        if any(value[key] is not None for key in (
-            "pid", "start_ticks", "exit_code"
-        )):
-            raise ValueError("PREPARED must not claim process observation")
+        if any(
+            value[key] is not None
+            for key in ("pid", "start_ticks", "exit_code")
+        ):
+            raise ValueError("PREPARED cannot claim process observation")
     else:
-        ProcessIdentity(value["pid"], value["start_ticks"]).validate()
+        ProcessIdentity(
+            value["pid"], value["start_ticks"]
+        ).validate()
 
         if phase == OBSERVED and value["exit_code"] is not None:
-            raise ValueError("Observed process cannot have exit result")
+            raise ValueError("OBSERVED cannot contain exit result")
 
         if phase == EXIT_OBSERVED:
             code = value["exit_code"]
             if type(code) is not int or not -255 <= code <= 255:
-                raise ValueError("Invalid observed exit code")
+                raise ValueError("Invalid process exit code")
 
     return value
 
@@ -135,11 +140,36 @@ class EvidenceResult:
 
 
 class DockerExecutionEvidenceStore:
-    def __init__(self, root):
-        self.root = Path(root)
+    """Read-only by default; mutation requires an active matching lease."""
 
-        # Caller provisions the root explicitly, outside this class.
+    def __init__(self, root, lock_dir=None, lease=None):
+        self.root = Path(root)
         require_private_dir(self.root)
+
+        if (lock_dir is None) != (lease is None):
+            raise RuntimeError(
+                "Lock directory and deployment lease must be supplied together"
+            )
+
+        if lease is not None and not isinstance(lease, DeploymentLease):
+            raise RuntimeError("DeploymentLease required")
+
+        self.lock_dir = (
+            Path(lock_dir) if lock_dir is not None else None
+        )
+        self.lease = lease
+
+        if lease is not None:
+            self.require_lease()
+
+    def require_lease(self):
+        if self.lease is None or self.lock_dir is None:
+            raise RuntimeError(
+                "Read-only evidence store cannot perform mutations"
+            )
+
+        self.lease.require(self.lock_dir)
+        return True
 
     def path(self, release_id):
         if (
@@ -174,12 +204,17 @@ class DockerExecutionEvidenceStore:
                 os.close(fd)
 
     def read(self, release_id):
-        path = self.path(release_id)
-        return self._read_path(path)
+        return self._read_path(self.path(release_id))
 
     def _write(self, path, record, *, create):
+        """Durable mutation boundary; never callable without a lease."""
+        self.require_lease()
         validate_record(record)
         require_private_dir(self.root)
+
+        expected = self.path(record["release_id"])
+        if Path(path) != expected:
+            raise ValueError("Evidence destination mismatch")
 
         fd, temporary = tempfile.mkstemp(
             prefix=".execution-", dir=self.root
@@ -193,6 +228,8 @@ class DockerExecutionEvidenceStore:
                 handle.write(canonical(record) + b"\n")
                 handle.flush()
                 os.fsync(handle.fileno())
+
+            self.require_lease()
 
             if create:
                 os.link(temporary, path)
@@ -209,11 +246,9 @@ class DockerExecutionEvidenceStore:
                 os.unlink(temporary)
 
     def prepare(self, attempt, command):
-        """Persist evidence for an existing bound STARTED attempt.
+        """Persist PREPARED for an already bound STARTED lab attempt."""
+        self.require_lease()
 
-        Call only while holding the same deployment lock that protects
-        the journal and rollback-attempt store.
-        """
         from rollback_attempt_store import validate_attempt_record
 
         validate_attempt_record(attempt)
@@ -249,7 +284,8 @@ class DockerExecutionEvidenceStore:
         return record
 
     def observe(self, release_id, identity):
-        """Persist the observed process identity without permitting retry."""
+        self.require_lease()
+
         if not isinstance(identity, ProcessIdentity):
             raise ValueError("ProcessIdentity required")
 
@@ -270,13 +306,15 @@ class DockerExecutionEvidenceStore:
         return updated
 
     def record_exit(self, release_id, exit_code):
+        self.require_lease()
+
         if type(exit_code) is not int or not -255 <= exit_code <= 255:
             raise ValueError("Invalid process exit code")
 
         current = self.read(release_id)
 
         if current["phase"] != OBSERVED:
-            raise ValueError("Exit requires observed process")
+            raise ValueError("Exit requires OBSERVED process")
 
         updated = dict(current)
         updated.update({
