@@ -94,44 +94,37 @@ async function main() {
         await checkResponse(mobile, '/');
 
         const toggle = mobile.locator('button.navbar-toggler');
-        await toggle.click();
-
         const offcanvas = mobile.locator('#offcanvasWithBackdrop');
 
-        await offcanvas.waitFor({ state: 'visible', timeout: 10000 });
+        await mobile.evaluate(() => {
+            window.__offcanvasShown = false;
 
-        const diagnostics = await mobile.evaluate(() => {
-            const menu = document.querySelector('#offcanvasWithBackdrop');
-            const button = document.querySelector('button.navbar-toggler');
-
-            return {
-                menuClass: menu?.className,
-                menuStyle: menu?.getAttribute('style'),
-                menuVisibility: menu
-                    ? getComputedStyle(menu).visibility
-                    : null,
-                menuDisplay: menu
-                    ? getComputedStyle(menu).display
-                    : null,
-                menuTransform: menu
-                    ? getComputedStyle(menu).transform
-                    : null,
-                buttonAttributes: button?.outerHTML,
-                bootstrapVersion: window.bootstrap?.Offcanvas?.VERSION,
-                bootstrapInstance: Boolean(
-                    menu && window.bootstrap?.Offcanvas?.getInstance(menu)
-                )
-            };
+            document.querySelector('#offcanvasWithBackdrop')
+                .addEventListener('shown.bs.offcanvas', () => {
+                    window.__offcanvasShown = true;
+                }, { once: true });
         });
 
-        console.log(
-            'MOBILE OFFCANVAS DIAGNOSTICS:',
-            JSON.stringify(diagnostics, null, 2)
+        await toggle.click();
+
+        await mobile.waitForFunction(
+            () => window.__offcanvasShown === true,
+            null,
+            { timeout: 10000 }
+        );
+
+        const position = await offcanvas.boundingBox();
+
+        assert(position, 'Mobile offcanvas has no bounding box');
+
+        assert(
+            position.x < 390 && position.x + position.width > 0,
+            'Mobile offcanvas remains outside the viewport'
         );
 
         assert(
             await offcanvas.isVisible(),
-            'Mobile offcanvas is not visible after toggle'
+            'Mobile offcanvas is not visible'
         );
 
         assert.equal(
