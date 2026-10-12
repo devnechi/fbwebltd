@@ -54616,3 +54616,12 @@ i {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
+
+/*
+ * FB_OFFCANVAS_TOGGLE_POINTER_FIX
+ * Ensure Bootstrap receives the mobile toggle button itself
+ * as the click target, rather than its nested icon.
+ */
+.navbar-toggler[data-bs-toggle="offcanvas"] > span {
+    pointer-events: none;
+}
