@@ -71,7 +71,7 @@ trap 'exit 143' TERM
 
 echo "===== START MYSQL, LARAVEL AND CADDY ====="
 
-compose up -d --pull missing --no-build --wait --wait-timeout 180
+compose up -d --pull missing --no-build --wait --wait-timeout 360
 
 echo "===== VERIFY LARAVEL READINESS ====="
 

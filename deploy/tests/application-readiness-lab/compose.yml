@@ -11,10 +11,11 @@ services:
     healthcheck:
       test:
         - CMD-SHELL
-        - MYSQL_PWD="$${MYSQL_ROOT_PASSWORD}" mysqladmin ping -h 127.0.0.1 --silent
-      interval: 3s
-      timeout: 3s
-      retries: 40
+        - 'MYSQL_PWD="$${MYSQL_PASSWORD}" mysql -h 127.0.0.1 -u"$${MYSQL_USER}" -D "$${MYSQL_DATABASE}" -N -e "SELECT 1" | grep -qx 1'
+      interval: 5s
+      timeout: 5s
+      start_period: 240s
+      retries: 12
     restart: "no"
     networks:
       - internal
