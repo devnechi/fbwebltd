@@ -7,9 +7,14 @@
                         <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color" />
                     </a>
 
-                    <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
-                        <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
-                    </a>
+                    <button class="navbar-toggler position-absolute right-0 border-0"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBackdrop"
+                            aria-controls="offcanvasWithBackdrop"
+                            aria-label="Open navigation menu">
+                        <span class="far fa-bars" aria-hidden="true"></span>
+                    </button>
                     <div class="clearfix"></div>
                     <div class="collapse navbar-collapse justify-content-center">
                         <ul class="nav col-12 col-md-auto justify-content-center main-menu">
