@@ -548,7 +548,7 @@
                                             <strong>9am to 5pm</strong>  EAT.
                                         </p>
                                     </div>
-                                    <a href="tel:00-255-743-728-990" class="btn btn-link mt-auto"> + 255 743 728 990 </a>
+                                    <a href="tel:00-255-687-859-500" class="btn btn-link mt-auto"> + 255 687 859 500 </a>
                                 </div>
                             </div>
                         </div>
