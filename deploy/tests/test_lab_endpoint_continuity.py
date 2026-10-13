@@ -44,8 +44,10 @@ class EndpointContinuityTests(unittest.TestCase):
         )
 
     def replace_socket(self):
-        self.listener.close()
-        self.endpoint.unlink()
+        # Preserve the original inode under another path so that
+        # the replacement cannot receive the same inode.
+        original = self.runtime / "original-docker-lab.sock"
+        self.endpoint.rename(original)
 
         replacement = socket.socket(
             socket.AF_UNIX, socket.SOCK_STREAM

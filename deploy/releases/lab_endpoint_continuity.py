@@ -28,6 +28,8 @@ class EndpointSnapshot:
     runtime_inode: int
     runtime_owner: int
     runtime_mode: int
+    socket_ctime_ns: int = 0
+    runtime_ctime_ns: int = 0
 
 
 @dataclass(frozen=True)
@@ -51,17 +53,33 @@ def capture_endpoint_snapshot(socket_path, runtime_dir):
     before_socket = socket_path.lstat()
     before_runtime = runtime_dir.lstat()
 
-    # Recheck paths to detect some concurrent substitutions.
+    # Recheck paths to detect concurrent substitutions.
     validate_private_lab_socket(socket_path, runtime_dir)
 
     after_socket = socket_path.lstat()
     after_runtime = runtime_dir.lstat()
 
     if (
-        (before_socket.st_dev, before_socket.st_ino)
-        != (after_socket.st_dev, after_socket.st_ino)
-        or (before_runtime.st_dev, before_runtime.st_ino)
-        != (after_runtime.st_dev, after_runtime.st_ino)
+        (
+            before_socket.st_dev,
+            before_socket.st_ino,
+            before_socket.st_ctime_ns,
+        )
+        != (
+            after_socket.st_dev,
+            after_socket.st_ino,
+            after_socket.st_ctime_ns,
+        )
+        or (
+            before_runtime.st_dev,
+            before_runtime.st_ino,
+            before_runtime.st_ctime_ns,
+        )
+        != (
+            after_runtime.st_dev,
+            after_runtime.st_ino,
+            after_runtime.st_ctime_ns,
+        )
     ):
         raise ValueError("Endpoint changed during inspection")
 
@@ -86,6 +104,8 @@ def capture_endpoint_snapshot(socket_path, runtime_dir):
         runtime_inode=after_runtime.st_ino,
         runtime_owner=after_runtime.st_uid,
         runtime_mode=stat.S_IMODE(after_runtime.st_mode),
+        socket_ctime_ns=after_socket.st_ctime_ns,
+        runtime_ctime_ns=after_runtime.st_ctime_ns,
     )
 
 
