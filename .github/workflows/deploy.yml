@@ -23,6 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python for security verification
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned Python security test dependencies
+        run: |
+          python3 -m pip install \
+            --disable-pip-version-check \
+            -r deploy/requirements-security-test.txt
+
       - name: Set up legacy PHP for compatibility verification
         uses: shivammathur/setup-php@v2
         with:
@@ -157,7 +168,7 @@ jobs:
             echo "### Caddy"
             echo "\`ghcr.io/devnechi/fbwebltd-web@$WEB_DIGEST\`"
             echo
-            echo "Attestation: $WEB_ATTESTATION"
+            echo "Attestation: $APP_ATTESTATION"
             echo
             echo "Production deployment remains disabled."
             echo "Signing does not constitute production approval."
