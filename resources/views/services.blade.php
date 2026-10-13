@@ -26,7 +26,7 @@
  <meta name="description" content="Basics is a digital company bringing simplified digital solution into complex Development Spaces.">
  <meta name="author" content="ThemeTags">
     <!--favicon icon-->
-    <link rel="icon" href="img/fbicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('img/fbicon.png') }}" type="image/png" sizes="16x16">
 
     <!--title-->
     <title>{{ config('app.name', 'Our services - FutureBasics') }}</title>
@@ -49,7 +49,7 @@
     <!--preloader start-->
     <div id="preloader">
         <div class="preloader-wrap">
-            <img src="img/fbicon.png" alt="logo" class="img-fluid preloader-icon" />
+            <img src="{{ asset('img/fbicon.png') }}" alt="logo" class="img-fluid preloader-icon" />
             <div class="loading-bar"></div>
         </div>
     </div>
@@ -57,286 +57,7 @@
     <!--main content wrapper start-->
     <div class="main-wrapper">
         <!--header section start-->
-        <header class="main-header w-100">
-            <nav class="navbar navbar-expand-xl navbar-light sticky-header">
-                <div class="container d-flex align-items-center justify-content-lg-between position-relative">
-                    <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white" />
-                        <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color" />
-                    </a>
-
-                    <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
-                        <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
-                    </a>
-                    <div class="clearfix"></div>
-                    <div class="collapse navbar-collapse justify-content-center">
-                        <ul class="nav col-12 col-md-auto justify-content-center main-menu">
-                            <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                            <li><a href="{{ route('about') }}" class="nav-link">About us</a></li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ route('our-services') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                    <div class="dropdown-grid rounded-custom width-full-3">
-                                        <div class="dropdown-grid-item">
-                                            <h6 class="drop-heading">Digital Solutions</h6>
-                                            <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-eject"></i></span>
-                                                <div class="drop-title">Graphics Design</div>
-                                            </a>
-
-                                            <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-browser"></i></span>
-                                                <div class="drop-title">Data Science</div>
-                                            </a>
-                                            <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-globe"></i></span>
-                                                <div class="drop-title">Website Design & Development</div>
-                                            </a>
-
-                                            <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-mobile"></i></span>
-                                                <div class="drop-title">Mobile App Development</div>
-                                            </a>
-                                        </div>
-                                        <div class="dropdown-grid-item">
-                                            <h6 class="drop-heading">Business Solutions</h6>
-                                            <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-bolt"></i></span>
-                                                <div class="drop-title">Prototyping</div>
-                                            </a>
-                                            <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-code-fork"></i></span>
-                                                <div class="drop-title">Software Engineering</div>
-                                            </a>
-                                            <a href="{{ route('all-bus-sys-development-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-briefcase"></i></span>
-                                                <div class="drop-title">Business System Development</div>
-                                            </a>
-                                            <a href="{{ route('all-branding-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-heartbeat"></i></span>
-                                                <div class="drop-title">Branding & Digital Strategizing</div>
-                                            </a>
-                                            {{-- <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                <div class="drop-title">Business Systems</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                <div class="drop-title">Digital Strategies</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-chart-network"></i></span>
-                                                <div class="drop-title">Business Analytics</div>
-                                            </a>
-                                            <a href="{{ route('our-services') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-paper-plane"></i></span>
-                                                <div class="drop-title">Augumented Sol.</div>
-                                            </a> --}}
-                                        </div>
-                                        <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                            <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ route('business') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                {{-- @guest
-                                @if (Route::has('login'))
-                                    <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
-                                @endif
-                            @else
-                            <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-
-                            @endguest --}}
-                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                    <div class="dropdown-grid rounded-custom width-full">
-                                        <div class="dropdown-grid-item">
-                                            <h6 class="drop-heading">Enterprise Solutions</h6>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
-                                                <span class="me-2"><i class="far fa-fingerprint"></i></span>
-                                                <div class="drop-title">Livestoka</div>
-                                            </a>
-                                            <a href="https://radarmile.com/" class="dropdown-link px-0">
-                                                <span class="me-2"><i class="far fa-address-book"></i></span>
-                                                <div class="drop-title">Radarmile</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                <div class="drop-title">Nakwalify</div>
-                                            </a>
-
-
-                                        </div>
-                                        <div class="dropdown-grid-item radius-right-side bg-light">
-                                            <h6 class="drop-heading">Innovations</h6>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                <div class="drop-title">Smart Risiti</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                <div class="drop-title">Mennyu</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-headset"></i></span>
-                                                <div class="drop-title">Tavrenni</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-laptop-code"></i></span>
-                                                <div class="drop-title">Avorra</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-                        <a href="{{ route('login') }}" class="btn btn-link text-decoration-none me-2">Sign In</a>
-                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact Us</a>
-                    </div>
-
-                       <!--offcanvas menu start-->
-                       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
-                        <div class="offcanvas-header d-flex align-items-center mt-4">
-                            <a href="{{ url('/') }}" class="d-flex align-items-center mb-md-0 text-decoration-none">
-                                <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid ps-2" />
-                            </a>
-                            <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
-                                <i class="far fa-close"></i>
-                            </button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="nav col-12 col-md-auto justify-content-center main-menu">
-                                <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                                <li><a href="{{ url('about') }}" class="nav-link">About us</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href=""{{ route('our-services') }}"" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
-                                    <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                        <div class="dropdown-grid rounded-custom width-full-3">
-                                            <div class="dropdown-grid-item">
-                                                <h6 class="drop-heading">Digital Solutions</h6>
-                                                <a href="{{ route('all-graphic-designs-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-bars"></i></span>
-                                                    <div class="drop-title">Graphics Design</div>
-                                                </a>
-
-                                                <a href="{{ route('all-data-science-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                    <div class="drop-title">Data Science</div>
-                                                </a>
-                                                <a href="{{ route('all-web-development-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-globe"></i></span>
-                                                    <div class="drop-title">Website Design & Development</div>
-                                                </a>
-
-                                                <a href="{{ route('all-mobile-development-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-mobile"></i></span>
-                                                    <div class="drop-title">Mobile App Development</div>
-                                                </a>
-                                            </div>
-                                            <div class="dropdown-grid-item">
-                                                <h6 class="drop-heading">Business Solutions</h6>
-                                                <a href="{{ route('all-prototyping-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-usd-square"></i></span>
-                                                    <div class="drop-title">Prototyping</div>
-                                                </a>
-                                                <a href="{{ route('all-software-development-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-th-list"></i></span>
-                                                    <div class="drop-title">Software Engineering</div>
-                                                </a>
-                                                <a href="{{ route('all-bus-sys-development-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-briefcase"></i></span>
-                                                    <div class="drop-title">Business System Development</div>
-                                                </a>
-                                                <a href="{{ route('all-branding-services') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-heartbeat"></i></span>
-                                                    <div class="drop-title">Branding & Digital Strategizing</div>
-                                                </a>
-                                            </div>
-                                            <div class="dropdown-grid-item last-item bg-light radius-right-side">
-                                                <a href="#"><img src="img/about/bs-ppl.jpg" alt="add" class="img-fluid rounded-custom" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                    <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-                                        <div class="dropdown-grid rounded-custom width-full">
-                                            <div class="dropdown-grid-item">
-                                                <h6 class="drop-heading">Enterprise Solutions</h6>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link px-0">
-                                                    <span class="me-2" ><i class="far fa-fingerprint"></i></span>
-                                                    <div class="drop-title">Livestoka</div>
-                                                </a>
-                                                <a href="https://radarmile.com/" class="dropdown-link px-0">
-                                                    <span class="me-2"><i class="far fa-address-book"></i></span>
-                                                    <div class="drop-title">Radarmile</div>
-                                                </a>
-                                                <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                    <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                    <div class="drop-title">Nakwalify</div>
-                                                </a>
-                                            </div>
-                                            <div class="dropdown-grid-item radius-right-side bg-light">
-                                                <h6 class="drop-heading">Innovations</h6>
-
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-code-branch"></i></span>
-                                                <div class="drop-title">Smart Risiti</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-life-ring"></i></span>
-                                                <div class="drop-title">Mennyu</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-headset"></i></span>
-                                                <div class="drop-title">Tavrenni</div>
-                                            </a>
-                                            <a href="{{ route('coming-soon') }}" class="dropdown-link">
-                                                <span class="me-2"><i class="far fa-laptop-code"></i></span>
-                                                <div class="drop-title">Avorra</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="action-btns mt-4 ps-3">
-                                    @guest
-                                        @if (Route::has('login'))
-                                            <a href="{{ route('login') }}" class="btn btn-outline-primary me-2">Sign In</a>
-                                        @endif
-                                    @else
-                                    <a class="btn btn-outline-primary me-2" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-
-                                    @endguest
-                                    <div>
-                                        <a href="{{ route('contact-us') }}" class="btn btn-primary">Contact us</a>
-                                    </div>
-                            </div>
-
-                        </div>
-                       </div>
-                    <!--offcanvas menu end-->
-                </div>
-            </nav>
-        </header>
+        @include('partials.public-navigation', ['navVariant' => 'light'])
         <!--header section end-->
 
         <!--page header section start-->
@@ -465,9 +186,9 @@
                             <div class="swiper-container testimonialSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/1.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/1.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                 <small>Founder and CEO at Amaara Herbs</small>
@@ -485,12 +206,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/3.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/3.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Oberoi R.</h6>
                                                 <small>CEO at Herbs</small>
@@ -508,12 +229,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/2.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/2.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Mr.Rupan Oberoi</h6>
                                                 <small>Founder and CEO</small>
@@ -531,12 +252,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/4.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/4.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Joan Dho</h6>
                                                 <small>Founder and CTO</small>
@@ -554,12 +275,12 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                     <div class="swiper-slide border border-2 p-5 rounded-custom position-relative">
-                                        <img src="img/testimonial/quotes-dot.svg" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
+                                        <img src="{{ asset('img/testimonial/quotes-dot.svg') }}" alt="quotes" width="100" class="img-fluid position-absolute left-0 top-0 z--1 p-3">
                                         <div class="d-flex mb-32 align-items-center">
-                                            <img src="img/testimonial/5.jpg" class="img-fluid me-3 rounded" width="60" alt="user">
+                                            <img src="{{ asset('img/testimonial/5.jpg') }}" class="img-fluid me-3 rounded" width="60" alt="user">
                                             <div class="author-info">
                                                 <h6 class="mb-0">Ranu Mondal</h6>
                                                 <small>Lead Developer</small>
@@ -577,7 +298,7 @@
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                             <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                         </ul>
-                                        <img src="img/testimonial/quotes.svg" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
+                                        <img src="{{ asset('img/testimonial/quotes.svg') }}" alt="quotes" class="position-absolute right-0 bottom-0 z--1 pe-4 pb-4">
                                     </div>
                                 </div>
                             </div>
@@ -641,8 +362,8 @@
                         <div class="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
                             <div class="footer-single-col">
                                 <div class="footer-single-col mb-4">
-                                    <img src="img/fb_og_logo.png" alt="logo" class="img-fluid logo-white">
-                                    <img src="img/fb_og_logo_drk.png" alt="logo" class="img-fluid logo-color">
+                                    <img src="{{ asset('img/fb_og_logo.png') }}" alt="logo" class="img-fluid logo-white">
+                                    <img src="{{ asset('img/fb_og_logo_drk.png') }}" alt="logo" class="img-fluid logo-color">
                                 </div>
                                 {{-- <p>Our latest news, articles, and resources, we will sent to
                                     your inbox weekly.</p>
@@ -740,13 +461,13 @@
     </div>
 
     <!--build:js-->
-    <script src="js/vendors/jquery-3.6.0.min.js"></script>
-    <script src="js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="js/vendors/swiper-bundle.min.js"></script>
-    <script src="js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendors/parallax.min.js"></script>
-    <script src="js/vendors/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/vendors/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/parallax.min.js') }}"></script>
+    <script src="{{ asset('js/vendors/aos.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <!--endbuild-->
 </body>
 
