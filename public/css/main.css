@@ -8437,6 +8437,16 @@ fieldset:disabled .btn {
           transform: none;
 }
 
+/*
+ * Future Basics mobile navigation compatibility.
+ * Bootstrap's JavaScript uses offcanvas-toggling while opening,
+ * but the bundled stylesheet only handles the .show state.
+ */
+#offcanvasWithBackdrop.offcanvas-toggling {
+  -webkit-transform: none;
+          transform: none;
+}
+
 /* line 5761, src/assets/scss/vendors/bootstrap.min.css */
 .offcanvas-backdrop::before {
   position: fixed;
@@ -54606,3 +54616,12 @@ i {
 
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
+
+/*
+ * FB_OFFCANVAS_TOGGLE_POINTER_FIX
+ * Ensure Bootstrap receives the mobile toggle button itself
+ * as the click target, rather than its nested icon.
+ */
+.navbar-toggler[data-bs-toggle="offcanvas"] > span {
+    pointer-events: none;
+}
