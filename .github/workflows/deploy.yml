@@ -168,7 +168,7 @@ jobs:
             echo "### Caddy"
             echo "\`ghcr.io/devnechi/fbwebltd-web@$WEB_DIGEST\`"
             echo
-            echo "Attestation: $APP_ATTESTATION"
+            echo "Attestation: $WEB_ATTESTATION"
             echo
             echo "Production deployment remains disabled."
             echo "Signing does not constitute production approval."
