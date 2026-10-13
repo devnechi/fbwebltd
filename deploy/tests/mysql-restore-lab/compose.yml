@@ -1,0 +1,50 @@
+services:
+  source:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: fbweb_rehearsal
+      MYSQL_USER: fbweb_lab
+      MYSQL_PASSWORD: lab_only_not_production
+      MYSQL_ROOT_PASSWORD: lab_root_not_production
+    volumes:
+      - source_data:/var/lib/mysql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - 'MYSQL_PWD="$${MYSQL_PASSWORD}" mysql -h 127.0.0.1 -u"$${MYSQL_USER}" -D "$${MYSQL_DATABASE}" -N -e "SELECT 1" | grep -qx 1'
+      interval: 5s
+      timeout: 5s
+      start_period: 240s
+      retries: 12
+    restart: "no"
+    networks:
+      - internal
+
+  restore:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: fbweb_rehearsal
+      MYSQL_USER: fbweb_lab
+      MYSQL_PASSWORD: lab_only_not_production
+      MYSQL_ROOT_PASSWORD: lab_root_not_production
+    volumes:
+      - restore_data:/var/lib/mysql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - 'MYSQL_PWD="$${MYSQL_PASSWORD}" mysql -h 127.0.0.1 -u"$${MYSQL_USER}" -D "$${MYSQL_DATABASE}" -N -e "SELECT 1" | grep -qx 1'
+      interval: 5s
+      timeout: 5s
+      start_period: 240s
+      retries: 12
+    restart: "no"
+    networks:
+      - internal
+
+networks:
+  internal:
+    internal: true
+
+volumes:
+  source_data:
+  restore_data:

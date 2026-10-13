@@ -1,0 +1,29 @@
+name: fbweb-gate16f-lab
+
+services:
+  db:
+    image: busybox:1.36
+    command: sh -c "mkdir -p /data && sleep 86400"
+    volumes:
+      - lab_database:/data
+    labels:
+      fbweb.test: "gate16f"
+
+  app:
+    image: busybox:1.36
+    command: sh -c "sleep 86400"
+    depends_on:
+      - db
+    labels:
+      fbweb.test: "gate16f"
+
+  web:
+    image: busybox:1.36
+    command: sh -c "sleep 86400"
+    depends_on:
+      - app
+    labels:
+      fbweb.test: "gate16f"
+
+volumes:
+  lab_database:
