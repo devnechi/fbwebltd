@@ -105,6 +105,22 @@ async function main() {
                 getComputedStyle(menu).visibility === 'visible';
         }, null, { timeout: 10000 });
 
+        // Bootstrap may apply the show class before its transition finishes.
+        // Wait for the menu to actually enter the viewport.
+        await mobile.waitForFunction(() => {
+            const menu = document.querySelector('#offcanvasWithBackdrop');
+            if (!menu) return false;
+
+            const rect = menu.getBoundingClientRect();
+
+            return (
+                rect.width > 0 &&
+                rect.height > 0 &&
+                rect.left < window.innerWidth &&
+                rect.right > 0
+            );
+        }, null, { timeout: 10000 });
+
         const position = await offcanvas.boundingBox();
 
         assert(position, 'Mobile offcanvas has no bounding box');
