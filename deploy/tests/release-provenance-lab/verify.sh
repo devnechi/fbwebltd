@@ -2,7 +2,7 @@
 set -euo pipefail
 
 REPO="devnechi/fbwebltd"
-SOURCE_REF="refs/heads/feature/docker-cicd-deployment"
+SOURCE_REF="refs/heads/master"
 WORKFLOW="devnechi/fbwebltd/.github/workflows/deploy.yml"
 
 APP_NAME="ghcr.io/devnechi/fbwebltd-app"
@@ -43,12 +43,10 @@ WEB_DIGEST="$3"
 command -v gh >/dev/null || fail "GitHub CLI unavailable"
 command -v python3 >/dev/null || fail "Python 3 unavailable"
 
-echo "===== GATE 4D.20 RELEASE PROVENANCE ====="
+echo "===== FUTURE BASICS RELEASE PROVENANCE ====="
 echo "Repository: $REPO"
 echo "Commit: $COMMIT_SHA"
 echo "Source ref: $SOURCE_REF"
-
-echo "===== VERIFY SOURCE COMMIT EXISTS ====="
 
 REMOTE_SHA=$(
     gh api "repos/$REPO/commits/$COMMIT_SHA" --jq '.sha'
@@ -56,8 +54,6 @@ REMOTE_SHA=$(
 
 [[ "$REMOTE_SHA" == "$COMMIT_SHA" ]] || \
     fail "Expected commit does not exist in the trusted repository"
-
-echo "PASS: Expected source commit exists in trusted repository"
 
 verify_image() {
     local name="$1"
@@ -68,8 +64,6 @@ verify_image() {
 
     echo "===== VERIFY $label ====="
 
-    # gh performs cryptographic attestation verification.
-    # Repository, signer, ref and exact source commit are mandatory.
     if ! result=$(
         gh attestation verify "$image" \
           --repo "$REPO" \
@@ -82,7 +76,6 @@ verify_image() {
         fail "$label attestation verification failed"
     fi
 
-    # An empty verification result is never accepted.
     if ! printf '%s' "$result" |
         python3 -c '
 import json
@@ -97,7 +90,6 @@ if not isinstance(data, list) or len(data) < 1:
     sys.exit(1)
 
 expected_name, expected_digest = sys.argv[1:3]
-
 found = False
 
 for item in data:
@@ -122,9 +114,9 @@ if not found:
         fail "$label verified statement lacks exact subject digest"
     fi
 
-    echo "PASS: $label signature and issuer verified"
-    echo "PASS: $label signer workflow and source identity verified"
-    echo "PASS: $label exact image digest bound to attestation"
+    echo "PASS: $label attestation verified"
+    echo "PASS: Expected workflow and master source verified"
+    echo "PASS: Exact image digest verified"
 }
 
 verify_image "$APP_NAME" "$APP_DIGEST" "LARAVEL APPLICATION"
@@ -132,6 +124,6 @@ verify_image "$WEB_NAME" "$WEB_DIGEST" "CADDY WEB"
 
 echo "===== RELEASE PAIR VERIFICATION ====="
 echo "PASS: Both images match the required Git commit"
-echo "PASS: Both images were attested by the required workflow"
-echo "PASS: Both image digest subjects verified"
-echo "===== GATE 4D.20 PASSED ====="
+echo "PASS: Both image attestations were verified"
+echo "PASS: Both immutable image digests were verified"
+echo "Production deployment is not authorized by this verification."
