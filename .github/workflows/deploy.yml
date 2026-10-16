@@ -1,4 +1,4 @@
-name: FBWeb test, build, attest and publish
+name: FBWeb test, build, attest and deploy
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
             --disable-pip-version-check \
             -r deploy/requirements-security-test.txt
 
-      - name: Set up legacy PHP for compatibility verification
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
@@ -45,10 +45,10 @@ jobs:
         run: |
           find app routes config database -name '*.php' -print0 | xargs -0 -n1 php -l >/dev/null
 
-      - name: Install dependencies from committed lock file
+      - name: Install Composer dependencies
         run: composer install --no-interaction --prefer-dist --no-progress
 
-      - name: Execute Laravel tests using isolated SQLite database
+      - name: Execute Laravel tests
         env:
           APP_ENV: testing
           APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
@@ -60,10 +60,9 @@ jobs:
         run: vendor/bin/phpunit
 
       - name: Validate Python deployment modules
-        run: |
-          python3 -m compileall -q deploy/releases deploy/tests
+        run: python3 -m compileall -q deploy/releases deploy/tests
 
-      - name: Execute deployment and recovery security tests
+      - name: Execute deployment and recovery tests
         env:
           PYTHONDONTWRITEBYTECODE: '1'
         run: |
@@ -74,7 +73,12 @@ jobs:
 
   publish:
     name: Build, attest and publish release images
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+    if: >-
+      ${{
+        (github.event_name == 'push' ||
+         github.event_name == 'workflow_dispatch') &&
+        github.ref == 'refs/heads/master'
+      }}
     needs: test
     runs-on: ubuntu-latest
 
@@ -83,6 +87,10 @@ jobs:
       packages: write
       id-token: write
       attestations: write
+
+    outputs:
+      app_digest: ${{ steps.app.outputs.digest }}
+      web_digest: ${{ steps.web.outputs.digest }}
 
     steps:
       - name: Checkout exact triggering commit
@@ -93,7 +101,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Authenticate with GitHub Container Registry
+      - name: Authenticate with GHCR
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
@@ -123,7 +131,6 @@ jobs:
           provenance: mode=min
 
       - name: Sign Laravel build attestation
-        id: app_attestation
         uses: actions/attest@v4
         with:
           subject-name: ghcr.io/devnechi/fbwebltd-app
@@ -132,7 +139,6 @@ jobs:
           create-storage-record: false
 
       - name: Sign Caddy build attestation
-        id: web_attestation
         uses: actions/attest@v4
         with:
           subject-name: ghcr.io/devnechi/fbwebltd-web
@@ -140,14 +146,12 @@ jobs:
           push-to-registry: true
           create-storage-record: false
 
-      - name: Record immutable image references
+      - name: Record immutable release images
         shell: bash
         env:
           COMMIT_SHA: ${{ github.sha }}
           APP_DIGEST: ${{ steps.app.outputs.digest }}
           WEB_DIGEST: ${{ steps.web.outputs.digest }}
-          APP_ATTESTATION: ${{ steps.app_attestation.outputs.attestation-url }}
-          WEB_ATTESTATION: ${{ steps.web_attestation.outputs.attestation-url }}
         run: |
           set -euo pipefail
 
@@ -156,36 +160,100 @@ jobs:
           [[ "$WEB_DIGEST" =~ ^sha256:[0-9a-f]{64}$ ]]
 
           {
-            echo "## Future Basics signed release images"
+            echo "## Future Basics release"
             echo
-            echo "Source commit: \`$COMMIT_SHA\`"
+            echo "Commit: \`$COMMIT_SHA\`"
             echo
-            echo "### Laravel"
-            echo "\`ghcr.io/devnechi/fbwebltd-app@$APP_DIGEST\`"
+            echo "Laravel: \`ghcr.io/devnechi/fbwebltd-app@$APP_DIGEST\`"
             echo
-            echo "Attestation: $APP_ATTESTATION"
-            echo
-            echo "### Caddy"
-            echo "\`ghcr.io/devnechi/fbwebltd-web@$WEB_DIGEST\`"
-            echo
-            echo "Attestation: $WEB_ATTESTATION"
-            echo
-            echo "Production deployment remains disabled."
-            echo "Signing does not constitute production approval."
+            echo "Caddy: \`ghcr.io/devnechi/fbwebltd-web@$WEB_DIGEST\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
-          echo "PASS: Both image digests and attestation links recorded"
-
   deploy:
-    if: ${{ false }}
+    name: Deploy approved release to DigitalOcean
+
+    if: >-
+      ${{
+        github.event_name == 'workflow_dispatch' &&
+        github.ref == 'refs/heads/master'
+      }}
+
     needs:
       - test
       - publish
+
     runs-on: ubuntu-latest
+
     environment: production
 
+    permissions:
+      contents: read
+
     steps:
-      - name: Production deployment intentionally disabled
+      - name: Prepare verified SSH configuration
+        shell: bash
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.FBWEB_DEPLOY_SSH_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.FBWEB_DEPLOY_KNOWN_HOSTS }}
         run: |
-          echo "Production deployment remains disabled."
-          echo "Pending server readiness, verified release approval and rollback validation."
+          set -euo pipefail
+          umask 077
+          mkdir -p "$HOME/.ssh"
+
+          printf '%s\n' "$SSH_PRIVATE_KEY" \
+            > "$HOME/.ssh/fbweb_deploy"
+
+          printf '%s\n' "$SSH_KNOWN_HOSTS" \
+            > "$HOME/.ssh/known_hosts"
+
+          chmod 600 \
+            "$HOME/.ssh/fbweb_deploy" \
+            "$HOME/.ssh/known_hosts"
+
+          ssh-keygen -y -f "$HOME/.ssh/fbweb_deploy" >/dev/null
+          ssh-keygen -lf "$HOME/.ssh/known_hosts"
+
+      - name: Deploy exact approved release
+        shell: bash
+        env:
+          DEPLOY_HOST: ${{ vars.FBWEB_DEPLOY_HOST }}
+          COMMIT_SHA: ${{ github.sha }}
+          APP_DIGEST: ${{ needs.publish.outputs.app_digest }}
+          WEB_DIGEST: ${{ needs.publish.outputs.web_digest }}
+        run: |
+          set -euo pipefail
+
+          [[ -n "$DEPLOY_HOST" ]]
+          [[ "$COMMIT_SHA" =~ ^[a-f0-9]{40}$ ]]
+          [[ "$APP_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]
+          [[ "$WEB_DIGEST" =~ ^sha256:[a-f0-9]{64}$ ]]
+
+          ssh \
+            -i "$HOME/.ssh/fbweb_deploy" \
+            -o IdentitiesOnly=yes \
+            -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes \
+            -o ConnectTimeout=15 \
+            -o ServerAliveInterval=15 \
+            -o ServerAliveCountMax=4 \
+            "fbdeploy@$DEPLOY_HOST" \
+            "deploy $COMMIT_SHA $APP_DIGEST $WEB_DIGEST"
+
+      - name: Verify public website after deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for domain in futurebasics.co.tz www.futurebasics.co.tz; do
+            status=$(curl \
+              --silent \
+              --show-error \
+              --location \
+              --output /dev/null \
+              --max-time 20 \
+              --write-out '%{http_code}' \
+              "https://$domain/")
+
+            echo "$domain: HTTP $status"
+            [[ "$status" == "200" ]]
+          done
