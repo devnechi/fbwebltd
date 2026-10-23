@@ -23,3 +23,16 @@ futurebasics.co.tz, www.futurebasics.co.tz {
         -Server
     }
 }
+
+# Chatamarketing — separate website
+chatamarketing.co.tz, www.chatamarketing.co.tz {
+    encode zstd gzip
+
+    reverse_proxy chata-web:8080
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        -Server
+    }
+}
