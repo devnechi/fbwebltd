@@ -33,6 +33,7 @@ services:
       - caddy_config:/config
     networks:
       - internal
+      - chata_edge
     depends_on:
       app:
         condition: service_healthy
@@ -60,6 +61,10 @@ services:
 networks:
   internal:
     name: fbweb_internal
+
+  chata_edge:
+    external: true
+    name: chata_edge
 
 volumes:
   app_storage:
